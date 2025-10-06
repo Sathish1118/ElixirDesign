@@ -12,8 +12,15 @@ $tooltip-opacity: $light-tooltip-default-top-bodytext-text-decoration;
 $input-font-weight: map-get($font-weight-map, $light-input-default-placeholder-font-weight);
 $input-color: $light-input-default-placdholder;
 $modal-content-bg: $light-popup-popup-fill;
+$light-select-bg: #ffffff;
+$light-select-color: #000000;
+
+$dark-select-bg: #2c2c2c;
+$dark-select-color: #ffffff;
 
 :root {
+   --select-bg: #{$light-select-bg};
+  --select-color: #{$light-select-color};
   --body-bg: #{$body-white};
   --body-text: #{$body-black};
   --body-font-family: #{$body-text-body-default-font-family};
@@ -52,6 +59,7 @@ $modal-content-bg: $light-popup-popup-fill;
   --pagination-small-border-style: #{$light-pagination-small-border-style};
   --pagination-small-border-color: #{$light-pagination-small-border-color};
   --pagination-small-width: 25px;
+  --pagination-small-pagewidth:#{$light-pagination-small-page-width};
   --pagination-small-height: #{$light-pagination-small-total-height};
   --pagination-small-goto-width: #{$light-pagination-small-goto-width};
   --pagination-small-goto-height: #{$light-pagination-small-goto-height};
@@ -64,6 +72,7 @@ $modal-content-bg: $light-popup-popup-fill;
   --pagination-medium-active-color: #{$light-pagination-medium-activetext};
   --pagination-medium-border-radius: #{$light-pagination-medium-cornerradius};
   --pagination-medium-width: 36px;
+  --pagination-medium-pagewidth:#{$light-pagination-medium-page-width};
   --pagination-medium-height: #{$light-pagination-medium-total-height};
   --pagination-medium-goto-width: #{$light-pagination-medium-goto-width};
   --pagination-medium-goto-height: #{$light-pagination-medium-goto-height};
@@ -76,6 +85,7 @@ $modal-content-bg: $light-popup-popup-fill;
   --pagination-large-active-color: #{$light-pagination-large-activetext};
   --pagination-large-border-radius: #{$light-pagination-large-cornerradius};
   --pagination-large-width: 66px;
+  --pagination-large-pagewidth:#{$light-pagination-large-page-width};
   --pagination-large-height: #{$light-pagination-large-total-height};
   --pagination-large-goto-width: #{$light-pagination-large-goto-width};
   --pagination-large-goto-height: #{$light-pagination-large-goto-height};
@@ -151,7 +161,7 @@ $modal-content-bg: $light-popup-popup-fill;
   //tooltip 
   --tooltip-bg: #{$tooltip-bg};
   --tooltip-opacity:#{$tooltip-opacity};
-    //modal
+  //modal
   --modal-content-bg: #{$modal-content-bg};
   //tab
   --tab-primary-default-text: #{$light-tab-primary-default-text};
@@ -382,8 +392,9 @@ $modal-content-bg: $light-popup-popup-fill;
 
 }
 
-
 .dark-theme {
+    --select-bg: #{$dark-select-bg};
+  --select-color: #{$dark-select-color};
   --body-bg: #{$body-black};
   --body-text: #{$body-white};
   --body-font-family: #{$body-text-body-default-font-family};
@@ -701,14 +712,12 @@ $modal-content-bg: $light-popup-popup-fill;
   --dropdown-dropdown-border-width: #{$dark-dropdown-default-dropdown-border-width};
   --dropdown-dropdown-border-style: #{$dark-dropdown-default-dropdown-border-style};
   --dropdown-dropdown-radius: #{$dark-dropdown-default-dropdown-radius};
-
   --dropdown-hover-fill: #{$dark-dropdown-hover-dropdown-hoverfill};
   --dropdown-hover-text: #{$dark-dropdown-hover-dropdown-hovertext};
   --dropdown-active-input-text: #{$dark-dropdown-active-dropdown-activetext};
   --dropdown-active-dropdown-text: #{$dark-dropdown-active-dropdown-activetext};
   --dropdown-active-checkbox-fill:#{$dark-dropdown-activewithcheckbox-dropdown-checkbox-fill};
   --dropdown-active-background:#{$dark-dropdown-hover-dropdown-hoverfill};
-
   --dropdown-withbadges-font-size:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-font-size};
   --dropdown-withbadges-font-weight:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-font-weight};
   --dropdown-withbadges-line-height:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-line-height};
@@ -746,4 +755,3 @@ $h6-line-height: $headings-h5-line-height;
 $table-bg: $light-table-default-header-background;
 //input
 $input-font-size: $light-input-default-placeholder-font-size;
-

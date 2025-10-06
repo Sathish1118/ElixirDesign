@@ -54,14 +54,17 @@ h6 {
   font-family: var(--table-font-family);
   border-radius: var(--table-border-radius);
   overflow: hidden;
-.form-check-input[type="checkbox"] {
-  border: 1px var(--table-checkbox-border-style) var(--table-checkbox-border);
-  height: var(--table-checkox-height);
-  width: var(--table-checkbox-width);
-}
-.form-check-input[type="checkbox"]:checked {
-  background-color: var(--table-background-checkbox);
-}
+
+  .form-check-input[type="checkbox"] {
+    border: 1px var(--table-checkbox-border-style) var(--table-checkbox-border);
+    height: var(--table-checkox-height);
+    width: var(--table-checkbox-width);
+  }
+
+  .form-check-input[type="checkbox"]:checked {
+    background-color: var(--table-background-checkbox);
+  }
+
   thead {
     background: $table-bg;
   }
@@ -85,9 +88,10 @@ h6 {
     text-transform: var(--table-body-text-case);
     background-color: var(--table-body);
     color: var(--table-body-text);
-    .btnaction{
-  color:var(--table-body-text);
-}
+
+    .btnaction {
+      color: var(--table-body-text);
+    }
   }
 
   tbody u {
@@ -121,7 +125,6 @@ label {
 
 .form-control:disabled::placeholder {
   color: var(--input-disabled-placeholder);
-  /* placeholder text is now black */
 }
 
 .form-control::placeholder {
@@ -311,6 +314,7 @@ label {
     line-height: var(--accordion-open-subtext-line-height);
   }
 }
+
 .form-check-input {
   border: 1px var(--toggle-default-boxborder-style) var(--toggle-default-boxborder-color);
   background-color: var(--input-background);
@@ -408,7 +412,7 @@ body.dark-theme .form-switch .form-check-input:checked {
 }
 
 .trigger {
-  border:1px var(--dropdown-input-border-style) var(--dropdown-input-border-color);
+  border: 1px var(--dropdown-input-border-style) var(--dropdown-input-border-color);
   border-radius: var(--dropdown-input-radius);
   color: var(--dropdown-input-text);
   background: var(--dropdown-input-background);
@@ -424,7 +428,7 @@ body.dark-theme .form-switch .form-check-input:checked {
 }
 
 .menu-item {
-  font-size: var( --dropdown-dropdown-text-font-size);
+  font-size: var(--dropdown-dropdown-text-font-size);
   font-family: var(--dropdown-dropdown-text-font-family);
   font-weight: var(--dropdown-dropdown-text-font-weight);
 
@@ -613,6 +617,7 @@ body.dark-theme .form-switch .form-check-input:checked {
   border-radius: var(--page-border-radius);
   overflow: hidden;
 }
+
 .pagination-wrapper {
   &.small {
     --page-bg: var(--pagination-small-bg);
@@ -627,6 +632,7 @@ body.dark-theme .form-switch .form-check-input:checked {
     --font-size: var(--pagination-small-font-size);
     --pagenumber-height: var(--pagination-small-pagenumber-height);
     --pagenumber-width: var(--pagination-small-pagenumber-width);
+    --pagenumber-width: var(--pagination-small-pagewidth);
   }
 
   &.medium {
@@ -642,6 +648,7 @@ body.dark-theme .form-switch .form-check-input:checked {
     --font-size: var(--pagination-medium-font-size);
     --pagenumber-height: var(--pagination-medium-pagenumber-height);
     --pagenumber-width: var(--pagination-medium-pagenumber-width);
+    --pagenumber-width: var(--pagination-medium-pagewidth);
   }
 
   &.large {
@@ -657,16 +664,41 @@ body.dark-theme .form-switch .form-check-input:checked {
     --font-size: var(--pagination-large-font-size);
     --pagenumber-height: var(--pagination-large-pagenumber-height);
     --pagenumber-width: var(--pagination-large-pagenumber-width);
+    --pagenumber-width: var(--pagination-large-pagewidth);
   }
 }
-.pagination-nav .page-btn:first-child {
-  border-top-left-radius: var(--page-border-radius);
-  border-bottom-left-radius: var(--page-border-radius);
+
+.custom-select-wrapper {
+  width: var(--pagenumber-width);
+
+  .custom-select-selected {
+    background: var(--page-bg);
+    color: var(--page-color);
+    border: 1px var(--pagination-small-border-style) var(--pagination-small-border-color);
+    cursor: pointer;
+    border-radius: var(--page-border-radius);
+  }
+
+  .custom-select-options {
+    background: var(--page-bg);
+    border: 1px var(--pagination-small-border-style) var(--pagination-small-border-color);
+    z-index: 10;
+    border-radius: var(--page-border-radius);
+    .custom-option {
+      cursor: pointer;
+      &:hover {
+        background-color: var(--filter-hover-hoverfill);
+        color: var(--filter-hover-hovertext);
+      }
+
+      &.active {
+        background-color: var(--filter-active-activefill);
+        color: var(--filter-active-activetext);
+      }
+    }
+  }
 }
-.pagination-nav .page-btn:last-child {
-  border-top-right-radius: var(--page-border-radius);
-  border-bottom-right-radius: var(--page-border-radius);
-}
+
 .pagination-nav .page-btn {
   background: var(--page-bg);
   color: var(--page-color);
@@ -678,6 +710,16 @@ body.dark-theme .form-switch .form-check-input:checked {
   border-radius: 0px;
   border: 1px var(--pagination-small-border-style) var(--pagination-small-border-color);
   font-size: var(--font-size);
+}
+
+.pagination-nav .page-btn:first-child {
+  border-top-left-radius: var(--page-border-radius);
+  border-bottom-left-radius: var(--page-border-radius);
+}
+
+.pagination-nav .page-btn:last-child {
+  border-top-right-radius: var(--page-border-radius);
+  border-bottom-right-radius: var(--page-border-radius);
 }
 
 .pagination-nav .page-btn+.page-btn {
@@ -757,6 +799,17 @@ body.dark-theme .form-switch .form-check-input:checked {
   font-family: var(--formulainput-invalid-validationtext-font-family);
 }
 
+.modal-content {
+  background-color: var(--modal-content-bg);
+
+  .modal-header {
+    border: none
+  }
+
+  .modal-footer {
+    border: none
+  }
+}
 
 .tooltip-inner {
   background-color: var(--tooltip-bg);
@@ -782,13 +835,4 @@ body.dark-theme .form-switch .form-check-input:checked {
 .tooltip.bs-tooltip-auto[x-placement^="right"] .tooltip-arrow::before,
 .tooltip.bs-tooltip-right .tooltip-arrow::before {
   border-right-color: var(--tooltip-bg);
-}
-.modal-content {
-  background-color: var(--modal-content-bg);
-  .modal-header {
-    border: none
-  }
-  .modal-footer {
-    border: none
-  }
 }
