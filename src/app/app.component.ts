@@ -2,10 +2,11 @@ import { Component,TemplateRef,ViewChild } from '@angular/core';
 import { TableColumn } from '../stories/table.component';
 // import { TableColumn } from './table.component';
 import { TableAction } from '../stories/table.component';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder,FormControl, Validators } from '@angular/forms';
 import { AlertService } from '../stories/alert.service';
 import  { filterData } from '../stories/search.utils';
 import { Tab } from '../stories/tab.component';
+import { checkbox } from '../stories/table.stories';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -43,8 +44,9 @@ export class AppComponent {
   ];
   
 actions: TableAction[] = [
-  { type: 'edit',iconClass: 'fas fa-edit' },
+  { type: 'edit',iconClass: 'fa-solid fa-pen-to-square' },
 ];
+
  tableData = [
   { name: 'Offer Letter', section: 'Candidate Letters', module: 'Onboarding', category: 'Welcome Letter', status: 'Enabled', updatedOn: '03/02/2025'},
   { name: 'Welcome Letter', section: 'HR Letters', module: 'Onboarding', category: 'Welcome', status: 'Enabled', updatedOn: '04/02/2025'},
@@ -58,20 +60,54 @@ actions: TableAction[] = [
     console.log('Clicked action:', event.action, 'on row:', event.row);
     alert ('dsasd')
   }
+
+onSubmit() {
+  if (this.userForm.valid) {
+    console.log(this.userForm.value);
+  } else {
+    this.userForm.markAllAsTouched(); 
+  }
+}
+isInvalid(controlName: string) {
+  const control = this.userForm.get(controlName);
+  return control && (control.touched || control.dirty) && control.invalid;
+}
+isvalid(controlName: string): boolean {
+  const control = this.userForm.get(controlName);
+  return !!control && control.touched && control.invalid;
+}
+
+
+
   submit(){
     alert(this.inputValue)
   this.alertService.show({ type: 'primary', message: 'Operation Successful!' });
   }
+    userForm!: FormGroup;
+
   constructor(private fb: FormBuilder, private alertService: AlertService) {
+        this.userForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      // gender: [''],
+      normal: ['',Validators.required],
+      badge: ['',Validators.required],
+      radio: ['',Validators.required],
+      number: ['',Validators.required],
+  checkbox: [[], this.minSelectedCheckboxes(1)]
+      // address: ['']
+    });
   }
    submit1() {
   this.alertService.show({ type: 'expand-success', message: 'Something went wrong!' });
   }
-//  defaultChecked = false;
-//   checkedExample = true;
-//   disabledExample = false;
-//   validExample = false;
-//   invalidExample = false;
+minSelectedCheckboxes(min = 1) {
+  return (control: FormControl) => {
+    const val = control.value;
+    if (Array.isArray(val) && val.length >= min) return null; // valid
+    return { required: true }; // invalid
+  }
+}
   checkedChange(value: boolean) {
   console.log('Radio checked:', value);
 }
@@ -86,6 +122,8 @@ onClose() {
 onSearch(query: string) {
   this.filteredData = filterData(this.tableData, query);
 }
+
+
 dropdownOptions = ['Option 1', 'Option 2', 'Option 3', 'Option 4','Option 4','Option 4','Option 4','Option 4','Option 4','Option 4','Option 4','Option 4'];
 dropdownList = [
   { label: 'Option', value: 'Option', count: '66' },
@@ -152,6 +190,5 @@ expr = expr.replace(/sum\((.*?)\)/gi, (_, content) => {
 toggleTheme() {
   document.body.classList.toggle("dark-theme");
 }
-
 
 }

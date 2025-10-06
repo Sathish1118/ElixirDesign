@@ -46,7 +46,7 @@
 <div class="m-3">
   <h1>Dropdown</h1>
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    <storybook-dropdown [options]="dropdownOptions" type="checkbox" placeholder="Select option"></storybook-dropdown>
+    <storybook-dropdown [options]="dropdownOptions"  placeholder="Select option"></storybook-dropdown>
     <storybook-dropdown [options]="dropdownOptions" mode="checkbox" placeholder="Select options">
     </storybook-dropdown>
     <storybook-dropdown [options]="dropdownOptions" mode="radio" placeholder="Select one option">
@@ -172,3 +172,49 @@
 <div *ngIf="result !== null">Result: {{result}}</div>
 </div>
 
+
+
+<!-- component.html -->
+<!-- user-form.component.html -->
+<div class="m-3">
+  <h1>Form with Validation</h1>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()" >
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+  <storybook-input
+    formControlName="name"
+    placeholder="Enter Name"
+ [border]="isInvalid('name') ? 'invalid' : 'default'" 
+  ></storybook-input>
+  <div *ngIf="isInvalid('name')" class="text-danger">
+    Please enter a Name.
+  </div>
+    </div>
+
+    <div class="col">
+  <storybook-input
+    formControlName="email"
+    placeholder="Enter Email"
+    type="email"
+  [border]="isInvalid('email') ? 'invalid' : 'default'"
+  ></storybook-input>
+  <div *ngIf="isInvalid('email')" class="text-danger">
+    Please enter a valid email.
+  </div>
+  </div>
+      <div class="col">
+   <storybook-dropdown  formControlName="normal" [border]="isInvalid('normal') ? 'invalid' : 'default'" [options]="dropdownOptions"  placeholder="Select option"></storybook-dropdown>
+  <div *ngIf="isInvalid('normal')" class="text-danger">
+    Please enter a valid email.
+  </div>
+  </div>
+      <div class="col">
+    <storybook-dropdown  formControlName="checkbox"  [border]="isInvalid('checkbox') ? 'invalid' : 'default'" [options]="dropdownOptions" mode="checkbox" placeholder="Select one option">
+    </storybook-dropdown>
+      <div *ngIf="isInvalid('checkbox')" class="text-danger">
+    Please enter a valid email.
+  </div>
+  </div>
+  </div>
+</form>
+</div>
