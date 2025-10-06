@@ -11,6 +11,7 @@ $tooltip-bg: $light-tooltip-default-top-background;
 $tooltip-opacity: $light-tooltip-default-top-bodytext-text-decoration;
 $input-font-weight: map-get($font-weight-map, $light-input-default-placeholder-font-weight);
 $input-color: $light-input-default-placdholder;
+$modal-content-bg: $light-popup-popup-fill;
 
 :root {
   --body-bg: #{$body-white};
@@ -150,6 +151,8 @@ $input-color: $light-input-default-placdholder;
   //tooltip 
   --tooltip-bg: #{$tooltip-bg};
   --tooltip-opacity:#{$tooltip-opacity};
+    //modal
+  --modal-content-bg: #{$modal-content-bg};
   //tab
   --tab-primary-default-text: #{$light-tab-primary-default-text};
   --tab-primary-default-navtext-font-family: #{$light-tab-primary-default-navtext-font-family};
@@ -489,6 +492,8 @@ $input-color: $light-input-default-placdholder;
   //tooltip
   --tooltip-bg: #{$dark-tooltip-default-top-background};
   --tooltip-opacity:#{$dark-tooltip-default-top-bodytext-text-decoration};
+  //modal
+  --modal-content-bg: #{$dark-popup-popup-fill};
   //tab
   --tab-primary-default-text: #{$dark-tab-primary-default-text};
   --tab-primary-default-navtext-font-family: #{$dark-tab-primary-default-navtext-font-family};

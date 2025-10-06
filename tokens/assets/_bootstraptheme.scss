@@ -783,3 +783,12 @@ body.dark-theme .form-switch .form-check-input:checked {
 .tooltip.bs-tooltip-right .tooltip-arrow::before {
   border-right-color: var(--tooltip-bg);
 }
+.modal-content {
+  background-color: var(--modal-content-bg);
+  .modal-header {
+    border: none
+  }
+  .modal-footer {
+    border: none
+  }
+}
