@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StorybookSearchComponent } from './search.component';
 import { PaginationComponent } from './pagination.component';
-
+import { FilterDropdownComponent } from './filter-dropdown.component';
 export type TableColumn = {
   style?: { [key: string]: string };
   headerStyle?: { [key: string]: string };
@@ -15,18 +15,16 @@ export type TableColumn = {
   headerClass?: string;
   isCheckbox?: boolean;
 };
-
 export type TableAction = {
   type?: string;
   className?: string;
   iconClass?: string;
   label?: string;
 };
-
 @Component({
   selector: 'storybook-table',
   standalone: true,
-  imports: [CommonModule, FormsModule, StorybookSearchComponent, PaginationComponent],
+  imports: [CommonModule, FormsModule, StorybookSearchComponent, FilterDropdownComponent, PaginationComponent],
   template: `
     <div class="mb-2">
       <storybook-search 
@@ -35,7 +33,6 @@ export type TableAction = {
         (search)="applyGlobalSearch()">
       </storybook-search>
     </div>
-
     <div class="table-responsive">
       <table class="table">
         <thead>
@@ -46,27 +43,14 @@ export type TableAction = {
                 <span *ngIf="filter && !col.isSerialNo && !col.isCheckbox" class="ms-2" style="cursor:pointer;" (click)="toggleFilter(col)">
                   <i class="fa fa-filter"></i>
                 </span>
-                <div class="dropdown-filter p-2 shadow-sm rounded" *ngIf="activeFilter === col.accessor">
-                  <storybook-search 
-                    [placeholder]="'Search...'" 
-                    [(value)]="searchText[col.accessor]"
-                    (search)="onDropdownSearch(col.accessor, $event)">
-                  </storybook-search>
-                  <div class="filter-options mt-2">
-                    <div 
-                      class="filter-row d-flex align-items-center p-1" 
-                      [class.selected]="selectedFilters[col.accessor][val]"
-                      *ngFor="let val of getFilteredUniqueValues(col.accessor)" 
-                      (click)="toggleFilterValue(col.accessor, val)">
-                      <input type="checkbox" class="form-check-input me-2" [(ngModel)]="selectedFilters[col.accessor][val]" (click)="$event.stopPropagation()">
-                      <span class="mt-1">{{ val }}</span>
-                    </div>
-                  </div>
-                  <div class="filter-actions d-flex justify-content-between mt-2">
-                    <button class="btn btn-sm btn-outline-primary" (click)="resetColumnFilter(col.accessor)">Reset</button>
-                    <button class="btn btn-sm btn-primary" (click)="applyColumnFilter(col.accessor)">Apply</button>
-                  </div>
-                </div>
+              <storybook-filter-dropdown
+          *ngIf="activeFilter === col.accessor"
+          [values]="getFilteredUniqueValues(col.accessor)"
+          [selectedValues]="selectedFilters[col.accessor]"
+          [(searchText)]="searchText[col.accessor]"
+          (onApply)="applyColumnFilter(col.accessor)"
+          (onReset)="resetColumnFilter(col.accessor)">
+        </storybook-filter-dropdown>
               </ng-container>
               <ng-template #checkboxHeader>
                 <input type="checkbox" class="form-check-input" (change)="toggleAllRows($event)">
@@ -75,7 +59,6 @@ export type TableAction = {
             <th *ngIf="actions?.length">Actions</th>
           </tr>
         </thead>
-
         <tbody>
           <tr *ngFor="let row of filteredData; let i = index">
             <td *ngFor="let col of columns" [ngClass]="col.className">
@@ -102,8 +85,6 @@ export type TableAction = {
         </tbody>
       </table>
     </div>
-
-    <!-- Pagination Component -->
     <storybook-pagination
       [totalItems]="allFilteredData.length"
       [pageSize]="pageSize"
@@ -122,63 +103,50 @@ export class TableComponent {
   @Input() actions: TableAction[] = [];
   @Input() paginationSize: 'small' | 'medium' | 'large' = 'medium';
   @Input() filter: boolean = false;
-
   @Output() actionClick = new EventEmitter<{ action: TableAction; row: any }>();
-
   filteredData: any[] = [];
   allFilteredData: any[] = [];
-
   pageIndex: number = 0;
   pageSize: number = 10;
   pageSizeOptions: number[] = [5, 10, 20, 50];
   gotoPageInput: number | null = null;
-
   activeFilter: string | null = null;
   selectedFilters: { [key: string]: { [val: string]: boolean } } = {};
   searchText: { [key: string]: string } = {};
   globalSearch: string = '';
-
   ngOnInit() {
     this.allFilteredData = [...this.data];
     this.applyPaging();
     this.columns.forEach(c => this.selectedFilters[c.accessor] = {});
   }
-
   onAction(action: any, row: any) {
     this.actionClick.emit({ action, row });
   }
-
   toggleAllRows(event: Event) {
     const checked = (event.target as HTMLInputElement).checked;
     this.data.forEach(row => row.selected = checked);
   }
-
   changePage(newIndex: number) {
     this.pageIndex = newIndex;
     this.applyPaging();
   }
-
   changePageSize(size: number) {
     this.pageSize = size;
     this.pageIndex = 0;
     this.applyPaging();
   }
-
   applyPaging() {
     const start = this.pageIndex * this.pageSize;
     const end = start + this.pageSize;
     this.filteredData = this.allFilteredData.slice(start, end);
   }
-
   toggleFilter(col: TableColumn) {
     this.activeFilter = this.activeFilter === col.accessor ? null : col.accessor;
   }
-
   toggleFilterValue(accessor: string, value: string) {
     if (!this.selectedFilters[accessor]) this.selectedFilters[accessor] = {};
     this.selectedFilters[accessor][value] = !this.selectedFilters[accessor][value];
   }
-
   applyColumnFilter(accessor: string) {
     const selected = this.selectedFilters[accessor];
     const activeValues = Object.keys(selected).filter(v => selected[v]);
@@ -189,7 +157,6 @@ export class TableComponent {
     this.pageIndex = 0;
     this.applyPaging();
   }
-
   resetColumnFilter(accessor: string) {
     this.selectedFilters[accessor] = {};
     this.allFilteredData = [...this.data];
@@ -197,28 +164,24 @@ export class TableComponent {
     this.applyPaging();
     this.activeFilter = null;
   }
-
   getUniqueValues(accessor: string): string[] {
     return [...new Set(this.data.map(row => row[accessor]).filter(v => v != null))];
   }
-
   onDropdownSearch(accessor: string, text: string) {
     this.searchText[accessor] = text.toLowerCase();
   }
-
   getFilteredUniqueValues(accessor: string): string[] {
     const allValues = this.getUniqueValues(accessor);
     const text = this.searchText[accessor] || '';
     return text ? allValues.filter(v => v.toLowerCase().includes(text)) : allValues;
   }
-
   applyGlobalSearch() {
     const query = this.globalSearch?.toLowerCase();
     this.allFilteredData = query
       ? this.data.filter(row =>
-          this.columns.some(col => !col.isCheckbox && !col.isSerialNo &&
-            String(row[col.accessor]).toLowerCase().includes(query))
-        )
+        this.columns.some(col => !col.isCheckbox && !col.isSerialNo &&
+          String(row[col.accessor]).toLowerCase().includes(query))
+      )
       : [...this.data];
     this.pageIndex = 0;
     this.applyPaging();
