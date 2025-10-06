@@ -39,7 +39,7 @@ export const Large: Story = {
   args: {
     totalItems: 100,
     pageSize: 20,
-    pageIndex: 5,
+    pageIndex: 3,
     size: 'large',
   },
 };
