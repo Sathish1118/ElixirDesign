@@ -1,4 +1,3 @@
-
 @import "light&dark.scss";
 $font-weight-map: (
   "Light": 300,
@@ -9,9 +8,9 @@ $font-weight-map: (
   "ExtraBold": 800
 );
 $tooltip-bg: $light-tooltip-default-top-background;
-$tooltip-opacity:$light-tooltip-default-top-bodytext-text-decoration;
+$tooltip-opacity: $light-tooltip-default-top-bodytext-text-decoration;
 $input-font-weight: map-get($font-weight-map, $light-input-default-placeholder-font-weight);
-$input-color:$light-input-default-placdholder;
+$input-color: $light-input-default-placdholder;
 
 :root {
   --body-bg: #{$body-white};
@@ -35,7 +34,12 @@ $input-color:$light-input-default-placdholder;
   --table-header-line-height:#{$light-table-default-header-headertext-line-height};
   --table-header-text-decoration:#{$light-table-default-header-headertext-text-decoration};
   --table-header-letter-spacing:#{$light-table-default-header-headertext-letter-spacing};
-//pagination
+  --table-checkbox-border:#{$light-table-multiselect-body-checkbox-uncheck-color};
+  --table-checkbox-border-style:#{$light-table-multiselect-body-checkbox-uncheck-style};
+  --table-background-checkbox:#{$light-table-multiselect-body-checkbox-activefill};
+  --table-checkox-height:#{$light-table-multiselect-body-checkbox-height};
+  --table-checkbox-width:#{$light-table-multiselect-body-checkbox-width};
+  //pagination
   --pagination-font-family:#{$light-pagination-large-text-font-family};
   --pagination-font-weight:#{map-get($font-weight-map, $light-pagination-large-text-font-weight)};
   --pagination-line-height:#{$light-pagination-large-text-line-height};
@@ -77,7 +81,7 @@ $input-color:$light-input-default-placdholder;
   --pagination-large-font-size: #{$light-pagination-large-text-font-size};
   --pagination-large-pagenumber-height: #{$light-pagination-large-page-height};
   --pagination-large-pagenumber-width: #{$light-pagination-large-page-width};
-//search
+  //search
   --search-default-text: #{$light-search-default-text};
   --search-default-icon: #{$light-search-default-icon};
   --search-default-font-family: #{$light-search-default-searchtext-font-family};
@@ -94,8 +98,8 @@ $input-color:$light-input-default-placdholder;
   --search-default-font-size: #{$light-search-default-searchtext-font-size};
   --search-default-text-decoration: #{$light-search-default-searchtext-text-decoration};
   --search-default-text-case: #{$light-search-default-searchtext-text-case};
-//accordion
-   --accordion-default-heading: #{$light-accordian-default-heading};
+  //accordion
+  --accordion-default-heading: #{$light-accordian-default-heading};
   --accordion-default-icon: #{$light-accordian-default-icon};
   --accordion-default-background: #{$light-accordian-default-background};
   --accordion-default-line-color: #{$light-accordian-default-line-color};
@@ -147,7 +151,7 @@ $input-color:$light-input-default-placdholder;
   --tooltip-bg: #{$tooltip-bg};
   --tooltip-opacity:#{$tooltip-opacity};
   //tab
-    --tab-primary-default-text: #{$light-tab-primary-default-text};
+  --tab-primary-default-text: #{$light-tab-primary-default-text};
   --tab-primary-default-navtext-font-family: #{$light-tab-primary-default-navtext-font-family};
   --tab-primary-default-navtext-font-weight: #{map-get($font-weight-map, $light-tab-primary-default-navtext-font-weight)};
   --tab-primary-default-navtext-font-size: #{$light-tab-primary-default-navtext-font-size};
@@ -175,7 +179,7 @@ $input-color:$light-input-default-placdholder;
   --tab-secondary-active-text: #{$light-tab-secondary-active-text};
   --tab-secondary-hover-text: #{$light-tab-secondary-hover-text};
   //formula
-    --formulainput-valid-validationtext-font-size: #{$light-formulainput-valid-validationtext-font-size};
+  --formulainput-valid-validationtext-font-size: #{$light-formulainput-valid-validationtext-font-size};
   --formulainput-valid-validation: #{$light-formulainput-valid-validation};
   --formulainput-valid-validationtext-font-family: #{$light-formulainput-valid-validationtext-font-family};
   --formulainput-valid-validationtext-font-weight: #{map-get($font-weight-map, $light-formulainput-valid-validationtext-font-weight)};
@@ -305,36 +309,38 @@ $input-color:$light-input-default-placdholder;
   --input-background:#{$body-white};
   --input-font-weight: #{$input-font-weight};
   --input-placholder-color:#{$input-color};
-   --input-border-style:#{$light-input-default-border-style};
-   --input-border-color:#{$light-input-default-border-color};
---input-default-placeholder-line-height:#{$light-input-default-placeholder-line-height};
---input-color:#{$light-input-default-placdholder};
---input-border-radius:#{$light-input-default-cornerradius};
---input-border-color:#{$light-input-default-border-color};
---input-font-size:#{$light-input-default-placeholder-font-size};
---input-withlabel-label: #{$light-input-withlabel-label};
---input-disabled:#{$light-input-disabled-background};
---input-disabled-border:#{$light-input-disabled-border-color};
---input-hover-border:#{$light-input-hover-border-color};
---input-focus-border:#{$light-input-focus-border-color};
---input-focus-placeholder:#{$light-input-focus-placeholder};
---input-placeholder-color:#{$light-input-default-placdholder};
---input-default-placeholder-font-family:#{$light-input-default-placeholder-font-family};
---input-default-placeholder-font-weight:#{$light-input-default-placeholder-font-weight};
---input-default-placeholder-font-size:#{$light-input-default-placeholder-font-size};
---input-labelinput-label-font-weight:#{map-get($font-weight-map, $light-input-labelinput-label-font-weight)};
---input-labelinput-label-font-family:#{$light-input-labelinput-label-font-family};
---input-labelinput-label-font-size:#{$light-input-labelinput-label-font-size};
---input-disabled-placeholder:#{$light-input-disabled-placeholder};
-//toggle
- --toggle-default-boxborder-color: #{$light-toggle-default-boxborder-color};
+  --input-border-style:#{$light-input-default-border-style};
+  --input-border-color:#{$light-input-default-border-color};
+  --input-default-placeholder-line-height:#{$light-input-default-placeholder-line-height};
+  --input-color:#{$light-input-default-placdholder};
+  --input-border-radius:#{$light-input-default-cornerradius};
+  --input-border-color:#{$light-input-default-border-color};
+  --input-font-size:#{$light-input-default-placeholder-font-size};
+  --input-withlabel-label: #{$light-input-withlabel-label};
+  --input-disabled:#{$light-input-disabled-background};
+  --input-disabled-border:#{$light-input-disabled-border-color};
+  --input-hover-border:#{$light-input-hover-border-color};
+  --input-focus-border:#{$light-input-focus-border-color};
+  --input-focus-placeholder:#{$light-input-focus-placeholder};
+  --input-placeholder-color:#{$light-input-default-placdholder};
+  --input-default-placeholder-font-family:#{$light-input-default-placeholder-font-family};
+  --input-default-placeholder-font-weight:#{$light-input-default-placeholder-font-weight};
+  --input-default-placeholder-font-size:#{$light-input-default-placeholder-font-size};
+  --input-labelinput-label-font-weight:#{map-get($font-weight-map, $light-input-labelinput-label-font-weight)};
+  --input-labelinput-label-font-family:#{$light-input-labelinput-label-font-family};
+  --input-labelinput-label-font-size:#{$light-input-labelinput-label-font-size};
+  --input-disabled-placeholder:#{$light-input-disabled-placeholder};
+  //toggle
+  --toggle-default-boxborder-color: #{$light-toggle-default-boxborder-color};
   --toggle-default-boxborder-width: #{$light-toggle-default-boxborder-width};
   --toggle-default-boxborder-style: #{$light-toggle-default-boxborder-style};
   --toggle-disabled-boxfill:#{$light-toggle-disabled-boxfill};
   --toggle-disabled-circlefill:#{$light-toggle-disabled-circlefill};
   --toggle-disabled-boxborder-color:#{$light-toggle-disabled-boxborder-color};
- --toggle-focused-color :#{$light-toggle-focused-boxfill};
- //dropdown
+  --toggle-focused-color :#{$light-toggle-focused-boxfill};
+  --toggle-default-font-size:#{$light-checkbox-focused-textstyle-font-size};
+  --toggle-default-font-family:#{$light-checkbox-focused-textstyle-font-family};
+  //dropdown
   /* Light Mode Variables */
   --dropdown-input-text: #{$light-dropdown-default-input-text};
   --dropdown-input-radius: #{$light-dropdown-default-input-radius};
@@ -344,8 +350,7 @@ $input-color:$light-input-default-placdholder;
   --dropdown-input-font-family: #{$light-dropdown-default-input-textstyle-font-family};
   --dropdown-input-font-weight: #{map-get($font-weight-map, $light-dropdown-default-input-textstyle-font-weight)};
   --dropdown-input-font-size: #{$light-dropdown-default-input-textstyle-font-size};
-  
-    --dropdown-menu-background:#{$light-dropdown-default-dropdown-background};
+  --dropdown-menu-background:#{$light-dropdown-default-dropdown-background};
   --dropdown-dropdown-text-font-family: #{$light-dropdown-default-dropdown-textstyle-font-family};
   --dropdown-dropdown-text-font-weight: #{map-get($font-weight-map, $light-dropdown-default-dropdown-textstyle-font-weight)};
   --dropdown-dropdown-text-font-size: #{$light-dropdown-default-dropdown-textstyle-font-size};
@@ -353,14 +358,12 @@ $input-color:$light-input-default-placdholder;
   --dropdown-dropdown-border-width: #{$light-dropdown-default-dropdown-border-width};
   --dropdown-dropdown-border-style: #{$light-dropdown-default-dropdown-border-style};
   --dropdown-dropdown-radius: #{$light-dropdown-default-dropdown-radius};
-
   --dropdown-hover-fill: #{$light-dropdown-hover-dropdown-hoverfill};
   --dropdown-hover-text: #{$light-dropdown-hover-dropdown-hovertext};
   --dropdown-active-input-text: #{$light-dropdown-active-dropdown-activetext};
   --dropdown-active-dropdown-text: #{$light-dropdown-active-dropdown-activetext};
   --dropdown-active-checkbox-fill: #{$light-dropdown-activewithcheckbox-dropdown-checkbox-fill};
   --dropdown-active-background:#{$light-dropdown-withbadges-dropdown-badges-activenumber};
-
   --dropdown-withbadges-font-size:#{$light-dropdown-withbadges-dropdown-badges-numberstyle-font-size};
   --dropdown-withbadges-font-weight:#{$light-dropdown-withbadges-dropdown-badges-numberstyle-font-weight};
   --dropdown-withbadges-line-height:#{$light-dropdown-withbadges-dropdown-badges-numberstyle-line-height};
@@ -370,6 +373,9 @@ $input-color:$light-input-default-placdholder;
   --dropdown-radio-text:#{$light-dropdown-activewithradiobutton-dropdown-radio-innercircle};
   --dropdown-radio-border-style:#{$light-dropdown-activewithradiobutton-dropdown-radio-border-style};
   --dropdown-radio-border-color:#{$light-dropdown-activewithradiobutton-dropdown-radio-fill};
+  //checkbox
+  --checkbox-default-boxborder-color: #{$light-checkbox-default-boxborder-color};
+  --checkbox-default-boxborder-style: #{$light-checkbox-default-boxborder-style};
 
 }
 
@@ -396,8 +402,13 @@ $input-color:$light-input-default-placdholder;
   --table-header-line-height:#{$dark-table-default-header-headertext-line-height};
   --table-header-text-decoration:#{$dark-table-default-header-headertext-text-decoration};
   --table-header-letter-spacing:#{$dark-table-default-header-headertext-letter-spacing};
-//pagination
- --pagination-small-bg: #{$dark-pagination-small-background};
+  --table-checkbox-border:#{$dark-table-multiselect-body-checkbox-uncheck-color};
+  --table-checkbox-border-style:#{$dark-table-multiselect-body-checkbox-uncheck-style};
+   --table-background-checkbox:#{$dark-table-multiselect-body-checkbox-activefill};
+  --table-checkox-height:#{$dark-table-multiselect-body-checkbox-height};
+  --table-checkbox-width:#{$dark-table-multiselect-body-checkbox-width};
+  //pagination
+  --pagination-small-bg: #{$dark-pagination-small-background};
   --pagination-small-color: #{$dark-pagination-small-defaulttext};
   --pagination-small-active-bg: #{$dark-pagination-small-activefill};
   --pagination-small-active-color: #{$dark-pagination-small-activetext};
@@ -409,7 +420,7 @@ $input-color:$light-input-default-placdholder;
   --pagination-large-color: #{$dark-pagination-large-defaulttext};
   --pagination-large-active-bg: #{$dark-pagination-large-activefill};
   --pagination-large-active-color: #{$dark-pagination-large-activetext};
-//search
+  //search
   --search-default-text: #{$dark-search-default-text};
   --search-default-icon: #{$dark-search-default-icon};
   --search-default-font-family: #{$dark-search-default-searchtext-font-family};
@@ -426,8 +437,8 @@ $input-color:$light-input-default-placdholder;
   --search-default-font-size: #{$dark-search-default-searchtext-font-size};
   --search-default-text-decoration: #{$dark-search-default-searchtext-text-decoration};
   --search-default-text-case: #{$dark-search-default-searchtext-text-case};
-//accordion
-   --accordion-default-heading: #{$dark-accordian-default-heading};
+  //accordion
+  --accordion-default-heading: #{$dark-accordian-default-heading};
   --accordion-default-icon: #{$dark-accordian-default-icon};
   --accordion-default-background: #{$dark-accordian-default-background};
   --accordion-default-line-color: #{$dark-accordian-default-line-color};
@@ -460,9 +471,9 @@ $input-color:$light-input-default-placdholder;
   --accordion-open-subtext-letter-spacing: #{$dark-accordian-open-subtext-letter-spacing};
   --accordion-open-subtext-text-case: #{$dark-accordian-open-subtext-text-case};
   --accordion-open-subtext-text-decoration: #{$dark-accordian-open-subtext-text-decoration};
-   //filter
-    --filter-default-background: #{$dark-filter-default-background};
-   --filter-default-button-width: #{$dark-filter-default-button-width};
+  //filter
+  --filter-default-background: #{$dark-filter-default-background};
+  --filter-default-button-width: #{$dark-filter-default-button-width};
   --filter-active-search-text: #{$dark-filter-active-search-text};
   --filter-active-width: #{$dark-filter-active-width};
   --filter-default-text: #{$dark-filter-default-text};
@@ -476,10 +487,10 @@ $input-color:$light-input-default-placdholder;
   --filter-default-textstyle-font-family: #{$dark-filter-default-textstyle-font-family};
   --filter-default-search-line-color: #{$dark-filter-default-search-line-color};
   //tooltip
- --tooltip-bg: #{$dark-tooltip-default-top-background};
+  --tooltip-bg: #{$dark-tooltip-default-top-background};
   --tooltip-opacity:#{$dark-tooltip-default-top-bodytext-text-decoration};
   //tab
-    --tab-primary-default-text: #{$dark-tab-primary-default-text};
+  --tab-primary-default-text: #{$dark-tab-primary-default-text};
   --tab-primary-default-navtext-font-family: #{$dark-tab-primary-default-navtext-font-family};
   --tab-primary-default-navtext-font-weight: #{map-get($font-weight-map, $dark-tab-primary-default-navtext-font-weight)};
   --tab-primary-default-navtext-font-size: #{$dark-tab-primary-default-navtext-font-size};
@@ -507,7 +518,7 @@ $input-color:$light-input-default-placdholder;
   --tab-secondary-active-text: #{$dark-tab-secondary-active-text};
   --tab-secondary-hover-text: #{$dark-tab-secondary-hover-text};
   //formula
-    --formulainput-valid-validationtext-font-size: #{$dark-formulainput-valid-validationtext-font-size};
+  --formulainput-valid-validationtext-font-size: #{$dark-formulainput-valid-validationtext-font-size};
   --formulainput-valid-validation: #{$dark-formulainput-valid-validation};
   --formulainput-valid-validationtext-font-family: #{$dark-formulainput-valid-validationtext-font-family};
   --formulainput-valid-validationtext-font-weight: #{map-get($font-weight-map, $dark-formulainput-valid-validationtext-font-weight)};
@@ -556,7 +567,7 @@ $input-color:$light-input-default-placdholder;
   --alert-secondary-body-text-decoration: #{$dark-alert-default-secondary-bodytext-text-decoration};
   --alert-secondary-body-text-case: #{$dark-alert-default-secondary-bodytext-text-case};
   --alert-secondary-height: #{$dark-alert-default-secondary-height};
-    --alert-success-bg: #{$dark-alert-default-success-background};
+  --alert-success-bg: #{$dark-alert-default-success-background};
   --alert-success-text: #{$dark-alert-default-success-text};
   --alert-success-cornerradius: #{$dark-alert-default-success-cornerradius};
   --alert-success-body-font-family: #{$dark-alert-default-success-bodytext-font-family};
@@ -617,7 +628,7 @@ $input-color:$light-input-default-placdholder;
   --alert-expand-danger-shadow-blur: #{$dark-alert-expand-danger-shadow-blur};
   --alert-expand-danger-heading-font-family: #{$dark-alert-expand-danger-headingtext-font-family};
   --alert-expand-danger-subtext-font-weight: #{map-get($font-weight-map, $dark-alert-expand-danger-subtext-font-weight)};
-   --alert-expand-warning-bg: #{$dark-alert-expand-warning-background};
+  --alert-expand-warning-bg: #{$dark-alert-expand-warning-background};
   --alert-expand-warning-heading: #{$dark-alert-expand-warning-heading};
   --alert-expand-warning-body: #{$dark-alert-expand-warning-bodytext};
   --alert-expand-warning-icon: #{$dark-alert-expand-warning-alerticon};
@@ -633,38 +644,40 @@ $input-color:$light-input-default-placdholder;
   --alert-expand-warning-heading-font-family: #{$dark-alert-expand-warning-headingtext-font-family};
   --alert-expand-warning-subtext-font-weight: #{map-get($font-weight-map, $dark-alert-expand-warning-subtext-font-weight)};
   //input 
-    --input-background:#{$body-black};
+  --input-background:#{$body-black};
   --input-font-weight: #{map-get($font-weight-map, $dark-input-default-placeholder-font-weight)};
   --input-placholder-color:#{$dark-input-default-placdholder};
   --input-border-style:#{$dark-input-default-border-style};
-   --input-border-color:#{$dark-input-default-border-color};
---input-default-placeholder-line-height:#{$dark-input-default-placeholder-line-height};
---input-color:#{$dark-input-default-placdholder};
---input-border-radius:#{$dark-input-default-cornerradius};
---input-border-color:#{$dark-input-default-border-color};
---input-font-size:#{$dark-input-default-placeholder-font-size};
---input-withlabel-label: #{$dark-input-withlabel-label};
---input-disabled:#{$dark-input-disabled-background};
---input-disabled-border:#{$dark-input-disabled-border-color};
---input-hover-border:#{$dark-input-hover-border-color};
---input-focus-border:#{$dark-input-focus-border-color};
---input-focus-placeholder:#{$dark-input-focus-placeholder};
---input-placeholder-color:#{$dark-input-default-placdholder};
---input-default-placeholder-font-family:#{$dark-input-default-placeholder-font-family};
---input-default-placeholder-font-weight:#{$dark-input-default-placeholder-font-weight};
---input-default-placeholder-font-size:#{$dark-input-default-placeholder-font-size};
---input-labelinput-label-font-weight:#{map-get($font-weight-map, $dark-input-labelinput-label-font-weight)};
---input-labelinput-label-font-family:#{$dark-input-labelinput-label-font-family};
---input-labelinput-label-font-size:#{$dark-input-labelinput-label-font-size};
---input-disabled-placeholder:#{$dark-input-disabled-placeholder};
- //toggle
- --toggle-default-boxborder-color: #{$dark-toggle-default-boxborder-color};
+  --input-border-color:#{$dark-input-default-border-color};
+  --input-default-placeholder-line-height:#{$dark-input-default-placeholder-line-height};
+  --input-color:#{$dark-input-default-placdholder};
+  --input-border-radius:#{$dark-input-default-cornerradius};
+  --input-border-color:#{$dark-input-default-border-color};
+  --input-font-size:#{$dark-input-default-placeholder-font-size};
+  --input-withlabel-label: #{$dark-input-withlabel-label};
+  --input-disabled:#{$dark-input-disabled-background};
+  --input-disabled-border:#{$dark-input-disabled-border-color};
+  --input-hover-border:#{$dark-input-hover-border-color};
+  --input-focus-border:#{$dark-input-focus-border-color};
+  --input-focus-placeholder:#{$dark-input-focus-placeholder};
+  --input-placeholder-color:#{$dark-input-default-placdholder};
+  --input-default-placeholder-font-family:#{$dark-input-default-placeholder-font-family};
+  --input-default-placeholder-font-weight:#{$dark-input-default-placeholder-font-weight};
+  --input-default-placeholder-font-size:#{$dark-input-default-placeholder-font-size};
+  --input-labelinput-label-font-weight:#{map-get($font-weight-map, $dark-input-labelinput-label-font-weight)};
+  --input-labelinput-label-font-family:#{$dark-input-labelinput-label-font-family};
+  --input-labelinput-label-font-size:#{$dark-input-labelinput-label-font-size};
+  --input-disabled-placeholder:#{$dark-input-disabled-placeholder};
+  //toggle
+  --toggle-default-boxborder-color: #{$dark-toggle-default-boxborder-color};
   --toggle-default-boxborder-width: #{$dark-toggle-default-boxborder-width};
   --toggle-default-boxborder-style: #{$dark-toggle-default-boxborder-style};
   --toggle-disabled-boxfill:#{$dark-toggle-disabled-boxfill};
   --toggle-disabled-circlefill:#{$dark-toggle-disabled-circlefill};
   --toggle-disabled-boxborder-color:#{$dark-toggle-disabled-boxborder-color};
   --toggle-focused-color :#{$dark-toggle-focused-boxfill};
+  --toggle-default-font-size:#{$dark-checkbox-focused-textstyle-font-size};
+  --toggle-default-font-family:#{$dark-checkbox-focused-textstyle-font-family};
   //dropdown
   --dropdown-input-text: #{$dark-dropdown-default-input-text};
   --dropdown-input-radius: #{$dark-dropdown-default-input-radius};
@@ -675,7 +688,7 @@ $input-color:$light-input-default-placdholder;
   --dropdown-input-font-weight: #{map-get($font-weight-map, $dark-dropdown-default-input-textstyle-font-weight)};
   --dropdown-input-font-size: #{$dark-dropdown-default-input-textstyle-font-size};
 
-    --dropdown-menu-background:#{$dark-dropdown-default-dropdown-background};
+  --dropdown-menu-background:#{$dark-dropdown-default-dropdown-background};
   --dropdown-dropdown-text-font-family: #{$dark-dropdown-default-dropdown-textstyle-font-family};
   --dropdown-dropdown-text-font-weight: #{map-get($font-weight-map, $dark-dropdown-default-dropdown-textstyle-font-weight)};
   --dropdown-dropdown-text-font-size: #{$dark-dropdown-default-dropdown-textstyle-font-size};
@@ -690,7 +703,7 @@ $input-color:$light-input-default-placdholder;
   --dropdown-active-dropdown-text: #{$dark-dropdown-active-dropdown-activetext};
   --dropdown-active-checkbox-fill:#{$dark-dropdown-activewithcheckbox-dropdown-checkbox-fill};
   --dropdown-active-background:#{$dark-dropdown-hover-dropdown-hoverfill};
-  
+
   --dropdown-withbadges-font-size:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-font-size};
   --dropdown-withbadges-font-weight:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-font-weight};
   --dropdown-withbadges-line-height:#{$dark-dropdown-withbadges-dropdown-badges-numberstyle-line-height};
@@ -700,113 +713,32 @@ $input-color:$light-input-default-placdholder;
   --dropdown-radio-text:#{$dark-dropdown-activewithradiobutton-dropdown-radio-innercircle};
   --dropdown-radio-border-style:#{$dark-dropdown-activewithradiobutton-dropdown-radio-border-style};
   --dropdown-radio-border-color:#{$dark-dropdown-activewithradiobutton-dropdown-radio-fill};
+  //checkbox
+  --checkbox-default-boxborder-color: #{$dark-checkbox-default-boxborder-color};
+  --checkbox-default-boxborder-style: #{$dark-checkbox-default-boxborder-style};
 }
 
 $primary: $light-mode-color-primary-color-default;
 $h1-font-size: $headings-h1-font-size;
-$h1-font-weight: $headings-h1-font-weight; 
+$h1-font-weight: $headings-h1-font-weight;
 $h1-line-height: $headings-h1-line-height;
-$h2-font-size:  $headings-h2-font-size;
-$h2-font-weight: $headings-h2-font-weight; 
+$h2-font-size: $headings-h2-font-size;
+$h2-font-weight: $headings-h2-font-weight;
 $h2-line-height: $headings-h2-line-height;
 $h3-font-size: $headings-h3-font-size;
 $h3-font-weight: map-get($font-weight-map, $headings-h3-font-weight);
 $h3-line-height: $headings-h3-line-height;
-$h4-font-size:  $headings-h4-font-size;
+$h4-font-size: $headings-h4-font-size;
 $h4-font-weight: map-get($font-weight-map, $headings-h4-font-weight);
 $h4-line-height: $headings-h4-line-height;
-$h5-font-size:  $headings-h5-font-size;
+$h5-font-size: $headings-h5-font-size;
 $h5-font-weight: map-get($font-weight-map, $headings-h5-font-weight);
 $h5-line-height: $headings-h5-line-height;
-$h6-font-size:  $headings-h6-font-size;
+$h6-font-size: $headings-h6-font-size;
 $h6-font-weight: map-get($font-weight-map, $headings-h6-font-weight);
 $h6-line-height: $headings-h5-line-height;
 //table
-$table-bg:$light-table-default-header-background;
+$table-bg: $light-table-default-header-background;
 //input
-$input-font-size:$light-input-default-placeholder-font-size;
+$input-font-size: $light-input-default-placeholder-font-size;
 
-
-//dropdown
-// $light-dropdown-default-input-text:$light-dropdown-default-input-text;
-// $light-dropdown-default-input-radius:$light-dropdown-default-input-radius;
-// $light-dropdown-default-input-background:$light-dropdown-default-input-background;
-// $light-dropdown-default-input-border-style:$light-dropdown-default-input-border-style;
-// $light-dropdown-default-input-border-color:$light-dropdown-default-input-border-color;
-// $light-dropdown-default-input-textstyle-font-family:$light-dropdown-default-input-textstyle-font-family;
-// $light-dropdown-default-input-textstyle-font-weight:map-get($font-weight-map, $light-dropdown-default-input-textstyle-font-weight);
-// $light-dropdown-default-input-textstyle-font-size:$light-dropdown-default-input-textstyle-font-size;
-// $light-dropdown-default-dropdown-textstyle-font-family:$light-dropdown-default-dropdown-textstyle-font-family;
-// $light-dropdown-default-dropdown-textstyle-font-weight:map-get($font-weight-map, $light-dropdown-default-dropdown-textstyle-font-weight);
-// $light-dropdown-default-dropdown-textstyle-font-size:$light-dropdown-default-dropdown-textstyle-font-size;
-// $light-dropdown-default-dropdown-border-color:$light-dropdown-default-dropdown-border-color;
-// $light-dropdown-default-dropdown-border-width:$light-dropdown-default-dropdown-border-width;
-// $light-dropdown-default-dropdown-border-style:$light-dropdown-default-dropdown-border-style;
-// $light-dropdown-hover-dropdown-hoverfill:$light-dropdown-hover-dropdown-hoverfill;
-// $light-dropdown-hover-dropdown-hovertext:$light-dropdown-hover-dropdown-hovertext;
-// $light-dropdown-withbadges-dropdown-badges-activenumber:$light-dropdown-withbadges-dropdown-badges-activenumber;
-// $light-dropdown-active-input-text:$light-dropdown-active-input-text;
-// $light-dropdown-active-dropdown-activetext:$light-dropdown-active-dropdown-activetext;
-// $light-dropdown-activewithcheckbox-input-height:$light-dropdown-activewithcheckbox-input-height;
-// $light-dropdown-default-dropdown-radius:$light-dropdown-default-dropdown-radius;
-// $light-dropdown-activewithcheckbox-dropdown-checkbox-fill:$light-dropdown-activewithcheckbox-dropdown-checkbox-fill;
-// $light-dropdown-activewithradiobutton-dropdown-radio-border-style:$light-dropdown-activewithradiobutton-dropdown-radio-border-style;
-// $light-dropdown-activewithradiobutton-dropdown-radio-fill:$light-dropdown-activewithradiobutton-dropdown-radio-fill;
-// $light-dropdown-activewithradiobutton-dropdown-text:$light-dropdown-activewithradiobutton-dropdown-text;
-// $light-dropdown-withbadges-dropdown-badges-background:$light-dropdown-withbadges-dropdown-badges-background;
-// $light-dropdown-withbadges-dropdown-badges-numberstyle-line-height:$light-dropdown-withbadges-dropdown-badges-numberstyle-line-height;
-// $light-dropdown-withbadges-dropdown-radius:$light-dropdown-withbadges-dropdown-radius;
-// $light-dropdown-withbadges-dropdown-background:$light-dropdown-withbadges-dropdown-background;
-// $light-dropdown-withbadges-dropdown-badges-numberstyle-font-weight:map-get($font-weight-map, $light-dropdown-withbadges-dropdown-badges-numberstyle-font-weight);
-// $light-dropdown-withbadges-dropdown-badges-numberstyle-font-size:$light-dropdown-withbadges-dropdown-badges-numberstyle-font-size;
-// $light-dropdown-withbadges-badges-radius:$light-dropdown-withbadges-badges-radius;
-
-
-
-//pagination
-.pagination-wrapper {
-  &.small {
-    --page-bg: var(--pagination-small-bg);
-    --page-color: var(--pagination-small-color);
-    --page-active-bg: var(--pagination-small-active-bg);
-    --page-active-color: var(--pagination-small-active-color);
-    --page-border-radius: var(--pagination-small-border-radius);
-    --page-width: var(--pagination-small-width);
-    --page-height: var(--pagination-small-height);
-    --goto-width: var(--pagination-small-goto-width);
-    --goto-height: var(--pagination-small-goto-height);
-    --font-size: var(--pagination-small-font-size);
-    --pagenumber-height: var(--pagination-small-pagenumber-height);
-    --pagenumber-width: var(--pagination-small-pagenumber-width);
-  }
-
-  &.medium {
-    --page-bg: var(--pagination-medium-bg);
-    --page-color: var(--pagination-medium-color);
-    --page-active-bg: var(--pagination-medium-active-bg);
-    --page-active-color: var(--pagination-medium-active-color);
-    --page-border-radius: var(--pagination-medium-border-radius);
-    --page-width: var(--pagination-medium-width);
-    --page-height: var(--pagination-medium-height);
-    --goto-width: var(--pagination-medium-goto-width);
-    --goto-height: var(--pagination-medium-goto-height);
-    --font-size: var(--pagination-medium-font-size);
-    --pagenumber-height: var(--pagination-medium-pagenumber-height);
-    --pagenumber-width: var(--pagination-medium-pagenumber-width);
-  }
-
-  &.large {
-    --page-bg: var(--pagination-large-bg);
-    --page-color: var(--pagination-large-color);
-    --page-active-bg: var(--pagination-large-active-bg);
-    --page-active-color: var(--pagination-large-active-color);
-    --page-border-radius: var(--pagination-large-border-radius);
-    --page-width: var(--pagination-large-width);
-    --page-height: var(--pagination-large-height);
-    --goto-width: var(--pagination-large-goto-width);
-    --goto-height: var(--pagination-large-goto-height);
-    --font-size: var(--pagination-large-font-size);
-    --pagenumber-height: var(--pagination-large-pagenumber-height);
-    --pagenumber-width: var(--pagination-large-pagenumber-width);
-  }
-}

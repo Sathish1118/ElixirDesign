@@ -54,7 +54,14 @@ h6 {
   font-family: var(--table-font-family);
   border-radius: var(--table-border-radius);
   overflow: hidden;
-
+.form-check-input[type="checkbox"] {
+  border: 1px var(--table-checkbox-border-style) var(--table-checkbox-border);
+  height: var(--table-checkox-height);
+  width: var(--table-checkbox-width);
+}
+.form-check-input[type="checkbox"]:checked {
+  background-color: var(--table-background-checkbox);
+}
   thead {
     background: $table-bg;
   }
@@ -78,9 +85,9 @@ h6 {
     text-transform: var(--table-body-text-case);
     background-color: var(--table-body);
     color: var(--table-body-text);
-    .btnaction {
-      color: var(--table-body-text);
-    }
+    .btnaction{
+  color:var(--table-body-text);
+}
   }
 
   tbody u {
@@ -304,13 +311,11 @@ label {
     line-height: var(--accordion-open-subtext-line-height);
   }
 }
-
-// .form-check-input[type="checkbox"] {
-//   border: 1px solid white;
-// }
 .form-check-input {
   border: 1px var(--toggle-default-boxborder-style) var(--toggle-default-boxborder-color);
   background-color: var(--input-background);
+  font-size: var(--toggle-default-font-size);
+  font-family: var(--toggle-default-font-family);
 
   &:disabled {
     background-color: var(--toggle-disabled-boxfill);
@@ -403,7 +408,7 @@ body.dark-theme .form-switch .form-check-input:checked {
 }
 
 .trigger {
-  border: 1px var(--dropdown-input-border-style) var(--dropdown-input-border-color);
+  border:1px var(--dropdown-input-border-style) var(--dropdown-input-border-color);
   border-radius: var(--dropdown-input-radius);
   color: var(--dropdown-input-text);
   background: var(--dropdown-input-background);
@@ -419,7 +424,7 @@ body.dark-theme .form-switch .form-check-input:checked {
 }
 
 .menu-item {
-  font-size: var(--dropdown-dropdown-text-font-size);
+  font-size: var( --dropdown-dropdown-text-font-size);
   font-family: var(--dropdown-dropdown-text-font-family);
   font-weight: var(--dropdown-dropdown-text-font-weight);
 
@@ -608,7 +613,52 @@ body.dark-theme .form-switch .form-check-input:checked {
   border-radius: var(--page-border-radius);
   overflow: hidden;
 }
+.pagination-wrapper {
+  &.small {
+    --page-bg: var(--pagination-small-bg);
+    --page-color: var(--pagination-small-color);
+    --page-active-bg: var(--pagination-small-active-bg);
+    --page-active-color: var(--pagination-small-active-color);
+    --page-border-radius: var(--pagination-small-border-radius);
+    --page-width: var(--pagination-small-width);
+    --page-height: var(--pagination-small-height);
+    --goto-width: var(--pagination-small-goto-width);
+    --goto-height: var(--pagination-small-goto-height);
+    --font-size: var(--pagination-small-font-size);
+    --pagenumber-height: var(--pagination-small-pagenumber-height);
+    --pagenumber-width: var(--pagination-small-pagenumber-width);
+  }
 
+  &.medium {
+    --page-bg: var(--pagination-medium-bg);
+    --page-color: var(--pagination-medium-color);
+    --page-active-bg: var(--pagination-medium-active-bg);
+    --page-active-color: var(--pagination-medium-active-color);
+    --page-border-radius: var(--pagination-medium-border-radius);
+    --page-width: var(--pagination-medium-width);
+    --page-height: var(--pagination-medium-height);
+    --goto-width: var(--pagination-medium-goto-width);
+    --goto-height: var(--pagination-medium-goto-height);
+    --font-size: var(--pagination-medium-font-size);
+    --pagenumber-height: var(--pagination-medium-pagenumber-height);
+    --pagenumber-width: var(--pagination-medium-pagenumber-width);
+  }
+
+  &.large {
+    --page-bg: var(--pagination-large-bg);
+    --page-color: var(--pagination-large-color);
+    --page-active-bg: var(--pagination-large-active-bg);
+    --page-active-color: var(--pagination-large-active-color);
+    --page-border-radius: var(--pagination-large-border-radius);
+    --page-width: var(--pagination-large-width);
+    --page-height: var(--pagination-large-height);
+    --goto-width: var(--pagination-large-goto-width);
+    --goto-height: var(--pagination-large-goto-height);
+    --font-size: var(--pagination-large-font-size);
+    --pagenumber-height: var(--pagination-large-pagenumber-height);
+    --pagenumber-width: var(--pagination-large-pagenumber-width);
+  }
+}
 .pagination-nav .page-btn {
   background: var(--page-bg);
   color: var(--page-color);
