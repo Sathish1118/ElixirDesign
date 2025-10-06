@@ -87,9 +87,9 @@ export type TableAction = {
           </td>
           <td *ngIf="actions?.length">
             <ng-container *ngFor="let action of actions">
-              <span (click)="onAction(action, row)" 
+              <span class="btn btn-sm btnaction"  (click)="onAction(action, row)" 
                     [ngClass]="action.className"
-                    style="cursor:pointer; margin-right:8px;">
+                   >
                 <i [class]="action.iconClass"></i>
                 <span *ngIf="action.label">{{ action.label }}</span>
               </span>

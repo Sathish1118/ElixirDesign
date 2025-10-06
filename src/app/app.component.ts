@@ -43,7 +43,7 @@ export class AppComponent {
   ];
   
 actions: TableAction[] = [
-  { type: 'edit',className: 'btn btn-sm fw-bold',iconClass: 'fas fa-edit' },
+  { type: 'edit',iconClass: 'fas fa-edit' },
 ];
  tableData = [
   { name: 'Offer Letter', section: 'Candidate Letters', module: 'Onboarding', category: 'Welcome Letter', status: 'Enabled', updatedOn: '03/02/2025'},
