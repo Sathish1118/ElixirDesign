@@ -1,0 +1,27 @@
+{
+  "source": ["tokens/FigmaTokens.json"],
+  "platforms": {
+    "scss": {
+      "transformGroup": "scss",
+      "transforms": ["attribute/cti", "pxToRem"],
+      "buildPath": "tokens/assets/",
+      "files": [
+        {
+          "destination": "light&dark.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+     "css": {
+      "transformGroup": "css",
+      "transforms": ["attribute/cti", "pxToRem"],
+      "buildPath": "tokens/assets/",
+      "files": [
+        {
+          "destination": "light&dark.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}

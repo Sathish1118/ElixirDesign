@@ -1,0 +1,174 @@
+  <button class="btn btn-secondary ms-3 mt-3" (click)="toggleTheme()">Toggle Dark/Light Theme</button>
+
+
+<div class="m-3">
+  <h1>H1</h1>
+  <h2>H2</h2>
+  <h3>H3</h3>
+  <h4>H4</h4>
+  <h5>H5</h5>
+  <h6>H6</h6>
+  <button (click)="submit()" class="btn btn-primary">Submit</button>
+</div>
+<div class="d-flex justify-content-center m-3 gap-4">
+  <storybook-tooltip>
+    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-title="This is a tooltip">
+      Hover me
+    </button>
+  </storybook-tooltip>
+  <storybook-tooltip placement="right">
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
+      data-bs-title="This is a tooltip on the right">
+      Hover me (Right)
+    </button>
+  </storybook-tooltip>
+  <storybook-tooltip placement="bottom">
+    <button type="button" class="btn btn-success" data-bs-toggle="tooltip"
+      data-bs-title="This is a tooltip at the bottom">
+      Hover me (Bottom)
+    </button>
+  </storybook-tooltip>
+  <storybook-tooltip placement="left">
+    <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-title="This is a tooltip on the left">
+      Hover me (Left)
+    </button>
+  </storybook-tooltip>
+</div>
+<div class="m-3">
+  <h1>Table</h1>
+  <div class="mt-2">
+    <storybook-table [columns]="columns" [filter]="true" [data]="tableData" [actions]="actions"
+      (actionClick)="handleAction($event)" [paginationSize]="'small'"></storybook-table>
+  </div>
+  <storybook-table [columns]="columns1" [data]="tableData" [actions]="actions"
+    (actionClick)="handleAction($event)"></storybook-table>
+</div>
+<div class="m-3">
+  <h1>Dropdown</h1>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <storybook-dropdown [options]="dropdownOptions" type="checkbox" placeholder="Select option"></storybook-dropdown>
+    <storybook-dropdown [options]="dropdownOptions" mode="checkbox" placeholder="Select options">
+    </storybook-dropdown>
+    <storybook-dropdown [options]="dropdownOptions" mode="radio" placeholder="Select one option">
+    </storybook-dropdown>
+    <storybook-dropdown [options]="dropdownList" [showBadge]="true"></storybook-dropdown>
+    <storybook-dropdown [options]="dropdownList" [showIndex]="true"></storybook-dropdown>
+  </div>
+</div>
+<div class="m-3">
+  <h1>Accordian</h1>
+<storybook-accordion [items]="accordionItems"></storybook-accordion>
+</div>
+<button class="btn btn-primary ms-3" (click)="show = true">Open Modal</button>
+<storybook-modal [(visible)]="show"  title="Popup" size="lg">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+    <storybook-input placeholder="Name" ></storybook-input>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+<storybook-input type="email" placeholder="Email" ></storybook-input>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Age</label>
+<storybook-input type="number" placeholder="Age" ></storybook-input>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Gender</label>
+  <storybook-dropdown [options]="dropdownOptions"   type="checkbox"   placeholder="Select option"></storybook-dropdown>
+    </div>
+</storybook-modal>
+   <h1 class="ms-3 mt-3">Toggle Switchs, Checkbox, Radio Button</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4 m-3">
+<div class="">
+  <storybook-toggle-switch
+ [checked]="false"  label="Uncheck"
+  >
+    </storybook-toggle-switch>
+    <storybook-toggle-switch
+      [checked]="true"    label="Check">
+    </storybook-toggle-switch>
+    <storybook-toggle-switch
+      [disabled]="true" label="disabled">
+    </storybook-toggle-switch>
+    <storybook-toggle-switch
+     [checked]="true" label="Valid" cssclass="is-valid">
+    </storybook-toggle-switch>
+    <storybook-toggle-switch
+      [checked]="true"  label="Invalid" cssclass="is-invalid">
+    </storybook-toggle-switch>
+</div>
+<div >
+   <storybook-checkbox [checked]="false" ></storybook-checkbox>  
+    <storybook-checkbox [checked]="true" ></storybook-checkbox>  
+     <storybook-checkbox [checked]="true" [disabled]="true"></storybook-checkbox>  
+   <storybook-checkbox [checked]="true" cssclass="is-valid"></storybook-checkbox>  
+ <storybook-checkbox [checked]="true" cssclass="is-invalid"></storybook-checkbox>  
+</div>
+<div >
+<storybook-radio name="group1"  label="Option 1"></storybook-radio>
+<storybook-radio name="group2" [checked]="true" label="Option 2"></storybook-radio>
+<storybook-radio name="group3" [disabled]="true" label="Option 3"></storybook-radio>
+<storybook-radio name="group4" cssclass="is-valid" label="Option 4"></storybook-radio>
+<storybook-radio name="group5" [checked]="true" cssclass="is-invalid" label="Option 5"></storybook-radio>
+</div>
+</div>
+ <div class="m-3">
+  <h1>Tabs</h1>
+  <storybook-tabs [tabs]="myTabs" tabClass="tab-headers"></storybook-tabs>
+<storybook-tabs [tabs]="myTabs1" tabClass="tab-secondary"></storybook-tabs>
+<ng-template #homeTemplate>
+  <h1>Home Content</h1>
+</ng-template>
+<ng-template #profileTemplate>
+  <h2>Profile</h2>
+</ng-template>
+<ng-template #settingsTemplate>
+  <h2>Settings</h2>
+</ng-template>
+ </div>
+
+ <div class="m-3">
+    <h1>Input</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+<storybook-input placeholder="Small input" [(ngModel)]="inputValue" size="sm"></storybook-input>
+<storybook-input placeholder="Default input"  required></storybook-input>
+<storybook-input placeholder="Large input" size="lg"></storybook-input>
+</div>
+    <div class="row g-4">
+        <div class="col-lg-4">
+        <label>Small</label>
+<storybook-input placeholder="Small input" size="sm"></storybook-input>
+        </div>
+ <div class="col-lg-4">
+        <label>Default</label>
+<storybook-input placeholder="Default input" ></storybook-input>
+ </div>
+  <div class="col-lg-4">
+<label>Large</label>
+<storybook-input placeholder="Large input" size="lg"></storybook-input>
+    </div>
+</div>
+<div class="row">
+    <label>Disabled</label>
+    <div class="col-lg-4">
+<storybook-input placeholder="Disabled input" [disabled]="true"></storybook-input>
+    </div>
+    <div class="col-lg-4">
+<storybook-input placeholder="Right Icon"  type="password"  iconRight="fa-solid fa-lock"></storybook-input>
+    </div>
+<div class="col-lg-4">
+<storybook-input placeholder="Left Icon" type="number"  iconLeft="fa-solid fa-user "></storybook-input>
+    </div>
+</div>
+  <button class="btn btn-primary mt-2 me-2" (click)="submit()">important</button>
+  <button class="btn btn-success mt-2" (click)="submit1()">default</button>
+<storybook-alert></storybook-alert>
+<div class="mt-2">
+<h2>Dynamic Formula Example</h2>
+<storybook-formula [(formula)]="formula"></storybook-formula>
+
+<button class="btn btn-primary mt-2" (click)="calculate()">Calculate</button>
+<div *ngIf="result !== null">Result: {{result}}</div>
+</div>
+
