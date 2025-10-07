@@ -43,14 +43,15 @@ export type TableAction = {
                 <span *ngIf="filter && !col.isSerialNo && !col.isCheckbox" class="ms-2" style="cursor:pointer;" (click)="toggleFilter(col)">
                   <i class="fa fa-filter"></i>
                 </span>
-              <storybook-filter-dropdown
-          *ngIf="activeFilter === col.accessor"
-          [values]="getFilteredUniqueValues(col.accessor)"
-          [selectedValues]="selectedFilters[col.accessor]"
-          [(searchText)]="searchText[col.accessor]"
-          (onApply)="applyColumnFilter(col.accessor)"
-          (onReset)="resetColumnFilter(col.accessor)">
-        </storybook-filter-dropdown>
+      <storybook-filter-dropdown
+        *ngIf="activeFilter === col.accessor"
+        [values]="getFilteredUniqueValues(col.accessor)"
+        [selectedValues]="selectedFilters[col.accessor]"
+        [(searchText)]="searchText[col.accessor]"
+        (onApply)="applyColumnFilter(col.accessor)"
+        (onReset)="resetColumnFilter(col.accessor)"
+        (close)="activeFilter = null">
+      </storybook-filter-dropdown>
               </ng-container>
               <ng-template #checkboxHeader>
                 <input type="checkbox" class="form-check-input" (change)="toggleAllRows($event)">
@@ -85,6 +86,7 @@ export type TableAction = {
         </tbody>
       </table>
     </div>
+    <!-- Pagination Component -->
     <storybook-pagination
       [totalItems]="allFilteredData.length"
       [pageSize]="pageSize"

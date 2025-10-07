@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ElementRef, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { StorybookSearchComponent } from './search.component';
@@ -37,10 +37,21 @@ export class FilterDropdownComponent {
   @Input() values: string[] = [];
   @Input() selectedValues: { [key: string]: boolean } = {};
   @Input() searchText: string = '';
-  @Output() searchTextChange = new EventEmitter<string>(); 
+  @Output() searchTextChange = new EventEmitter<string>();
   @Output() onApply = new EventEmitter<{ [key: string]: boolean }>();
   @Output() onReset = new EventEmitter<void>();
   toggleValue(val: string) {
     this.selectedValues[val] = !this.selectedValues[val];
   }
+  constructor(private eRef: ElementRef) { }
+  @Output() close = new EventEmitter<void>();
+  @HostListener('document:click', ['$event'])
+  handleClickOutside(event: MouseEvent) {
+    setTimeout(() => {
+      if (!this.eRef.nativeElement.contains(event.target)) {
+        this.close.emit();
+      }
+    }, 0);
+  }
+
 }
