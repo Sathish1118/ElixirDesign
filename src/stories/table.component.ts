@@ -126,7 +126,7 @@ export class TableComponent {
   }
   toggleAllRows(event: Event) {
     const checked = (event.target as HTMLInputElement).checked;
-    this.data.forEach(row => row.selected = checked);
+    this.filteredData.forEach(row => row.selected = checked);
   }
   changePage(newIndex: number) {
     this.pageIndex = newIndex;
