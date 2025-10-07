@@ -19,7 +19,7 @@ $dark-select-bg: #2c2c2c;
 $dark-select-color: #ffffff;
 
 :root {
-   --select-bg: #{$light-select-bg};
+  --select-bg: #{$light-select-bg};
   --select-color: #{$light-select-color};
   --body-bg: #{$body-white};
   --body-text: #{$body-black};
@@ -389,11 +389,21 @@ $dark-select-color: #ffffff;
   //checkbox
   --checkbox-default-boxborder-color: #{$light-checkbox-default-boxborder-color};
   --checkbox-default-boxborder-style: #{$light-checkbox-default-boxborder-style};
+  //pivot table
+  --pivot-table-background :#{$light-table-pivotdefault-body-totalbackground};
+  --pivot-table-hover-background :#{$light-table-pivothover-body-hoverbackground};
+  --pivot-table-font-weight:#{map-get($font-weight-map, $light-table-pivotdefault-body-totaltext-font-weight)};
+  --pivot-table-line-height:#{$light-table-pivotdefault-body-totaltext-line-height};
+  --pivot-table-hover-content :#{$light-table-pivothover-body-background};
+  --pivot-table-hover-decoration :#{$light-table-pivothover-body-contenttext-text-decoration};
+  --pivot-table-header:#{$light-table-pivotdefault-body-topic};
+  --pivot-table-header-font-size:#{$light-table-pivotdefault-header-headertext-font-size};
+  --pivot-table-header-font-weight:#{map-get($font-weight-map, $light-table-pivothover-body-topictext-font-weight)};
 
 }
 
 .dark-theme {
-    --select-bg: #{$dark-select-bg};
+  --select-bg: #{$dark-select-bg};
   --select-color: #{$dark-select-color};
   --body-bg: #{$body-black};
   --body-text: #{$body-white};
@@ -418,7 +428,7 @@ $dark-select-color: #ffffff;
   --table-header-letter-spacing:#{$dark-table-default-header-headertext-letter-spacing};
   --table-checkbox-border:#{$dark-table-multiselect-body-checkbox-uncheck-color};
   --table-checkbox-border-style:#{$dark-table-multiselect-body-checkbox-uncheck-style};
-   --table-background-checkbox:#{$dark-table-multiselect-body-checkbox-activefill};
+  --table-background-checkbox:#{$dark-table-multiselect-body-checkbox-activefill};
   --table-checkox-height:#{$dark-table-multiselect-body-checkbox-height};
   --table-checkbox-width:#{$dark-table-multiselect-body-checkbox-width};
   //pagination
@@ -730,6 +740,16 @@ $dark-select-color: #ffffff;
   //checkbox
   --checkbox-default-boxborder-color: #{$dark-checkbox-default-boxborder-color};
   --checkbox-default-boxborder-style: #{$dark-checkbox-default-boxborder-style};
+  //pivot table
+  --pivot-table-background :#{$dark-table-pivotdefault-body-totalbackground};
+  --pivot-table-hover-background :#{$dark-table-pivothover-body-hoverbackground};
+  --pivot-table-font-weight:#{map-get($font-weight-map, $dark-table-pivotdefault-body-topictext-font-weight)};
+  --pivot-table-line-height:#{$dark-table-pivotdefault-body-totaltext-line-height};
+  --pivot-table-hover-content :#{$dark-table-pivothover-body-background};
+  --pivot-table-hover-decoration :#{$dark-table-pivothover-body-contenttext-text-decoration};
+  --pivot-table-header:#{$dark-table-pivotdefault-body-topic};
+  --pivot-table-header-font-size:#{$dark-table-pivotdefault-header-headertext-font-size};
+  --pivot-table-header-font-weight:#{map-get($font-weight-map, $dark-table-pivothover-body-topictext-font-weight)};
 }
 
 $primary: $light-mode-color-primary-color-default;

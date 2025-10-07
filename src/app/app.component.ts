@@ -190,5 +190,24 @@ expr = expr.replace(/sum\((.*?)\)/gi, (_, content) => {
 toggleTheme() {
   document.body.classList.toggle("dark-theme");
 }
+salesData = [
+  { businessUnit: 'Business Unit 1', salesType: 'Sales A', division: 'Division 1', amount: 1000 },
+  { businessUnit: 'Business Unit 1', salesType: 'Sales A', division: 'Division 2', amount: 1000 },
+  { businessUnit: 'Business Unit 1', salesType: 'Sales A', division: 'Division 3', amount: 1000 },
+  { businessUnit: 'Business Unit 1', salesType: 'Sales B', division: 'Division 1', amount: 1 },
+  { businessUnit: 'Business Unit 1', salesType: 'Sales B', division: 'Division 2', amount: 1 },
+  { businessUnit: 'Business Unit 1', salesType: 'Sales B', division: 'Division 3', amount: 1 },
+  { businessUnit: 'Business Unit 2', salesType: 'Sales A', division: 'Division 1', amount: 500 },
+  { businessUnit: 'Business Unit 2', salesType: 'Sales A', division: 'Division 2', amount: 500 },
+  { businessUnit: 'Business Unit 2', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 3', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 4', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 5', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 6', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 7', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 8', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+    { businessUnit: 'Business Unit 9', salesType: 'Sales A', division: 'Division 3', amount: 500 },
+
+];
 
 }

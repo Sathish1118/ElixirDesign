@@ -18,6 +18,7 @@ import {StorybookDropdownComponent} from '../stories/dropdown.component';
 import { TooltipComponent } from '../stories/tooltip.component';
 import { TabsComponent } from '../stories/tab.component';
 import {FormulaComponent} from '../stories/formula.component';
+import { StorybookPivotTableComponent } from '../stories/pivot-table.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {FormulaComponent} from '../stories/formula.component';
     StorybookDropdownComponent,
     TooltipComponent,
     TabsComponent,
-    FormulaComponent
+    FormulaComponent,
+    StorybookPivotTableComponent
 ],
   providers: [],
   bootstrap: [AppComponent]

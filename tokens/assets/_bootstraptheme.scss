@@ -76,6 +76,7 @@ h6 {
     color: var(--table-header-text);
     letter-spacing: var(--table-header-letter-spacing);
     text-decoration: var(--table-header-text-decoration);
+    border-bottom: none;
   }
 
   tbody td {
@@ -86,7 +87,7 @@ h6 {
     letter-spacing: var(--table-body-letter-spacing);
     text-decoration: var(--table-body-text-decoration);
     text-transform: var(--table-body-text-case);
-    background-color: var(--table-body);
+    // background-color: var(--table-body);
     color: var(--table-body-text);
 
     .btnaction {
@@ -125,6 +126,7 @@ label {
 
 .form-control:disabled::placeholder {
   color: var(--input-disabled-placeholder);
+  /* placeholder text is now black */
 }
 
 .form-control::placeholder {
@@ -684,8 +686,10 @@ body.dark-theme .form-switch .form-check-input:checked {
     border: 1px var(--pagination-small-border-style) var(--pagination-small-border-color);
     z-index: 10;
     border-radius: var(--page-border-radius);
+
     .custom-option {
       cursor: pointer;
+
       &:hover {
         background-color: var(--filter-hover-hoverfill);
         color: var(--filter-hover-hovertext);
@@ -835,4 +839,40 @@ body.dark-theme .form-switch .form-check-input:checked {
 .tooltip.bs-tooltip-auto[x-placement^="right"] .tooltip-arrow::before,
 .tooltip.bs-tooltip-right .tooltip-arrow::before {
   border-right-color: var(--tooltip-bg);
+}
+
+.pivot-table {
+  .table tbody tr:hover td {
+    background-color: var(--pivot-table-hover-background);
+    cursor: pointer;
+    color: var(--pivot-table-hover-content);
+    border: var(--pivot-table-hover-decoration);
+    transition: background-color 0.3s;
+  }
+
+  .table tbody tr td:last-child {
+    background-color: var(--pivot-table-background);
+    font-weight: var(--pivot-table-font-weight);
+    line-height: var(--pivot-table-line-height);
+  }
+
+  .table tbody tr.business-unit-row td:not(:last-child) {
+    color: var(--pivot-table-header);
+    font-weight: var(--pivot-table-header-font-weight);
+  }
+
+  .table tbody tr:hover td:last-child {
+    background-color: var(--pivot-table-hover-background);
+    color: var(--pivot-table-hover-content);
+    border: var(--pivot-table-hover-decoration)
+  }
+
+  .business-unit-row {
+    color: var(--pivot-table-header)
+  }
+
+  .table thead th {
+    border-bottom: none;
+  }
+
 }
