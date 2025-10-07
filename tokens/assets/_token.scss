@@ -353,6 +353,8 @@ $dark-select-color: #ffffff;
   --toggle-focused-color :#{$light-toggle-focused-boxfill};
   --toggle-default-font-size:#{$light-checkbox-focused-textstyle-font-size};
   --toggle-default-font-family:#{$light-checkbox-focused-textstyle-font-family};
+  --toggle-invalid-border:#{$light-toggle-invalid-boxborder-color};
+  --toggle-valid-border:#{$light-toggle-valid-boxborder-color};
   //dropdown
   /* Light Mode Variables */
   --dropdown-input-text: #{$light-dropdown-default-input-text};
@@ -704,6 +706,8 @@ $dark-select-color: #ffffff;
   --toggle-focused-color :#{$dark-toggle-focused-boxfill};
   --toggle-default-font-size:#{$dark-checkbox-focused-textstyle-font-size};
   --toggle-default-font-family:#{$dark-checkbox-focused-textstyle-font-family};
+  --toggle-invalid-border:#{$light-toggle-invalid-boxborder-color};
+  --toggle-valid-border:#{$light-toggle-valid-boxborder-color};
   //dropdown
   --dropdown-input-text: #{$dark-dropdown-default-input-text};
   --dropdown-input-radius: #{$dark-dropdown-default-input-radius};
