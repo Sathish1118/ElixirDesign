@@ -15,7 +15,7 @@
     </storybook-leftnav>
   </div>
   <div class="row">
-    <div class="row  m-3 ">
+    <div class="row  ms-3 ">
       <div class="d-flex flex-row">
         <storybook-button className="btn-primary me-1" size="sm" label="Breadcrumb" [routerLink]="'/breadcrumb'"></storybook-button>
           <storybook-button className="btn-secondary mb-1" size="sm" label="Switch Theme" (click)="toggleTheme()" ></storybook-button>
@@ -260,7 +260,7 @@
 <storybook-button-icon icon="fa-solid fa-trash"className="btn-icon-outline-circle-lg me-1"[disabled]="true" ></storybook-button-icon>
 </div>
 
-  <div class="col-lg-2">
+  <div class="col-lg-3">
     <div class="mb-3 " >
   <h4 class="fw-bold">Calendar Component</h4> <hr>
 
@@ -287,12 +287,7 @@
 </storybook-calendar>
 
 </div>
-  <div class="col-lg-2 ms-5">
-<h4>Dropdown-List Component</h4> <hr>
-<storybook-dropdown-list
-  [options]="['Edit', 'Delete']"
-></storybook-dropdown-list>
-  </div>
+
     <div class="col-lg-2 ms-5">
 <h4>Menu-List Component</h4> <hr>
 <storybook-menubutton
@@ -390,7 +385,12 @@
   [showMenu]="true"
 ></storybook-summary-point>
 </div>
-  
+    <div class="col-lg-2 ms-5">
+<h4>Dropdown-List Component</h4> <hr>
+<storybook-dropdown-list
+  [options]="['Edit', 'Delete']"
+></storybook-dropdown-list>
+  </div>
   <div class="col-lg-6 col-sm-12 col-md-12">
 <h4 class="fw-bold">Bar Chart</h4>
 <storybook-charts
