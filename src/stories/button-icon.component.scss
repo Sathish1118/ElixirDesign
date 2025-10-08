@@ -1,0 +1,27 @@
+@import "../../tokens/assets/_bootstraptheme.scss";
+
+/* button-icon.scss */
+
+/* base style for all icons inside buttons */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  line-height: 1;
+}
+
+/* Icon size classes for <i> element */
+.btn-icon-sm {
+  width: $light-button-primary-iconbutton-rectangle-default-small-width !important;
+  height: $light-button-primary-iconbutton-rectangle-default-small-height !important;
+}
+.btn-icon-md {
+  width: $light-button-primary-iconbutton-rectangle-default-medium-width !important;
+  height: $light-button-primary-iconbutton-rectangle-default-medium-height !important;
+}
+.btn-icon-lg {
+  width: $light-button-primary-iconbutton-rectangle-default-large-width !important;
+  height: $light-button-primary-iconbutton-rectangle-default-large-height !important;
+}
+

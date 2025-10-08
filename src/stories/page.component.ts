@@ -12,8 +12,6 @@ import type { User } from './user';
   <storybook-header
     [user]="user"
     (onLogout)="doLogout()"
-    (onLogin)="doLogin()"
-    (onCreateAccount)="doCreateAccount()"
   ></storybook-header>
   <section class="storybook-page">
     <h2>Pages in Storybook</h2>
@@ -72,11 +70,5 @@ export class PageComponent {
     this.user = null;
   }
 
-  doLogin() {
-    this.user = { name: 'Jane Doe' };
-  }
 
-  doCreateAccount() {
-    this.user = { name: 'Jane Doe' };
-  }
 }

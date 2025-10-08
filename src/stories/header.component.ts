@@ -1,76 +1,78 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ButtonComponent } from './button.component';
 import type { User } from './user';
-
+import { ButtonIconComponent } from "./button-icon.component";
+import { BentoComponent } from './bento.component';
 @Component({
   selector: 'storybook-header',
   standalone: true,
-  imports: [CommonModule, ButtonComponent],
-  template: `<header>
-  <div class="storybook-header">
-    <div>
-      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-        <g fill="none" fillRule="evenodd">
-          <path
-            d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
-            fill="#FFF"
-          />
-          <path
-            d="M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z"
-            fill="#555AB9"
-          />
-          <path d="M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z" fill="#91BAF8" />
-        </g>
-      </svg>
-      <h1>Acme</h1>
-    </div>
-    <div>
-      <div *ngIf="user">
-        <span class="welcome">
-          Welcome, <b>{{ user.name }}</b
-          >!
-        </span>
-        <storybook-button
-          *ngIf="user"
-          size="small"
-          (onClick)="onLogout.emit($event)"
-          label="Log out"
-        ></storybook-button>
-      </div>
-      <div *ngIf="!user">
-        <storybook-button
-          *ngIf="!user"
-          size="small"
-          class="margin-left"
-          (onClick)="onLogin.emit($event)"
-          label="Log in"
-        ></storybook-button>
-        <storybook-button
-          *ngIf="!user"
-          size="small"
-          [primary]="true"
-          class="margin-left"
-          (onClick)="onCreateAccount.emit($event)"
-          label="Sign up"
-        ></storybook-button>
-      </div>
-    </div>
+  imports: [CommonModule, ButtonIconComponent,BentoComponent],
+  template: `
+<header class="header-default px-3 d-flex justify-content-between align-items-center">
+  <div class="d-flex align-items-center" (click)="bentoMenu()">
+    <i class="fa fa-th-large bento-icon me-2"></i>
+    
+    <span class="header-logo">Company Logo</span>
+
+
   </div>
-</header>`,
-  styleUrls: ['./header.css'],
+  <div class="d-flex flex-row flex-wrap align-items-center">
+    <storybook-button-icon icon="fa-solid fa-search"
+      className="btn-icon-outline-circle-md me-2">
+    </storybook-button-icon>
+    <storybook-button-icon icon="fa-brands fa-buffer"
+      className="btn-icon-outline-circle-md me-2">
+    </storybook-button-icon>
+    <div class="header-user-group d-flex align-items-center px-3 py-2"
+         [ngClass]="{ 'active': menuOpen }"
+         (click)="toggleMenu()">
+      <div class="header-icon me-2">
+        <storybook-button-icon
+          icon="fa-regular fa-user"
+          className="btn-icon-primary-circle-md">
+        </storybook-button-icon>
+      </div>
+      <div class="header-info d-none d-sm-block" *ngIf="user">
+        <div class="header-username">{{ user.name }}</div>
+        <div class="header-account">My Account</div>
+      </div>
+    <div class="header-username">
+      <i class="fa-solid fa-chevron-down ms-2"></i>
+    </div>
+    </div>
+      <ul class="header-menu" *ngIf="menuOpen">
+          <li class="header-menu-item">Menu Item 1</li>
+          <li class="header-menu-item">Menu Item 2</li>
+          <li class="header-menu-item">Menu Item 3</li>
+          <li class="header-menu-item">Menu Item 4</li>
+          <li class="header-menu-item disabled">Logout</li>
+        </ul>
+  </div>
+
+</header>
+<div *ngIf="bentoOpen">
+  <storybook-bento [items]="bentoItems" [horizontals]="horizontals"></storybook-bento>
+</div>
+
+  `,
 })
 export class HeaderComponent {
-  @Input()
-  user: User | null = null;
+  @Input() user: User | null = null;
 
-  @Output()
-  onLogin = new EventEmitter<Event>();
-
-  @Output()
-  onLogout = new EventEmitter<Event>();
-
-  @Output()
-  onCreateAccount = new EventEmitter<Event>();
+  @Output() onLogin = new EventEmitter<Event>();
+  @Output() onLogout = new EventEmitter<Event>();
+  @Output() onCreateAccount = new EventEmitter<Event>();
+  @Input() bentoItems: any[] = [];    
+  @Input() horizontals: any[] = []; 
+  menuOpen = false;
+  bentoOpen = false;
+  
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  } 
+  bentoMenu(){
+    this.bentoOpen = !this.bentoOpen;
+  }
 }
+

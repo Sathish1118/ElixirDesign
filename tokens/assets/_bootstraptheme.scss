@@ -887,3 +887,3761 @@ body.dark-theme .form-switch .form-check-input:checked {
   }
 
 }
+// subash files
+
+
+// @import "bootstrap/scss/functions";
+// @import "_token.scss";
+// @import "bootstrap/scss/bootstrap";
+/* ================= Header Dropdown Menu ================= */
+body{
+   background-color: var(--body-bg);
+   color:var (--body-text)
+}
+.btn-secondary{
+    background-color: var( --secondary);
+    color: var( --secondary-text);
+    border-radius: $light-button-secondary-textbutton-default-small-cornerradius;
+    text-decoration: $light-button-secondary-textbutton-default-small-textstyle-text-decoration;
+    text-transform: $light-button-secondary-textbutton-default-small-textstyle-text-case !important;
+    border-color: $light-button-secondary-textbutton-default-small-background;
+}
+.btn-secondary:hover{
+    background-color: var( --secondary-hover);
+    color: var(--secondary-hover-text);
+    border-radius: $bs-btn-default-sec-radius-hover;
+    text-decoration: $light-button-secondary-textbutton-hover-small-textstyle-text-decoration !important;
+    text-transform: $light-button-secondary-textbutton-hover-small-textstyle-text-case !important;
+    border-color:$light-button-secondary-textbutton-hover-small-background;
+    .btn-icon {
+    color: $light-button-secondary-textbutton-hover-small-text !important; 
+  }
+}
+.btn-secondary:active{
+    background-color:var(--secondary-active);
+    color: var(--secondary-active-text) !important;
+    border-radius: $light-button-secondary-textbutton-active-small-cornerradius;
+    text-decoration: $light-button-secondary-textbutton-active-small-textstyle-text-decoration !important;
+    text-transform: $light-button-secondary-textbutton-active-small-textstyle-text-case !important;
+    border-color: $light-button-secondary-textbutton-active-small-background;
+
+    .btn-icon {
+    color:$light-button-secondary-textbutton-active-small-text !important; 
+  }
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: $light-button-primary-textbutton-default-small-text;
+    border-radius: $light-button-primary-textbutton-default-small-cornerradius;
+    text-decoration: $light-button-primary-textbutton-default-small-textstyle-text-decoration;
+    text-transform: $light-button-primary-textbutton-default-small-textstyle-text-case !important;
+    border-color: $light-button-primary-textbutton-default-small-background;
+
+}
+.btn-primary:hover{
+    background-color: var(--primary-hover);
+    color: var(--btn-primary-hover-text);
+    border-radius: $light-button-primary-textbutton-hover-small-cornerradius;
+    text-decoration: $light-button-primary-textbutton-hover-small-textstyle-text-decoration !important;
+    text-transform: $light-button-primary-textbutton-hover-small-textstyle-text-case !important;
+    border-color: $light-button-primary-textbutton-hover-small-background;
+}
+.btn-primary:active{
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+    border-radius: $light-button-primary-textbutton-active-small-cornerradius;
+    text-decoration: $light-button-primary-textbutton-active-small-textstyle-text-decoration !important;
+    text-transform: $light-button-primary-textbutton-active-small-textstyle-text-case !important;
+    border-color: $light-button-primary-textbutton-active-small-background !important;
+}
+.bg-gradients:hover{
+    background: $light-button-gradient-textbutton-hover-small-background;
+    color: $light-button-gradient-textbutton-hover-small-text;
+    border-radius: $light-button-gradient-textbutton-hover-small-cornerradius;
+    border: $light-button-gradient-textbutton-hover-small-textstyle-text-decoration;
+    border-radius:  $light-button-gradient-textbutton-hover-small-textstyle-text-case;   
+       .btn-icon {
+    color: $light-button-secondary-textbutton-hover-small-text !important; 
+  }
+}
+
+.bg-gradients:disabled{
+    background: $light-button-gradient-textbutton-disabled-small-background;
+    color: $light-button-gradient-textbutton-disabled-small-text;
+    border-radius: $light-button-gradient-textbutton-disabled-small-cornerradius;
+    border: $light-button-gradient-textbutton-disabled-small-textstyle-text-decoration;
+    border-radius:  $light-button-gradient-textbutton-disabled-small-textstyle-text-case;   
+         .btn-icon {
+    color: $light-button-secondary-textbutton-hover-small-text !important; 
+  }
+}
+.bg-gradients:active{
+    background: $light-button-gradient-textbutton-active-small-background;
+    color: $light-button-gradient-textbutton-active-small-text !important;
+    border-radius: $light-button-gradient-textbutton-active-small-cornerradius;
+    border: $light-button-gradient-textbutton-active-small-textstyle-text-decoration;
+    border-radius:  $light-button-gradient-textbutton-active-small-textstyle-text-case;   
+    .btn-icon {
+    color:  $light-button-gradient-textbutton-active-small-text !important; 
+  }
+}
+.btn-primary:disabled{
+    background-color: var(--primary-disabled);
+    color: $light-button-primary-textbutton-disabled-small-text;
+    border-radius: $light-button-primary-textbutton-disabled-small-cornerradius;
+    border: $light-button-primary-textbutton-disabled-small-textstyle-text-decoration;
+    border-radius:  $light-button-primary-textbutton-disabled-small-textstyle-text-case;   
+         .btn-icon {
+    color: $light-button-secondary-textbutton-hover-small-text !important; 
+  }
+}
+
+.btn-secondary:disabled{
+    background-color: $bs-btn-disabled-sec-background;
+    color: $bs-btn-disabled-sec-text;
+    border-radius: $light-button-secondary-textbutton-disabled-small-cornerradius;
+    border: $light-button-secondary-textbutton-disabled-small-textstyle-text-decoration;
+    border-radius:  $light-button-secondary-textbutton-disabled-small-textstyle-text-case;   
+         .btn-icon {
+    color: $light-button-secondary-textbutton-hover-small-text !important; 
+  }
+}
+.bg-gradients {
+    background: $bg-gradient;
+    color: $light-button-gradient-textbutton-default-small-text;
+    border-radius: $light-button-gradient-textbutton-default-small-cornerradius;
+    border: $light-button-gradient-textbutton-default-small-textstyle-text-decoration;
+    border-radius:  $light-button-gradient-textbutton-default-small-textstyle-text-case;   
+}
+
+.btn-sm {
+  font-size: $bs-btn-font-size;
+  font-weight: $bs-btn-font-weight;
+  color: $bs-btn-text-color ;
+  border-radius: $bs-btn-radius  ;
+  height: $bs-btn-default-height;
+  font-family: $bs-btn-font-family ;  
+  letter-spacing: $bs-btn-letter-spacing;
+}
+
+.btn-md{
+    font-size: $bs-btn-md-font-size;
+    font-weight: $bs-btn-md-font-weight;
+    color: $bs-btn-md-text-color ;
+    border-radius: $bs-btn-md-cornerradius  ;
+    height: $bs-btn-md-height;
+    font-family: $bs-btn-md-font-family ;  
+    letter-spacing: $bs-btn-md-letter-spacing;
+}
+
+.btn-lg{
+    font-size: $bs-btn-lg-font-size;
+    font-weight: $bs-btn-lg-font-weight;
+    color: $bs-btn-lg-text-color ;
+    border-radius: $bs-btn-lg-cornerradius  ;
+    font-family: $bs-btn-lg-font-family ;  
+    letter-spacing: $bs-btn-lg-letter-spacing;
+    height: $bs-btn-lg-height;
+}
+
+.btn-outline-primary {
+  border-color: var(--btn-outline-border-color) !important;
+  color: var(--btn-outline-text);
+  .btn-icon {
+    color:$bs-btn-outline-border-color !important; 
+  }
+}
+.btn-outline-primary:hover {
+  background-color: var(--btn-outline-hover-background);
+  color: var(--btn-outline-hover-text);
+  border-color: var( --btn-outline-border-color) !important;
+           .btn-icon {
+    color: $bs-btn-outline-border-color !important; 
+  }
+}
+.btn-outline-primary:active {
+  background-color: var( --btn-outline-active-background)!important;
+  color: var(--btn-outline-active-text) !important;
+  border-color: var( --btn-outline-active-background);
+}
+.btn-outline-primary:disabled {
+  color: $light-button-outline-textbutton-disabled-small-text;
+  border-color: $bs-btn-outline-disabled-border !important;
+        .btn-icon {
+    color: $light-button-outline-textbutton-disabled-small-text !important; 
+  }
+}
+.btn-success {
+  background-color: $btn-success;
+  color: $bs-btn-success-text;
+  border-radius: $bs-btn-success-cornerradius;
+  text-decoration: $light-button-success-textbutton-hover-small-textstyle-text-decoration;
+  text-transform: $light-button-success-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $btn-success;
+}
+.btn-success:hover {
+  background-color: $bs-btn-success-hover-background;
+  color: $bs-btn-success-hover-text;
+  border-radius: $bs-btn-success-hover-cornerradius;
+  text-decoration: $light-button-success-textbutton-hover-small-textstyle-text-decoration !important;
+  text-transform: $light-button-success-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $bs-btn-success-hover-background;
+}
+.btn-success:disabled {
+  background-color: var(--btn-success-disabled-bg);
+  color: var(--btn-success-disabled-text);
+  border-radius: $bs-btn-success-disabled-cornerradius;
+  border-color: $light-button-success-textbutton-disabled-small-background;
+}
+.btn-success:active {
+  background-color: $bs-btn-success-active-background !important;
+  color: $bs-btn-success-active-text !important;
+}
+.btn-danger {
+  background-color: $btn-danger;
+  color: $bs-btn-danger-text;
+  border-radius: $bs-btn-danger-cornerradius;
+  text-decoration: $light-button-danger-textbutton-hover-small-textstyle-text-decoration;
+  text-transform: $light-button-danger-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $btn-danger;
+  font-weight: $bs-btn-danger-font-weight;
+}
+.btn-danger:hover {
+  background-color: $bs-btn-danger-hover-background;
+  color: $bs-btn-danger-hover-text;
+  border-radius: $bs-btn-danger-hover-cornerradius;
+  text-decoration: $light-button-danger-textbutton-hover-small-textstyle-text-decoration !important;
+  text-transform: $light-button-danger-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $bs-btn-danger-hover-background;
+}
+.btn-danger:active {
+  background-color: $bs-btn-danger-active-background !important;
+  color: $bs-btn-danger-active-text !important;
+}
+.btn-danger:disabled {
+  background-color: $bs-btn-danger-disabled-background;
+  color: $bs-btn-danger-disabled-text;
+  border-radius: $bs-btn-danger-disabled-cornerradius;
+  border-color: $light-button-danger-textbutton-disabled-small-background;
+}
+.btn-warning {
+  background-color: $btn-warning;
+  color: $bs-btn-warning-text;
+  border-radius: $bs-btn-warning-cornerradius;
+  text-decoration: $light-button-warning-textbutton-hover-small-textstyle-text-decoration;
+  text-transform: $light-button-warning-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $btn-warning;
+}
+.btn-warning:hover {
+  background-color: $bs-btn-warning-hover-background;
+  color: $bs-btn-warning-hover-text;
+  border-radius: $bs-btn-warning-hover-cornerradius;
+  text-decoration: $light-button-warning-textbutton-hover-small-textstyle-text-decoration !important;
+  text-transform: $light-button-warning-textbutton-hover-small-textstyle-text-case !important;
+  border-color: $bs-btn-warning-hover-background;
+}
+.btn-warning:disabled {
+  background-color: $bs-btn-warning-disabled-background;
+  color: $bs-btn-warning-disabled-text;
+  border-radius: $bs-btn-warning-disabled-cornerradius;
+  border-color: $light-button-warning-textbutton-disabled-small-background;
+}
+.btn-warning:active {
+  background-color: $bs-btn-warning-active-background !important;
+  color: $bs-btn-warning-active-text !important;  
+}
+/* ================= Dropdown List ================= */
+.dropdown-list {
+  padding: 0.25rem 0;
+  background: var(--table-dropdown-defult-background);
+  border-radius: $light-tabledropdown-default-cornerradius;
+  box-shadow: var( --table-dropdown-shadow);
+}
+.dropdown-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: $light-tabledropdown-default-bodytext-font-family;
+  font-size: $light-tabledropdown-default-bodytext-font-size;
+  font-weight: map-get($font-weight-map, $light-tabledropdown-default-bodytext-font-weight);
+  color: var(--table-drodown-defult-text);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  border-bottom: 1px $light-tabledropdown-default-line-style $light-tabledropdown-default-line-color;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdown-list li:last-child {
+  border-bottom: none;
+}
+.dropdown-list li:hover {
+  background: var(--table-dropdown-hover-fill);
+  color: var( --table-dropdown-hover-text);
+  border-radius: $light-tabledropdown-hover-cornerradius $light-tabledropdown-hover-cornerradius 0 0;
+  box-shadow: var(--table-dropdown-hover-shadow)
+}
+.dropdown-list li:hover .fa-solid {
+  color: var( --table-dropdown-hover-icon );
+}
+.dropdown-list .fa-solid {
+  color: var(  --table-drodown-defult-icon-text) ;
+  font-size: 1.1rem;
+}
+.link-primary {
+  color: var(--link-primary) !important;
+  font-weight: $bs-link-primary-font-weight;
+  font-size: $bs-link-primary-font-size;
+  line-height: $bs-link-primary-line-height;
+  letter-spacing: $bs-link-primary-letter-seacing;
+  text-transform: $bs-link-primary-text-case;
+  text-decoration: $bs-link-primary-underline !important;
+  // text-decoration: $bs-link-primary-text-decoration !important;
+}
+.link-disabled {
+  color: $bs-link-primary-disabled !important;
+  font-weight: $bs-link-primary-disabled-font-weight;
+  font-size: $bs-link-primary-disabled-font-size;
+  line-height: $bs-link-primary-disabled-line-height;
+  letter-spacing: $bs-link-primary-disabled-letter-spacing;
+  text-transform: $bs-link-primary-disabled-text-case;
+  text-decoration: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.link-primary:hover {
+  color: var(--link-primary-hover)!important;
+  text-decoration: underline !important;
+}
+.link-primary:active {
+  color: var(--link-primary-active)!important;
+  text-decoration: underline !important;
+}
+.link-sm{
+  font-size: $bs-link-primary-small-font-size;
+  font-weight: $bs-link-primary-small-font-weight;
+  line-height: $bs-link-primary-small-line-height;
+  letter-spacing: $bs-link-primary-small-letter-seacing;
+}
+.link-md{
+  font-size: $bs-link-primary-medium-font-size;
+  font-weight: $bs-link-primary-medium-font-weight;
+  line-height: $bs-link-primary-medium-line-height;
+  letter-spacing: $bs-link-primary-medium-letter-seacing;
+}
+.link-lg{
+    font-size: $bs-link-primary-large-font-size;
+  font-weight: $bs-link-primary-large-font-weight;
+  line-height: $bs-link-primary-large-line-height;
+  letter-spacing: $bs-link-primary-large-letter-seacing;
+}
+
+
+// .btn-icons {
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  line-height: 1;
+}
+.btn-icon-right {
+ $color: var(--btn-icon-right-color) !important;
+}
+.btn-primary-rectangle-icon {
+  background-color: var(--icon-btn-primary-bg);
+  color: $bs-icon-btn-primary-text-color;
+  width: $bs-icon-btn-width;
+  height: $bs-icon-btn-line-height; // usually same as height
+  line-height: $bs-icon-btn-line-height;
+  border-radius: $bs-icon-btn-cornerradius;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.btn-primary-rectangle-icon:hover {
+  background-color: $bs-icon-btn-primary-hover-background;
+  color: $bs-icon-btn-primary-hover-text;
+  border: none !important;
+  outline: none !important;
+}
+
+.btn-primary-icon-sm {
+  /* width/height removed; only background, color, border-radius, border for button */
+  background-color: var(--icon-btn-primary-bg);
+  color: var(--icon-btn-primary-text);
+  border-radius: $light-button-primary-iconbutton-rectangle-default-small-cornerradius;
+  width:  $light-button-primary-iconbutton-rectangle-default-small-width;
+  height: $light-button-primary-iconbutton-rectangle-default-small-height;
+  border: none !important;
+  font-size: 12px;
+}
+.btn-primary-icon-sm:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  border: none !important;
+}
+.btn-primary-icon-sm:disabled {
+  background-color: var(--icon-btn-primary-disabled-bg);
+  color: var(--icon-btn-primary-disabled-text);
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-primary-icon-sm:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+}
+
+.btn-primary-icon-md {
+  width: $light-button-primary-iconbutton-rectangle-default-medium-width;
+  height: $light-button-primary-iconbutton-rectangle-default-medium-height;
+  background-color: var(--icon-btn-primary-bg);
+  color: var(--icon-btn-primary-text);
+  border-radius: $light-button-primary-iconbutton-rectangle-default-medium-cornerradius;
+  font-size: inherit;
+  border: none !important;
+   font-size: 14px;
+}
+.btn-primary-icon-md:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  text-transform: $light-button-primary-texticonright-active-medium-textstyle-text-case!important;
+  text-decoration: $light-button-primary-texticonright-active-medium-textstyle-text-decoration !important;
+  border: none !important;
+
+}
+.btn-primary-icon-md:disabled {
+  background-color: var(--icon-btn-primary-disabled-bg);
+  color: var(--icon-btn-primary-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-primary-icon-md:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+}
+.btn-primary-icon-lg {
+  width: $light-button-primary-iconbutton-rectangle-default-large-width;
+  height: $light-button-primary-iconbutton-rectangle-default-large-height;
+  background-color: var(--icon-btn-primary-bg);
+  color: var(--icon-btn-primary-text);
+  border-radius: $light-button-primary-iconbutton-rectangle-default-large-cornerradius;
+  font-size: inherit;
+  border: none !important;
+}
+.btn-primary-icon-lg:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  border: none !important;
+}
+.btn-primary-icon-lg:disabled {
+  background-color: var(--icon-btn-primary-disabled-bg) !important;
+  color: var(--icon-btn-primary-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-primary-icon-lg:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+  border: none !important;
+}
+.btn-secondary-icon-sm {
+  width: $light-button-secondary-iconbutton-rectangle-default-small-width !important;
+  height: $light-button-secondary-iconbutton-rectangle-default-small-height !important;
+  background-color: var(--icon-btn-secondary-bg);
+  color: var(--icon-btn-secondary-text);
+  border-radius: $light-button-secondary-iconbutton-rectangle-default-small-cornerradius;
+  border: none !important;
+  font-size: 12px;
+}
+.btn-icon-sm {
+  width: $light-button-primary-iconbutton-rectangle-default-small-width !important;
+  height: $light-button-primary-iconbutton-rectangle-default-small-height !important;
+
+
+}
+
+// .btn-icon-md {
+//   width: $light-button-primary-iconbutton-rectangle-default-medium-icon-size;
+//   height: $light-button-primary-iconbutton-rectangle-default-medium-icon-size;
+// }
+
+// .btn-icon-lg {
+//   width: $light-button-primary-iconbutton-rectangle-default-large-icon-size;
+//   height: $light-button-primary-iconbutton-rectangle-default-large-icon-size;
+// }
+
+.btn-secondary-icon-sm:active {
+  background-color: var(--icon-btn-secondary-active-bg) !important;
+  color: var(--icon-btn-secondary-active-text)!important;
+  border: none !important;
+}
+.btn-secondary-icon-sm:disabled {
+  background-color: var( --icon-btn-secondary-disabled-bg);
+  color: var( --icon-btn-secondary-disabled-text);
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-secondary-icon-sm:hover {
+  background-color: var(--icon-btn-secondary-hover-bg);
+  color: var(--icon-btn-secondary-hover-text);
+}
+.btn-secondary-icon-md {
+  width: $light-button-secondary-iconbutton-rectangle-default-medium-width;
+  height: $light-button-secondary-iconbutton-rectangle-default-medium-height;
+  background-color: var(--icon-btn-secondary-bg);
+  color: var(--icon-btn-secondary-text);
+  border-radius: $light-button-secondary-iconbutton-rectangle-default-medium-cornerradius;
+  font-size: inherit;
+  border: none !important;
+   font-size: 14px;
+}
+.btn-secondary-icon-md:active {
+  background-color: var(--icon-btn-secondary-active-bg) !important;
+  color: var(--icon-btn-secondary-active-text)!important;
+  border: none !important;
+
+}
+.btn-secondary-icon-md:disabled {
+  background-color: var( --icon-btn-secondary-disabled-bg);
+  color: var( --icon-btn-secondary-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-secondary-icon-md:hover {
+  background-color: var(--icon-btn-secondary-hover-bg);
+  color: var(--icon-btn-secondary-hover-text);
+}
+.btn-secondary-icon-lg {
+  width: $light-button-secondary-iconbutton-rectangle-default-large-width;
+  height: $light-button-secondary-iconbutton-rectangle-default-large-height;
+  background-color: var(--icon-btn-secondary-bg);
+  color: var(--icon-btn-secondary-text);
+  border-radius: $light-button-secondary-iconbutton-rectangle-default-large-cornerradius;
+  font-size: inherit;
+  border: none !important;
+}
+.btn-secondary-icon-lg:active {
+  background-color: var(--icon-btn-secondary-active-bg) !important;
+  color: var(--icon-btn-secondary-active-text)!important;
+  border: none !important;
+}
+.btn-secondary-icon-lg:disabled {
+  background-color: var( --icon-btn-secondary-disabled-bg);
+  color: var( --icon-btn-secondary-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-secondary-icon-lg:hover {
+  background-color: var(--icon-btn-secondary-hover-bg);
+  color: var(--icon-btn-secondary-hover-text);
+  border: none !important;
+}
+.bg-gradients-icon-sm {
+  width: $light-button-gradient-iconbutton-rectangle-default-small-width !important;
+  height: $light-button-gradient-iconbutton-rectangle-default-small-height !important;
+  background: var(--icon-btn-gradient-bg) !important;
+  color: var(--icon-btn-gradient-text);
+  border-radius: $bs-icon-btn-gradient-cornerradius;
+  border: none !important;
+   font-size: 12px;
+}
+.bg-gradients-icon-sm:hover {
+  background: var(--icon-btn-gradient-hover-bg) !important;
+  color: var(  --icon-btn-gradient-hover-text) !important;
+  border: none !important;
+  outline: none !important;
+}
+.bg-gradients-icon-sm:disabled {
+  background: var(--icon-btn-gradient-disabled-bg);
+  color: var(--icon-btn-gradient-disabled-text);
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-gradients-icon-sm:active {
+  background: $light-button-gradient-iconbutton-rectangle-active-small-background !important;
+  color: $light-button-gradient-iconbutton-rectangle-active-small-icon !important;
+  border: none !important;
+}
+.bg-gradients-icon-md {
+  width: $bs-icon-btn-gradient-md-width;
+  height: $bs-icon-btn-gradient-md-line-height;
+  background: var(--icon-btn-gradient-bg);
+  color: var(--icon-btn-gradient-text);
+  border-radius: $bs-icon-btn-gradient-md-cornerradius;
+  font-size: inherit;
+  border: none !important;
+   font-size: 14px;
+}
+.bg-gradients-icon-md:hover {
+  background: var(--icon-btn-gradient-hover-bg);
+  color: var( --icon-btn-gradient-hover-text);
+  border: none !important;
+  outline: none !important;
+}
+.bg-gradients-icon-md:disabled {
+  background: var(--icon-btn-gradient-disabled-bg);
+  color: var(--icon-btn-gradient-disabled-text);
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-gradients-icon-md:active {
+  background: $light-button-gradient-iconbutton-rectangle-active-medium-background !important;
+  color: $light-button-gradient-iconbutton-rectangle-active-medium-icon !important;
+  border: none !important;
+}
+.bg-gradients-icon-lg {
+  width: $bs-icon-btn-gradient-lg-width;
+  height: $bs-icon-btn-gradient-lg-line-height;
+  background: var(--icon-btn-gradient-bg);
+  color: var(--icon-btn-gradient-text);
+  border-radius: $bs-icon-btn-gradient-lg-cornerradius;
+  font-size: inherit;
+  border: none !important;
+}
+.bg-gradients-icon-lg:hover {
+  background: var(--icon-btn-gradient-hover-bg);
+  color: var( --icon-btn-gradient-hover-text);
+  border: none !important;
+  outline: none !important;
+}
+.bg-gradients-icon-lg:disabled {
+  background: var(--icon-btn-gradient-disabled-bg);
+  color: var(--icon-btn-gradient-disabled-text);
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-gradients-icon-lg:active {
+  background: $light-button-gradient-iconbutton-rectangle-active-large-background !important;
+  color: $light-button-gradient-iconbutton-rectangle-active-large-icon !important;
+  border: none !important;
+}
+.btn-outline-icon-rectangle-sm {
+  color: $light-button-outline-iconbutton-rectangle-default-small-icon;
+  border-radius: $light-button-outline-iconbutton-rectangle-default-small-cornerradius;
+  border: 1px solid var( --icon-btn-outline-border) !important;
+   font-size: 12px;
+   height: $light-button-outline-iconbutton-rectangle-default-small-height;
+   width: $light-button-outline-iconbutton-rectangle-default-small-width;
+   background: var(--icon-btn-outline-bg) ;
+}
+.btn-outline-icon-rectangle-sm:active {
+  background-color: $light-button-outline-iconbutton-rectangle-active-small-background !important;
+  color: $light-button-outline-iconbutton-rectangle-active-small-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-rectangle-default-small-border-color !important;
+}
+.btn-outline-icon-rectangle-sm:disabled {
+  color: var(--icon-btn-outline-disabled-text);
+  border: 1px solid var(--icon-btn-outline-disabled-border) !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-outline-icon-rectangle-sm:hover {
+  background-color: $light-button-outline-iconbutton-rectangle-hover-small-background;
+  color: var( --icon-btn-outline-hover-text);
+  border: 1px solid $light-button-outline-iconbutton-rectangle-default-small-border-color !important;
+}
+.btn-outline-icon-rectangle-md {
+  width: $light-button-outline-iconbutton-rectangle-default-medium-width;
+  height: $light-button-outline-iconbutton-rectangle-default-medium-height;
+  color: $light-button-outline-iconbutton-rectangle-default-medium-icon;
+  border-radius: $light-button-outline-iconbutton-rectangle-default-medium-cornerradius;
+  font-size: inherit;
+  border: 1px solid var( --icon-btn-outline-border) !important;
+  background: var(--icon-btn-outline-bg) ;
+  font-size: 14px;
+}
+.btn-outline-icon-rectangle-md:active {
+  background-color: $light-button-outline-iconbutton-rectangle-active-medium-background !important;
+  color: $light-button-outline-iconbutton-rectangle-active-medium-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-rectangle-active-medium-border-color !important;
+}
+.btn-outline-icon-rectangle-md:disabled {
+  color: var(--icon-btn-outline-disabled-text);
+  border: 1px solid var(--icon-btn-outline-disabled-border) !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-outline-icon-rectangle-md:hover {
+  background-color: $light-button-outline-iconbutton-rectangle-hover-medium-background;
+  color: var( --icon-btn-outline-hover-text);
+  border: 1px solid $light-button-outline-iconbutton-rectangle-hover-medium-border-color !important;
+}
+.btn-outline-icon-rectangle-lg {
+  width: $light-button-outline-iconbutton-rectangle-default-large-width;
+  height: $light-button-outline-iconbutton-rectangle-default-large-height;
+  color: $light-button-outline-iconbutton-rectangle-default-large-icon;
+  border-radius: $light-button-outline-iconbutton-rectangle-default-large-cornerradius;
+  font-size: inherit;
+  border: 1px solid var( --icon-btn-outline-border) !important;
+  background: var(--icon-btn-outline-bg) ;
+}
+.btn-outline-icon-rectangle-lg:active {
+  background-color: $light-button-outline-iconbutton-rectangle-active-large-background !important;
+  color: $light-button-outline-iconbutton-rectangle-active-large-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-rectangle-default-large-border-color !important;
+}
+.btn-outline-icon-rectangle-lg:disabled {
+  color: var(--icon-btn-outline-disabled-text);
+  border: 1px solid var(--icon-btn-outline-disabled-border) !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-outline-icon-rectangle-lg:hover {
+  background-color: $light-button-outline-iconbutton-rectangle-hover-large-background;
+  color: var( --icon-btn-outline-hover-text);
+  border: 1px solid $light-button-outline-iconbutton-rectangle-default-large-border-color  !important;
+}
+.btn-icon-primary-circle-sm {
+  width: $light-button-primary-iconbutton-circle-default-small-width;
+  height:$light-button-primary-iconbutton-circle-default-small-height;
+  background-color: var(--icon-btn-circle-bg);
+  color: var(--icon-btn-circle-text);
+  border: none !important;
+  border-radius: $light-button-primary-iconbutton-circle-default-small-cornerradius;
+   font-size: 12px;
+}
+.btn-icon-primary-circle-sm:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  border: none !important;
+}
+.btn-icon-primary-circle-sm:disabled {
+  background-color: $light-button-primary-iconbutton-circle-disabled-small-background;
+  color: $light-button-primary-iconbutton-circle-disabled-small-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-primary-circle-sm:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+  border: none !important;
+}
+.btn-icon-primary-circle-md {
+  width: $light-button-primary-iconbutton-circle-default-medium-width;
+  height:$light-button-primary-iconbutton-circle-default-medium-height;
+  background-color: var(--icon-btn-circle-bg);
+  color: var(--icon-btn-circle-text);
+  border: none !important;
+  border-radius: $light-button-primary-iconbutton-circle-default-medium-cornerradius;
+   font-size: 14px;
+}
+.btn-icon-primary-circle-md:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  border: none !important;
+}
+.btn-icon-primary-circle-md:disabled {
+  background-color: $light-button-primary-iconbutton-circle-disabled-medium-background;
+  color: $light-button-primary-iconbutton-circle-disabled-medium-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-primary-circle-md:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+  border: none !important;
+}
+.btn-icon-primary-circle-lg {
+  width: $light-button-primary-iconbutton-circle-default-large-width;
+  height:$light-button-primary-iconbutton-circle-default-large-height;
+  background-color: var(--icon-btn-circle-bg);
+  color: var(--icon-btn-circle-text);
+  border: none !important;
+  border-radius: $light-button-primary-iconbutton-circle-default-large-cornerradius;
+}
+.btn-icon-primary-circle-lg:active {
+    background-color: var(--primary-active) !important;
+    color: var(--btn-primary-active-text) !important;
+  border: none !important;
+}
+.btn-icon-primary-circle-lg:disabled {
+  background-color: $light-button-primary-iconbutton-circle-disabled-large-background;
+  color: $light-button-primary-iconbutton-circle-disabled-large-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-primary-circle-lg:hover {
+  background-color: var(--icon-btn-primary-hover-bg);
+  color: var(  --icon-btn-primary-hover-text);
+  border: none !important;
+}
+.btn-icon-secondary-circle-sm {
+  width: $light-button-secondary-iconbutton-circle-default-small-width;
+  height:$light-button-secondary-iconbutton-circle-default-small-height;
+  background-color: $light-button-secondary-iconbutton-circle-default-small-background;
+  color: $light-button-secondary-iconbutton-circle-default-small-icon;
+  border: none !important;
+  border-radius: $light-button-secondary-iconbutton-circle-default-small-cornerradius;
+   font-size: 12px;
+}
+.btn-icon-secondary-circle-sm:active {
+  background-color: $light-button-secondary-iconbutton-circle-active-small-background !important;
+  color: $light-button-secondary-iconbutton-circle-active-small-icon !important;
+  border: none !important;
+}
+.btn-icon-secondary-circle-sm:disabled {
+  background-color: $light-button-secondary-iconbutton-circle-disabled-small-background;
+  color: $light-button-secondary-iconbutton-circle-disabled-small-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-secondary-circle-sm:hover {
+  background-color: $light-button-secondary-iconbutton-circle-hover-small-background;
+  color: $light-button-secondary-iconbutton-circle-hover-small-icon;
+  border: none !important;
+}
+.btn-icon-secondary-circle-md {
+  width: $light-button-secondary-iconbutton-circle-default-medium-width;
+  height:$light-button-secondary-iconbutton-circle-default-medium-height;
+  background-color: $light-button-secondary-iconbutton-circle-default-medium-background;
+  color: $light-button-secondary-iconbutton-circle-default-medium-icon;
+  border: none !important;
+  border-radius: $light-button-secondary-iconbutton-circle-default-medium-cornerradius;
+   font-size: 14px;
+}
+.btn-icon-secondary-circle-md:active {
+  background-color: $light-button-secondary-iconbutton-circle-active-medium-background !important;
+  color: $light-button-secondary-iconbutton-circle-active-medium-icon !important;
+  border: none !important;
+}
+.btn-icon-secondary-circle-md:disabled {
+  background-color: $light-button-secondary-iconbutton-circle-disabled-medium-background;
+  color: $light-button-secondary-iconbutton-circle-disabled-medium-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-secondary-circle-md:hover {
+  background-color: $light-button-secondary-iconbutton-circle-hover-medium-background;
+  color: $light-button-secondary-iconbutton-circle-hover-medium-icon;
+  border: none !important;
+}
+.btn-icon-secondary-circle-lg {
+  width: $light-button-secondary-iconbutton-circle-default-large-width;
+  height:$light-button-secondary-iconbutton-circle-default-large-height;
+  background-color: $light-button-secondary-iconbutton-circle-default-large-background;
+  color: $light-button-secondary-iconbutton-circle-default-large-icon;
+  border: none !important;
+  border-radius: $light-button-secondary-iconbutton-circle-default-large-cornerradius;
+}
+.btn-icon-secondary-circle-lg:active {
+  background-color: $light-button-secondary-iconbutton-circle-active-large-background !important;
+  color: $light-button-secondary-iconbutton-circle-active-large-icon !important;
+  border: none !important;
+}
+.btn-icon-secondary-circle-lg:disabled {
+  background-color: $light-button-secondary-iconbutton-circle-disabled-large-background;
+  color: $light-button-secondary-iconbutton-circle-disabled-large-icon;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-secondary-circle-lg:hover {
+  background-color: $light-button-secondary-iconbutton-circle-hover-large-background;
+  color: $light-button-secondary-iconbutton-circle-hover-large-icon;
+  border: none !important;
+}
+.btn-icon-outline-circle-sm {
+  color: $light-button-outline-iconbutton-circle-default-small-icon;
+  border-radius: $light-button-outline-iconbutton-circle-default-small-cornerradius;
+  border: 1px solid var(--icon-btn-outline-lg-border) ;
+   font-size: 12px;
+   height: $light-button-outline-iconbutton-circle-default-small-height;
+   width: $light-button-outline-iconbutton-circle-default-small-width;
+   background: var(--icon-btn-outline-bg) ;
+;
+}
+.btn-icon-outline-circle-sm:active {
+  background-color: $light-button-outline-iconbutton-circle-active-small-background !important;
+  color: $light-button-outline-iconbutton-circle-active-small-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-circle-default-small-border-color !important;
+}
+.btn-icon-outline-circle-sm:disabled {
+  color: $light-button-outline-iconbutton-circle-disabled-small-icon;
+  border: 1px solid $light-button-outline-iconbutton-circle-disabled-small-border-color !important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-outline-circle-sm:hover {
+  background-color:  $light-button-outline-iconbutton-circle-hover-medium-background;
+  color:var( --icon-btn-outline-texts);
+  border: 1px solid var(--icon-btn-outline-lg-border) ;
+}
+.btn-icon-outline-circle-md {
+  width: $light-button-outline-iconbutton-circle-default-medium-width;
+  height: $light-button-outline-iconbutton-circle-default-medium-height;
+  color: $light-button-outline-iconbutton-circle-default-medium-icon;
+  border-radius: $light-button-outline-iconbutton-circle-default-medium-cornerradius;
+  font-size: inherit;
+  border: 1px solid var(--icon-btn-outline-lg-border) ;
+   font-size: 14px;
+      background: var(--icon-btn-outline-bg) ;
+
+}
+.btn-icon-outline-circle-md:active {
+  background-color: $light-button-outline-iconbutton-circle-active-medium-background !important;
+  color: $light-button-outline-iconbutton-circle-active-medium-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-circle-active-medium-border-color !important;
+}
+.btn-icon-outline-circle-md:disabled {
+  color: $light-button-outline-iconbutton-circle-disabled-medium-icon;
+  border: 1px solid $light-button-outline-iconbutton-circle-disabled-medium-border-color !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-outline-circle-md:hover {
+  background-color: $light-button-outline-iconbutton-circle-hover-medium-background;
+  color:var( --icon-btn-outline-texts);
+  border: 1px solid var(--icon-btn-outline-lg-border) ;
+}
+.btn-icon-outline-circle-lg {
+  width: $light-button-outline-iconbutton-circle-default-large-width;
+  height: $light-button-outline-iconbutton-circle-default-large-height;
+  color: $light-button-outline-iconbutton-circle-default-large-icon;
+  border-radius: $light-button-outline-iconbutton-circle-default-large-cornerradius;
+  font-size: inherit;
+  border: 1px solid var(--icon-btn-outline-lg-border) ;
+     background: var(--icon-btn-outline-bg) ;
+
+}
+.btn-icon-outline-circle-lg:active {
+  background-color: $light-button-outline-iconbutton-circle-active-large-background !important;
+  color: $light-button-outline-iconbutton-circle-active-large-icon !important;
+  border: 1px solid $light-button-outline-iconbutton-circle-default-large-border-color !important;
+}
+.btn-icon-outline-circle-lg:disabled {
+  color: $light-button-outline-iconbutton-circle-disabled-large-icon;
+  border: 1px solid $light-button-outline-iconbutton-circle-disabled-large-border-color !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.btn-icon-outline-circle-lg:hover {
+  background-color: $light-button-outline-iconbutton-circle-hover-large-background;
+  color: var(--icon-btn-outline-texts);
+  border: 1px solid $light-button-outline-iconbutton-circle-default-large-border-color  !important;
+}
+.bg-primary-gradients-icon-sm {
+  width: $bs-icon-btn-circle-gradient-width;
+  height: $bs-icon-btn-circle-gradient-line-height;
+  background: $bs-icon-btn-circle-gradient-background;
+  color: $bs-icon-btn-circle-gradient-text;
+  border-radius: $bs-icon-btn-circle-gradient-cornerradius;
+  border: none !important;
+   font-size: 12px;
+}
+.bg-primary-gradients-icon-sm:hover {
+  background: $light-button-gradient-iconbutton-circle-hover-small-background;
+  color: $light-button-gradient-iconbutton-circle-hover-small-icon;
+  border: none !important;
+  outline: none !important;
+}
+.bg-primary-gradients-icon-sm:disabled {
+  background: $bs-icon-btn-circle-gradient-disabled-background;
+  color: $bs-icon-btn-circle-gradient-disabled-text;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-primary-gradients-icon-sm:active {
+  background: $bs-icon-btn-circle-gradient-active-background !important;
+  color: $bs-icon-btn-circle-gradient-active-text !important;
+  border: none !important;
+}
+.bg-primary-gradients-icon-md {
+  width: $bs-icon-btn-circle-gradient-md-width;
+  height: $bs-icon-btn-circle-gradient-md-line-height;
+  background: $bs-icon-btn-circle-gradient-md-background;
+  color:$bs-icon-btn-circle-gradient-md-text;
+  border-radius: $bs-icon-btn-circle-gradient-md-cornerradius;
+  // font-size: inherit;
+  border: none !important;
+   font-size: 14px;
+}
+.bg-primary-gradients-icon-md:hover {
+  background: $bs-icon-btn-circle-gradient-md-hover-background;
+  color: $bs-icon-btn-circle-gradient-md-hover-text;
+  border: none !important;
+  outline: none !important;
+}
+.bg-primary-gradients-icon-md:disabled {
+  background: $bs-icon-btn-circle-gradient-md-disabled-background;
+  color: $bs-icon-btn-circle-gradient-md-disabled-text;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-primary-gradients-icon-md:active {
+  background: $bs-icon-btn-circle-gradient-md-active-background!important;
+  color: $bs-icon-btn-circle-gradient-md-active-text!important;
+  border: none !important;
+}
+.bg-primary-gradients-icon-lg {
+  width: $bs-icon-btn-circle-gradient-lg-width;
+  height:$bs-icon-btn-circle-gradient-lg-line-height;
+  background: $bs-icon-btn-circle-gradient-lg-background;
+  color: $bs-icon-btn-circle-gradient-lg-text;
+  border-radius: $bs-icon-btn-circle-gradient-lg-cornerradius;
+  font-size: inherit;
+  border: none !important;
+}
+.bg-primary-gradients-icon-lg:hover {
+  background: $bs-icon-btn-circle-gradient-lg-hover-background;
+  color: $bs-icon-btn-circle-gradient-lg-hover-text;
+  border: none !important;
+  outline: none !important;
+}
+.bg-primary-gradients-icon-lg:disabled {
+  background: $bs-icon-btn-circle-gradient-lg-disabled-background;
+  color: $bs-icon-btn-circle-gradient-lg-disabled-text;
+  box-shadow: none !important;
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+.bg-primary-gradients-icon-lg:active {
+  background: $bs-icon-btn-circle-gradient-lg-active-background !important;
+  color: $bs-icon-btn-circle-gradient-lg-active-text !important;
+  border: none !important;
+}
+
+// /* ================= Header Default ================= */
+ .header-default {
+  //  width: $light-header-default-width;
+  //  width: 100rem;
+   height: $light-header-default-height;
+   background: var( --header-default-bg);
+   box-shadow: var(--header-default-shadow);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 1rem;
+ }
+
+ .header-default .header-icon {
+   width: $light-header-default-iconwidth;
+   height: $light-header-default-iconheight;
+   background: var(--header-default-iconborder-color);
+   color: var(--header-default-profileicon);
+   border-radius: $light-header-default-iconradius;
+   border:var(--header-default-border);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+ }
+
+ .header-default .header-username {
+   color: var(--header-default-username);
+   font-family: $light-header-default-name-font-family;
+   font-weight: $light-header-default-name-font-weight;
+   font-size: $light-header-default-name-font-size;
+   line-height: $light-header-default-name-line-height;
+ }
+ .header-default .header-username:hover {
+   color: var(--header-hover-username);
+ }
+
+ .header-default .header-account {
+   color: var(--header-default-account);
+   font-family: $light-header-default-accounttext-font-family;
+   font-weight: $light-header-default-accounttext-font-weight;
+   font-size: $light-header-default-accounttext-font-size;
+   line-height: $light-header-default-accounttext-line-height;
+ }
+ .header-default .header-account:hover {
+   color: var(--header-hover-account);
+ }
+ /* ================= Hover State ================= */
+ .header-default .header-icon:hover {
+   background: var(--header-hover-profilefill);
+   color: var(--header-hover-profileicon);
+   border: var(--header-hover-border);
+   box-shadow: var(--header-hover-box-shadow);
+ }
+
+ /* ================= Active State ================= */
+ .header-default .header-icon:active {
+   background: var(--header-active-profilefill);
+   color: var(--header-active-profileicon);
+   border: var(--header-active-border);
+   box-shadow:var(--header-active-box-shadow);
+ }
+
+ .header-default .header-menu {
+   width: $light-header-active-menuwidth;
+   background: var(--header-active-menubackground);
+   box-shadow: var(--header-active-box-shadow);
+   border-radius: $light-header-active-activeradius;
+   padding: 0.5rem 0;
+ }
+
+ .header-default .header-menu li {
+   font-family: $light-header-active-menutext-font-family;
+   font-weight: $light-header-active-menutext-font-weight;
+   font-size: $light-header-active-menutext-font-size;
+   line-height: $light-header-active-menutext-line-height;
+   color: var(--header-active-menuitem);
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+ }
+
+ .header-default .header-menu li:hover {
+   background: var(--header-hover-hoverfill);
+   color: var(--header-hover-dropdown);
+ }
+
+ .header-default .header-menu li:active {
+   background: var(--header-active-activefill);
+   color: var(--header-hover-dropdown);
+ }
+
+
+.header-menu {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  width: $light-header-active-menuwidth;
+  background: var(--header-active-menubackground);
+  border-radius: $light-header-active-activeradius;
+  box-shadow: var(--header-active-box-shadow);
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  list-style: none;
+}
+.header-menu-item {
+  font-family: $light-header-active-menutext-font-family;
+  font-weight: $light-header-active-menutext-font-weight;
+  font-size: $light-header-active-menutext-font-size;
+  line-height: $light-header-active-menutext-line-height;
+  color: var(--header-active-menuitem);
+  padding: 1rem;
+  border-bottom: var(--header-active-menuitem-border-bottom);
+  cursor: pointer;
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+.header-menu-item:last-child {
+  border-bottom: none;
+}
+.header-menu-item:hover {
+  background: var(--header-hover-background);
+  color: var(--header-hover-dropdown);
+}
+.header-menu-item.disabled {
+  color: $grey-g100;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+/* ================= USER GROUP HOVER ================= */
+.header-default .header-user-group {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--header-active-profileicon);
+  padding: 12px 1rem;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+ .header-default .header-user-group:hover .header-username{
+  color: var(--header-hover-username);
+ }
+ .header-default .header-user-group:hover .header-account{
+  color: var(--header-hover-account);
+ }
+ .header-default .header-user-group:hover .btn-icon-primary-circle-md {
+  color: var(--header-hover-username);
+  border: 1px solid var(--header-hover-username) !important;
+ background:var(--header-hover-profilefill);      
+}
+.header-default .header-user-group:hover {
+  background:var(--header-hover-profilefill);      
+  color: black;     
+  box-shadow: var(--header-hover-box-shadow);
+}
+
+
+.header-default .header-user-group:hover .header-icon {
+  background: transparent;  
+  color: inherit;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.bento-icon {
+  width: $light-header-active-bentowidth;
+  height: $light-header-active-bentoheight;
+  color: $bs-header-bento;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bento-icon:hover {
+  color: $light-header-hover-bento;
+  background: $light-header-hover-icon;
+}
+.bento-icon:active {
+  color: $light-header-active-bento;
+  background: $bs-header-bento;
+}
+
+/* ================= Calendar Wrapper ================= */
+.calendar {
+  border-radius: $light-calendar-date-active-calendar-cornerradius;
+  box-shadow: var(--calendar-shadow);
+  width: $light-calendar-date-active-calendar-width;
+  height: $light-calendar-date-active-calendar-height;
+  font-family: $light-calendar-date-active-calendar-header-monthtext-font-family, sans-serif;
+  background: var(--Calendar-active-bg);
+  color: var(--calendar-body-days);
+}
+
+/* ================= Search Bar ================= */
+.calendar-searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: $light-calendar-date-active-searchbar-width;
+  height: $light-calendar-date-active-searchbar-height;
+  border: var(--calendar-searchbar-active-border);
+  border-radius: $light-calendar-date-active-searchbar-cornerradius;
+  background: var(--calendar-searchbar-active-bg);
+  // color: $light-calendar-date-active-searchbar-text;
+  padding: 0 0.5rem;
+
+  input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-family: $light-calendar-date-active-searchbar-searchtext-font-family;
+    font-size: $light-calendar-date-active-searchbar-searchtext-font-size;
+    font-weight: $light-calendar-date-active-searchbar-searchtext-font-weight;
+    line-height: $light-calendar-date-active-searchbar-searchtext-line-height;
+    color: var(--calendar-searchbar-active-text);
+    background: var(--calendar-searchbar-active-bg);
+  }
+
+  .icon {
+    color: $light-calendar-date-active-searchbar-icon;
+    cursor: pointer;
+  }
+}
+
+/* ================= Calendar Header ================= */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px $light-calendar-date-active-calendar-header-line-style $light-calendar-date-active-calendar-header-line-color;
+  padding: 0.5rem 0;
+
+  .month {
+    color: var( --calendar-body-days);
+    font-family: $light-calendar-date-active-calendar-header-monthtext-font-family;
+    font-size: $light-calendar-date-active-calendar-header-monthtext-font-size;
+    font-weight: $light-calendar-date-active-calendar-header-monthtext-font-weight;
+  }
+
+  .year {
+    color: var( --calendar-body-days);
+    font-family: $light-calendar-date-active-calendar-header-yeartext-font-family;
+    font-size: $light-calendar-date-active-calendar-header-yeartext-font-size;
+    font-weight: $light-calendar-date-active-calendar-header-yeartext-font-weight;
+  }
+
+  .icon {
+    color: var( --calendar-body-days);
+    cursor: pointer;
+  }
+}
+
+/* ================= Calendar Body (Dates) ================= */
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  padding: 0.5rem;
+
+  .day {
+    font-family: $light-calendar-date-active-calendar-body-daystext-font-family;
+    font-size: $light-calendar-date-active-calendar-body-daystext-font-size;
+    font-weight: $light-calendar-date-active-calendar-body-daystext-font-weight;
+    color: var( --calendar-body-days);
+    text-align: center;
+  }
+
+  .date {
+    font-family: $light-calendar-date-active-calendar-body-datestext-font-family;
+    font-size: $light-calendar-date-active-calendar-body-datestext-font-size;
+    font-weight: $light-calendar-date-active-calendar-body-datestext-font-weight;
+    color: var( --calendar-body-days);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--calendar-body-hover-date);
+      color: $light-calendar-date-hover-calendar-body-hoverdate;
+    }
+
+    &.active {
+      background: var(--calendar-body-active-color);
+      color: var( --calendar-body-active-date);
+      font-weight: $light-calendar-date-active-calendar-body-activetext-font-weight;
+    }
+
+    &.disabled {
+      color: var( --calendar-body-disabled-date);
+      cursor: not-allowed;
+    }
+  }
+  .month-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.5rem 2.5rem;
+    padding: 1rem 0 0.5rem 36px;
+    justify-items: center;
+    align-items: center;
+}
+  
+}
+
+/* ================= Table Dropdown ================= */
+.table-dropdown {
+  width: $light-tabledropdown-default-width;
+  height: $light-tabledropdown-default-height;
+  background: $light-tabledropdown-default-background;
+  color: $light-tabledropdown-default-text;
+  border-radius: $light-tabledropdown-default-cornerradius;
+  border: $light-tabledropdown-default-line-width $light-tabledropdown-default-line-style $light-tabledropdown-default-line-color;
+  box-shadow: 0 $light-tabledropdown-default-shadow-y $light-tabledropdown-default-shadow-blur $light-tabledropdown-default-shadow-color;
+  font-family: $light-tabledropdown-default-bodytext-font-family;
+  font-weight: map-get($font-weight-map, $light-tabledropdown-default-bodytext-font-weight);
+  font-size: $light-tabledropdown-default-bodytext-font-size;
+  line-height: $light-tabledropdown-default-bodytext-line-height;
+  letter-spacing: $light-tabledropdown-default-bodytext-letter-spacing;
+  text-decoration: $light-tabledropdown-default-bodytext-text-decoration;
+  text-transform: $light-tabledropdown-default-bodytext-text-case;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+
+  .icon {
+    color: $light-tabledropdown-default-icon;
+  }
+
+  &:hover {
+    background: $light-tabledropdown-hover-background;
+    color: $light-tabledropdown-hover-text;
+    border-radius: $light-tabledropdown-hover-cornerradius;
+    border: $light-tabledropdown-hover-line-width $light-tabledropdown-hover-line-style $light-tabledropdown-hover-line-color;
+    box-shadow: 0 $light-tabledropdown-hover-shadow-y $light-tabledropdown-hover-shadow-blur $light-tabledropdown-hover-shadow-color;
+
+    .icon {
+      color: $light-tabledropdown-hover-icon;
+    }
+  }
+}
+
+.menu-button {
+  background: var(--menu-button-bg);
+  color: var(--menu-button-text);
+  border-radius: $light-menubutton-default-button-cornerradius;
+  font-family: $light-menubutton-default-button-buttontext-font-family;
+  font-weight: $light-menubutton-default-button-buttontext-font-weight;
+  font-size: $light-menubutton-default-button-buttontext-font-size;
+  height: $light-menubutton-default-button-height;
+  width: $light-menubutton-default-button-width;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  cursor: pointer;
+
+  i {
+    color: var(--menu-button-icon);
+  }
+
+  &:hover {
+    background: var(--menu-button-hover-bg);
+    color: var(--menu-button-hover-text);
+    
+    i {
+      color: var(--menu-button-hover-icon);
+    }
+  }
+
+  &.open {
+    background: var(--menu-button-bg);
+    color: var(--menu-button-text);
+
+    i {
+      color:var( --menu-button-defaultopen-menu-icon);
+    }
+  }
+
+  &.active {
+    background: var(--menu-button-activemenu-bg);
+    color:var(--menu-button-activemenu-text);
+
+    i {
+      color: var(--menu-button-activemenu-icon);
+    }
+  }
+}
+
+.menu-list {
+  background: var(--menu-button-defaultopen-menu-bg);
+  color: var(--menu-button-defaultopen-menu-text);
+  border-radius: $light-menubutton-defaultopen-menu-cornerradius;
+  box-shadow: var(--menu-button-defaultopen-shadow);
+  width: $light-menubutton-defaultopen-menu-width;
+  margin-top: 0.25rem;
+  list-style: none;
+  padding: 0;
+
+  li {
+    font-family: $light-menubutton-defaultopen-menu-menutext-font-family;
+    font-weight: $light-menubutton-defaultopen-menu-menutext-font-weight;
+    font-size:  map-get($font-weight-map, $light-menubutton-defaultopen-menu-menutext-font-size) ;
+    line-height: $light-menubutton-defaultopen-menu-menutext-line-height;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: var(--menu-button-defaultopen-menu-line);
+
+    &:hover {
+      background: $light-menubutton-hoveropen-menu-hoverfill;
+      color: $light-menubutton-hoveropen-menu-hovertext;
+    }
+
+    &.active {
+      background: $light-menubutton-activeopen-menu-activefill;
+      color: $light-menubutton-activeopen-menu-activetext;
+    }
+  }
+}
+
+/* ================= Hyperlink Values ================= */
+
+.hyperlink-value {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: $light-hyperlinkvalues-default-textsize-font-family;
+  font-weight:  map-get($font-weight-map, $light-hyperlinkvalues-default-textsize-font-weight) ;
+  font-size: $light-hyperlinkvalues-default-textsize-font-size;
+  line-height: $light-hyperlinkvalues-default-textsize-line-height;
+  letter-spacing: $light-hyperlinkvalues-default-textsize-letter-spacing;
+  color: var(--hyberlink-multiple-values-text);
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: $light-hyperlinkvalues-default-badgeheight;
+    width: $light-hyperlinkvalues-default-badgewidth;
+    border-radius: $light-hyperlinkvalues-default-badgeradius;
+    background-color: var( --hyberlink-defult-bg);
+    color: var(--hyberlink-badge-text);
+    font-family: $light-hyperlinkvalues-default-badge-font-family;
+    font-weight: $light-hyperlinkvalues-default-badge-font-weight;
+    font-size: $light-hyperlinkvalues-default-badge-font-size;
+    line-height: $light-hyperlinkvalues-default-badge-line-height;
+    letter-spacing: $light-hyperlinkvalues-default-badge-letter-spacing;
+    text-decoration: $light-hyperlinkvalues-default-badge-text-decoration;
+    text-transform: $light-hyperlinkvalues-default-badge-text-case;
+  }
+
+  &:hover {
+    color: var(--hyberlink-multiple-values-hover-text);
+
+    .badge {
+      background-color: var( --hyberlink-badge-hover-bg);
+      color: var(--hyberlink-badge-hover-text);
+    }
+  }
+}
+
+// /* breadcrumb */
+
+.breadcrumb {
+  font-family: $light-breadcrumb-active-bodytext-font-family;
+  font-weight: $light-breadcrumb-active-bodytext-font-weight;
+  font-size: $light-breadcrumb-active-bodytext-font-size;
+  line-height: $light-breadcrumb-active-bodytext-line-height;
+  letter-spacing: $light-breadcrumb-active-bodytext-letter-spacing;
+  text-decoration: none;
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+    .breadcrumb-link {
+      color: var(--breadcrumb-hover-text);
+      font-family: $light-breadcrumb-hover-bodytext-font-family;
+      font-weight: $light-breadcrumb-hover-bodytext-font-weight;
+      font-size: $light-breadcrumb-hover-bodytext-font-size;
+      line-height: $light-breadcrumb-hover-bodytext-line-height;
+      letter-spacing: $light-breadcrumb-hover-bodytext-letter-spacing;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover {
+        color: var(--breadcrumb-hover-hovertext) !important;
+      }
+    }
+    .breadcrumb-active {
+      color: var(--breadcrumb-active-activetext);
+      text-decoration: $light-breadcrumb-activetext-underline;
+      font-family: $light-breadcrumb-active-bodytext-font-family;
+      font-weight: $light-breadcrumb-active-bodytext-font-weight;
+      font-size: $light-breadcrumb-active-bodytext-font-size;
+      line-height: $light-breadcrumb-active-bodytext-line-height;
+      letter-spacing: $light-breadcrumb-active-bodytext-letter-spacing;
+    }
+  }
+  .breadcrumb-separator {
+    margin: 0 8px;
+    color: var(--breadcrumb-active-activetext);
+    font-size: $light-breadcrumb-active-bodytext-font-size;
+    font-family: $light-breadcrumb-active-bodytext-font-family;;
+    vertical-align: middle;
+  }
+}
+
+//chip
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  border-radius: $light-chip-default-cornerradius;
+  font-family: $light-chip-default-bodytext-font-family;
+  font-weight: $light-chip-default-bodytext-font-weight;
+  font-size: $light-chip-default-bodytext-font-size;
+  line-height: $light-chip-default-bodytext-line-height;
+  height: $light-chip-default-height;
+  background: var(--chip-defult-bg);
+  color: var(--chip-defult-text);
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--chip-hover-bg);
+    color: var(--chip-hover-text);
+  }
+
+  &.disabled {
+    background: var(--chip-disabled-bg);
+    color: var(--chip-disabled-tex);
+    cursor: not-allowed;
+  }
+
+  .chip-icon-right {
+    font-size: $light-chip-hover-bodytext-font-size ;
+    margin-right: 6px ;
+
+  }
+    .chip-icon-left {
+    font-size: $light-chip-hover-bodytext-font-size ;
+    margin-left: 6px ;
+
+  }
+}
+
+/* Finite chip class */
+/* ================= Category Chips ================= */
+.finite-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  cursor: default;
+
+  &.Sales {
+    background: $light-finitecolors-categories-sales-fill;
+    color: $light-finitecolors-categories-sales-text;
+    height: $light-finitecolors-categories-sales-height;
+    border-radius: $light-finitecolors-categories-sales-cornerradius;
+    font-family: $light-finitecolors-categories-sales-placeholdertext-font-family;
+    font-weight: $light-finitecolors-categories-sales-placeholdertext-font-weight;
+    font-size: $light-finitecolors-categories-sales-placeholdertext-font-size;
+    line-height: $light-finitecolors-categories-sales-placeholdertext-line-height;
+  }
+
+  &.Financial {
+    background: $light-finitecolors-categories-financial-fill;
+    color: $light-finitecolors-categories-financial-text;
+    height: $light-finitecolors-categories-financial-height;
+    border-radius: $light-finitecolors-categories-financial-cornerradius;
+    font-family: $light-finitecolors-categories-financial-placeholdertext-font-family;
+    font-size: $light-finitecolors-categories-financial-placeholdertext-font-size;
+    line-height: $light-finitecolors-categories-financial-placeholdertext-line-height;
+  }
+
+  &.Business {
+    background: $light-finitecolors-categories-business-fill;
+    color: $light-finitecolors-categories-business-text;
+    height: $light-finitecolors-categories-business-height;
+    border-radius: $light-finitecolors-categories-business-cornerradius;
+    font-family: $light-finitecolors-categories-business-placeholdertext-font-family;
+    font-size: $light-finitecolors-categories-business-placeholdertext-font-size;
+    line-height: $light-finitecolors-categories-business-placeholdertext-line-height;
+  }
+
+  &.Revenue {
+    background: $light-finitecolors-categories-revenue-fill;
+    color: $light-finitecolors-categories-revenue-text;
+    height: $light-finitecolors-categories-revenue-height;
+    border-radius: $light-finitecolors-categories-revenue-cornerradius;
+    font-family: $light-finitecolors-categories-revenue-placeholdertext-font-family;
+    font-size: $light-finitecolors-categories-revenue-placeholdertext-font-size;
+    line-height: $light-finitecolors-categories-revenue-placeholdertext-line-height;
+  }
+
+  &.Technology {
+    background: $light-finitecolors-categories-technology-fill;
+    color: $light-finitecolors-categories-technology-text;
+    height: $light-finitecolors-categories-technology-height;
+    border-radius: $light-finitecolors-categories-technology-cornerradius;
+    font-family: $light-finitecolors-categories-technology-placeholdertext-font-family;
+    font-size: $light-finitecolors-categories-technology-placeholdertext-font-size;
+    line-height: $light-finitecolors-categories-technology-placeholdertext-line-height;
+  }
+}
+
+/* ================= Query Chips ================= */
+.query-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+
+  &.Inprogress {
+    background: $light-finitecolors-querystatus-type2-inprogress-background;
+    color: $light-finitecolors-querystatus-type2-inprogress-text;
+    height: $light-finitecolors-querystatus-type2-inprogress-height;
+    font-size: $light-finitecolors-querystatus-type2-inprogress-placeholdertext-font-size;
+    line-height: $light-finitecolors-querystatus-type2-inprogress-placeholdertext-line-height;
+    border-radius: $light-finitecolors-querystatus-type2-inprogress-cornerradius;
+    font-family: $light-finitecolors-querystatus-type2-inprogress-placeholdertext-font-family;
+  }
+
+  &.Response {
+    background: $light-finitecolors-querystatus-type2-response-background;
+    color: $light-finitecolors-querystatus-type2-response-text;
+    height: $light-finitecolors-querystatus-type2-response-height;
+    border-radius: $light-finitecolors-querystatus-type2-response-cornerradius;
+    font-family: $light-finitecolors-querystatus-type2-response-placeholdertext-font-family;
+    font-size: $light-finitecolors-querystatus-type2-response-placeholdertext-font-size;
+  }
+
+  &.Inactive {
+    background: $light-finitecolors-querystatus-type2-inactive-background;
+    color: $light-finitecolors-querystatus-type2-inactive-text;
+    height: $light-finitecolors-querystatus-type2-inactive-height;
+    border-radius: $light-finitecolors-querystatus-type2-inactive-cornerradius;
+    font-family: $light-finitecolors-querystatus-type2-inactive-placeholdertext-font-family;
+    font-size: $light-finitecolors-querystatus-type2-inactive-placeholdertext-font-size;
+    line-height: $light-finitecolors-querystatus-type2-inactive-placeholdertext-line-height;
+  }
+
+  &.Resolution {
+    background: $light-finitecolors-querystatus-type2-resolution-background;
+    color: $light-finitecolors-querystatus-type2-resolution-text;
+    height: $light-finitecolors-querystatus-type2-resolution-height;
+    border-radius: $light-finitecolors-querystatus-type2-resolution-cornerradius;
+    font-family: $light-finitecolors-querystatus-type2-resolution-placeholdertext-font-family;
+    font-size: $light-finitecolors-querystatus-type2-resolution-placeholdertext-font-size;
+    line-height: $light-finitecolors-querystatus-type2-resolution-placeholdertext-line-height;
+  }
+
+  &.Raised {
+    background: $light-finitecolors-querystatus-type2-raised-background;
+    color: $light-finitecolors-querystatus-type2-raised-text;
+    height: $light-finitecolors-querystatus-type2-raised-height;
+    border-radius: $light-finitecolors-querystatus-type2-raised-cornerradius;
+    font-family: $light-finitecolors-querystatus-type2-raised-placeholdertext-font-family;
+    font-size: $light-finitecolors-querystatus-type2-raised-placeholdertext-font-size;
+    line-height: $light-finitecolors-querystatus-type2-raised-placeholdertext-line-height;
+  }
+}
+
+// .querystatus {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 0 0.5rem;
+//   font-family: Inter, sans-serif;
+//   font-weight: Regular;
+//   font-size: 0.75rem;
+//   line-height: 1rem;
+//   letter-spacing: 0%;
+//   text-transform: none;
+//   text-decoration: none;
+//   height: 2rem;
+//   border-radius: 1.5rem;
+
+//   &.Pending {
+//     background: $light-finitecolors-querystatus-pending-background;
+//     color: $light-finitecolors-querystatus-pending-text;
+//   }
+
+//   &.Resolved {
+//     background: $light-finitecolors-querystatus-resolved-background;
+//     color: $light-finitecolors-querystatus-resolved-text;
+//   }
+
+//   &.Cancelled {
+//     background: $light-finitecolors-querystatus-cancelled-background;
+//     color: $light-finitecolors-querystatus-cancelled-text;
+//   }
+// }
+
+/* ================= Progress Upload ================= */
+.progress-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: $light-progressupload-default-width;
+  background: var(--progressupload-bg);
+  border-radius: $light-progressupload-default-cornerradius;
+  padding: 1rem;
+
+  .header {
+    font-family: $light-progressupload-default-headingtext-font-family;
+    font-weight: $light-progressupload-default-headingtext-font-weight;
+    font-size: $light-progressupload-default-headingtext-font-size;
+    line-height: $light-progressupload-default-headingtext-line-height;
+    color: var(--progressupload-default-heading);
+  }
+
+  .file-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .file-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .file-image {
+        width: $light-progressupload-default-imagewidth;
+        height: $light-progressupload-default-imageheight;
+        border-radius: $light-progressupload-default-imageradius;
+        background: var(--progressupload-default-progresstrack); // placeholder image bg
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .file-name {
+        font-family: $light-progressupload-default-filetext-font-family;
+        font-weight: $light-progressupload-default-filetext-font-weight;
+        font-size: $light-progressupload-default-filetext-font-size;
+        line-height: $light-progressupload-default-filetext-line-height;
+        color:var(--progressupload-default-file);
+      }
+    }
+
+    .file-size {
+      font-family: $light-progressupload-default-sizetext-font-family;
+      font-weight: $light-progressupload-default-sizetext-font-weight;
+      font-size: $light-progressupload-default-sizetext-font-size;
+      line-height: $light-progressupload-default-sizetext-line-height;
+      color: var(--progressupload-default-size);
+    }
+
+    .status-icon {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--progressupload-default-erroricon);
+
+      &.error {
+        background: var(--progressupload-default-iconfill);
+      }
+
+      &.success {
+        background: $light-progressupload-completed-iconfill;
+      }
+    }
+  }
+
+  /* ===== Progress Track ===== */
+    .progress-track {
+    position: relative;
+    // width: $light-progressupload-default-trackwidth;
+    width: 58rem;
+    height: $light-progressupload-default-trackheight;
+    border-radius: $light-progressupload-default-trackradius;
+    background: var(--progressupload-default-progresstrack);
+    overflow: hidden;
+
+    .progress-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: inherit;
+      width: 0%; // will be updated dynamically
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $light-progressupload-progress-percentagetext-font-family;
+      font-weight: $light-progressupload-progress-percentagetext-font-weight;
+      font-size: $light-progressupload-progress-percentagetext-font-size;
+      color: var(--progressupload-default-percentage);
+    }
+  }
+
+  /* ===== States ===== */
+  &.default {
+    .progress-fill {
+      background: transparent;
+    }
+  }
+
+  &.progress {
+    .progress-fill {
+      background: var(--progressupload-default-progressfill);
+    }
+  }
+
+  &.completed {
+    .progress-fill {
+      background: var(--progressupload-default-completed);
+      width: 100% !important;
+    }
+  }
+
+  
+}
+
+.drag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:$light-draganddrop-hover-width;
+  height: $light-draganddrop-hover-height;
+
+}
+
+.drag-list li {
+  display: flex;
+  align-items: center;
+  background: var(--draganddrop-defult-bg);
+  border-radius: $light-draganddrop-grabbing-cornerradius;
+  box-shadow: var(--draganddrop-box-shadow);
+  padding: 1rem 1.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+    width:$light-draganddrop-hover-width;
+  height: $light-draganddrop-hover-height;
+  border:   1px solid #c4c4c4;
+;
+
+}
+
+.drag-list li.hover {
+  border-color: var(--draganddrop-hover-border) ;
+  box-shadow: var(--draganddrop-hover-box-shadow);
+  width:$light-draganddrop-hover-width;
+  height: $light-draganddrop-hover-height;
+
+}
+
+.drag-list li.grabbing {
+  border: var(--draganddrop-grabbing-border);
+  box-shadow: var(--draganddrop-grabbing-box-shadow);
+  cursor: grabbing;
+  width:$light-draganddrop-hover-width;
+  height: $light-draganddrop-hover-height;
+
+}
+
+.list-icon {
+  font-size: 1.2rem;
+  color: var(--draganddrop-icon);
+  margin-right: 1.25rem;
+}
+
+.list-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--progressupload-default-heading);
+}
+
+.list-desc {
+  font-size: 0.95rem;
+  color: var(--draganddrop-icon);
+}
+
+.grabbing-icon {
+  font-size: 1.2rem;
+  color: var(--draganddrop-icon-grabbing);
+  margin-left: 1rem;
+}
+//sort items
+.sort-item {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: $light-sort-default-cornerradius;
+  // border: 1px  $light-sort-default-border-style  $light-sort-default-border-color;
+  border: none;
+  background: var(--sort-default-background);
+  height: auto;
+  font-family: $light-sort-default-bodytext-font-family, sans-serif;
+  font-weight: $light-sort-default-bodytext-font-weight;
+  font-size: $light-sort-default-bodytext-font-size;
+  line-height: $light-sort-default-bodytext-line-height;
+  color: var(--sort-default-text);
+  box-shadow: var(--sort-default-shadow);
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+
+  &.hover {
+    background: var(--sort-hover-hoverfill);
+    color: var(--sort-hover-hovertext);
+    border-radius: $light-sort-hover-cornerradius;
+    box-shadow: none;
+  }
+
+  &.active {
+    background: var(--sort-active-activefill);
+    color: $light-sort-active-activetext;
+    border-radius: $light-sort-active-cornerradius;
+    box-shadow: none;
+  }
+
+
+  .sort-title {
+    font-family: $light-sort-default-bodytext-font-family, sans-serif;
+    font-weight: $light-sort-default-bodytext-font-weight;
+    font-size: $light-sort-default-bodytext-font-size;
+    color: inherit;
+  }
+
+  // .sort-desc {
+  //   font-size: 0.95rem;
+  //   color: #666;
+  // }
+}
+
+
+/* =======================
+   Card Base Styles
+======================= */
+
+.card-for-imag {
+  width: $light-card-card-width;
+  background: var(--card-card-background);
+  border-radius: $light-card-card-cornerradius;
+  box-shadow: var(--card-box-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: $light-card-card-bodytext-font-family;
+}
+
+/* Image */
+.card__image {
+  width: $light-card-card-image-width;
+  height: $light-card-card-image-height;
+  border-radius: $light-card-card-image-cornerradius $light-card-card-image-cornerradius 0 0;
+  background-color: #ccc; /* fallback */
+  object-fit: cover;
+  margin: 15px;
+}
+
+/* Content Area */
+.card__content {
+  padding: 1rem;
+}
+
+.card__heading {
+  color: var(--card-heading-color);
+  font-family: $light-card-card-headingtext-font-family;
+  font-weight: $bs-card-font-weight;
+  font-size: $light-card-card-headingtext-font-size;
+  line-height: $light-card-card-headingtext-line-height;
+  margin-bottom: 0.5rem;
+}
+
+.card__body {
+  color: var(--card-card-card-body);
+  font-family: $light-card-card-bodytext-font-family;
+  font-weight: $light-card-card-bodytext-font-weight;
+  font-size: $light-card-card-bodytext-font-size;
+  line-height: $light-card-card-bodytext-line-height;
+}
+
+
+/* =======================
+   Card with Buttons
+======================= */
+
+.card--with-button {
+  width: $light-card-cardwithbutton-width;
+  background: var(--card-card-background);
+  border-radius: $light-card-cardwithbutton-cornerradius;
+  box-shadow: var(--card-box-shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card--with-button .card__image {
+  width: $light-card-cardwithbutton-image-width;
+  height: $light-card-cardwithbutton-image-height;
+  border-radius: $light-card-cardwithbutton-image-cornerradius $light-card-cardwithbutton-image-cornerradius 0 0;
+}
+
+.card--with-button .card__heading {
+  color: var(--card-heading-color);
+}
+
+.card--with-button .card__body {
+  color: var(--card-cardwithbutton-body);
+}
+
+/* Buttons Container */
+.card__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+/* Cancel Button */
+.card__btn--cancel {
+  width: $light-card-cardwithbutton-button-cancelwidth;
+  height: $light-card-cardwithbutton-button-cancelheight;
+  background: transparent;
+  // color: $light-card-cardwithbutton-button-canceltext;
+  // border: 1px solid $light-card-cardwithbutton-button-cancelborder-color;
+  border: 1px solid  var(--btn-outline-border-color) !important;
+  color: var(--btn-outline-text);
+
+  border-radius: $light-card-cardwithbutton-button-cancel;
+  font-family: $light-card-cardwithbutton-button-cancelsize-font-family;
+  font-weight: $light-card-cardwithbutton-button-cancelsize-font-weight;
+  font-size: $light-card-cardwithbutton-button-cancelsize-font-size;
+  line-height: $light-card-cardwithbutton-button-cancelsize-line-height;
+  cursor: pointer;
+
+  &:hover {
+  background-color: var(--btn-outline-hover-background);
+  color: var(--btn-outline-hover-text);
+  border-color: var( --btn-outline-border-color) !important;
+  //          .btn-icon {
+  //   color: $bs-btn-outline-border-color !important; 
+  // }
+  }
+}
+
+/* Submit Button */
+.card__btn--submit {
+  width: $light-card-cardwithbutton-button-submitwidth;
+  height: $light-card-cardwithbutton-button-submitheight;
+  background: var(--primary);
+  color: $light-card-cardwithbutton-button-submittext;
+  border: none;
+  border-radius: $light-card-cardwithbutton-button-submit;
+  font-family: $light-card-cardwithbutton-button-submitsize-font-family;
+  font-weight: $light-card-cardwithbutton-button-submitsize-font-weight;
+  font-size: $light-card-cardwithbutton-button-submitsize-font-size;
+  line-height: $light-card-cardwithbutton-button-submitsize-line-height;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-hover);
+    color: var(--icon-btn-primary-hover-text);
+
+  }
+}
+
+// charts
+/* ===========================
+   Doughnut Chart - Default
+=========================== */
+.apexcharts-legend-text {
+  fill: var(--doughnutchart-widget-title) !important;   
+  color: var(--doughnutchart-widget-title) !important; 
+}
+.apexcharts-xaxis text,
+.apexcharts-yaxis text {
+    color: var(--doughnutchart-widget-title) !important;
+     fill: var(--doughnutchart-widget-title) !important;   
+
+
+}
+.doughnutchart-default {
+  background: var(--doughnutchart-default-background);
+  border-radius: $light-doughnutchart-default-radius;
+  box-shadow: var(--doughnutchart-default-box-shadow);
+  padding: 1rem;
+ // height: $light-doughnutchart-default-doughnut-width;
+ height: 15.5rem;
+//width: $light-doughnutchart-default-doughnut-width;
+width: 20.5rem;
+
+  .title {
+    color: var(--doughnutchart-default-title);
+    font-family: $light-doughnutchart-default-titletext-font-family;
+    font-weight: $light-doughnutchart-default-titletext-font-weight;
+    font-size: $light-doughnutchart-default-titletext-font-size;
+    line-height: $light-doughnutchart-default-titletext-line-height;
+    letter-spacing: $light-doughnutchart-default-titletext-letter-spacing;
+    text-decoration: $light-doughnutchart-default-titletext-text-decoration;
+    text-transform: $light-doughnutchart-default-titletext-text-case;
+  }
+
+  .chart-values {
+    color: var(--doughnutchart-default-chartvalues);
+    font-family: $light-doughnutchart-default-chartvaluestext-font-family;
+    font-weight: $light-doughnutchart-default-chartvaluestext-font-weight;
+    font-size: $light-doughnutchart-default-chartvaluestext-font-size;
+    line-height: $light-doughnutchart-default-chartvaluestext-line-height;
+    letter-spacing: $light-doughnutchart-default-chartvaluestext-letter-spacing;
+    text-decoration: $light-doughnutchart-default-chartvaluestext-text-decoration;
+    text-transform: $light-doughnutchart-default-chartvaluestext-text-case;
+  }
+
+  .doughnut {
+    width: $light-doughnutchart-default-doughnut-width;
+    height: $light-doughnutchart-default-doughnut-height;
+
+    &-segment1 { fill: var(--doughnutchart-default-doughnut-color1); }
+    &-segment2 { fill: var(--doughnutchart-default-doughnut-color2); }
+    &-segment3 { fill: var(--doughnutchart-default-doughnut-color3); }
+  }
+
+  .legend {
+    color:var( --doughnutchart-default-legend-legendcolor);
+    font-family: $light-doughnutchart-default-legend-legendtext-font-family;
+    font-weight: $light-doughnutchart-default-legend-legendtext-font-weight;
+    font-size: $light-doughnutchart-default-legend-legendtext-font-size;
+    line-height: $light-doughnutchart-default-legend-legendtext-line-height;
+    letter-spacing: $light-doughnutchart-default-legend-legendtext-letter-spacing;
+    text-decoration: $light-doughnutchart-default-legend-legendtext-text-decoration;
+    text-transform: $light-doughnutchart-default-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-doughnutchart-default-legend-circlewidth;
+      height: $light-doughnutchart-default-legend-circleheight;
+      background-color:var(--doughnutchart-default-legend-circle);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-doughnutchart-default-legend-circlewidth;
+      height: $light-doughnutchart-default-legend-circleheight;
+      background-color: var(--doughnutchart-default-legend-circle2);
+      border-radius: 50%;
+    }
+
+    .circle3 {
+      width: $light-doughnutchart-default-legend-circlewidth;
+      height: $light-doughnutchart-default-legend-circleheight;
+      background-color: var( --doughnutchart-default-legend-circle3);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   Doughnut Chart - Widget
+=========================== */
+.doughnutchart-widget {
+  background:var(--doughnutchart-widget-background);
+  border-radius: $light-doughnutchart-widget-radius;
+  box-shadow: var(--doughnutchart-widget-box-shadow);
+  padding: 1rem;
+  // height: $light-doughnutchart-widget-doughnut-height;
+  height: 20.5rem;
+  width: $light-doughnutchart-widget-doughnut-width;
+
+  .title {
+    color: var(--doughnutchart-widget-title);
+    font-family: $light-doughnutchart-widget-titletext-font-family;
+    font-weight: $light-doughnutchart-widget-titletext-font-weight;
+    font-size: $light-doughnutchart-widget-titletext-font-size;
+    line-height: $light-doughnutchart-widget-titletext-line-height;
+    letter-spacing: $light-doughnutchart-widget-titletext-letter-spacing;
+    text-decoration: $light-doughnutchart-widget-titletext-text-decoration;
+    text-transform: $light-doughnutchart-widget-titletext-text-case;
+  }
+
+  .icon {
+    color: var(--doughnutchart-widget-icon);
+  }
+
+  .chart-values {
+    color: var(--doughnutchart-widget-chartvalues);
+    font-family: $light-doughnutchart-widget-chartvaluestext-font-family;
+    font-weight: $light-doughnutchart-widget-chartvaluestext-font-weight;
+    font-size: $light-doughnutchart-widget-chartvaluestext-font-size;
+    line-height: $light-doughnutchart-widget-chartvaluestext-line-height;
+    letter-spacing: $light-doughnutchart-widget-chartvaluestext-letter-spacing;
+    text-decoration: $light-doughnutchart-widget-chartvaluestext-text-decoration;
+    text-transform: $light-doughnutchart-widget-chartvaluestext-text-case;
+  }
+
+  .doughnut {
+    width: $light-doughnutchart-widget-doughnut-width;
+    height: $light-doughnutchart-widget-doughnut-height;
+
+    &-segment1 { fill: var(--doughnutchart-widget-doughnut-color1); }
+    &-segment2 { fill: var(--doughnutchart-widget-doughnut-color2); }
+    &-segment3 { fill: var(--doughnutchart-widget-doughnut-color3); }
+  }
+
+  .legend {
+    color: var(--doughnutchart-widget-legend-legendcolor);
+    font-family: $light-doughnutchart-widget-legend-legendtext-font-family;
+    font-weight: $light-doughnutchart-widget-legend-legendtext-font-weight;
+    font-size: $light-doughnutchart-widget-legend-legendtext-font-size;
+    line-height: $light-doughnutchart-widget-legend-legendtext-line-height;
+    letter-spacing: $light-doughnutchart-widget-legend-legendtext-letter-spacing;
+    text-decoration: $light-doughnutchart-widget-legend-legendtext-text-decoration;
+    text-transform: $light-doughnutchart-widget-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-doughnutchart-widget-legend-circlewidth;
+      height: $light-doughnutchart-widget-legend-circleheight;
+      background-color: var(--doughnutchart-widget-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-doughnutchart-widget-legend-circlewidth;
+      height: $light-doughnutchart-widget-legend-circleheight;
+      background-color: var(--doughnutchart-widget-legend-circle2);
+      border-radius: 50%;
+    }
+
+    .circle3 {
+      width: $light-doughnutchart-widget-legend-circlewidth;
+      height: $light-doughnutchart-widget-legend-circleheight;
+      background-color: var(--doughnutchart-widget-legend-circle3);
+      border-radius: 50%;
+    }
+  }
+}
+
+
+/* ===========================
+   Pie Chart - Default
+=========================== */
+.piechart-default {
+  background: var(--piechart-default-background);
+  border-radius: $light-piechart-default-radius;
+  box-shadow: var(--piechart-default-box-shadow);
+  padding: 1rem;
+  // height: $light-piechart-default-piechart-height;
+  height: 15.5rem;
+  //width: $light-piechart-default-piechart-width;
+  width: 20.5rem;
+
+  .title {
+    color: var(--piechart-default-title);
+    font-family: $light-piechart-default-titletext-font-family;
+    font-weight: $light-piechart-default-titletext-font-weight;
+    font-size: $light-piechart-default-titletext-font-size;
+    line-height: $light-piechart-default-titletext-line-height;
+    letter-spacing: $light-piechart-default-titletext-letter-spacing;
+    text-decoration: $light-piechart-default-titletext-text-decoration;
+    text-transform: $light-piechart-default-titletext-text-case;
+  }
+
+  .chart-values {
+    color: var(--piechart-default-chartvalues);
+    font-family: $light-piechart-default-chartvaluestext-font-family;
+    font-weight: $light-piechart-default-chartvaluestext-font-weight;
+    font-size: $light-piechart-default-chartvaluestext-font-size;
+    line-height: $light-piechart-default-chartvaluestext-line-height;
+    letter-spacing: $light-piechart-default-chartvaluestext-letter-spacing;
+    text-decoration: $light-piechart-default-chartvaluestext-text-decoration;
+    text-transform: $light-piechart-default-chartvaluestext-text-case;
+  }
+
+  .pie {
+    width: $light-piechart-default-piechart-width;
+    height: $light-piechart-default-piechart-height;
+
+    &-segment1 { fill: var(--piechart-default-pie-color1); }
+    &-segment2 { fill: var(--piechart-default-pie-color2); }
+    &-segment3 { fill: var(--piechart-default-pie-color3); }
+    &-segment4 { fill:var(--piechart-default-pie-color4); }
+    &-segment5 { fill: var(--piechart-default-pie-color5); }
+  }
+
+  .legend {
+    color: var(--piechart-default-legend-legendcolor);
+    font-family: $light-piechart-default-legend-legendtext-font-family;
+    font-weight: $light-piechart-default-legend-legendtext-font-weight;
+    font-size: $light-piechart-default-legend-legendtext-font-size;
+    line-height: $light-piechart-default-legend-legendtext-line-height;
+    letter-spacing: $light-piechart-default-legend-legendtext-letter-spacing;
+    text-decoration: $light-piechart-default-legend-legendtext-text-decoration;
+    text-transform: $light-piechart-default-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-piechart-default-legend-circlewidth;
+      height: $light-piechart-default-legend-circleheight;
+      background-color: var(--piechart-default-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-piechart-default-legend-circlewidth;
+      height: $light-piechart-default-legend-circleheight;
+      background-color: var(--piechart-default-legend-circle2);
+      border-radius: 50%;
+    }
+
+    .circle3 {
+      width: $light-piechart-default-legend-circlewidth;
+      height: $light-piechart-default-legend-circleheight;
+      background-color: var(--piechart-default-legend-circle3);
+      border-radius: 50%;
+    }
+
+    .circle4 {
+      width: $light-piechart-default-legend-circlewidth;
+      height: $light-piechart-default-legend-circleheight;
+      background-color:var(--piechart-default-legend-circle4);
+      border-radius: 50%;
+    }
+
+    .circle5 {
+      width: $light-piechart-default-legend-circlewidth;
+      height: $light-piechart-default-legend-circleheight;
+      background-color:var(--piechart-default-legend-circle5);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   Pie Chart - Widget
+=========================== */
+.piechart-widget {
+  background: var(--piechart-widget-background);
+  border-radius: $light-piechart-widget-radius;
+  box-shadow: var(--piechart-widget-box-shadow);
+  padding: 1rem;
+  height: $light-piechart-widget-piechart-height;
+  // width: $light-piechart-widget-piechart-width;
+
+  .title {
+    color: var(--piechart-widget-title);
+    font-family: $light-piechart-widget-titletext-font-family;
+    font-weight: $light-piechart-widget-titletext-font-weight;
+    font-size: $light-piechart-widget-titletext-font-size;
+    line-height: $light-piechart-widget-titletext-line-height;
+    letter-spacing: $light-piechart-widget-titletext-letter-spacing;
+    text-decoration: $light-piechart-widget-titletext-text-decoration;
+    text-transform: $light-piechart-widget-titletext-text-case;
+  }
+
+  .icon {
+    color: var(--piechart-widget-icon);
+  }
+
+  .chart-values {
+    color: var(--piechart-widget-chartvalues);
+    font-family: $light-piechart-widget-chartvaluestext-font-family;
+    font-weight: $light-piechart-widget-chartvaluestext-font-weight;
+    font-size: $light-piechart-widget-chartvaluestext-font-size;
+    line-height: $light-piechart-widget-chartvaluestext-line-height;
+    letter-spacing: $light-piechart-widget-chartvaluestext-letter-spacing;
+    text-decoration: $light-piechart-widget-chartvaluestext-text-decoration;
+    text-transform: $light-piechart-widget-chartvaluestext-text-case;
+  }
+
+  .pie {
+    width: $light-piechart-widget-piechart-width;
+    height: $light-piechart-widget-piechart-height;
+
+    &-segment1 { fill: var(--piechart-widget-pie-color1); }
+    &-segment2 { fill: var(--piechart-widget-pie-color2); }
+    &-segment3 { fill: var(--piechart-widget-pie-color3); }
+    &-segment4 { fill: var(--piechart-widget-pie-color4); }
+    &-segment5 { fill: var(--piechart-widget-pie-color5); }
+  }
+
+  .legend {
+    color: var(--piechart-widget-legend-legendcolo);
+    font-family: $light-piechart-widget-legend-legendtext-font-family;
+    font-weight: $light-piechart-widget-legend-legendtext-font-weight;
+    font-size: $light-piechart-widget-legend-legendtext-font-size;
+    line-height: $light-piechart-widget-legend-legendtext-line-height;
+    letter-spacing: $light-piechart-widget-legend-legendtext-letter-spacing;
+    text-decoration: $light-piechart-widget-legend-legendtext-text-decoration;
+    text-transform: $light-piechart-widget-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-piechart-widget-legend-circlewidth;
+      height: $light-piechart-widget-legend-circleheight;
+      background-color: var(--piechart-widget-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-piechart-widget-legend-circlewidth;
+      height: $light-piechart-widget-legend-circleheight;
+      background-color: var(--piechart-widget-legend-circle2);
+      border-radius: 50%;
+    }
+
+    .circle3 {
+      width: $light-piechart-widget-legend-circlewidth;
+      height: $light-piechart-widget-legend-circleheight;
+      background-color: var(--piechart-widget-legend-circle3);
+      border-radius: 50%;
+    }
+
+    .circle4 {
+      width: $light-piechart-widget-legend-circlewidth;
+      height: $light-piechart-widget-legend-circleheight;
+      background-color: var(--piechart-widget-legend-circle4);
+      border-radius: 50%;
+    }
+
+    .circle5 {
+      width: $light-piechart-widget-legend-circlewidth;
+      height: $light-piechart-widget-legend-circleheight;
+      background-color: var(--piechart-widget-legend-circle5);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   Bubble Chart - Default
+=========================== */
+.bubblechart-default {
+  background: var(--bubblechart-default-background);
+  border-radius: $light-bubblechart-default-radius;
+  box-shadow: var(--bubblechart-default-box-shadow);
+  padding: 1rem;
+
+  .title {
+    color: var(--bubblechart-default-title);
+    font-family: $light-bubblechart-default-titletext-font-family;
+    font-weight: $light-bubblechart-default-titletext-font-weight;
+    font-size: $light-bubblechart-default-titletext-font-size;
+    line-height: $light-bubblechart-default-titletext-line-height;
+    letter-spacing: $light-bubblechart-default-titletext-letter-spacing;
+    text-decoration: $light-bubblechart-default-titletext-text-decoration;
+    text-transform: $light-bubblechart-default-titletext-text-case;
+  }
+
+  .x-labels {
+    color: var(--bubblechart-default-xlabels);
+    font-family: $light-bubblechart-default-xvalues-font-family;
+    font-weight: $light-bubblechart-default-xvalues-font-weight;
+    font-size: $light-bubblechart-default-xvalues-font-size;
+    line-height: $light-bubblechart-default-xvalues-line-height;
+    letter-spacing: $light-bubblechart-default-xvalues-letter-spacing;
+    text-decoration: $light-bubblechart-default-xvalues-text-decoration;
+    text-transform: $light-bubblechart-default-xvalues-text-case;
+  }
+
+  .y-labels {
+    color: var(--bubblechart-default-ylabels);
+    font-family: $light-bubblechart-default-yvalues-font-family;
+    font-weight: $light-bubblechart-default-yvalues-font-weight;
+    font-size: $light-bubblechart-default-yvalues-font-size;
+    line-height: $light-bubblechart-default-yvalues-line-height;
+    letter-spacing: $light-bubblechart-default-yvalues-letter-spacing;
+    text-decoration: $light-bubblechart-default-yvalues-text-decoration;
+    text-transform: $light-bubblechart-default-yvalues-text-case;
+  }
+
+  .grid-lines {
+    border-style: $light-bubblechart-default-gridline-style;
+    border-color: var(--bubblechart-default-gridline-color);
+    border-width: $light-bubblechart-default-gridline-width;
+  }
+
+  .x-line {
+    border-style: $light-bubblechart-default-xline-style;
+    border-color: var(--bubblechart-default-xline-color);
+    border-width: $light-bubblechart-default-xline-width;
+  }
+
+  .bubble {
+    &-1 { background-color: var(--bubblechart-default-bubble-bubble1); }
+    &-2 { background-color: var(--bubblechart-default-bubble-bubble2); }
+    border-radius: 50%;
+  }
+
+  .legend {
+    color: var(--bubblechart-default-legend-legendcolor);
+    font-family: $light-bubblechart-default-legend-legendtext-font-family;
+    font-weight: $light-bubblechart-default-legend-legendtext-font-weight;
+    font-size: $light-bubblechart-default-legend-legendtext-font-size;
+    line-height: $light-bubblechart-default-legend-legendtext-line-height;
+    letter-spacing: $light-bubblechart-default-legend-legendtext-letter-spacing;
+    text-decoration: $light-bubblechart-default-legend-legendtext-text-decoration;
+    text-transform: $light-bubblechart-default-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-bubblechart-default-legend-circlewidth;
+      height: $light-bubblechart-default-legend-circleheight;
+      background-color: var(--bubblechart-default-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-bubblechart-default-legend-circlewidth;
+      height: $light-bubblechart-default-legend-circleheight;
+      background-color: var(--bubblechart-default-legend-circle2);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   Bubble Chart - Widget
+=========================== */
+.bubblechart-widget {
+  background: var(--bubblechart-widget-background);
+  border-radius: $light-bubblechart-widget-radius;
+  box-shadow: var(--bubblechart-widget-box-shadow);
+  padding: 1rem;
+  height: 20.5rem;
+  width: $light-doughnutchart-widget-doughnut-width;
+  .title {
+    color: var(--bubblechart-widget-title);
+    font-family: $light-bubblechart-widget-titletext-font-family;
+    font-weight: $light-bubblechart-widget-titletext-font-weight;
+    font-size: $light-bubblechart-widget-titletext-font-size;
+    line-height: $light-bubblechart-widget-titletext-line-height;
+    letter-spacing: $light-bubblechart-widget-titletext-letter-spacing;
+    text-decoration: $light-bubblechart-widget-titletext-text-decoration;
+    text-transform: $light-bubblechart-widget-titletext-text-case;
+  }
+
+  .icon {
+    color: var(--bubblechart-widget-icon);
+  }
+
+  .x-labels {
+    color: var(--bubblechart-widget-xlabels);
+    font-family: $light-bubblechart-widget-xvalues-font-family;
+    font-weight: $light-bubblechart-widget-xvalues-font-weight;
+    font-size: $light-bubblechart-widget-xvalues-font-size;
+    line-height: $light-bubblechart-widget-xvalues-line-height;
+    letter-spacing: $light-bubblechart-widget-xvalues-letter-spacing;
+    text-decoration: $light-bubblechart-widget-xvalues-text-decoration;
+    text-transform: $light-bubblechart-widget-xvalues-text-case;
+  }
+
+  .y-labels {
+    color: var(--bubblechart-widget-ylabels);
+    font-family: $light-bubblechart-widget-yvalues-font-family;
+    font-weight: $light-bubblechart-widget-yvalues-font-weight;
+    font-size: $light-bubblechart-widget-yvalues-font-size;
+    line-height: $light-bubblechart-widget-yvalues-line-height;
+    letter-spacing: $light-bubblechart-widget-yvalues-letter-spacing;
+    text-decoration: $light-bubblechart-widget-yvalues-text-decoration;
+    text-transform: $light-bubblechart-widget-yvalues-text-case;
+  }
+
+  .grid-lines {
+    border-style: $light-bubblechart-widget-gridline-style;
+    border-color: var(--bubblechart-widget-gridline-colo);
+    border-width: $light-bubblechart-widget-gridline-width;
+  }
+
+  .x-line {
+    border-style: $light-bubblechart-widget-xline-style;
+    border-color: var(--bubblechart-widget-xline-colo);
+    border-width: $light-bubblechart-widget-xline-width;
+  }
+
+  .bubble {
+    &-1 { background-color: var(--bubblechart-widget-bubble-bubble); }
+    &-2 { background-color: var(--bubblechart-widget-bubble-bubble2); }
+    border-radius: 50%;
+  }
+
+  .legend {
+    color: var(--bubblechart-widget-legend-legendcolo);
+    font-family: $light-bubblechart-widget-legend-legendtext-font-family;
+    font-weight: $light-bubblechart-widget-legend-legendtext-font-weight;
+    font-size: $light-bubblechart-widget-legend-legendtext-font-size;
+    line-height: $light-bubblechart-widget-legend-legendtext-line-height;
+    letter-spacing: $light-bubblechart-widget-legend-legendtext-letter-spacing;
+    text-decoration: $light-bubblechart-widget-legend-legendtext-text-decoration;
+    text-transform: $light-bubblechart-widget-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-bubblechart-widget-legend-circlewidth;
+      height: $light-bubblechart-widget-legend-circleheight;
+      background-color: var(--bubblechart-widget-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-bubblechart-widget-legend-circlewidth;
+      height: $light-bubblechart-widget-legend-circleheight;
+      background-color: var(--bubblechart-widget-legend-circle2);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   Bubble Chart - Hover Data
+=========================== */
+.bubblechart-hoverdata {
+  background: var(--bubblechart-hoverdata-background);
+  border-radius: $light-bubblechart-hoverdata-radius;
+  box-shadow: var(--bubblechart-hoverdata-box-shadow);
+  padding: 0.5rem;
+
+  .tooltip {
+    background: var(--bubblechart-hoverdata-tooltip-background);
+    color: var(--bubblechart-hoverdata-tooltip-text);
+    box-shadow: var(--bubblechart-hoverdata-tooltip-box-shadow);
+    width: $light-bubblechart-hoverdata-tooltip-width;
+    height: $light-bubblechart-hoverdata-tooltip-height;
+    font-family: $light-bubblechart-hoverdata-tooltip-textstyle-font-family;
+    font-weight: $light-bubblechart-hoverdata-tooltip-textstyle-font-weight;
+    font-size: $light-bubblechart-hoverdata-tooltip-textstyle-font-size;
+    line-height: $light-bubblechart-hoverdata-tooltip-textstyle-line-height;
+    letter-spacing: $light-bubblechart-hoverdata-tooltip-textstyle-letter-spacing;
+    text-decoration: $light-bubblechart-hoverdata-tooltip-textstyle-text-decoration;
+    text-transform: $light-bubblechart-hoverdata-tooltip-textstyle-text-case;
+    border-radius: $light-bubblechart-hoverdata-radius;
+    padding: 0.5rem;
+  }
+
+  .legend {
+    color: var(--bubblechart-hoverdata-legend-legendcolor);
+    font-family: $light-bubblechart-hoverdata-legend-legendtext-font-family;
+    font-weight: $light-bubblechart-hoverdata-legend-legendtext-font-weight;
+    font-size: $light-bubblechart-hoverdata-legend-legendtext-font-size;
+    line-height: $light-bubblechart-hoverdata-legend-legendtext-line-height;
+    letter-spacing: $light-bubblechart-hoverdata-legend-legendtext-letter-spacing;
+    text-decoration: $light-bubblechart-hoverdata-legend-legendtext-text-decoration;
+    text-transform: $light-bubblechart-hoverdata-legend-legendtext-text-case;
+
+    .circle1 {
+      width: $light-bubblechart-hoverdata-legend-circlewidth;
+      height: $light-bubblechart-hoverdata-legend-circleheight;
+      background-color: var(--bubblechart-hoverdata-legend-circle1);
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      width: $light-bubblechart-hoverdata-legend-circlewidth;
+      height: $light-bubblechart-hoverdata-legend-circleheight;
+      background-color: var(--bubblechart-hoverdata-legend-circle2);
+      border-radius: 50%;
+    }
+  }
+
+  .bubble {
+    &-1 { background-color: var(--bubblechart-hoverdata-bubble-bubble1); }
+    &-2 { background-color: var(--bubblechart-hoverdata-bubble-bubble2); }
+    border-radius: 50%;
+  }
+}
+
+/* ===========================
+   BoxPlot Chart - Default
+=========================== */
+.boxplotchart-default {
+  background: var(--boxplotchart-default-background);
+  border-radius: $light-boxplotchart-default-radius;
+  box-shadow: var(--boxplotchart-default-box-shadow);
+  padding: 1rem;
+  .title {
+    color: var(--boxplotchart-default-title);
+    font-family: $light-boxplotchart-default-titletext-font-family;
+    font-weight: $light-boxplotchart-default-titletext-font-weight;
+    font-size: $light-boxplotchart-default-titletext-font-size;
+    line-height: $light-boxplotchart-default-titletext-line-height;
+    letter-spacing: $light-boxplotchart-default-titletext-letter-spacing;
+    text-decoration: $light-boxplotchart-default-titletext-text-decoration;
+    text-transform: $light-boxplotchart-default-titletext-text-case;
+  }
+
+  .x-labels {
+    color: var(--boxplotchart-default-xlabels);
+    font-family: $light-boxplotchart-default-xvalues-font-family;
+    font-weight: $light-boxplotchart-default-xvalues-font-weight;
+    font-size: $light-boxplotchart-default-xvalues-font-size;
+    line-height: $light-boxplotchart-default-xvalues-line-height;
+    letter-spacing: $light-boxplotchart-default-xvalues-letter-spacing;
+    text-decoration: $light-boxplotchart-default-xvalues-text-decoration;
+    text-transform: $light-boxplotchart-default-xvalues-text-case;
+  }
+
+  .y-labels {
+    color: var(--boxplotchart-default-ylabels);
+    font-family: $light-boxplotchart-default-yvalues-font-family;
+    font-weight: $light-boxplotchart-default-yvalues-font-weight;
+    font-size: $light-boxplotchart-default-yvalues-font-size;
+    line-height: $light-boxplotchart-default-yvalues-line-height;
+    letter-spacing: $light-boxplotchart-default-yvalues-letter-spacing;
+    text-decoration: $light-boxplotchart-default-yvalues-text-decoration;
+    text-transform: $light-boxplotchart-default-yvalues-text-case;
+  }
+
+  .grid-lines {
+    border-style: $light-boxplotchart-default-gridline-style;
+    border-color: var(--boxplotchart-default-gridline-color);
+    border-width: $light-boxplotchart-default-gridline-width;
+  }
+
+  .x-line {
+    border-style: $light-boxplotchart-default-xline-style;
+    border-color:var(--boxplotchart-default-xline-color);
+    border-width: $light-boxplotchart-default-xline-width;
+  }
+
+  .boxplot {
+    background: var(--boxplotchart-default-boxplot-boxfill);
+    border: var(--boxplotchart-default-boxplot-line);
+    border-radius: $light-boxplotchart-default-radius;
+  }
+
+  .legend {
+    color: var(--boxplotchart-default-legend-legendcolor);
+    font-family: $light-boxplotchart-default-legend-legendtext-font-family;
+    font-weight: $light-boxplotchart-default-legend-legendtext-font-weight;
+    font-size: $light-boxplotchart-default-legend-legendtext-font-size;
+    line-height: $light-boxplotchart-default-legend-legendtext-line-height;
+    letter-spacing: $light-boxplotchart-default-legend-legendtext-letter-spacing;
+    text-decoration: $light-boxplotchart-default-legend-legendtext-text-decoration;
+    text-transform: $light-boxplotchart-default-legend-legendtext-text-case;
+
+    .circle {
+      width: $light-boxplotchart-default-legend-circlewidth;
+      height: $light-boxplotchart-default-legend-circleheight;
+      background-color: var(--boxplotchart-default-legend-circle);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   BoxPlot Chart - Widget
+=========================== */
+.boxplotchart-widget {
+  background: var(--boxplotchart-widget-background);
+  border-radius: $light-boxplotchart-widget-radius;
+  box-shadow: var(--boxplotchart-widget-box-shadow);
+  padding: 1rem;
+
+  .title {
+    color: var(--boxplotchart-widget-title);
+    font-family: $light-boxplotchart-widget-titletext-font-family;
+    font-weight: $light-boxplotchart-widget-titletext-font-weight;
+    font-size: $light-boxplotchart-widget-titletext-font-size;
+    line-height: $light-boxplotchart-widget-titletext-line-height;
+    letter-spacing: $light-boxplotchart-widget-titletext-letter-spacing;
+    text-decoration: $light-boxplotchart-widget-titletext-text-decoration;
+    text-transform: $light-boxplotchart-widget-titletext-text-case;
+  }
+
+  .icon {
+    color: var(--boxplotchart-widget-icon);
+  }
+
+  .x-labels {
+    color: var(--boxplotchart-widget-xlabels);
+    font-family: $light-boxplotchart-widget-xvalues-font-family;
+    font-weight: $light-boxplotchart-widget-xvalues-font-weight;
+    font-size: $light-boxplotchart-widget-xvalues-font-size;
+    line-height: $light-boxplotchart-widget-xvalues-line-height;
+    letter-spacing: $light-boxplotchart-widget-xvalues-letter-spacing;
+    text-decoration: $light-boxplotchart-widget-xvalues-text-decoration;
+    text-transform: $light-boxplotchart-widget-xvalues-text-case;
+  }
+
+  .y-labels {
+    color:var(--boxplotchart-widget-ylabels);
+    font-family: $light-boxplotchart-widget-yvalues-font-family;
+    font-weight: $light-boxplotchart-widget-yvalues-font-weight;
+    font-size: $light-boxplotchart-widget-yvalues-font-size;
+    line-height: $light-boxplotchart-widget-yvalues-line-height;
+    letter-spacing: $light-boxplotchart-widget-yvalues-letter-spacing;
+    text-decoration: $light-boxplotchart-widget-yvalues-text-decoration;
+    text-transform: $light-boxplotchart-widget-yvalues-text-case;
+  }
+
+  .grid-lines {
+    border-style: $light-boxplotchart-widget-gridline-style;
+    border-color: var(--boxplotchart-widget-gridline-color);
+    border-width: $light-boxplotchart-widget-gridline-width;
+  }
+
+  .x-line {
+    border-style: $light-boxplotchart-widget-xline-style;
+    border-color: var(--boxplotchart-widget-xline-color);
+    border-width: $light-boxplotchart-widget-xline-width;
+  }
+
+  .boxplot {
+    background: $light-boxplotchart-widget-boxplot-boxfill;
+    border: var(--boxplotchart-widget-boxplot-line);
+    border-radius: $light-boxplotchart-widget-radius;
+  }
+
+  .legend {
+    color: var($light-boxplotchart-widget-legend-legendcolor);
+    font-family: $light-boxplotchart-widget-legend-legendtext-font-family;
+    font-weight: $light-boxplotchart-widget-legend-legendtext-font-weight;
+    font-size: $light-boxplotchart-widget-legend-legendtext-font-size;
+    line-height: $light-boxplotchart-widget-legend-legendtext-line-height;
+    letter-spacing: $light-boxplotchart-widget-legend-legendtext-letter-spacing;
+    text-decoration: $light-boxplotchart-widget-legend-legendtext-text-decoration;
+    text-transform: $light-boxplotchart-widget-legend-legendtext-text-case;
+
+    .circle {
+      width: $light-boxplotchart-widget-legend-circlewidth;
+      height: $light-boxplotchart-widget-legend-circleheight;
+      background-color: var(--boxplotchart-widget-legend-circle);
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ===========================
+   BoxPlot Chart - Hover Data
+=========================== */
+.boxplotchart-hoverdata {
+  background: var(--boxplotchart-hoverdata-background);
+  border-radius: $light-boxplotchart-hoverdata-radius;
+  box-shadow: var(--boxplotchart-hoverdata-box-shado);
+  padding: 0.5rem;
+
+  .tooltip {
+    background: var(--boxplotchart-hoverdata-tooltip-background);
+    color: var(--boxplotchart-hoverdata-tooltip-text);
+    box-shadow: var(--boxplotchart-hoverdata-tooltip-box-shadow);
+    width: $light-boxplotchart-hoverdata-tooltip-width;
+    height: $light-boxplotchart-hoverdata-tooltip-height;
+    font-family: $light-boxplotchart-hoverdata-tooltip-textstyle-font-family;
+    font-weight: $light-boxplotchart-hoverdata-tooltip-textstyle-font-weight;
+    font-size: $light-boxplotchart-hoverdata-tooltip-textstyle-font-size;
+    line-height: $light-boxplotchart-hoverdata-tooltip-textstyle-line-height;
+    letter-spacing: $light-boxplotchart-hoverdata-tooltip-textstyle-letter-spacing;
+    text-decoration: $light-boxplotchart-hoverdata-tooltip-textstyle-text-decoration;
+    text-transform: $light-boxplotchart-hoverdata-tooltip-textstyle-text-case;
+    border-radius: $light-boxplotchart-hoverdata-radius;
+    padding: 0.5rem;
+  }
+
+  .legend {
+    color: var(--boxplotchart-hoverdata-legend-legendcolo);
+    font-family: $light-boxplotchart-hoverdata-legend-legendtext-font-family;
+    font-weight: $light-boxplotchart-hoverdata-legend-legendtext-font-weight;
+    font-size: $light-boxplotchart-hoverdata-legend-legendtext-font-size;
+    line-height: $light-boxplotchart-hoverdata-legend-legendtext-line-height;
+    letter-spacing: $light-boxplotchart-hoverdata-legend-legendtext-letter-spacing;
+    text-decoration: $light-boxplotchart-hoverdata-legend-legendtext-text-decoration;
+    text-transform: $light-boxplotchart-hoverdata-legend-legendtext-text-case;
+
+    .circle {
+      width: $light-boxplotchart-hoverdata-legend-circlewidth;
+      height: $light-boxplotchart-hoverdata-legend-circleheight;
+      background-color: var(--boxplotchart-hoverdata-legend-circle);
+      border-radius: 50%;
+    }
+  }
+
+  .boxplot {
+    background: var(--boxplotchart-hoverdata-boxplot-boxfill);
+    border: var(--boxplotchart-hoverdata-boxplot-line);
+    border-radius: $light-boxplotchart-hoverdata-radius;
+  }
+}
+
+// =======================================
+// Chart 5: Linechart
+// =======================================
+
+.linechart-default {
+  background: var(--linechart-default-background);
+  color: var(--linechart-default-title);
+  border-radius: $light-linechart-default-radius;
+  box-shadow: var(--linechart-default-box-shadow);
+  .title {
+    color: var(--linechart-default-title);
+    font-family: $light-linechart-default-titletext-font-family;
+    font-weight: $light-linechart-default-titletext-font-weight;
+    line-height: $light-linechart-default-titletext-line-height;
+    font-size: $light-linechart-default-titletext-font-size;
+    letter-spacing: $light-linechart-default-titletext-letter-spacing;
+    text-transform: $light-linechart-default-titletext-text-case;
+    text-decoration: $light-linechart-default-titletext-text-decoration;
+  }
+
+  .xlabels {
+    color: var(--linechart-default-xlabels);
+    font-family: $light-linechart-default-xvalues-font-family;
+    font-weight: $light-linechart-default-xvalues-font-weight;
+    line-height: $light-linechart-default-xvalues-line-height;
+    font-size: $light-linechart-default-xvalues-font-size;
+    letter-spacing: $light-linechart-default-xvalues-letter-spacing;
+    text-transform: $light-linechart-default-xvalues-text-case;
+    text-decoration: $light-linechart-default-xvalues-text-decoration;
+  }
+
+  .ylabels {
+    color: var(--linechart-default-ylabels);
+    font-family: $light-linechart-default-yvalues-font-family;
+    font-weight: $light-linechart-default-yvalues-font-weight;
+    line-height: $light-linechart-default-yvalues-line-height;
+    font-size: $light-linechart-default-yvalues-font-size;
+    letter-spacing: $light-linechart-default-yvalues-letter-spacing;
+    text-transform: $light-linechart-default-yvalues-text-case;
+    text-decoration: $light-linechart-default-yvalues-text-decoration;
+  }
+
+  .legend {
+    display: flex;
+    align-items: center;
+    color: var(--linechart-default-legend-legendcolor);
+
+    .circle1 {
+      background: var(--linechart-default-legend-circle1);
+      width: $light-linechart-default-legend-circlewidth;
+      height: $light-linechart-default-legend-circleheight;
+      border-radius: 50%;
+    }
+
+    .circle2 {
+      background: var(--linechart-default-legend-circle2);
+      width: $light-linechart-default-legend-circlewidth;
+      height: $light-linechart-default-legend-circleheight;
+      border-radius: 50%;
+    }
+
+    .text {
+      font-family: $light-linechart-default-legend-legendtext-font-family;
+      font-weight: $light-linechart-default-legend-legendtext-font-weight;
+      font-size: $light-linechart-default-legend-legendtext-font-size;
+      line-height: $light-linechart-default-legend-legendtext-line-height;
+      letter-spacing: $light-linechart-default-legend-legendtext-letter-spacing;
+      text-transform: $light-linechart-default-legend-legendtext-text-case;
+      text-decoration: $light-linechart-default-legend-legendtext-text-decoration;
+    }
+  }
+
+  .line1 {
+    stroke: $light-linechart-default-line-line1;
+  }
+
+  .line2 {
+    stroke: $light-linechart-default-line-line2;
+  }
+
+  .xline {
+    border-bottom: $light-linechart-default-xline-width $light-linechart-default-xline-style $light-linechart-default-xline-color;
+  }
+
+  .gridline {
+    border-bottom: $light-linechart-default-gridline-width $light-linechart-default-gridline-style $light-linechart-default-gridline-color;
+  }
+}
+
+// =======================================
+// Widget Variant
+// =======================================
+
+.linechart-widget {
+  background: var(--linechart-widget-backgroun);
+  border-radius: $light-linechart-widget-radius;
+  box-shadow: $light-linechart-widget-shadow-type $light-linechart-widget-shadow-y $light-linechart-widget-shadow-blur $light-linechart-widget-shadow-color;
+
+  .title {
+    color: var(--linechart-widget-title);
+    font-family: $light-linechart-widget-titletext-font-family;
+    font-weight: $light-linechart-widget-titletext-font-weight;
+    font-size: $light-linechart-widget-titletext-font-size;
+    line-height: $light-linechart-widget-titletext-line-height;
+  }
+
+  .legend {
+    color: var(--linechart-widget-legend-legendcolor);
+
+    &-circle1 {
+      background: var(--linechart-widget-legend-circle1);
+    }
+
+    &-circle2 {
+      background: var(--linechart-widget-legend-circle2);
+    }
+
+    &-text {
+      font-family: $light-linechart-widget-legend-legendtext-font-family;
+      font-weight: $light-linechart-widget-legend-legendtext-font-weight;
+      font-size: $light-linechart-widget-legend-legendtext-font-size;
+    }
+  }
+
+  &__line1 {
+    stroke: $light-linechart-widget-line-line1;
+  }
+
+  &__line2 {
+    stroke: $light-linechart-widget-line-line2;
+  }
+}
+
+// =======================================
+// Hover Data
+// =======================================
+
+.linechart-hoverdata {
+  background: var(--linechart-hoverdata-background);
+  border-radius: $light-linechart-hoverdata-radius;
+  box-shadow: var(--linechart-hoverdata-box-shadow);
+
+  &__tooltip {
+    background: var(--linechart-hoverdata-tooltip-background);
+    color: var(--linechart-hoverdata-tooltip-text);
+    height: $light-linechart-hoverdata-tooltip-height;
+    width: $light-linechart-hoverdata-tooltip-width;
+    box-shadow: $light-linechart-hoverdata-tooltip-shadow-type $light-linechart-hoverdata-tooltip-shadow-y $light-linechart-hoverdata-tooltip-shadow-blur $light-linechart-hoverdata-tooltip-shadow-color;
+
+    &-textstyle {
+      font-family: $light-linechart-hoverdata-tooltip-textstyle-font-family;
+      font-weight: $light-linechart-hoverdata-tooltip-textstyle-font-weight;
+      font-size: $light-linechart-hoverdata-tooltip-textstyle-font-size;
+      line-height: $light-linechart-hoverdata-tooltip-textstyle-line-height;
+    }
+  }
+
+  &__legend {
+    color: var(--linechart-hoverdata-legend-legendcolo);
+
+    &-circle1 {
+      background: var(--linechart-hoverdata-legend-circle1);
+    }
+
+    &-circle2 {
+      background: var(--linechart-hoverdata-legend-circle2);
+    }
+  }
+
+  &__line1 {
+    stroke: $light-linechart-hoverdata-line-line1;
+  }
+
+  &__line2 {
+    stroke: $light-linechart-hoverdata-line-line2;
+  }
+}
+
+// ==============================
+// Chart 6: Stacked Bar Chart
+// ==============================
+
+// ---------- Default ----------
+.stackedbarchart-default {
+  background: var(--stackedbarchart-default-background);
+  border-radius: $light-stackedbarchart-default-radius;
+  box-shadow: var(--stackedbarchart-default-box-shadow);
+  .chart-title {
+    color: var(--stackedbarchart-default-title);
+    font-family: $light-stackedbarchart-default-titletext-font-family;
+    font-weight: $light-stackedbarchart-default-titletext-font-weight;
+    font-size: $light-stackedbarchart-default-titletext-font-size;
+    line-height: $light-stackedbarchart-default-titletext-line-height;
+    text-transform: $light-stackedbarchart-default-titletext-text-case;
+    text-decoration: $light-stackedbarchart-default-titletext-text-decoration;
+  }
+
+  .x-axis-label {
+    color: var(--stackedbarchart-default-xlabels);
+    font-family: $light-stackedbarchart-default-xvalues-font-family;
+    font-weight: $light-stackedbarchart-default-xvalues-font-weight;
+    font-size: $light-stackedbarchart-default-xvalues-font-size;
+    line-height: $light-stackedbarchart-default-xvalues-line-height;
+  }
+
+  .y-axis-label {
+    color: var(--stackedbarchart-default-ylabels);
+    font-family: $light-stackedbarchart-default-yvalues-font-family;
+    font-weight: $light-stackedbarchart-default-yvalues-font-weight;
+    font-size: $light-stackedbarchart-default-yvalues-font-size;
+    line-height: $light-stackedbarchart-default-yvalues-line-height;
+  }
+
+  .bar-values {
+    color: var(--stackedbarchart-default-barvalue);
+    font-family: $light-stackedbarchart-default-barvaluestext-font-family;
+    font-weight: $light-stackedbarchart-default-barvaluestext-font-weight;
+    font-size: $light-stackedbarchart-default-barvaluestext-font-size;
+    line-height: $light-stackedbarchart-default-barvaluestext-line-height;
+  }
+
+  .grid-line {
+    border-bottom: $light-stackedbarchart-default-gridline-width
+                   $light-stackedbarchart-default-gridline-style
+                   $light-stackedbarchart-default-gridline-color;
+  }
+
+  .x-line {
+    border-bottom: $light-stackedbarchart-default-xline-width
+                   $light-stackedbarchart-default-xline-style
+                   $light-stackedbarchart-default-xline-color;
+  }
+
+  // Bar stacks
+  .bar-stack1 { background: var(--stackedbarchart-default-bar-stack1); }
+  .bar-stack2 { background: var(--stackedbarchart-default-bar-stack2); }
+  .bar-stack3 { background: var(--stackedbarchart-default-bar-stack3); }
+  .bar-stack4 { background: var(--stackedbarchart-default-bar-stack4); }
+
+  // Legend
+  .legend {
+    display: flex;
+    gap: 0.5rem;
+    color: var(--stackedbarchart-default-legend-legendcolor);
+
+    .legend-circle1 {
+      width: $light-stackedbarchart-default-legend-circlewidth;
+      height: $light-stackedbarchart-default-legend-circleheight;
+      background: var(--stackedbarchart-default-legend-circle1);
+      border-radius: 50%;
+    }
+    .legend-circle2 {
+      width: $light-stackedbarchart-default-legend-circlewidth;
+      height: $light-stackedbarchart-default-legend-circleheight;
+      background:var(--stackedbarchart-default-legend-circle2);
+      border-radius: 50%;
+    }
+    .legend-circle3 {
+      width: $light-stackedbarchart-default-legend-circlewidth;
+      height: $light-stackedbarchart-default-legend-circleheight;
+      background: var(--stackedbarchart-default-legend-circle3);
+      border-radius: 50%;
+    }
+    .legend-circle4 {
+      width: $light-stackedbarchart-default-legend-circlewidth;
+      height: $light-stackedbarchart-default-legend-circleheight;
+      background: var(--stackedbarchart-default-legend-circle4);
+      border-radius: 50%;
+    }
+
+    .legend-text {
+      font-family: $light-stackedbarchart-default-legend-legendtext-font-family;
+      font-weight: $light-stackedbarchart-default-legend-legendtext-font-weight;
+      font-size: $light-stackedbarchart-default-legend-legendtext-font-size;
+      line-height: $light-stackedbarchart-default-legend-legendtext-line-height;
+    }
+  }
+}
+
+// ---------- Widget ----------
+.stackedbarchart-widget {
+  background: var(--stackedbarchart-widget-background);
+  border-radius: $light-stackedbarchart-widget-radius;
+  box-shadow: var(--stackedbarchart-widget-box-shadow);
+
+  .chart-title {
+    color: var(--stackedbarchart-widget-title);
+    font-family: $light-stackedbarchart-widget-titletext-font-family;
+    font-weight: $light-stackedbarchart-widget-titletext-font-weight;
+    font-size: $light-stackedbarchart-widget-titletext-font-size;
+  }
+
+  .x-axis-label {
+    color: var(--stackedbarchart-widget-xlabels);
+  }
+
+  .y-axis-label {
+    color: var(--stackedbarchart-widget-ylabels);
+  }
+
+  // Similar structure as default, but using widget variables
+  .bar-stack1 { background: var(--stackedbarchart-widget-bar-stack1); }
+  .bar-stack2 { background: var(--stackedbarchart-widget-bar-stack2); }
+  .bar-stack3 { background: var(--stackedbarchart-widget-bar-stack3); }
+  .bar-stack4 { background: var(--stackedbarchart-widget-bar-stack4); }
+}
+
+// ==============================
+// Chart 7: Bar Chart
+// ==============================
+
+// ---------- Default ----------
+.barchart-default {
+  background: var(--barchart-default-background);
+  border-radius: $light-barchart-default-radius;
+  box-shadow: var(--barchart-default-box-shadow);
+  .chart-title {
+    color: var(--barchart-default-title);
+    font-family: $light-barchart-default-titletext-font-family;
+    font-weight: $light-barchart-default-titletext-font-weight;
+    font-size: $light-barchart-default-titletext-font-size;
+    line-height: $light-barchart-default-titletext-line-height;
+    text-transform: $light-barchart-default-titletext-text-case;
+    text-decoration: $light-barchart-default-titletext-text-decoration;
+  }
+
+  .x-axis-label {
+    color: var(--barchart-default-xlabels);
+    font-family: $light-barchart-default-xvalues-font-family;
+    font-weight: $light-barchart-default-xvalues-font-weight;
+    font-size: $light-barchart-default-xvalues-font-size;
+    line-height: $light-barchart-default-xvalues-line-height;
+    text-transform: $light-barchart-default-xvalues-text-case;
+    text-decoration: $light-barchart-default-xvalues-text-decoration;
+  }
+
+  .y-axis-label {
+    color: var(--barchart-default-ylabels);
+    font-family: $light-barchart-default-yvalues-font-family;
+    font-weight: $light-barchart-default-yvalues-font-weight;
+    font-size: $light-barchart-default-yvalues-font-size;
+    line-height: $light-barchart-default-yvalues-line-height;
+    text-transform: $light-barchart-default-yvalues-text-case;
+    text-decoration: $light-barchart-default-yvalues-text-decoration;
+  }
+
+  .bar {
+    background: var(--barchart-default-bar)
+  }
+
+  .bar-values {
+    color: var(--barchart-default-barvalues);
+    font-family: $light-barchart-default-barvaluestext-font-family;
+    font-weight: $light-barchart-default-barvaluestext-font-weight;
+    font-size: $light-barchart-default-barvaluestext-font-size;
+    line-height: $light-barchart-default-barvaluestext-line-height;
+    text-transform: $light-barchart-default-barvaluestext-text-case;
+    text-decoration: $light-barchart-default-barvaluestext-text-decoration;
+  }
+
+  .grid-line {
+    border-bottom: $light-barchart-default-gridline-width
+                   $light-barchart-default-gridline-style
+                   $light-barchart-default-gridline-color;
+  }
+
+  .x-line {
+    border-bottom: $light-barchart-default-xline-width
+                   $light-barchart-default-xline-style
+                   $light-barchart-default-xline-color;
+  }
+
+  // Legend
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--barchart-default-legend-legendcolor);
+
+    .legend-circle {
+      width: $light-barchart-default-circlewidth;
+      height: $light-barchart-default-circleheight;
+      background: var(--barchart-default-legendcircle);
+      border-radius: 50%;
+    }
+
+    .legend-text {
+      font-family: $light-barchart-default-legendtext-font-family;
+      font-weight: $light-barchart-default-legendtext-font-weight;
+      font-size: $light-barchart-default-legendtext-font-size;
+      line-height: $light-barchart-default-legendtext-line-height;
+      text-transform: $light-barchart-default-legendtext-text-case;
+      text-decoration: $light-barchart-default-legendtext-text-decoration;
+    }
+  }
+}
+
+// // ---------- Widget ----------
+.barchart-widget {
+  background: var(--barchart-widget-background);
+  border-radius: $light-barchart-widget-radius;
+  box-shadow: var(--barchart-widget-box-shadow);
+
+  .chart-title {
+    color: var(--barchart-widget-title);
+    font-family: $light-barchart-widget-titletext-font-family;
+    font-weight: $light-barchart-widget-titletext-font-weight;
+    font-size: $light-barchart-widget-titletext-font-size;
+    line-height: $light-barchart-widget-titletext-line-height;
+  }
+
+  .x-axis-label {
+    color: var(--barchart-widget-xlabels);
+    font-family: $light-barchart-widget-xvalues-font-family;
+    font-weight: $light-barchart-widget-xvalues-font-weight;
+    font-size: $light-barchart-widget-xvalues-font-size;
+    line-height: $light-barchart-widget-xvalues-line-height;
+  }
+
+  .y-axis-label {
+    color: var(--barchart-widget-ylabels);
+    font-family: $light-barchart-widget-yvalues-font-family;
+    font-weight: $light-barchart-widget-yvalues-font-weight;
+    font-size: $light-barchart-widget-yvalues-font-size;
+    line-height: $light-barchart-widget-yvalues-line-height;
+  }
+
+  .bar {
+    background: var(--barchart-widget-bar);
+  }
+
+  .bar-values {
+    color:var(--barchart-widget-barvalues);
+    font-family: $light-barchart-widget-barvaluestext-font-family;
+    font-weight: $light-barchart-widget-barvaluestext-font-weight;
+    font-size: $light-barchart-widget-barvaluestext-font-size;
+    line-height: $light-barchart-widget-barvaluestext-line-height;
+  }
+
+  .grid-line {
+    border-bottom: $light-barchart-widget-gridline-width
+                   $light-barchart-widget-gridline-style
+                   $light-barchart-widget-gridline-color;
+  }
+
+  .x-line {
+    border-bottom: $light-barchart-widget-xline-width
+                   $light-barchart-widget-xline-style
+                   $light-barchart-widget-xline-color;
+  }
+
+  // Legend
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--barchart-widget-legend);
+
+    .legend-circle {
+      width: $light-barchart-widget-circlewidth;
+      height: $light-barchart-widget-circleheight;
+      background: var(--barchart-widget-legendcircle);
+      border-radius: 50%;
+    }
+
+    .legend-text {
+      font-family: $light-barchart-widget-legendtext-font-family;
+      font-weight: $light-barchart-widget-legendtext-font-weight;
+      font-size: $light-barchart-widget-legendtext-font-size;
+      line-height: $light-barchart-widget-legendtext-line-height;
+    }
+  }
+}
+.cardpoints {
+  height: 9.0rem;
+  width: 22rem;
+  border: var(--border-color);
+  border-radius: $light-button-primary-textbutton-hover-small-cornerradius;
+}
+.cardpint1 {
+  height: 8rem;
+  width: 21rem;
+  background: var(--primary);
+  border-radius: $light-button-primary-textbutton-hover-small-cornerradius;
+  color: white ;
+  font-family: $light-button-primary-textbutton-hover-small-textstyle-font-family;
+  font-weight: map-get($font-weight-map, $light-card-card-headingtext-font-weight);
+
+}
+.cardpint1:hover{
+     background-color: var(--primary-hover);
+    color: var(--icon-btn-primary-hover-text);
+    border-radius: $light-button-primary-textbutton-hover-small-cornerradius;
+    text-decoration: $light-button-primary-textbutton-hover-small-textstyle-text-decoration !important;
+    text-transform: $light-button-primary-textbutton-hover-small-textstyle-text-case !important;
+
+}
+/* ======================
+   Bento Default Style
+====================== */
+.bento-default {
+  background: var(--bento-default-background);
+  border-radius: $light-bento-default-cornerradius;
+  box-shadow: var(--bento-default-box-shadow);
+  width: $light-bento-default-width;
+  /* height: $light-bento-default-height; */
+  padding: 1rem;
+  position: fixed;
+  border-radius: 8px;
+  z-index: 1100;
+
+  max-height: 750px;    
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ======================
+   Module Common Style
+====================== */
+.bento-module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: $light-bento-default-cornerradius;
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+
+  .bento-icon {
+    background-color: var(--bento-default-modules-iconfill);
+    color: var(--bento-default-modules-icon);
+    width: $light-bento-default-modules-iconbgwidth;
+    height: $light-bento-default-modules-iconbgheight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+
+.bento-title {
+  font-family: $light-bento-default-modules-titletext-font-family;
+  font-weight: $light-bento-default-modules-titletext-font-weight;
+  font-size: $light-bento-default-modules-titletext-font-size;
+  line-height: $light-bento-default-modules-titletext-line-height;
+  color: var(--bento-default-modules-title);
+  margin-bottom: 0.25rem;
+  width: 6rem;                
+  white-space: nowrap;         
+  overflow: hidden;             
+  text-overflow: ellipsis;    
+  display: inline-block;
+  text-align: center;
+  cursor: default;
+  transition: width 0.3s ease;   
+}
+.bento-title:hover {
+  width: auto;                 
+  max-width: none;             
+  overflow: visible;          
+  text-overflow: clip;         
+  white-space: wrap;         
+}
+
+  .bento-label {
+    font-family: $light-bento-default-modules-labeltext-font-family;
+    font-weight: $light-bento-default-modules-labeltext-font-weight;
+    font-size: $light-bento-default-modules-labeltext-font-size;
+    color: var(--bento-default-modules-label);
+  }
+
+  &:hover {
+    background-color: var(--bento-hover-modules-hover-foreground);
+
+    .bento-icon {
+      background-color: var(--bento-hover-modules-hover-iconfill);
+      color: var(--bento-hover-modules-hover-icon);
+    }
+  }
+
+  &.active {
+    background-color: var(--bento-active-modules-active-foreground);
+
+    .bento-icon {
+      background-color: var(--bento-active-modules-active);
+      color: var(--bento-active-modules-active-icon);
+    }
+  }
+}
+
+/* ---------------------- */
+.bento-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+/* ======================
+   Horizontals
+====================== */
+.bento-horizontals {
+  .bento-section-title {
+    font-family: $light-bento-active-horizontals-titletext-font-family;
+    font-weight: $light-bento-active-horizontals-titletext-font-weight;
+    font-size: $light-bento-active-horizontals-titletext-font-size;
+    line-height: $light-bento-active-horizontals-titletext-line-height;
+    color: var(--bento-active-horizontals-title);
+    margin-bottom: 1rem;
+  }
+
+  .bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .bento-module {
+    padding: 0.5rem;
+    border-radius: $light-bento-active-horizontals-iconfillradius;
+
+    .bento-icon {
+      background-color: var(--bento-active-horizontals-iconfill);
+      color: var(--bento-active-horizontals-icon);
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $light-bento-active-horizontals-iconfillradius;
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-title {
+      font-family: $light-bento-active-horizontals-titletext-font-family;
+      font-weight: $light-bento-active-horizontals-titletext-font-weight;
+      font-size: $light-bento-active-horizontals-titletext-font-size;
+      line-height: $light-bento-active-horizontals-titletext-line-height;
+      color: var(--bento-active-horizontals-title);
+      margin-bottom: 0.25rem;
+      width: 6rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+      text-align: center;
+      cursor: default;
+      position: relative;
+    }
+
+    .bento-title:hover::after {
+      content: attr(title);
+      position: absolute;
+      top: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--bento-default-modules-title);
+      color: var(--bento-default-modules-title);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      z-index: 1200;
+    }
+
+    .bento-label {
+      font-family: $light-bento-active-horizontals-labeltext-font-family;
+      font-weight: $light-bento-active-horizontals-labeltext-font-weight;
+      font-size: $light-bento-active-horizontals-labeltext-font-size;
+      line-height: $light-bento-active-horizontals-labeltext-line-height;
+      color: var(--bento-active-horizontals-label);
+    }
+
+    &:hover {
+      background-color: var(--bento-active-horizontals-active-foreground);
+
+      .bento-icon {
+        background-color: var(--bento-active-horizontals-active-iconfill);
+        color: var(--bento-active-horizontals-active-icon);
+      }
+    }
+
+    &.active {
+      background-color: var(--bento-active-horizontals-active-foreground);
+
+      .bento-icon {
+        background-color: var(--bento-active-horizontals-active-iconfill);
+        color: var(--bento-active-horizontals-active-icon);
+      }
+    }
+  }
+}
+
+$font-weight-map: (
+  "Light": 300,
+  "Regular": 400,
+  "Medium": 500,
+  Semi Bold: 600,
+  "Bold": 700,
+  "ExtraBold": 800
+);
+
+   .leftnav-default {
+  width: $light-leftnav-default-width;
+  height: $light-leftnav-default-height;
+  background: var(--leftnav-default-bg);
+  color: var(--leftnav-default-title);
+  // border-radius: $corner-radius-8;
+  font-family: $light-leftnav-default-titletext-font-family;
+}
+
+
+.collapse-btn {
+  width: $light-leftnav-default-collapsewidth;
+  height: $light-leftnav-default-collapseheight;
+  background: $light-leftnav-default-collapsefill;
+  color: $light-leftnav-default-collapseicon;
+  border-radius: $corner-radius-16;
+  position: absolute;
+  top: 16px;
+  right: -10px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;       
+  align-items: center;     
+  justify-content: center;    
+  font-size: $light-leftnav-default-bodytext-font-size;    
+}
+.collapse-btn:hover {
+  background: $light-leftnav-hover-hoverfill !important;
+  color: $light-leftnav-hover-hovericon !important;
+}
+.collapse-btn:active {
+  background: $light-leftnav-active-background !important;
+  color: $light-leftnav-active-activeicon !important;
+}
+
+.leftnav {
+  position: relative;
+}
+
+.menus li {
+  display: flex;
+  padding: 12px 0px;
+  font-size: $light-leftnav-default-titletext-font-size;
+  // color: $light-leftnav-default-title;
+  color: var(--leftnav-default-title);
+  font-family: $light-leftnav-default-titletext-font-family;
+  line-height: $light-leftnav-default-titletext-line-height;
+  font-weight: map-get($font-weight-map,  $light-leftnav-default-titletext-font-weight);
+
+//   transition: background 0.2s, color 0.2s;
+}
+.menus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menus li.active-menu {
+  background: $light-leftnav-submenu-activemenufill !important;
+  color: #fff !important;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: bold;
+  opacity: 1;
+}
+.menus li.disable {
+  color: $light-leftnav-inactive-inactivetext;
+  cursor: not-allowed;
+}
+
+.menus li:hover {
+  background: $light-leftnav-hover-hoverfill;
+  color: $light-leftnav-hover-hovertext;
+}
+
+.leftnav-icon {
+  font-size: 15px;
+  margin-right: 6px;
+  margin-left: 8px;
+  min-width: 50px;
+  text-align: center;
+  // color: $light-leftnav-default-icon;
+}
+.leftnav-icon:hover {
+  color: $light-leftnav-hover-hovericon ;
+}
+.leftnav-icon:active {
+  color: $light-leftnav-active-activeicon !important;
+}
+
+.leftnav-title {
+  white-space: nowrap;
+  font-family: $light-leftnav-default-titletext-font-family;
+  font-weight: map-get($font-weight-map,  $light-leftnav-default-titletext-font-weight);
+  font-size: $light-leftnav-default-titletext-font-size;
+  line-height: $light-leftnav-default-titletext-line-height;
+}
+.menus li.submenu-active {
+  background: $light-leftnav-submenu-activemenufill;
+  color: $light-leftnav-active-activetext; 
+  cursor: pointer;
+  border-radius: $corner-radius-8; 
+}
+
+.leftnav.leftnav-collapse {
+  // width: $light-leftnav-collapse-expandwidth!important;
+  width: 3.375rem !important;
+  height: $light-leftnav-collapse-height;
+  background: var(--leftnav-collapse-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftnav.leftnav-collapse .leftnav-title {
+  display: none !important;
+}
+
+.leftnav.leftnav-collapse .menus li {
+  justify-content: center;
+  padding: 12px 0;
+  width: 100%;
+}
+
+.leftnav.leftnav-collapse .leftnav-icon {
+  margin-right: 0;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+

@@ -1,3 +1,465 @@
+  <!-- subash Files -->
+     <storybook-header
+      [user]="currentUser"
+      (onLogin)="handleLogin($event)"
+      (onLogout)="handleLogout($event)"
+      (onCreateAccount)="handleCreate($event)"
+      [bentoItems]="bentoData"
+      [horizontals]="bentoHorizontals">
+    </storybook-header>
+    <storybook-breadcrumb></storybook-breadcrumb>
+<div class="d-flex">
+  <div>
+    <storybook-leftnav 
+      variant="leftnav-default">
+    </storybook-leftnav>
+  </div>
+  <div class="row">
+    <div class="row  m-3 ">
+      <div class="d-flex flex-row">
+        <storybook-button className="btn-primary me-1" size="sm" label="Breadcrumb" [routerLink]="'/breadcrumb'"></storybook-button>
+          <storybook-button className="btn-secondary mb-1" size="sm" label="Switch Theme" (click)="toggleTheme()" ></storybook-button>
+
+
+      </div>
+                <div>
+<router-outlet></router-outlet>
+
+          </div>
+      <h3 class="text-center fw-bold bg-secondary text-white p-2" >Button Component</h3>
+<!-- 
+<storybook-button
+  [primary]="true"
+  label="Add"  class="ms-5"
+  size="small">
+</storybook-button> -->
+<div class="col-lg-2">
+
+<!-- <button class="btn-toggle" (click)="toggleTheme()"></button> -->
+<h4>Primary</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Success" size="sm" className="btn-primary mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Success" size="md" className="btn-primary mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Success" size="lg" className="btn-primary mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg" className="btn-primary mb-2 " [disabled]="true" ></storybook-button>
+</div>
+<div class="col-lg-2">
+<h4>Secondary</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Success" size="sm" className="btn-secondary mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Success" size="md" className="btn-secondary mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Success" size="lg" className="btn-secondary mb-2"></storybook-button><br>
+<storybook-button label="Success" size="lg" className="btn-secondary mb-2 "  [disabled]="true"></storybook-button>
+
+</div>
+<div class="col-lg-2">
+<h4>Gradient</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Success" size="sm" className="bg-gradients mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Success" size="md" className="bg-gradients mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Success" size="lg" className="bg-gradients mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg" className="bg-gradients mb-2 "  [disabled]="true"></storybook-button>
+
+</div>
+<div class="col-lg-2">
+<h4>Outline</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Success" size="sm" className="btn-outline-primary mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Success" size="md" className="btn-outline-primary mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Success" size="lg" className="btn-outline-primary mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg" className="btn-outline-primary mb-2 "  [disabled]="true"></storybook-button>
+</div>
+<div class="col-lg-2">
+<h4>Success</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Success" size="sm" className="btn-success mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Success" size="md" className="btn-success mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Success" size="lg" className="btn-success mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg" className="btn-success mb-2 "  [disabled]="true"></storybook-button>
+
+</div>
+<div class="col-lg-2">
+<h4>Danger</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Danger" size="sm" className="btn-danger mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Danger" size="md" className="btn-danger mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Danger" size="lg" className="btn-danger mb-2"></storybook-button> <br>
+<storybook-button label="Danger" size="lg" className="btn-danger mb-2 "  [disabled]="true"></storybook-button>
+
+</div>
+</div>
+<div class="row  m-3 ">
+  <div class="col-lg-2">
+<h4>Warning</h4> <hr>
+<span class="fw-bold">Button Small</span><br>
+<storybook-button label="Warning" size="sm" className="btn-warning mb-2"></storybook-button><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-button label="Warning" size="md" className="btn-warning mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-button label="Warning" size="lg" className="btn-warning mb-2"></storybook-button> <br>
+<storybook-button label="Warning" size="lg" className="btn-warning mb-2 "  [disabled]="true"></storybook-button>
+
+</div>
+  <div class="col-lg-2">
+<h4>Link</h4> <hr>
+
+<span class="fw-bold">Button Small</span><br>
+<storybook-link 
+  label="Click Me" 
+  size="sm" 
+  className="link-primary" 
+  [disabled]="false">
+</storybook-link><br>
+<span class="fw-bold">Button Medium</span><br>
+<storybook-link
+  label="Click Me"
+  size="md"
+  className="link-primary"
+  [disabled]="false"
+></storybook-link><br>
+<span class="fw-bold"> Button Large</span><br>
+<storybook-link
+  label="Click Me"
+  size="lg"
+  className="link-primary"
+  [disabled]="false"
+></storybook-link> <br>
+<storybook-link
+    label="Click Me"
+  size="md"
+  className="link-primary"
+  [disabled]="true"
+></storybook-link>
+
+
+</div>
+
+  <div class="col-lg-2">
+<h4>Text icon Left Btn</h4> <hr>
+
+<span class="fw-bold">Button primary</span><br>
+<storybook-button label="Success" icon="fa-solid fa-pen-to-square" size="sm" className="btn-primary">
+</storybook-button><br>
+<span class="fw-bold">Button secondary</span><br>
+<storybook-button label="Success" size="md" icon="fa-solid fa-pen-to-square" className="btn-secondary mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Gradient</span><br>
+<storybook-button label="Success" size="lg" icon="fa-solid fa-pen-to-square" className="bg-gradients mb-2"></storybook-button> <br>
+
+<storybook-button label="Success" size="lg" icon="fa-solid fa-pen-to-square" className="btn-primary mb-2 "  [disabled]="true"></storybook-button>
+<storybook-button label="Success" size="lg" icon="fa-solid fa-pen-to-square" className="btn-outline-primary mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg"  icon="fa-solid fa-pen-to-square"className="btn-outline-primary mb-2 "  [disabled]="true"></storybook-button>
+
+
+</div>
+  <div class="col-lg-2">
+<h4>Text icon Right Btn</h4> <hr>
+
+<span class="fw-bold">Button primary</span><br>
+<storybook-button label="Success" icon="fa-solid fa-arrow-right"  size="sm"  iconPosition="right" className="btn-primary">
+</storybook-button><br>
+<span class="fw-bold">Button secondary</span><br>
+<storybook-button label="Success" size="md" icon="fa-solid fa-arrow-right" iconPosition="right" className="btn-secondary mb-2"></storybook-button><br>
+<span class="fw-bold"> Button Gradient</span><br>
+<storybook-button label="Success" size="lg" icon="fa-solid fa-arrow-right" iconPosition="right" className="bg-gradients mb-2"></storybook-button> <br>
+
+<storybook-button label="Success" size="lg" icon="fa-solid fa-arrow-right" iconPosition="right" className="btn-primary mb-2 "  [disabled]="true"></storybook-button>
+<storybook-button label="Success" size="lg" icon="fa-solid fa-arrow-right" iconPosition="right" className="btn-outline-primary mb-2"></storybook-button> <br>
+<storybook-button label="Success" size="lg"  icon="fa-solid fa-arrow-right" iconPosition="right" className="btn-outline-primary mb-2 "  [disabled]="true"></storybook-button>
+</div>
+
+  <div class="col-lg-2">
+<h4>rectangle Buttons</h4> <hr>
+
+<span class="fw-bold">Button primarys</span><br>
+
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-primary-icon-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-primary-icon-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-primary-icon-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-primary-icon-lg me-1" [disabled]="true"></storybook-button-icon>
+
+<span class="fw-bold">Button secondary</span><br>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-secondary-icon-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-secondary-icon-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-secondary-icon-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-secondary-icon-lg me-1" [disabled]="true"></storybook-button-icon>
+
+<span class="fw-bold"> Button Gradient</span><br>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-gradients-icon-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-gradients-icon-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-gradients-icon-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-gradients-icon-lg me-1" [disabled]="true"></storybook-button-icon>
+<span>Button Outline</span><br>
+<!-- Solid primary icon button (small) -->
+
+<!-- Outline icon button (small) -->
+<storybook-button-icon
+  icon="fa-solid fa-search"
+  className="btn-outline-icon-rectangle-sm me-1"
+  >
+</storybook-button-icon>
+
+<!-- Outline icon button (medium) -->
+<storybook-button-icon
+  icon="fa-solid fa-user"
+  className="btn-outline-icon-rectangle-md me-1"
+  >
+</storybook-button-icon>
+
+<!-- Outline icon button (large) -->
+<storybook-button-icon
+  icon="fa-solid fa-trash"
+  className="btn-outline-icon-rectangle-lg me-1"
+  >
+</storybook-button-icon>
+<!-- Outline icon button (large) -->
+<storybook-button-icon
+  icon="fa-solid fa-trash"
+  className="btn-outline-icon-rectangle-lg me-1"
+  [disabled]="true"
+  >
+</storybook-button-icon>
+</div>
+
+  <div class="col-lg-2">
+<h4>Circle Buttons</h4> <hr>
+
+<span class="fw-bold">Button primarys</span><br>
+
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-icon-primary-circle-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-icon-primary-circle-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-icon-primary-circle-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className="btn-icon-primary-circle-lg me-1" [disabled]="true"></storybook-button-icon>
+
+<span class="fw-bold">Button secondary</span><br>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-icon-secondary-circle-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-icon-secondary-circle-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-icon-secondary-circle-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" btn-icon-secondary-circle-lg me-1" [disabled]="true"></storybook-button-icon>
+
+<span class="fw-bold"> Button Gradient</span><br>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-primary-gradients-icon-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-primary-gradients-icon-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-primary-gradients-icon-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-arrow-right" className=" bg-primary-gradients-icon-lg me-1" [disabled]="true"></storybook-button-icon>
+<span>Button Outline</span><br>
+<storybook-button-icon icon="fa-solid fa-search"className="btn-icon-outline-circle-sm me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-user" className="btn-icon-outline-circle-md me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-trash" className="btn-icon-outline-circle-lg me-1"></storybook-button-icon>
+<storybook-button-icon icon="fa-solid fa-trash"className="btn-icon-outline-circle-lg me-1"[disabled]="true" ></storybook-button-icon>
+</div>
+
+  <div class="col-lg-2">
+    <div class="mb-3 " >
+  <h4 class="fw-bold">Calendar Component</h4> <hr>
+
+    </div>
+<span class="fw-bold">Date Calendar</span>
+<storybook-calendar
+  type="date" class="mb-1"
+  [currentDate]="today"
+  [selectedDate]="selectedDate">
+</storybook-calendar>
+
+<span class="fw-bold">Month Calendar</span>
+<storybook-calendar
+  type="month" class="mb-1"
+  [currentDate]="today"
+  [selectedDate]="selectedDate">
+</storybook-calendar>
+
+<span class="fw-bold">Year Calendar</span>
+<storybook-calendar
+  type="year"
+  [currentDate]="today"
+  [selectedDate]="selectedDate">
+</storybook-calendar>
+
+</div>
+  <div class="col-lg-2 ms-5">
+<h4>Dropdown-List Component</h4> <hr>
+<storybook-dropdown-list
+  [options]="['Edit', 'Delete']"
+></storybook-dropdown-list>
+  </div>
+    <div class="col-lg-2 ms-5">
+<h4>Menu-List Component</h4> <hr>
+<storybook-menubutton
+  [placeholder]="'Button'"
+  [options]="['Option 1', 'Option 2', 'Option 3']"
+></storybook-menubutton>
+  </div>
+    <div class="col-lg-2 ms-5">
+<h4>HyperLink with Badge</h4> <hr>
+ <storybook-hyperlink-value
+      [label]="'Element 01'"
+      [value]="backendValue">
+    </storybook-hyperlink-value> <br>
+<h4>Chip</h4>
+<storybook-chip
+  label="Close"
+  leadingIcon="fa-solid fa-search"
+  trailingIcon="fa-solid fa-close"
+  [disabled]="false">
+</storybook-chip><br>
+<h3>Category Chips</h3>
+<storybook-finite type="category" category="sales" label="Sales"></storybook-finite>
+<storybook-finite type="category" category="financial" label="Financial"></storybook-finite>
+<storybook-finite type="query" status="inprogress" label="In Progress"></storybook-finite>
+<storybook-finite type="query" status="resolution" label="Resolution"></storybook-finite>
+
+
+</div>
+<div class="col-lg-2">
+  <h4>Drag and Drop Fields</h4>
+<storybook-draganddrop
+  [items]="filesList"
+  (fileSelected)="onFileSelected($event)">
+</storybook-draganddrop>
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-10">
+  <h2 class="header">Upload Files</h2>
+  <input type="file" (change)="onFileSelected($event)" class="file-input" />
+
+  <!-- Show default design when no files are selected -->
+  <div *ngIf="files.length === 0">
+    <storybook-progress
+      [fileName]="'File_Name.jpg'"
+      [fileSize]="'0.0 Mb'"
+      [progress]="0"
+      [status]="'default'">
+    </storybook-progress>
+  </div>
+  <div *ngFor="let file of files">
+    <storybook-progress
+      [fileName]="file.name"
+      [fileSize]="file.size"
+      [progress]="file.progress"
+      [status]="file.status">
+    </storybook-progress>
+  </div>
+
+</div>
+  <div class="col-lg-2 mt-5">
+    <h4 class="ms-4 fw-bold">Sort</h4>
+<storybook-sort  class="mt-5"
+  [items]="sortOptions" 
+  (selectedChange)="onSortChange($event)">
+</storybook-sort>
+</div>
+</div>
+
+  <div class="col-lg-4">
+<h4>Card without buttons</h4>
+<storybook-card
+  [heading]="'Welcome Card'"
+  [content]="'This card just shows an image and text.'"
+  [image]="'https://via.placeholder.com/320x180'">
+</storybook-card>
+
+<h4>Card with buttons</h4>
+<storybook-card
+  [heading]="'Action Card'"
+  [content]="'This card has two buttons for actions.'"
+  [image]="'https://via.placeholder.com/320x180'"
+  [showActions]="true"
+  [submitLabel]="'Save'"
+  [cancelLabel]="'Discard'">
+</storybook-card>
+</div>
+<div class="col-lg-4">
+  <h4>Summary Point</h4>
+ <storybook-summary-point
+  [title]="'Employees By Team'"
+  [value]="56"
+  [description]="'Active employees currently in team'"
+  [showMenu]="true"
+></storybook-summary-point>
+</div>
+  
+  <div class="col-lg-6 col-sm-12 col-md-12">
+<h4 class="fw-bold">Bar Chart</h4>
+<storybook-charts
+  [type]="'barchart'"
+  [title]="'Annual Sales'"
+  [data]="barChartData"
+  [height]="280">
+</storybook-charts>
+  </div>
+
+  <div class="col-lg-6 col-sm-12 col-md-12">
+<h2>Line Chart</h2>
+<storybook-charts
+  [type]="'linechart'"
+  [title]="'Revenue Growth'"
+  [data]="lineChartData"
+  [height]="300">
+</storybook-charts>
+  </div>
+
+<div class="col-lg-6 col-sm-12 col-md-12 mb-3">
+    <h2>Pie Chart</h2>
+<storybook-charts
+  [type]="'piechart'"
+  [title]="'Market Share'"
+  [data]="pieChartData"
+  [height]="280">
+</storybook-charts>
+  </div>
+
+<div class="col-lg-6 col-sm-12 col-md-12 mb-3">
+    <h2>Radial Bar Chart</h2>
+<storybook-charts
+  [type]="'doughnutchart'"
+  [title]="'Project Progress'"
+  [data]="radialData"
+  [height]="280">
+</storybook-charts>
+  </div>
+<div class="col-lg-6 col-sm-12 col-md-12 mb-3">
+    <h2>BoxPlot Chart</h2>
+<storybook-charts
+  [type]="'boxplotchart'"
+  [title]="'Sample Text 1'"
+  [data]="boxPlotData"
+  [height]="300">
+</storybook-charts>
+  </div>
+<div class="col-lg-6 col-sm-12 col-md-12">
+    <storybook-charts
+  [type]="'bubblechart'"
+  [title]="'Sample Text 1'"
+  [data]="boxPlotData"
+  [height]="300">
+</storybook-charts>
+  </div>
+<div class="col-lg-6 col-sm-12 col-md-12">
+<storybook-charts
+  type="stackedbarchart"
+  variant="default"
+  [title]="'Revenue Breakdown'"
+   [data]="radialData"
+></storybook-charts>
+</div>
+
+
+  
+<!--   
+  //sathish files -->
   <button class="btn btn-secondary ms-3 mt-3" (click)="toggleTheme()">Toggle Dark/Light Theme</button>
 
 

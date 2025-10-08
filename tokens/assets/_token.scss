@@ -779,3 +779,1942 @@ $h6-line-height: $headings-h5-line-height;
 $table-bg: $light-table-default-header-background;
 //input
 $input-font-size: $light-input-default-placeholder-font-size;
+
+//subash files
+:root {
+  /* PRIMARY */
+  --primary: #{$light-mode-color-primary-color-default};
+  --primary-hover: #{$light-mode-color-primary-color-p-hover};
+  --primary-active: #{$light-mode-color-primary-color-active};
+  --primary-disabled: #{$light-mode-color-primary-color-p-disable};
+
+  /* SECONDARY */
+  --secondary: #{$light-mode-color-secondary-color-s-default};
+  --secondary-hover: #{$light-button-secondary-textbutton-hover-small-background};
+  --secondary-active: #{$light-button-secondary-textbutton-active-small-background};
+  --secondary-disabled: #{$light-button-secondary-textbutton-disabled-small-background};
+  --secondary-text: #{$light-button-secondary-textbutton-default-small-text};
+  --secondary-active-text: #{$light-button-secondary-textbutton-active-small-text};
+  --secondary-disabled-text: #{$light-button-secondary-textbutton-disabled-small-text};
+  --secondary-hover-text: #{$light-button-secondary-textbutton-hover-small-text};
+  /* GRADIENT */
+  --bg-gradient: #{$light-mode-color-gradient-color-gradient-default};
+  --bg-gradient-hover: #{$light-mode-color-gradient-color-gradient-hover};
+  --bg-gradient-active: #{$light-mode-color-gradient-color-gradient-active};
+  --bg-gradient-disabled: #{$light-mode-color-gradient-color-g-disable};
+
+  /* BUTTON - PRIMARY */
+  --btn-primary-bg: #{$light-button-primary-textbutton-default-small-background};
+  --btn-primary-hover-bg: #{$light-button-primary-textbutton-hover-small-background};
+  --btn-primary-hover-text: #{$light-button-primary-textbutton-hover-small-text};
+  --btn-primary-active-text: #{$light-button-primary-textbutton-active-small-text};
+  /* BUTTON - SECONDARY */
+  --btn-secondary-bg: #{$light-button-secondary-textbutton-default-small-background};
+  --btn-secondary-hover-bg: #{$light-button-secondary-textbutton-hover-small-background};
+  --btn-secondary-hover-text: #{$light-button-secondary-textbutton-hover-small-text};
+
+  /* SUCCESS */
+  --btn-success-bg: #{$light-button-success-textbutton-default-small-background};
+  --btn-success-hover-bg: #{$light-button-success-textbutton-hover-small-background};
+  --btn-secondary-hover-text: #{$light-button-secondary-textbutton-hover-small-text};
+  --btn-success-disabled-bg: #{$dark-button-success-textbutton-disabled-small-background};
+  --btn-success-disabled-text: #{$dark-button-success-textbutton-disabled-small-text};
+
+  /* DANGER */
+  --btn-danger-bg: #{$light-button-danger-textbutton-default-small-background};
+  --btn-danger-hover-bg: #{$light-button-danger-textbutton-hover-small-background};
+
+  /* WARNING */
+  --btn-warning-bg: #{$light-button-warning-textbutton-default-small-background};
+  --btn-warning-hover-bg: #{$light-button-warning-textbutton-hover-small-background};
+  --btn-warning-disabled-bg: #{$light-button-warning-textbutton-disabled-small-background};
+  --btn-warning-disabled-text: #{$light-button-warning-textbutton-disabled-small-text};
+
+  /* OUTLINE */
+  --btn-outline-text: #{$light-button-outline-textbutton-default-small-text};
+  --btn-outline-hover-text: #{$light-button-outline-textbutton-hover-small-text};
+  --btn-outline-border-color: #{$light-button-outline-textbutton-default-small-border-color};
+  --btn-outline-hover-background: #{$light-button-outline-textbutton-hover-small-background};
+  --btn-outline-active-border-color: #{$light-button-outline-textbutton-active-small-border-color};
+  --btn-outline-active-text: #{$light-button-outline-textbutton-active-small-text};
+  --btn-outline-active-background: #{$light-button-outline-textbutton-active-small-background};
+  /* GENERAL TEXT */
+  --body-bg: #{$body-white};
+  --body-text: #{$body-black};
+
+  /* ==== LINKS ==== */
+  --link-primary: #{$light-button-link-default-small-text};
+  --link-primary-underline: #{$light-button-link-default-small-underline};
+  --link-primary-font-weight: #{map-get($font-weight-map, $light-button-link-textbutton-default-small-textstyle-font-weight)};
+  --link-primary-font-size: #{$light-button-link-textbutton-default-small-textstyle-font-size};
+  --link-primary-line-height: #{$light-button-link-textbutton-default-small-textstyle-line-height};
+  --link-primary-letter-spacing: #{$light-button-link-textbutton-default-small-textstyle-letter-spacing};
+  --link-primary-text-case: #{$light-button-link-textbutton-default-small-textstyle-text-case};
+  --link-primary-text-decoration: #{$light-button-link-textbutton-default-small-textstyle-text-decoration};
+
+  --link-primary-hover: #{$light-button-link-hover-small-text};
+  --link-primary-hover-underline: #{$light-button-link-hover-small-underline};
+
+  --link-primary-active: #{$light-button-link-active-small-text};
+  --link-primary-active-underline: #{$light-button-link-active-small-underline};
+
+  /* Disabled link */
+  --link-primary-disabled: #{$light-button-link-disabled-small-text};
+  --link-primary-disabled-font-weight: #{map-get($font-weight-map, $light-button-link-textbutton-disabled-small-textstyle-font-weight)};
+  --link-primary-disabled-font-size: #{$light-button-link-textbutton-disabled-small-textstyle-font-size};
+  --link-primary-disabled-line-height: #{$light-button-link-textbutton-disabled-small-textstyle-line-height};
+  --link-primary-disabled-letter-spacing: #{$light-button-link-textbutton-disabled-small-textstyle-letter-spacing};
+  --link-primary-disabled-text-case: #{$light-button-link-textbutton-disabled-small-textstyle-text-case};
+  --link-primary-disabled-text-decoration: #{$light-button-link-textbutton-disabled-small-textstyle-text-decoration};
+
+  /* ==== ICON BUTTONS ==== */
+  /* Icon colors */
+  --btn-icon-left-color: #{$light-button-primary-texticonleft-default-small-icon};
+  --btn-icon-right-color: #{$light-button-primary-texticonright-default-small-icon};
+
+  /* Rectangle Icon Primary Button */
+  --icon-btn-primary-bg: #{$light-button-primary-iconbutton-rectangle-default-small-background};
+  --icon-btn-primary-text: #{$light-button-primary-iconbutton-rectangle-default-small-icon};
+
+  /* Rectangle Icon Primary Hover */
+  --icon-btn-primary-hover-bg: #{$light-button-primary-iconbutton-rectangle-hover-small-background};
+  --icon-btn-primary-hover-text: #{$light-button-primary-iconbutton-rectangle-hover-small-icon};
+  --icon-btn-primary-disabled-bg: #{$dark-button-primary-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-primary-disabled-text: #{$dark-button-primary-iconbutton-rectangle-disabled-small-icon};
+  /* Rectangle Icon Primary active */
+  --icon-btn-primary-active-bg:$light-button-primary-iconbutton-rectangle-active-small-background
+  --icon-btn-primary-active-text:$light-button-primary-iconbutton-rectangle-active-small-icon;
+  /* Rectangle Icon Secondary */
+  --icon-btn-secondary-bg: #{$light-button-secondary-iconbutton-rectangle-default-small-background};
+  --icon-btn-secondary-text: #{$light-button-secondary-iconbutton-rectangle-default-small-icon};
+  --icon-btn-secondary-radius: #{$light-button-secondary-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-secondary-height: #{$light-button-secondary-iconbutton-rectangle-default-small-height};
+  --icon-btn-secondary-width: #{$light-button-secondary-iconbutton-rectangle-default-small-width};
+
+  /* Rectangle Icon Secondary Hover */
+  --icon-btn-secondary-hover-bg: #{$light-button-secondary-iconbutton-rectangle-hover-small-background};
+  --icon-btn-secondary-hover-text: #{$light-button-secondary-iconbutton-rectangle-hover-small-icon};
+
+  /* Rectangle Icon Secondary Disabled */
+  --icon-btn-secondary-disabled-bg: #{$light-button-secondary-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-secondary-disabled-text: #{$light-button-secondary-iconbutton-rectangle-disabled-small-icon};
+/* Rectangle Icon Secondary active */
+  --icon-btn-secondary-active-bg: #{$light-button-secondary-iconbutton-rectangle-active-small-background};
+  --icon-btn-secondary-active-text: #{$light-button-secondary-iconbutton-rectangle-active-small-icon};
+/* Rectangle Gradient */
+  --icon-btn-gradient-bg: #{$light-button-gradient-iconbutton-rectangle-default-small-background};
+  --icon-btn-gradient-text: #{$light-button-gradient-iconbutton-rectangle-default-small-icon};
+  --icon-btn-gradient-radius: #{$light-button-gradient-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-gradient-height: #{$light-button-gradient-iconbutton-rectangle-default-small-height};
+  --icon-btn-gradient-width: #{$light-button-gradient-iconbutton-rectangle-default-small-width};
+
+  --icon-btn-gradient-hover-bg: #{$light-button-gradient-iconbutton-rectangle-hover-small-background};
+  --icon-btn-gradient-hover-text: #{$light-button-gradient-iconbutton-rectangle-hover-small-icon};
+  --icon-btn-gradient-disabled-bg: #{$light-button-gradient-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-gradient-disabled-text: #{$light-button-gradient-iconbutton-rectangle-disabled-small-icon};
+
+  /* Rectangle Outline */
+  --icon-btn-outline-bg: transparent;
+  --icon-btn-outline-text: #{$light-button-outline-iconbutton-rectangle-default-small-icon};
+  --icon-btn-outline-radius: #{$light-button-outline-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-outline-height: #{$light-button-outline-iconbutton-rectangle-default-small-height};
+  --icon-btn-outline-width: #{$light-button-outline-iconbutton-rectangle-default-small-width};
+  --icon-btn-outline-border: #{$light-button-outline-iconbutton-rectangle-default-small-border-color};
+
+  --icon-btn-outline-hover-bg: #{$light-button-outline-iconbutton-rectangle-hover-small-background};
+  --icon-btn-outline-hover-text: #{$light-button-outline-iconbutton-rectangle-hover-small-icon};
+  --icon-btn-outline-hover-border: #{$light-button-outline-iconbutton-rectangle-hover-small-border-color};
+  --icon-btn-outline-disabled-text: #{$light-button-outline-iconbutton-rectangle-disabled-small-icon};
+  --icon-btn-outline-disabled-border: #{$light-button-outline-iconbutton-rectangle-disabled-small-border-color};
+
+  /* Circle Primary */
+  --icon-btn-circle-bg: #{$light-button-primary-iconbutton-circle-default-small-background};
+  --icon-btn-circle-text: #{$light-button-primary-iconbutton-circle-default-small-icon};
+  --icon-btn-circle-radius: #{$light-button-primary-iconbutton-circle-default-small-cornerradius};
+  --icon-btn-circle-height: #{$light-button-primary-iconbutton-circle-default-small-height};
+  --icon-btn-circle-width: #{$light-button-primary-iconbutton-circle-default-small-width};
+
+  --icon-btn-circle-hover-bg: #{$light-button-primary-iconbutton-circle-hover-small-background};
+  --icon-btn-circle-hover-text: #{$light-button-primary-iconbutton-circle-hover-small-icon};
+  --icon-btn-circle-active-bg: #{$light-button-primary-iconbutton-circle-active-small-background};
+  --icon-btn-circle-active-text: #{$light-button-primary-iconbutton-circle-active-small-icon};
+  --icon-btn-circle-disabled-bg: #{$light-button-primary-iconbutton-circle-disabled-small-background};
+  --icon-btn-circle-disabled-text: #{$light-button-primary-iconbutton-circle-disabled-small-icon};
+
+  /* Circle Secondary */
+  --icon-btn-circle-sec-bg: #{$light-button-secondary-iconbutton-circle-default-small-background};
+  --icon-btn-circle-sec-text: #{$light-button-secondary-iconbutton-circle-default-small-icon};
+  --icon-btn-circle-sec-radius: #{$light-button-secondary-iconbutton-circle-default-small-cornerradius};
+  --icon-btn-circle-sec-height: #{$light-button-secondary-iconbutton-circle-default-small-height};
+  --icon-btn-circle-sec-width: #{$light-button-secondary-iconbutton-circle-default-small-width};
+
+  --icon-btn-circle-sec-hover-bg: #{$light-button-secondary-iconbutton-circle-hover-small-background};
+  --icon-btn-circle-sec-hover-text: #{$light-button-secondary-iconbutton-circle-hover-small-icon};
+  --icon-btn-circle-sec-active-bg: #{$light-button-secondary-iconbutton-circle-active-small-background};
+  --icon-btn-circle-sec-active-text: #{$light-button-secondary-iconbutton-circle-active-small-icon};
+  --icon-btn-circle-sec-disabled-bg: #{$light-button-secondary-iconbutton-circle-disabled-small-background};
+  --icon-btn-circle-sec-disabled-text: #{$light-button-secondary-iconbutton-circle-disabled-small-icon};
+
+  /* Circle Gradient */
+  --icon-btn-circle-gradient-bg: #{$light-button-gradient-iconbutton-circle-default-small-background};
+  --icon-btn-circle-gradient-text: #{$light-button-gradient-iconbutton-circle-default-small-icon};
+  --icon-btn-circle-gradient-radius: #{$light-button-gradient-iconbutton-circle-default-small-cornerradius};
+  --icon-btn-circle-gradient-height: #{$light-button-gradient-iconbutton-circle-default-small-height};
+  --icon-btn-circle-gradient-width: #{$light-button-gradient-iconbutton-circle-default-small-width};
+
+  --icon-btn-circle-gradient-hover-bg: #{$light-button-gradient-iconbutton-circle-hover-small-background};
+  --icon-btn-circle-gradient-hover-text: #{$light-button-gradient-iconbutton-circle-hover-small-icon};
+  --icon-btn-circle-gradient-active-bg: #{$light-button-gradient-iconbutton-circle-active-small-background};
+  --icon-btn-circle-gradient-active-text: #{$light-button-gradient-iconbutton-circle-active-small-icon};
+  --icon-btn-circle-gradient-disabled-bg: #{$light-button-gradient-iconbutton-circle-disabled-small-background};
+  --icon-btn-circle-gradient-disabled-text: #{$light-button-gradient-iconbutton-circle-disabled-small-icon};
+
+    /* Medium */
+  --icon-btn-outline-md-text: #{$light-button-outline-iconbutton-rectangle-default-medium-icon};
+  --icon-btn-outline-md-radius: #{$light-button-outline-iconbutton-rectangle-default-medium-cornerradius};
+  --icon-btn-outline-md-height: #{$light-button-outline-iconbutton-rectangle-default-medium-height};
+  --icon-btn-outline-md-width: #{$light-button-outline-iconbutton-rectangle-default-medium-width};
+  --icon-btn-outline-md-border: #{$light-button-outline-iconbutton-rectangle-default-medium-border-color};
+
+  --icon-btn-outline-md-hover-bg: #{$light-button-outline-iconbutton-rectangle-hover-medium-background};
+  --icon-btn-outline-md-hover-text: #{$light-button-outline-iconbutton-rectangle-hover-medium-icon};
+  --icon-btn-outline-md-hover-border: #{$light-button-outline-iconbutton-rectangle-hover-medium-border-color};
+    --icon-btn-outline-texts:  #{$light-button-outline-iconbutton-circle-hover-small-icon};
+
+  /* Large */
+  --icon-btn-outline-lg-text: #{$light-button-outline-iconbutton-rectangle-default-large-icon};
+  --icon-btn-outline-lg-radius: #{$light-button-outline-iconbutton-rectangle-default-large-cornerradius};
+  --icon-btn-outline-lg-height: #{$light-button-outline-iconbutton-rectangle-default-large-height};
+  --icon-btn-outline-lg-width: #{$light-button-outline-iconbutton-rectangle-default-large-width};
+  --icon-btn-outline-lg-border: #{$light-button-outline-iconbutton-rectangle-default-large-border-color};
+
+  --icon-btn-outline-lg-hover-bg: #{$light-button-outline-iconbutton-rectangle-hover-large-background};
+  --icon-btn-outline-lg-hover-text: #{$light-button-outline-iconbutton-rectangle-hover-large-icon};
+  --icon-btn-outline-lg-hover-border: #{$light-button-outline-iconbutton-rectangle-hover-large-border-color};
+
+
+  /* =============== LEFT NAV ================= */
+  // $bs-leftnav-default-title: black;
+
+  // --leftnav-default-title: #{$light-leftnav-default-title};
+  --leftnav-default-title: black;
+  --leftnav-default-icon: #{$light-leftnav-default-icon};
+  --leftnav-default-body: #{$light-leftnav-default-body};
+  --leftnav-default-bg: #{$light-leftnav-default-background};
+  --leftnav-default-collapse-fill: #{$light-leftnav-default-collapsefill};
+  --leftnav-default-collapse-icon: #{$light-leftnav-default-collapseicon};
+  --leftnav-collapse-bg:#{$light-leftnav-collapse-backfround};
+  --leftnav-collapse-text:#{$light-leftnav-collapse-title};
+
+  --leftnav-active-title: #{$light-leftnav-active-title};
+  --leftnav-active-bg: #{$light-leftnav-active-background};
+  --leftnav-active-fill: #{$light-leftnav-active-activefill};
+  --leftnav-active-text: #{$light-leftnav-active-activetext};
+
+  --leftnav-hover-title: #{$light-leftnav-hover-title};
+  --leftnav-hover-bg: #{$light-leftnav-hover-background};
+  --leftnav-hover-fill: #{$light-leftnav-hover-hoverfill};
+  --leftnav-hover-text: #{$light-leftnav-hover-hovertext};
+
+  --leftnav-inactive-title: #{$light-leftnav-inactive-title};
+  --leftnav-inactive-bg: #{$light-leftnav-inactive-background};
+  --leftnav-inactive-text: #{$light-leftnav-inactive-inactivetext};
+
+  --leftnav-submenu-title: #{$light-leftnav-submenu-title};
+  --leftnav-submenu-bg: #{$light-leftnav-submenu-background};
+  --leftnav-submenu-active-bg: #{$light-leftnav-submenu-activemenufill};
+  --leftnav-submenu-active-text: #{$light-leftnav-submenu-activemenutext};
+
+  /* =============== HEADER ================= */
+  --header-default-height: #{$light-header-default-height};
+  --header-default-bg: #{$light-header-default-background};
+  --header-hover-bg: #{$light-header-hover-background};
+  --header-hover-bento: #{$light-header-hover-bento};
+  --header-hover-username: #{$light-header-hover-username};
+  --header-hover-fill: #{$light-header-hover-hoverfill};
+  --header-hover-icon-fill: #{$light-header-hover-iconfill};
+  --header-hover-profile-fill: #{$light-header-hover-profilefill};
+  --header-hover-profile-border: #{$light-header-hover-profileborder-color};
+  --header-default-shadow: #{0 $light-header-default-shadow-y $light-header-default-shadow-blur $light-header-default-shadow-color};
+
+   /* =============== calender searchbar ================= */
+    --calendar-searchbar-active-bg: #{$light-calendar-date-active-searchbar-background};
+    --calendar-searchbar-active-text: #{$light-calendar-date-active-searchbar-text};
+    --calendar-searchbar-active-border: #{1px $light-calendar-date-active-searchbar-border-style $light-calendar-date-active-searchbar-border-color };
+    --calendar-searchbar-icon: #{$light-calendar-date-active-searchbar-icon};
+    --calendar-searchbar-active-font-weight: #{map-get($font-weight-map, $light-calendar-date-active-searchbar-searchtext-font-weight)};
+    --calendar-searchbar-active-font-size: #{$light-calendar-date-active-searchbar-searchtext-font-size};
+    //calendar header and body
+    --calendar-header-month: #{$light-calendar-date-active-calendar-header-month};
+    --calendar-header-year: #{$light-calendar-date-active-calendar-header-year};
+    --calendar-body-days: #{$light-calendar-date-active-calendar-body-days};
+    --calendar-body-month: #{$light-calendar-month-active-calendar-body-activefill};
+    --calendar-body-active-date: #{$light-calendar-date-active-calendar-body-activedate};
+    --calendar-shadow: #{0 $light-calendar-date-active-calendar-shadow-y $light-calendar-date-active-calendar-shadow-blur $light-calendar-date-active-calendar-shadow-color};
+    --Calendar-active-bg: #{$light-calendar-date-active-calendar-background};
+    --calendar-body-dates: #{$dark-calendar-date-active-calendar-body-activefill};
+    --calendar-body-hover-date: #{$light-calendar-date-hover-calendar-body-hoverfill};
+    --calendar-body-disabled-date: #{$light-calendar-date-active-calendar-body-disableddate};
+    --calendar-body-active-date: #{$light-calendar-date-active-calendar-body-activedate};
+    --calendar-body-active-color: #{$light-calendar-date-active-calendar-body-activefill};
+    //dropdown-list //
+    --table-dropdown-defult-background: #{$light-tabledropdown-default-background};
+    --table-drodown-defult-text: #{$light-tabledropdown-default-text};
+    --table-drodown-defult-icon-text: #{$light-tabledropdown-default-icon};
+    --table-dropdown-defult-color: #{$light-tabledropdown-default-line-color};
+    --table-dropdown-shadow: #{0 $light-tabledropdown-default-shadow-y $light-tabledropdown-default-shadow-blur $light-tabledropdown-default-shadow-color};
+    --table-dropdown-hover-text: #{$light-tabledropdown-hover-hovertext};
+    --table-dropdown-hover-icon: #{$light-tabledropdown-hover-hovericon};
+    --table-dropdown-hover-fill: #{$light-tabledropdown-hover-hoverfill};
+    --table-dropdown-hover-shadow: #{0 $light-tabledropdown-hover-shadow-y $light-tabledropdown-hover-shadow-blur $light-tabledropdown-hover-shadow-color};
+    //menu-button
+    --menu-button-bg: #{$light-menubutton-default-button-background};
+    --menu-button-text: #{$light-menubutton-default-button-text};
+    --menu-button-icon: #{$light-menubutton-default-button-icon};
+    --menu-button-hover-bg: #{$light-menubutton-hover-button-background};
+    --menu-button-hover-text: #{$light-menubutton-hover-button-text};
+    --menu-button-hover-icon: #{$light-menubutton-hover-button-icon};
+    --menu-button-defaultopen-menu-bg: #{$light-menubutton-defaultopen-menu-background};
+    --menu-button-defaultopen-menu-text: #{$light-menubutton-defaultopen-menu-text};
+    --menu-button-defaultopen-menu-icon: #{$light-menubutton-defaultopen-button-icon};
+    --menu-button-activemenu-bg: #{$light-menubutton-activeopen-button-background};
+    --menu-button-activemenu-text: #{$light-menubutton-activeopen-button-text};
+    --menu-button-activemenu-icon: #{$light-menubutton-activeopen-button-icon};
+    --menu-button-defaultopen-shadow: #{0 $light-menubutton-defaultopen-menu-shadow-y $light-menubutton-defaultopen-menu-shadow-blur $light-menubutton-defaultopen-menu-shadow-color};
+    --menu-button-defaultopen-menu-line: #{$light-menubutton-defaultopen-menu-line-color};
+    //hyberlink-multiple values
+    --hyberlink-multiple-values-text: #{$light-hyperlinkvalues-default-text};
+    --hyberlink-defult-bg:#{$light-hyperlinkvalues-default-badgefill};
+    --hyberlink-multiple-values-hover-text: #{$light-hyperlinkvalues-hover-text};
+    --hyberlink-badge-bg: #{$light-hyperlinkvalues-default-badgefill};
+    --hyberlink-badge-text: #{$light-hyperlinkvalues-default-badgetext};
+    --hyberlink-badge-hover-bg: #{$light-hyperlinkvalues-hover-badgefill};
+    --hyberlink-badge-hover-text: #{$light-hyperlinkvalues-hover-badgetext};
+    //chip defult
+    --chip-defult-bg: #{$light-chip-default-background};
+    --chip-defult-text: #{$light-chip-default-text};
+    --chip-defult-icon: #{$light-chip-default-icon};
+    --chip-hover-bg: #{$light-chip-hover-background};
+    --chip-hover-text: #{$light-chip-hover-text};
+    --chip-hover-icon: #{$light-chip-hover-icon};
+    --chip-disabled-bg: #{$light-chip-disabled-background};
+    --chip-disabled-text: #{$light-chip-disabled-text};
+    //finite draganddrop
+     --draganddrop-defult-bg:#{$light-draganddrop-default-background};
+    --draganddrop-bg: #{$light-draganddrop-grabbing-background};
+    --draganddrop-text: #{$light-draganddrop-grabbing-icon};
+    --draganddrop-border: #{1px $light-draganddrop-grabbing-border-style $light-draganddrop-grabbing-border-color};
+    --draganddrop-box-shadow: #(0 $light-draganddrop-grabbing-shadow-y $light-draganddrop-grabbing-shadow-blur $light-draganddrop-grabbing-shadow-color);
+    --draganddrop-icon: #{$light-draganddrop-default-icon};
+    --draganddrop-hover-bg: #{$light-draganddrop-hover-background};
+    --draganddrop-hover-text: #{$light-draganddrop-hover-body};
+    --draganddrop-hover-border: #{ $light-draganddrop-hover-border-color};
+    --draganddrop-hover-box-shadow: #{0 $light-draganddrop-hover-shadow-y $light-draganddrop-hover-shadow-blur $light-draganddrop-hover-shadow-color};
+    --draganddrop-icon-hover: #{$light-draganddrop-hover-icon};
+    --draganddrop-grabbing-bg: #{$light-draganddrop-grabbing-background};
+    --draganddrop-grabbing-text: #{$light-draganddrop-grabbing-icon};
+    --draganddrop-grabbing-border: #{2px $light-draganddrop-grabbing-border-style $light-draganddrop-grabbing-border-color};
+    --draganddrop-grabbing-box-shadow: #{0 $light-draganddrop-grabbing-shadow-y $light-draganddrop-grabbing-shadow-blur $light-draganddrop-grabbing-shadow-color};
+    --draganddrop-icon-grabbing: #{$light-draganddrop-grabbing-icon};
+   //progressupload default
+    --progressupload-bg: #{$light-progressupload-default-background};
+    --progressupload-fill: #{$light-progressupload-default-file};
+    --progressupload-default-progresstrack: #{$light-progressupload-default-progresstrack};
+    --progressupload-default-iconfill: #{$light-progressupload-default-iconfill};
+    --progressupload-default-heading:#{$light-progressupload-default-heading};
+    --progressupload-default-file: #{$light-progressupload-default-file};
+    --progressupload-default-size: #{$light-progressupload-default-size};
+    --progressupload-default-erroricon: #{$light-progressupload-default-erroricon};
+    --progressupload-default-iconfill: #{$light-progressupload-default-iconfill};
+    --progressupload-default-completed-iconfill: #{$light-progressupload-completed-iconfill};
+    --progressupload-default-percentage: #{$light-progressupload-progress-percentage};
+    --progressupload-default-progressfill: #{$light-progressupload-progress-progressfill};
+    --progressupload-default-completed: #{$light-progressupload-completed-progressfill};
+  //sort
+    --sort-default-background: #{$light-sort-default-background};
+    --sort-default-text: #{$light-sort-default-text};
+    --sort-hover-background: #{$light-sort-hover-background};
+    --sort-default-shadow: #{0 $light-sort-default-shadow-y $light-sort-default-shadow-blur $light-sort-default-shadow-color};
+    --sort-hover-hoverfill: #{$light-sort-hover-hoverfill};
+    --sort-hover-hovertext: #{$light-sort-hover-hovertext};
+    --sort-active-activefill: #{$light-sort-active-activefill};
+    --sort-active-activetext: #{$light-sort-active-activetext};
+    //card image
+    --card-card-background: #{$light-card-card-background};
+    --card-box-shadow: #{0 $light-card-card-shadow-y $dark-card-card-shadow-blur $light-card-card-shadow-color};
+    --card-heading-color: #{$light-card-card-heading};
+    --card-card-card-body: #{$light-card-card-body};
+    --card-cardwithbutton-body: #{$light-card-cardwithbutton-body};
+    //doughnut chart
+--doughnutchart-default-background:#{$light-doughnutchart-default-background};
+--doughnutchart-default-title:#{$light-doughnutchart-default-title};
+--doughnutchart-default-chartvalues:#{$light-doughnutchart-default-chartvalues};
+--doughnutchart-default-doughnut-color1: #{$light-doughnutchart-default-doughnut-color1};
+--doughnutchart-default-doughnut-color2: #{$light-doughnutchart-default-doughnut-color2};
+--doughnutchart-default-doughnut-color3: #{$light-doughnutchart-default-doughnut-color3};
+--doughnutchart-default-box-shadow: #{0 $light-doughnutchart-default-shadow-y $light-doughnutchart-default-shadow-blur $light-doughnutchart-default-shadow-color};
+ --doughnutchart-default-legend-legendcolor: #{$light-doughnutchart-default-legend-legendcolor};
+ --doughnutchart-default-legend-circle1: #{$light-doughnutchart-default-legend-circle1};
+  --doughnutchart-default-legend-circle2: #{$light-doughnutchart-default-legend-circle2};
+  --doughnutchart-default-legend-circle3: #{$light-doughnutchart-default-legend-circle3};
+--doughnutchart-widget-background: #{$light-doughnutchart-widget-background};
+--doughnutchart-widget-box-shadow: #{0 $light-doughnutchart-widget-shadow-y $light-doughnutchart-widget-shadow-blur $light-doughnutchart-widget-shadow-color};
+--doughnutchart-widget-title: #{$light-doughnutchart-widget-title};
+--doughnutchart-widget-icon: #{$light-doughnutchart-widget-icon};
+--doughnutchart-widget-chartvalues: #{$light-doughnutchart-widget-chartvalues};
+--doughnutchart-widget-doughnut-color1: #{$light-doughnutchart-widget-doughnut-color1};
+--doughnutchart-widget-doughnut-color2: #{$light-doughnutchart-widget-doughnut-color2};
+--doughnutchart-widget-doughnut-color3: #{$light-doughnutchart-widget-doughnut-color3};
+--doughnutchart-widget-legend-legendcolor: #{$light-doughnutchart-widget-legend-legendcolor};
+--doughnutchart-widget-legend-circle1: #{$light-doughnutchart-widget-legend-circle1};
+--doughnutchart-widget-legend-circle2: #{$light-doughnutchart-widget-legend-circle2};
+--doughnutchart-widget-legend-circle3: #{$light-doughnutchart-widget-legend-circle3};
+//pie chart
+--piechart-default-background: #{$light-piechart-default-background};
+--piechart-default-box-shadow: #{0 $light-piechart-default-shadow-y $light-piechart-default-shadow-blur $light-piechart-default-shadow-color};
+--piechart-default-title: #{$light-piechart-default-title};
+--piechart-default-chartvalues: #{$light-piechart-default-chartvalues};
+--piechart-default-pie-color1: #{$light-piechart-default-piechart-color1};
+--piechart-default-pie-color2: #{$light-piechart-default-piechart-color2};
+--piechart-default-pie-color3: #{$light-piechart-default-piechart-color3};
+--piechart-default-pie-color4: #{$light-piechart-default-piechart-color4};
+--piechart-default-pie-color5: #{$light-piechart-default-piechart-color5};
+--piechart-default-legend-legendcolor: #{$light-piechart-default-legend-legendcolor};
+--piechart-default-legend-circle1: #{$light-piechart-default-legend-circle1};
+--piechart-default-legend-circle2: #{$light-piechart-default-legend-circle2};
+--piechart-default-legend-circle3: #{$light-piechart-default-legend-circle3};
+--piechart-default-legend-circle4: #{$light-piechart-default-legend-circle4};
+--piechart-default-legend-circle5: #{$light-piechart-default-legend-circle5};
+--piechart-widget-background: #{$light-piechart-widget-background};
+--piechart-widget-box-shadow: #{0 $light-piechart-widget-shadow-y $light-piechart-widget-shadow-blur $light-piechart-widget-shadow-color};
+--piechart-widget-title: #{$light-piechart-widget-title};
+--piechart-widget-icon: #{$light-piechart-widget-icon};
+--piechart-widget-chartvalues: #{$light-piechart-widget-chartvalues};
+--piechart-widget-pie-color1: #{$light-piechart-widget-piechart-color1};
+--piechart-widget-pie-color2: #{$light-piechart-widget-piechart-color2};
+--piechart-widget-pie-color3: #{$light-piechart-widget-piechart-color3};
+--piechart-widget-pie-color4: #{$light-piechart-widget-piechart-color4};
+--piechart-widget-pie-color5: #{$light-piechart-widget-piechart-color5};
+--piechart-widget-legend-legendcolor: #{$light-piechart-widget-legend-legendcolor};
+--piechart-widget-legend-circle1: #{$light-piechart-widget-legend-circle1};
+--piechart-widget-legend-circle2: #{$light-piechart-widget-legend-circle2};
+--piechart-widget-legend-circle3: #{$light-piechart-widget-legend-circle3};
+--piechart-widget-legend-circle4: #{$light-piechart-widget-legend-circle4};
+--piechart-widget-legend-circle5: #{$light-piechart-widget-legend-circle5};
+//bubblechart
+--bubblechart-default-background: #{$light-bubblechart-default-background};
+--bubblechart-default-box-shadow: #{0 $light-bubblechart-default-shadow-y $light-bubblechart-default-shadow-blur $light-bubblechart-default-shadow-color};
+--bubblechart-default-title: #{$light-bubblechart-default-title};
+--bubblechart-default-xlabels: #{$light-bubblechart-default-xlabels};
+--bubblechart-default-ylabels: #{$light-bubblechart-default-ylabels};
+--bubblechart-default-gridline-color: #{$light-bubblechart-default-gridline-color};
+--bubblechart-default-xline-color: #{$light-bubblechart-default-xline-color};
+--bubblechart-default-bubble-bubble1: #{$light-bubblechart-default-bubble-bubble1};
+--bubblechart-default-bubble-bubble2: #{$light-bubblechart-default-bubble-bubble2};
+--bubblechart-default-legend-legendcolor: #{$light-bubblechart-default-legend-legendcolor};
+--bubblechart-default-legend-circle1: #{$light-bubblechart-default-legend-circle1};
+--bubblechart-default-legend-circle2: #{$light-bubblechart-default-legend-circle2};
+--bubblechart-widget-background: #{$light-bubblechart-widget-background};
+--bubblechart-widget-box-shadow: #{0 $light-bubblechart-widget-shadow-y $light-bubblechart-widget-shadow-blur $light-bubblechart-widget-shadow-color};
+--bubblechart-widget-title: #{$light-bubblechart-widget-title};
+--bubblechart-widget-icon: #{$light-bubblechart-widget-icon};
+--bubblechart-widget-xlabels: #{$light-bubblechart-widget-xlabels};
+--bubblechart-widget-ylabels: #{$light-bubblechart-widget-ylabels};
+--bubblechart-widget-gridline-color: #{$light-bubblechart-widget-gridline-color};
+--bubblechart-widget-xline-color: #{$light-bubblechart-widget-xline-color};
+--bubblechart-widget-bubble-bubble1: #{$light-bubblechart-widget-bubble-bubble1};
+--bubblechart-widget-bubble-bubble2: #{$light-bubblechart-widget-bubble-bubble2};
+--bubblechart-widget-legend-legendcolor: #{$light-bubblechart-widget-legend-legendcolor};
+--bubblechart-widget-legend-circle1: #{$light-bubblechart-widget-legend-circle1};
+--bubblechart-widget-legend-circle2: #{$light-bubblechart-widget-legend-circle2};
+--bubblechart-hoverdata-background: #{$light-bubblechart-hoverdata-background};
+--bubblechart-hoverdata-box-shadow: #{0 $light-bubblechart-hoverdata-shadow-y $light-bubblechart-hoverdata-shadow-blur $light-bubblechart-hoverdata-shadow-color};
+--bubblechart-hoverdata-tooltip-background: #{$light-bubblechart-hoverdata-tooltip-background};
+--bubblechart-hoverdata-tooltip-text: #{$light-bubblechart-hoverdata-tooltip-text};
+--bubblechart-hoverdata-tooltip-box-shadow: #{0 $light-bubblechart-hoverdata-tooltip-shadow-y $light-bubblechart-hoverdata-tooltip-shadow-blur $light-bubblechart-hoverdata-tooltip-shadow-color};
+--bubblechart-hoverdata-legend-legendcolor: #{$light-bubblechart-hoverdata-legend-legendcolor};
+--bubblechart-hoverdata-legend-circle1: #{$light-bubblechart-hoverdata-legend-circle1};
+--bubblechart-hoverdata-legend-circle2: #{$light-bubblechart-hoverdata-legend-circle2};
+--bubblechart-hoverdata-bubble-bubble1: #{$light-bubblechart-hoverdata-bubble-bubble1};
+--bubblechart-hoverdata-bubble-bubble2: #{$light-bubblechart-hoverdata-bubble-bubble2};
+//boxplot chart
+--boxplotchart-default-background: #{$light-boxplotchart-default-background};
+--boxplotchart-default-box-shadow: #{0 $light-boxplotchart-default-shadow-y $light-boxplotchart-default-shadow-blur $light-boxplotchart-default-shadow-color};
+--boxplotchart-default-title: #{$light-boxplotchart-default-title};
+--boxplotchart-default-xlabels: #{$light-boxplotchart-default-xlabels};
+--boxplotchart-default-ylabels: #{$light-boxplotchart-default-ylabels};
+--boxplotchart-default-gridline-color: #{$light-boxplotchart-default-gridline-color};
+--boxplotchart-default-xline-color: #{$light-boxplotchart-default-xline-color};
+--boxplotchart-default-boxplot-boxfill: #{$light-boxplotchart-default-boxplot-boxfill};
+--boxplotchart-default-boxplot-line: #{  1px solid $light-boxplotchart-default-boxplot-line};
+--boxplotchart-default-legend-legendcolor: #{$light-boxplotchart-default-legend-legendcolor};
+--boxplotchart-default-legend-circle: #{$light-boxplotchart-default-legend-circle};
+--boxplotchart-widget-background: #{$light-boxplotchart-widget-background};
+--boxplotchart-widget-box-shadow: #{0 $light-boxplotchart-widget-shadow-y $light-boxplotchart-widget-shadow-blur $light-boxplotchart-widget-shadow-color};
+--boxplotchart-widget-title: #{$light-boxplotchart-widget-title};
+--boxplotchart-widget-icon: #{$light-boxplotchart-widget-icon};
+--boxplotchart-widget-xlabels: #{$light-boxplotchart-widget-xlabels};
+--boxplotchart-widget-ylabels: #{$light-boxplotchart-widget-ylabels};
+--boxplotchart-widget-gridline-color: #{$light-boxplotchart-widget-gridline-color};
+--boxplotchart-widget-xline-color: #{$light-boxplotchart-widget-xline-color};
+--boxplotchart-widget-boxplot-line: #{  1px solid $light-boxplotchart-widget-boxplot-line};  
+--boxplotchart-widget-legend-circle: #{$light-boxplotchart-widget-legend-circle};
+--boxplotchart-hoverdata-background: #{$light-boxplotchart-hoverdata-background};
+--boxplotchart-hoverdata-box-shadow: #{0 $light-boxplotchart-hoverdata-shadow-y $light-boxplotchart-hoverdata-shadow-blur $light-boxplotchart-hoverdata-shadow-color};
+--boxplotchart-hoverdata-tooltip-background: #{$light-boxplotchart-hoverdata-tooltip-background};
+--boxplotchart-hoverdata-tooltip-text: #{$light-boxplotchart-hoverdata-tooltip-text};
+--boxplotchart-hoverdata-tooltip-box-shadow: #{0 $light-boxplotchart-hoverdata-tooltip-shadow-y $light-boxplotchart-hoverdata-tooltip-shadow-blur $light-boxplotchart-hoverdata-tooltip-shadow-color};
+--boxplotchart-hoverdata-legend-legendcolor: #{$light-boxplotchart-hoverdata-legend-legendcolor};
+--boxplotchart-hoverdata-legend-circle: #{$light-boxplotchart-hoverdata-legend-circle};
+--boxplotchart-hoverdata-boxplot-boxfill: #{$light-boxplotchart-hoverdata-boxplot-boxfill};
+--boxplotchart-hoverdata-boxplot-line: #{  1px solid $light-boxplotchart-hoverdata-boxplot-line};
+//line chart
+--linechart-default-background: #{$light-linechart-default-background};
+--linechart-default-box-shadow: #{0 $light-linechart-default-shadow-y $light-linechart-default-shadow-blur $light-linechart-default-shadow-color};
+--linechart-default-title: #{$light-linechart-default-title};
+--linechart-default-xlabels: #{$light-linechart-default-xlabels};
+--linechart-default-ylabels: #{$light-linechart-default-ylabels};
+--linechart-default-legend-legendcolor: #{$light-linechart-default-legend-legendcolor};
+--linechart-default-legend-circle1: #{$light-linechart-default-legend-circle1};
+--linechart-default-legend-circle2: #{$light-linechart-default-legend-circle2};
+--linechart-widget-background: #{$light-linechart-widget-background};
+--linechart-widget-title: #{$light-linechart-widget-title};
+--linechart-widget-legend-legendcolor: #{$light-linechart-widget-legend-legendcolor};
+--linechart-widget-legend-circle1: #{$light-linechart-widget-legend-circle1};
+--linechart-widget-legend-circle2: #{$light-linechart-widget-legend-circle2};
+--linechart-hoverdata-background: #{$light-linechart-hoverdata-background};
+--linechart-hoverdata-box-shadow: #{0 $light-linechart-hoverdata-shadow-y $light-linechart-hoverdata-shadow-blur $light-linechart-hoverdata-shadow-color};
+--linechart-hoverdata-tooltip-background: #{$light-linechart-hoverdata-tooltip-background};
+--linechart-hoverdata-tooltip-text: #{$light-linechart-hoverdata-tooltip-text};
+--linechart-hoverdata-legend-legendcolor : #{$light-linechart-hoverdata-legend-legendcolor};
+--linechart-hoverdata-legend-circle1: #{$light-linechart-hoverdata-legend-circle1};
+--linechart-hoverdata-legend-circle2: #{$light-linechart-hoverdata-legend-circle2};
+//stacked bar chart
+--stackedbarchart-default-background: #{$light-stackedbarchart-default-background};
+--stackedbarchart-default-box-shadow: #{0 $light-stackedbarchart-default-shadow-y $light-stackedbarchart-default-shadow-blur $light-stackedbarchart-default-shadow-color};
+--stackedbarchart-default-title: #{$light-stackedbarchart-default-title};
+--stackedbarchart-default-xlabels: #{$light-stackedbarchart-default-xlabels};
+--stackedbarchart-default-ylabels: #{$light-stackedbarchart-default-ylabels};
+--stackedbarchart-default-barvalues: #{$light-stackedbarchart-default-barvalues};
+--stackedbarchart-default-bar-stack1: #{$light-stackedbarchart-default-bar-stack1};
+--stackedbarchart-default-bar-stack2: #{$light-stackedbarchart-default-bar-stack2};
+--stackedbarchart-default-bar-stack3: #{$light-stackedbarchart-default-bar-stack3};
+--stackedbarchart-default-bar-stack4: #{$light-stackedbarchart-default-bar-stack4};
+--stackedbarchart-default-legend-legendcolor: #{$light-stackedbarchart-default-legend-legendcolor};
+--stackedbarchart-default-legend-circle1: #{$light-stackedbarchart-default-legend-circle1};
+--stackedbarchart-default-legend-circle2: #{$light-stackedbarchart-default-legend-circle2};
+--stackedbarchart-default-legend-circle3: #{$light-stackedbarchart-default-legend-circle3};
+--stackedbarchart-default-legend-circle4: #{$light-stackedbarchart-default-legend-circle4};
+--stackedbarchart-widget-background: #{$light-stackedbarchart-widget-background};
+--stackedbarchart-widget-box-shadow: #{0 $light-stackedbarchart-widget-shadow-y $light-stackedbarchart-widget-shadow-blur $light-stackedbarchart-widget-shadow-color};
+--stackedbarchart-widget-title: #{$light-stackedbarchart-widget-title};
+--stackedbarchart-widget-xlabels: #{$light-stackedbarchart-widget-xlabels};
+--stackedbarchart-widget-ylabels: #{$light-stackedbarchart-widget-ylabels};
+--stackedbarchart-widget-bar-stack1: #{$light-stackedbarchart-widget-bar-stack1};
+--stackedbarchart-widget-bar-stack2: #{$light-stackedbarchart-widget-bar-stack2};
+--stackedbarchart-widget-bar-stack3: #{$light-stackedbarchart-widget-bar-stack3};
+--stackedbarchart-widget-bar-stack4: #{$light-stackedbarchart-widget-bar-stack4};
+//bar chart
+--barchart-default-background: #{$light-barchart-default-background};
+--barchart-default-box-shadow: #{0 $light-barchart-default-shadow-y $light-barchart-default-shadow-blur $light-barchart-default-shadow-color};
+--barchart-default-title: #{$light-barchart-default-title};
+--barchart-default-xlabels: #{$light-barchart-default-xlabels};
+--barchart-default-ylabels: #{$light-barchart-default-ylabels};
+--barchart-default-bar: #{$light-barchart-default-bar};
+--barchart-default-barvalues: #{$light-barchart-default-barvalues};
+--barchart-default-legend-legendcolor: #{$light-barchart-default-legend};
+--barchart-default-legendcircle: #{$light-barchart-default-legendcircle};
+--barchart-widget-background: #{$light-barchart-widget-background};
+--barchart-widget-box-shadow: #{0 $light-barchart-widget-shadow-y $light-barchart-widget-shadow-blur $light-barchart-widget-shadow-color};
+--barchart-widget-title: #{$light-barchart-widget-title};
+--barchart-widget-xlabels: #{$light-barchart-widget-xlabels};
+--barchart-widget-ylabels: #{$light-barchart-widget-ylabels};
+--barchart-widget-bar: #{$light-barchart-widget-bar};
+--barchart-widget-barvalues: #{$light-barchart-widget-barvalues};
+--barchart-widget-legend: #{$light-barchart-widget-legend};
+--barchart-widget-legendcircle: #{$light-barchart-widget-legendcircle};
+//breadcrumb
+--breadcrumb-hover-text: #{$light-breadcrumb-hover-text};
+--breadcrumb-hover-hovertext: #{$light-breadcrumb-hover-hovertext};
+--breadcrumb-active-activetext: #{$light-breadcrumb-active-activetext};
+//summary point
+--border-color:  8px solid #f0f0f0;
+//header
+--header-default-iconborder-color: #{$light-header-default-iconborder-color};
+--header-default-profileicon: #{$light-header-default-profileicon};
+--header-default-border: #{ $light-header-default-iconborder-width $light-header-default-iconborder-style $light-header-default-iconborder-color};
+--header-default-username: #{$light-header-default-username};
+--header-default-account: #{$light-header-default-account}; 
+--header-hover-profilefill: #{$light-header-hover-profilefill};
+--header-hover-profileicon: #{$light-header-hover-profileicon};
+--header-hover-border: #{$light-header-hover-iconborder-width $light-header-hover-iconborder-style $light-header-hover-iconborder-color};
+--header-hover-box-shadow: #{0 $light-header-hover-shadow-y $light-header-hover-shadow-blur $light-header-hover-shadow-color};
+--header-active-profilefill: #{$light-header-active-profilefill};
+--header-active-profileicon: #{$light-header-active-profileicon};
+--header-active-border: #{ $light-header-active-iconborder-width $light-header-active-iconborder-style $light-header-active-iconborder-color};
+--header-active-box-shadow: #{0 $light-header-active-shadow-y $light-header-active-shadow-blur $light-header-active-shadow-color};
+--header-active-menubackground: #{$light-header-active-menubackground};
+--header-active-menuitem: #{$light-header-active-menuitem};
+--header-hover-hoverfill: #{$light-header-hover-hoverfill };
+--header-hover-dropdown: #{$light-header-hover-dropdown};
+--header-active-activefill: #{$light-header-active-activefill};
+--header-active-menubackground: #{$light-header-active-menubackground};
+--header-active-box-shadow: #{0 $light-header-active-shadow-y $light-header-active-shadow-blur $light-header-active-shadow-color};
+--header-active-menuitem: #{$light-header-active-menuitem};
+--header-active-menuitem-border-bottom: #{1px $light-header-active-menuline-style $light-header-active-menuline-color};
+--header-hover-background: #{$light-header-hover-background};
+--header-hover-dropdown: #{$light-header-hover-dropdown};
+--header-active-profileicon: #{$light-header-active-profileicon};
+--header-hover-box-shadow: #{0 $light-header-hover-shadow-y $light-header-hover-shadow-blur $light-header-hover-shadow-color};
+--header-hover-username: #{$light-header-hover-username};
+--header-hover-account: #{$light-header-hover-account};
+//;bento
+--bento-default-background: #{$light-bento-default-background};
+--bento-default-box-shadow: #{0 $light-bento-default-shadow-y $light-bento-default-shadow-blur $light-bento-default-shadow-color};
+--bento-default-modules-iconfill: #{$light-bento-default-modules-iconfill};
+--bento-default-modules-icon: #{$light-bento-default-modules-icon};
+--bento-default-modules-title: #{$light-bento-default-modules-title};
+
+--bento-default-modules-label: #{$light-bento-default-modules-label};
+--bento-hover-modules-hover-foreground: #{$light-bento-hover-modules-hover-foreground};
+--bento-hover-modules-hover-iconfill: #{$light-bento-hover-modules-hover-iconfill};
+--bento-hover-modules-hover-icon: #{$light-bento-hover-modules-hover-icon};
+ --bento-active-modules-active-foreground: #{$light-bento-active-modules-active-foreground};
+--bento-active-modules-active: #{$light-bento-active-modules-active-iconfill};
+--bento-active-modules-active-icon: #{$light-bento-active-modules-active-icon};
+--bento-active-horizontals-title: #{$light-bento-active-horizontals-title};
+--bento-active-horizontals-iconfill: #{$light-bento-active-horizontals-iconfill};
+ --bento-active-horizontals-icon: #{$light-bento-active-horizontals-icon};
+ --bento-active-horizontals-title: #{$light-bento-active-horizontals-title};
+ --bento-active-horizontals-label: #{$light-bento-active-horizontals-label};
+ --bento-active-horizontals-active-foreground: #{$light-bento-active-horizontals-active-foreground};
+ --bento-active-horizontals-active-iconfill: #{$light-bento-active-horizontals-active-iconfill};
+ --bento-active-horizontals-active-icon: #{$light-bento-active-horizontals-active-icon};
+
+
+
+
+}
+
+
+.dark-theme{
+  --body-bg: #{$body-black};
+  --body-text: #{$body-white};
+  --primary: #{$dark-mode-color-primary-color-default};
+  --primary-hover: #{$dark-mode-color-primary-color-hover};
+  --primary-active: #{$dark-mode-color-primary-color-active};
+  --primary-disabled: #{$dark-mode-color-primary-color-disable};
+
+  --secondary: #{$dark-mode-color-secondary-color-s-default};
+  --secondary-hover: #{$dark-button-secondary-textbutton-hover-small-background};
+  --secondary-active: #{$dark-button-secondary-textbutton-active-small-background};
+  --secondary-disabled: #{$dark-button-secondary-textbutton-disabled-small-background};
+  --secondary-text: #{$dark-button-secondary-textbutton-default-small-text};
+  --secondary-active-text: #{$dark-button-secondary-textbutton-active-small-text};
+  --secondary-disabled-text: #{$dark-button-secondary-textbutton-disabled-small-text};
+  --secondary-hover-text: #{$dark-button-secondary-textbutton-hover-small-text};
+
+  --bg-gradient: #{$dark-mode-color-gradient-color-gradient-default};
+  --bg-gradient-hover: #{$dark-mode-color-gradient-color-gradient-hover};
+  --bg-gradient-active: #{$dark-mode-color-gradient-color-gradient-active};
+  --bg-gradient-disabled: #{$dark-mode-color-gradient-color-g-disable};
+
+  --btn-primary-bg: #{$dark-button-primary-textbutton-default-small-background};
+  --btn-primary-hover-bg: #{$dark-button-primary-textbutton-hover-small-background};
+  --btn-primary-hover-text: #{$dark-button-primary-textbutton-hover-small-text};
+  --btn-primary-active-text: #{$dark-button-primary-textbutton-active-small-text};
+
+  --btn-secondary-bg: #{$dark-button-secondary-textbutton-default-small-background};
+  --btn-secondary-hover-bg: #{$dark-button-secondary-textbutton-hover-small-background};
+  --btn-secondary-hover-text: #{$dark-button-secondary-textbutton-hover-small-text};
+
+  --btn-success-bg: #{$dark-button-success-textbutton-default-small-background};
+  --btn-success-hover-bg: #{$dark-button-success-textbutton-hover-small-background};
+  --btn-success-disabled-bg: #{$dark-button-success-textbutton-disabled-small-background};
+  --btn-success-disabled-text: #{$dark-button-success-textbutton-disabled-small-text};
+
+  --btn-danger-bg: #{$dark-button-danger-textbutton-default-small-background};
+  --btn-danger-hover-bg: #{$dark-button-danger-textbutton-hover-small-background};
+
+  --btn-warning-bg: #{$dark-button-warning-textbutton-default-small-background};
+  --btn-warning-disabled-bg: #{$dark-button-warning-textbutton-disabled-small-background};
+  --btn-warning-disabled-text: #{$dark-button-warning-textbutton-disabled-small-text};
+
+  --btn-outline-text: #{$dark-button-outline-textbutton-default-small-text};
+  --btn-outline-hover-text: #{$dark-button-outline-textbutton-hover-small-text};
+  --btn-outline-border-color: #{$dark-button-outline-textbutton-default-small-border-color};
+  --btn-outline-hover-background: #{$dark-button-outline-textbutton-hover-small-background};
+  --btn-outline-active-border-color: #{$dark-button-outline-textbutton-active-small-border-color};
+  --btn-outline-active-text: #{$dark-button-outline-textbutton-active-small-text};
+  --btn-outline-active-background: #{$dark-button-outline-textbutton-active-small-background};
+ /* ================= LINKS ================= */
+  --link-primary: #{$dark-button-link-default-small-text};
+  --link-primary-underline: #{$dark-button-link-default-small-underline};
+  --link-primary-font-weight: #{map-get($font-weight-map, $dark-button-link-textbutton-default-small-textstyle-font-weight)};
+  --link-primary-font-size: #{$dark-button-link-textbutton-default-small-textstyle-font-size};
+  --link-primary-line-height: #{$dark-button-link-textbutton-default-small-textstyle-line-height};
+  --link-primary-letter-spacing: #{$dark-button-link-textbutton-default-small-textstyle-letter-spacing};
+  --link-primary-text-case: #{$dark-button-link-textbutton-default-small-textstyle-text-case};
+  --link-primary-text-decoration: #{$dark-button-link-textbutton-default-small-textstyle-text-decoration};
+
+  /* Link hover */
+  --link-primary-hover: #{$dark-button-link-hover-small-text};
+  --link-primary-hover-underline: #{$dark-button-link-hover-small-underline};
+
+  /* Link active */
+  --link-primary-active: #{$dark-button-link-active-small-text};
+  --link-primary-active-underline: #{$dark-button-link-active-small-underline};
+
+  /* Link disabled */
+  --link-primary-disabled: #{$dark-button-link-disabled-small-text};
+  --link-primary-disabled-font-weight: #{map-get($font-weight-map, $dark-button-link-textbutton-disabled-small-textstyle-font-weight)};
+  --link-primary-disabled-font-size: #{$dark-button-link-textbutton-disabled-small-textstyle-font-size};
+  --link-primary-disabled-line-height: #{$dark-button-link-textbutton-disabled-small-textstyle-line-height};
+  --link-primary-disabled-letter-spacing: #{$dark-button-link-textbutton-disabled-small-textstyle-letter-spacing};
+  --link-primary-disabled-text-case: #{$dark-button-link-textbutton-disabled-small-textstyle-text-case};
+  --link-primary-disabled-text-decoration: #{$dark-button-link-textbutton-disabled-small-textstyle-text-decoration};
+
+  /* ================= ICON BUTTONS ================= */
+  --btn-icon-left-color: #{$dark-button-primary-texticonleft-default-small-icon};
+  --btn-icon-right-color: #{$dark-button-primary-texticonright-default-small-icon};
+
+  /* Rectangle Icon Primary Button */
+  --icon-btn-primary-bg: #{$dark-button-primary-iconbutton-rectangle-default-small-background};
+  --icon-btn-primary-text: #{$dark-button-primary-iconbutton-rectangle-default-small-icon};
+  --icon-btn-primary-radius: #{$dark-button-primary-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-primary-height: #{$dark-button-primary-iconbutton-rectangle-default-small-height};
+  --icon-btn-primary-width: #{$dark-button-primary-iconbutton-rectangle-default-small-width};
+
+  /* Rectangle Icon Primary Hover */
+  --icon-btn-primary-hover-bg: #{$dark-button-primary-iconbutton-rectangle-hover-small-background};
+  --icon-btn-primary-hover-text: #{$dark-button-primary-iconbutton-rectangle-hover-small-icon};
+   /* Rectangle Icon Primary disabled */
+  --icon-btn-primary-disabled-bg: #{$dark-button-primary-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-primary-disabled-text: #{$dark-button-primary-iconbutton-rectangle-disabled-small-icon};
+  /* Rectangle Icon Secondary Button */
+  --icon-btn-secondary-bg: #{$dark-button-secondary-iconbutton-rectangle-default-small-background};
+  --icon-btn-secondary-text: #{$dark-button-secondary-iconbutton-rectangle-default-small-icon};
+  --icon-btn-secondary-radius: #{$dark-button-secondary-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-secondary-height: #{$dark-button-secondary-iconbutton-rectangle-default-small-height};
+  --icon-btn-secondary-width: #{$dark-button-secondary-iconbutton-rectangle-default-small-width};
+
+  /* Rectangle Icon Secondary Hover */
+  --icon-btn-secondary-hover-bg: #{$dark-button-secondary-iconbutton-rectangle-hover-small-background};
+  --icon-btn-secondary-hover-text: #{$dark-button-secondary-iconbutton-rectangle-hover-small-icon};
+  --icon-btn-secondary-active-bg: #{$dark-button-secondary-iconbutton-rectangle-active-small-background};
+  --icon-btn-secondary-active-text: #{$dark-button-secondary-iconbutton-rectangle-active-small-icon};
+
+  /* Rectangle Icon Secondary Disabled */
+  --icon-btn-secondary-disabled-bg: #{$dark-button-secondary-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-secondary-disabled-text: #{$dark-button-secondary-iconbutton-rectangle-disabled-small-icon};
+
+  /* =============== GRADIENT RECTANGLE ICON BUTTON ================= */
+  --icon-btn-gradient-bg: #{$dark-button-gradient-iconbutton-rectangle-default-small-background};
+  --icon-btn-gradient-text: #{$dark-button-gradient-iconbutton-rectangle-default-small-icon};
+  --icon-btn-gradient-radius: #{$dark-button-gradient-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-gradient-height: #{$dark-button-gradient-iconbutton-rectangle-default-small-height};
+  --icon-btn-gradient-width: #{$dark-button-gradient-iconbutton-rectangle-default-small-width};
+
+  --icon-btn-gradient-hover-bg: #{$dark-button-gradient-iconbutton-rectangle-hover-small-background};
+  --icon-btn-gradient-hover-text: #{$dark-button-gradient-iconbutton-rectangle-hover-small-icon};
+
+  --icon-btn-gradient-disabled-bg: #{$dark-button-gradient-iconbutton-rectangle-disabled-small-background};
+  --icon-btn-gradient-disabled-text: #{$dark-button-gradient-iconbutton-rectangle-disabled-small-icon};
+
+  /* Medium + Large */
+  --icon-btn-gradient-md-bg: #{$dark-button-gradient-iconbutton-rectangle-default-medium-background};
+  --icon-btn-gradient-md-text: #{$dark-button-gradient-iconbutton-rectangle-default-medium-icon};
+  --icon-btn-gradient-md-radius: #{$dark-button-gradient-iconbutton-rectangle-default-medium-cornerradius};
+  --icon-btn-gradient-md-height: #{$dark-button-gradient-iconbutton-rectangle-default-medium-height};
+  --icon-btn-gradient-md-width: #{$dark-button-gradient-iconbutton-rectangle-default-medium-width};
+
+  --icon-btn-gradient-lg-bg: #{$dark-button-gradient-iconbutton-rectangle-default-large-background};
+  --icon-btn-gradient-lg-text: #{$dark-button-gradient-iconbutton-rectangle-default-large-icon};
+  --icon-btn-gradient-lg-radius: #{$dark-button-gradient-iconbutton-rectangle-default-large-cornerradius};
+  --icon-btn-gradient-lg-height: #{$dark-button-gradient-iconbutton-rectangle-default-large-height};
+  --icon-btn-gradient-lg-width: #{$dark-button-gradient-iconbutton-rectangle-default-large-width};
+
+  /* =============== OUTLINE RECTANGLE ICON BUTTON ================= */
+  --icon-btn-outline-text: #{$dark-button-outline-iconbutton-rectangle-default-small-icon};
+  --icon-btn-outline-radius: #{$dark-button-outline-iconbutton-rectangle-default-small-cornerradius};
+  --icon-btn-outline-height: #{$dark-button-outline-iconbutton-rectangle-default-small-height};
+  --icon-btn-outline-width: #{$dark-button-outline-iconbutton-rectangle-default-small-width};
+  --icon-btn-outline-border: #{$dark-button-outline-iconbutton-rectangle-default-small-border-color};
+    --icon-btn-outline-texts:  #{$dark-button-outline-iconbutton-circle-hover-small-icon};
+  --icon-btn-outline-hover-bg: #{$dark-button-outline-iconbutton-rectangle-hover-small-background};
+  --icon-btn-outline-hover-text: #{$dark-button-outline-iconbutton-rectangle-hover-small-icon};
+  --icon-btn-outline-hover-border: #{$dark-button-outline-iconbutton-rectangle-hover-small-border-color};
+
+  --icon-btn-outline-disabled-text: #{$dark-button-outline-iconbutton-rectangle-disabled-small-icon};
+  --icon-btn-outline-disabled-border: #{$dark-button-outline-iconbutton-rectangle-disabled-small-border-color};
+
+  /* Medium */
+  --icon-btn-outline-md-text: #{$dark-button-outline-iconbutton-rectangle-default-medium-icon};
+  --icon-btn-outline-md-radius: #{$dark-button-outline-iconbutton-rectangle-default-medium-cornerradius};
+  --icon-btn-outline-md-height: #{$dark-button-outline-iconbutton-rectangle-default-medium-height};
+  --icon-btn-outline-md-width: #{$dark-button-outline-iconbutton-rectangle-default-medium-width};
+  --icon-btn-outline-md-border: #{$dark-button-outline-iconbutton-rectangle-default-medium-border-color};
+
+  --icon-btn-outline-md-hover-bg: #{$dark-button-outline-iconbutton-rectangle-hover-medium-background};
+  --icon-btn-outline-md-hover-text: #{$dark-button-outline-iconbutton-rectangle-hover-medium-icon};
+  --icon-btn-outline-md-hover-border: #{$dark-button-outline-iconbutton-rectangle-hover-medium-border-color};
+
+  /* Large */
+  --icon-btn-outline-lg-text: #{$dark-button-outline-iconbutton-rectangle-default-large-icon};
+  --icon-btn-outline-lg-radius: #{$dark-button-outline-iconbutton-rectangle-default-large-cornerradius};
+  --icon-btn-outline-lg-height: #{$dark-button-outline-iconbutton-rectangle-default-large-height};
+  --icon-btn-outline-lg-width: #{$dark-button-outline-iconbutton-rectangle-default-large-width};
+  --icon-btn-outline-lg-border: #{$dark-button-outline-iconbutton-rectangle-default-large-border-color};
+
+  --icon-btn-outline-lg-hover-bg: #{$dark-button-outline-iconbutton-rectangle-hover-large-background};
+  --icon-btn-outline-lg-hover-text: #{$dark-button-outline-iconbutton-rectangle-hover-large-icon};
+  --icon-btn-outline-lg-hover-border: #{$dark-button-outline-iconbutton-rectangle-hover-large-border-color};
+
+  /* =============== CIRCLE BUTTONS (PRIMARY / SECONDARY / GRADIENT / OUTLINE) ================= */
+  --icon-btn-circle-bg: #{$dark-button-primary-iconbutton-circle-default-small-background};
+  --icon-btn-circle-text: #{$dark-button-primary-iconbutton-circle-default-small-icon};
+  --icon-btn-circle-radius: #{$dark-button-primary-iconbutton-circle-default-small-cornerradius};
+  --icon-btn-circle-height: #{$dark-button-primary-iconbutton-circle-default-small-height};
+  --icon-btn-circle-width: #{$dark-button-primary-iconbutton-circle-default-small-width};
+
+  --icon-btn-circle-hover-bg: #{$dark-button-primary-iconbutton-circle-hover-small-background};
+  --icon-btn-circle-hover-text: #{$dark-button-primary-iconbutton-circle-hover-small-icon};
+
+  --icon-btn-circle-active-bg: #{$dark-button-primary-iconbutton-circle-active-small-background};
+  --icon-btn-circle-active-text: #{$dark-button-primary-iconbutton-circle-active-small-icon};
+
+  --icon-btn-circle-disabled-bg: #{$dark-button-primary-iconbutton-circle-disabled-small-background};
+  --icon-btn-circle-disabled-text: #{$dark-button-primary-iconbutton-circle-disabled-small-icon};
+
+  /* Secondary / Gradient / Outline → same pattern: just replace `primary` with `secondary` or `gradient` or `outline` */
+  /* You can duplicate above lines for each variant with dark variables. */
+
+  /* =============== LEFT NAV ================= */
+  // --leftnav-default-title: #{$dark-leftnav-default-title};
+  --leftnav-default-title: white;
+  --leftnav-default-icon: #{$dark-leftnav-default-icon};
+  --leftnav-default-body: #{$dark-leftnav-default-body};
+  --leftnav-default-bg: #{$dark-leftnav-default-background};
+  --leftnav-default-collapse-fill: #{$dark-leftnav-default-collapsefill};
+  --leftnav-default-collapse-icon: #{$dark-leftnav-default-collapseicon};
+  --leftnav-collapse-bg:#{$dark-leftnav-collapse-backfround};
+  --leftnav-collapse-text:#{$dark-leftnav-collapse-title};
+
+  --leftnav-active-title: #{$dark-leftnav-active-title};
+  --leftnav-active-bg: #{$dark-leftnav-active-background};
+  --leftnav-active-fill: #{$dark-leftnav-active-activefill};
+  --leftnav-active-text: #{$dark-leftnav-active-activetext};
+
+  --leftnav-hover-title: #{$dark-leftnav-hover-title};
+  --leftnav-hover-bg: #{$dark-leftnav-hover-background};
+  --leftnav-hover-fill: #{$dark-leftnav-hover-hoverfill};
+  --leftnav-hover-text: #{$dark-leftnav-hover-hovertext};
+
+  --leftnav-inactive-title: #{$dark-leftnav-inactive-title};
+  --leftnav-inactive-bg: #{$dark-leftnav-inactive-background};
+  --leftnav-inactive-text: #{$dark-leftnav-inactive-inactivetext};
+
+  --leftnav-submenu-title: #{$dark-leftnav-submenu-title};
+  --leftnav-submenu-bg: #{$dark-leftnav-submenu-background};
+  --leftnav-submenu-active-bg: #{$dark-leftnav-submenu-activemenufill};
+  --leftnav-submenu-active-text: #{$dark-leftnav-submenu-activemenutext};
+
+  /* =============== HEADER ================= */
+  --header-default-height: #{$dark-header-default-height};
+  --header-default-bg: #{$dark-header-default-background};
+  --header-hover-bg: #{$dark-header-hover-background};
+  --header-hover-bento: #{$dark-header-hover-bento};
+  --header-hover-username: #{$dark-header-hover-username};
+  --header-hover-fill: #{$dark-header-hover-hoverfill};
+  --header-hover-icon-fill: #{$dark-header-hover-iconfill};
+  --header-hover-profile-fill: #{$dark-header-hover-profilefill};
+  --header-hover-profile-border: #{$dark-header-hover-profileborder-color};
+  --header-default-shadow: #{0 $dark-header-default-shadow-y $dark-header-default-shadow-blur $dark-header-default-shadow-color};
+   /* =============== calender searchbar ================= */
+    --calendar-searchbar-active-bg: #{$dark-calendar-date-active-searchbar-background};
+    --calendar-searchbar-active-text: #{$dark-calendar-date-active-searchbar-text};
+    --calendar-searchbar-active-border: #{1px $dark-calendar-date-active-searchbar-border-style $light-calendar-date-active-searchbar-border-color };
+    --calendar-searchbar-icon: #{$dark-calendar-date-active-searchbar-icon};
+    --calendar-searchbar-active-font-weight: #{map-get($font-weight-map, $dark-calendar-date-active-searchbar-searchtext-font-weight)};
+    --calendar-searchbar-active-font-size: #{$dark-calendar-date-active-searchbar-searchtext-font-size};
+        //calendar header and body
+    --calendar-header-month: #{$dark-calendar-date-active-calendar-header-month};
+    --calendar-header-year: #{$dark-calendar-date-active-calendar-header-year};
+    --calendar-body-days: #{$dark-calendar-date-active-calendar-body-days};
+    --calendar-body-month: #{$dark-calendar-month-active-calendar-body-activefill};
+    --calendar-body-active-date: #{$dark-calendar-date-active-calendar-body-activedate};
+    --calendar-shadow: #{0 $dark-calendar-date-active-calendar-shadow-y $dark-calendar-date-active-calendar-shadow-blur $dark-calendar-date-active-calendar-shadow-color};
+    --Calendar-active-bg: #{$dark-calendar-date-active-calendar-background};
+    --calendar-body-dates: #{$dark-calendar-date-active-calendar-body-activefill};
+    --calendar-body-hover-date: #{$dark-calendar-date-hover-calendar-body-hoverfill};
+     --calendar-body-disabled-date: #{$dark-calendar-date-active-calendar-body-disableddate};
+     --calendar-body-active-date: #{$dark-calendar-date-active-calendar-body-activedate};
+     --calendar-body-active-color: #{$dark-calendar-date-active-calendar-body-activefill};
+     //dropdown-list //
+    --table-dropdown-defult-background: #{$dark-tabledropdown-default-background};
+    --table-drodown-defult-text: #{$dark-tabledropdown-default-text};
+    --table-dropdown-defult-color: #{$dark-tabledropdown-default-line-color};
+    --table-dropdown-shadow: #{0 $dark-tabledropdown-default-shadow-y $dark-tabledropdown-default-shadow-blur $dark-tabledropdown-default-shadow-color};
+    --table-dropdown-hover-text: #{$dark-tabledropdown-hover-hovertext};
+    --table-dropdown-hover-icon: #{$dark-tabledropdown-hover-hovericon};
+    --table-dropdown-hover-fill: #{$dark-tabledropdown-hover-hoverfill};  
+    --table-dropdown-hover-shadow: #{0 $dark-tabledropdown-hover-shadow-y $dark-tabledropdown-hover-shadow-blur $dark-tabledropdown-hover-shadow-color};
+    --table-drodown-defult-icon-text: #{$dark-tabledropdown-default-icon};
+    //menu-button
+    --menu-button-bg: #{$dark-menubutton-default-button-background};
+    --menu-button-text: #{$dark-menubutton-default-button-text};
+    --menu-button-icon: #{$dark-menubutton-default-button-icon};
+    --menu-button-hover-bg: #{$dark-menubutton-hover-button-background};
+    --menu-button-hover-text: #{$dark-menubutton-hover-button-text};
+    --menu-button-hover-icon: #{$dark-menubutton-hover-button-icon};
+    --menu-button-defaultopen-menu-bg: #{$dark-menubutton-defaultopen-menu-background};
+    --menu-button-defaultopen-menu-text: #{$dark-menubutton-defaultopen-menu-text};
+    --menu-button-defaultopen-menu-icon: #{$dark-menubutton-defaultopen-button-icon};
+    --menu-button-activemenu-bg: #{$dark-menubutton-activeopen-button-background};
+    --menu-button-activemenu-text: #{$dark-menubutton-activeopen-button-text};
+    --menu-button-activemenu-icon: #{$dark-menubutton-activeopen-button-icon};
+    --menu-button-defaultopen-shadow: #{0 $dark-menubutton-defaultopen-menu-shadow-y $dark-menubutton-defaultopen-menu-shadow-blur $dark-menubutton-defaultopen-menu-shadow-color};
+    --menu-button-defaultopen-menu-line: #{$dark-menubutton-defaultopen-menu-line-color};
+    //hyberlink-multiple values
+    --hyberlink-multiple-values-text: #{$dark-hyperlinkvalues-default-text};
+    --hyberlink-defult-bg:#{$dark-hyperlinkvalues-default-badgefill};
+    --hyberlink-multiple-values-hover-text: #{$dark-hyperlinkvalues-hover-text};
+    --hyberlink-badge-bg: #{$dark-hyperlinkvalues-default-badgefill};
+    --hyberlink-badge-text: #{$dark-hyperlinkvalues-default-badgetext};
+    --hyberlink-badge-hover-bg: #{$dark-hyperlinkvalues-hover-badgefill};
+    --hyberlink-badge-hover-text: #{$dark-hyperlinkvalues-hover-badgetext};
+
+    //chip defult
+    --chip-defult-bg: #{$dark-chip-default-background};
+    --chip-defult-text: #{$dark-chip-default-text};
+    --chip-defult-icon: #{$dark-chip-default-icon};
+    --chip-hover-bg: #{$dark-chip-hover-background};
+    --chip-hover-text: #{$dark-chip-hover-text};
+    --chip-hover-icon: #{$dark-chip-hover-icon};
+    --chip-disabled-bg: #{$dark-chip-disabled-background};
+    --chip-disabled-text: #{$dark-chip-disabled-text};
+    //finite draganddrop
+    --draganddrop-bg: #{$dark-draganddrop-grabbing-background};
+    --draganddrop-defult-bg:#{$dark-draganddrop-default-background};
+    --draganddrop-text: #{$dark-draganddrop-grabbing-icon};
+    --draganddrop-border-grapping: #{1px $dark-draganddrop-grabbing-border-style $dark-draganddrop-grabbing-border-color};
+    --draganddrop-box-shadow: #(0 $dark-draganddrop-grabbing-shadow-y $dark-draganddrop-grabbing-shadow-blur $dark-draganddrop-grabbing-shadow-color);
+    --draganddrop-icon: #{$dark-draganddrop-default-icon};
+    --draganddrop-hover-bg: #{$dark-draganddrop-hover-background};
+    --draganddrop-hover-text: #{$dark-draganddrop-hover-body};
+    --draganddrop-hover-border: #{ $dark-draganddrop-hover-border-color};
+    --draganddrop-hover-box-shadow: #{0 $dark-draganddrop-hover-shadow-y $dark-draganddrop-hover-shadow-blur $dark-draganddrop-hover-shadow-color};
+    --draganddrop-icon-hover: #{$dark-draganddrop-hover-icon};
+    --draganddrop-grabbing-bg: #{$dark-draganddrop-grabbing-background};
+    --draganddrop-grabbing-text: #{$dark-draganddrop-grabbing-icon};
+    --draganddrop-grabbing-border: #{2px $dark-draganddrop-grabbing-border-style $dark-draganddrop-grabbing-border-color};
+    --draganddrop-grabbing-box-shadow: #{0 $dark-draganddrop-grabbing-shadow-y $dark-draganddrop-grabbing-shadow-blur $dark-draganddrop-grabbing-shadow-color};
+    --draganddrop-icon-grabbing: #{$dark-draganddrop-grabbing-icon};
+   //progressupload default
+    --progressupload-bg: #{$dark-progressupload-default-background};
+    --progressupload-fill: #{$dark-progressupload-default-file};
+    --progressupload-default-progresstrack: #{$dark-progressupload-default-progresstrack};
+    --progressupload-default-iconfill: #{$dark-progressupload-default-iconfill};
+    --progressupload-default-heading:#{$dark-progressupload-default-heading};
+    --progressupload-default-file: #{$dark-progressupload-default-file};
+    --progressupload-default-size: #{$dark-progressupload-default-size};
+    --progressupload-default-erroricon: #{$dark-progressupload-default-erroricon};
+    --progressupload-default-iconfill: #{$dark-progressupload-default-iconfill};
+    --progressupload-default-completed-iconfill: #{$dark-progressupload-completed-iconfill};
+    --progressupload-default-percentage: #{$dark-progressupload-progress-percentage};
+    --progressupload-default-progressfill: #{$dark-progressupload-progress-progressfill};
+    --progressupload-default-completed: #{$dark-progressupload-completed-progressfill};
+      //sort
+    --sort-default-background: #{$dark-sort-default-background};
+    --sort-default-text: #{$dark-sort-default-text};
+    --sort-hover-background: #{$dark-sort-hover-background};
+    --sort-default-shadow: #{0 $dark-sort-default-shadow-y $dark-sort-default-shadow-blur $dark-sort-default-shadow-color};
+    --sort-hover-hoverfill: #{$dark-sort-hover-hoverfill};
+    --sort-hover-hovertext: #{$dark-sort-hover-hovertext};
+    --sort-active-activefill: #{$dark-sort-active-hoverfill};
+    --sort-active-activetext: #{$dark-sort-active-hovertext};
+    //card image
+    --card-card-background: #{$dark-card-card-background};
+    --card-box-shadow: #{0 $dark-card-card-shadow-y $dark-card-card-shadow-blur $dark-card-card-shadow-color};
+    --card-heading-color: #{$dark-card-card-heading};
+    --card-card-card-body: #{$dark-card-card-bodytextcolor};
+    --card-cardwithbutton-body: #{$dark-card-cardwithbutton-bodytextcolor};
+//doughnut chart
+--doughnutchart-default-background:#{$dark-doughnutchart-default-background};
+--doughnutchart-default-title:#{$dark-doughnutchart-default-title};
+--doughnutchart-default-chartvalues:#{$dark-doughnutchart-default-chartvalues};
+--doughnutchart-default-doughnut-color1: #{$dark-doughnutchart-default-doughnut-color1};
+--doughnutchart-default-doughnut-color2: #{$dark-doughnutchart-default-doughnut-color2};
+--doughnutchart-default-doughnut-color3: #{$dark-doughnutchart-default-doughnut-color3};
+--doughnutchart-default-box-shadow: #{0 $dark-doughnutchart-default-shadow-y $dark-doughnutchart-default-shadow-blur $dark-doughnutchart-default-shadow-color};
+ --doughnutchart-default-legend-legendcolor: #{$dark-doughnutchart-default-legend-legendcolor};
+ --doughnutchart-default-legend-circle1: #{$dark-doughnutchart-default-legend-circle1};
+  --doughnutchart-default-legend-circle2: #{$dark-doughnutchart-default-legend-circle2};
+  --doughnutchart-default-legend-circle3: #{$dark-doughnutchart-default-legend-circle3};
+--doughnutchart-widget-background: #{$dark-doughnutchart-widget-background};
+--doughnutchart-widget-box-shadow: #{0 $dark-doughnutchart-widget-shadow-y $dark-doughnutchart-widget-shadow-blur $dark-doughnutchart-widget-shadow-color};
+--doughnutchart-widget-title: #{$dark-doughnutchart-widget-title};
+--doughnutchart-widget-icon: #{$dark-doughnutchart-widget-icon};
+--doughnutchart-widget-chartvalues: #{$dark-doughnutchart-widget-chartvalues};
+--doughnutchart-widget-doughnut-color1: #{$dark-doughnutchart-widget-doughnut-color1};
+--doughnutchart-widget-doughnut-color2: #{$dark-doughnutchart-widget-doughnut-color2};
+--doughnutchart-widget-doughnut-color3: #{$dark-doughnutchart-widget-doughnut-color3};
+--doughnutchart-widget-legend-legendcolor: #{$dark-doughnutchart-widget-legend-legendcolor};
+--doughnutchart-widget-legend-circle1: #{$dark-doughnutchart-widget-legend-circle1};
+--doughnutchart-widget-legend-circle2: #{$dark-doughnutchart-widget-legend-circle2};
+--doughnutchart-widget-legend-circle3: #{$dark-doughnutchart-widget-legend-circle3};
+//pie chart
+--piechart-default-background: #{$dark-piechart-default-background};
+--piechart-default-box-shadow: #{0 $dark-piechart-default-shadow-y $dark-piechart-default-shadow-blur $dark-piechart-default-shadow-color};
+--piechart-default-title: #{$dark-piechart-default-title};
+--piechart-default-chartvalues: #{$dark-piechart-default-chartvalues};
+--piechart-default-pie-color1: #{$dark-piechart-default-piechart-color1};
+--piechart-default-pie-color2: #{$dark-piechart-default-piechart-color2};
+--piechart-default-pie-color3: #{$dark-piechart-default-piechart-color3};
+--piechart-default-pie-color4: #{$dark-piechart-default-piechart-color4};
+--piechart-default-pie-color5: #{$dark-piechart-default-piechart-color5};
+--piechart-default-legend-legendcolor: #{$dark-piechart-default-legend-legendcolor};
+--piechart-default-legend-circle1: #{$dark-piechart-default-legend-circle1};
+--piechart-default-legend-circle2: #{$dark-piechart-default-legend-circle2};
+--piechart-default-legend-circle3: #{$dark-piechart-default-legend-circle3};
+--piechart-default-legend-circle4: #{$dark-piechart-default-legend-circle4};
+--piechart-default-legend-circle5: #{$dark-piechart-default-legend-circle5};
+--piechart-widget-background: #{$dark-piechart-widget-background};
+--piechart-widget-box-shadow: #{0 $dark-piechart-widget-shadow-y $dark-piechart-widget-shadow-blur $dark-piechart-widget-shadow-color};
+--piechart-widget-title: #{$dark-piechart-widget-title};
+--piechart-widget-icon: #{$dark-piechart-widget-icon};
+--piechart-widget-chartvalues: #{$dark-piechart-widget-chartvalues};
+--piechart-widget-pie-color1: #{$dark-piechart-widget-piechart-color1};
+--piechart-widget-pie-color2: #{$dark-piechart-widget-piechart-color2};
+--piechart-widget-pie-color3: #{$dark-piechart-widget-piechart-color3};
+--piechart-widget-pie-color4: #{$dark-piechart-widget-piechart-color4};
+--piechart-widget-pie-color5: #{$dark-piechart-widget-piechart-color5};
+--piechart-widget-legend-legendcolor: #{$dark-piechart-widget-legend-legendcolor};
+--piechart-widget-legend-circle1: #{$dark-piechart-widget-legend-circle1};
+--piechart-widget-legend-circle2: #{$dark-piechart-widget-legend-circle2};
+--piechart-widget-legend-circle3: #{$dark-piechart-widget-legend-circle3};
+--piechart-widget-legend-circle4: #{$dark-piechart-widget-legend-circle4};
+--piechart-widget-legend-circle5: #{$dark-piechart-widget-legend-circle5};
+//bubblechart
+--bubblechart-default-background: #{$dark-bubblechart-default-background};
+--bubblechart-default-box-shadow: #{0 $dark-bubblechart-default-shadow-y $dark-bubblechart-default-shadow-blur $dark-bubblechart-default-shadow-color};
+--bubblechart-default-title: #{$dark-bubblechart-default-title};
+--bubblechart-default-xlabels: #{$dark-bubblechart-default-xlabels};
+--bubblechart-default-ylabels: #{$dark-bubblechart-default-ylabels};
+--bubblechart-default-gridline-color: #{$dark-bubblechart-default-gridline-color};
+--bubblechart-default-xline-color: #{$dark-bubblechart-default-xline-color};
+--bubblechart-default-bubble-bubble1: #{$dark-bubblechart-default-bubble-bubble1};
+--bubblechart-default-bubble-bubble2: #{$dark-bubblechart-default-bubble-bubble2};
+--bubblechart-default-legend-legendcolor: #{$dark-bubblechart-default-legend-legendcolor};
+--bubblechart-default-legend-circle1: #{$dark-bubblechart-default-legend-circle1};
+--bubblechart-default-legend-circle2: #{$dark-bubblechart-default-legend-circle2};
+--bubblechart-widget-background: #{$dark-bubblechart-widget-background};
+--bubblechart-widget-box-shadow: #{0 $dark-bubblechart-widget-shadow-y $dark-bubblechart-widget-shadow-blur $dark-bubblechart-widget-shadow-color};
+--bubblechart-widget-title: #{$dark-bubblechart-widget-title};
+--bubblechart-widget-icon: #{$dark-bubblechart-widget-icon};
+--bubblechart-widget-xlabels: #{$dark-bubblechart-widget-xlabels};
+--bubblechart-widget-ylabels: #{$dark-bubblechart-widget-ylabels};
+--bubblechart-widget-gridline-color: #{$dark-bubblechart-widget-gridline-color};
+--bubblechart-widget-xline-color: #{$dark-bubblechart-widget-xline-color};
+--bubblechart-widget-bubble-bubble1: #{$dark-bubblechart-widget-bubble-bubble1};
+--bubblechart-widget-bubble-bubble2: #{$dark-bubblechart-widget-bubble-bubble2};
+--bubblechart-widget-legend-legendcolor: #{$dark-bubblechart-widget-legend-legendcolor};
+--bubblechart-widget-legend-circle1: #{$dark-bubblechart-widget-legend-circle1};
+--bubblechart-widget-legend-circle2: #{$dark-bubblechart-widget-legend-circle2};
+--bubblechart-hoverdata-background: #{$dark-bubblechart-hoverdata-background};
+--bubblechart-hoverdata-box-shadow: #{0 $dark-bubblechart-hoverdata-shadow-y $dark-bubblechart-hoverdata-shadow-blur $dark-bubblechart-hoverdata-shadow-color};
+--bubblechart-hoverdata-tooltip-background: #{$dark-bubblechart-hoverdata-tooltip-background};
+--bubblechart-hoverdata-tooltip-text: #{$dark-bubblechart-hoverdata-tooltip-text};
+--bubblechart-hoverdata-tooltip-box-shadow: #{0 $dark-bubblechart-hoverdata-tooltip-shadow-y $dark-bubblechart-hoverdata-tooltip-shadow-blur $dark-bubblechart-hoverdata-tooltip-shadow-color};
+--bubblechart-hoverdata-legend-legendcolor: #{$dark-bubblechart-hoverdata-legend-legendcolor};
+--bubblechart-hoverdata-legend-circle1: #{$dark-bubblechart-hoverdata-legend-circle1};
+--bubblechart-hoverdata-legend-circle2: #{$dark-bubblechart-hoverdata-legend-circle2};
+--bubblechart-hoverdata-bubble-bubble1: #{$dark-bubblechart-hoverdata-bubble-bubble1};
+--bubblechart-hoverdata-bubble-bubble2: #{$dark-bubblechart-hoverdata-bubble-bubble2};
+//boxplot chart
+--boxplotchart-default-background: #{$dark-boxplotchart-default-background};
+--boxplotchart-default-box-shadow: #{0 $dark-boxplotchart-default-shadow-y $dark-boxplotchart-default-shadow-blur $dark-boxplotchart-default-shadow-color};
+--boxplotchart-default-title: #{$dark-boxplotchart-default-title};
+--boxplotchart-default-xlabels: #{$dark-boxplotchart-default-xlabels};
+--boxplotchart-default-ylabels: #{$dark-boxplotchart-default-ylabels};
+--boxplotchart-default-gridline-color: #{$dark-boxplotchart-default-gridline-color};
+--boxplotchart-default-xline-color: #{$dark-boxplotchart-default-xline-color};
+--boxplotchart-default-boxplot-boxfill: #{$dark-boxplotchart-default-boxplot-boxfill};
+--boxplotchart-default-boxplot-line: #{  1px solid $dark-boxplotchart-default-boxplot-line};
+--boxplotchart-default-legend-legendcolor: #{$dark-boxplotchart-default-legend-legendcolor};
+--boxplotchart-default-legend-circle: #{$dark-boxplotchart-default-legend-circle};
+--boxplotchart-widget-background: #{$dark-boxplotchart-widget-background};
+--boxplotchart-widget-box-shadow: #{0 $dark-boxplotchart-widget-shadow-y $dark-boxplotchart-widget-shadow-blur $dark-boxplotchart-widget-shadow-color};
+--boxplotchart-widget-title: #{$dark-boxplotchart-widget-title};
+--boxplotchart-widget-icon: #{$dark-boxplotchart-widget-icon};
+--boxplotchart-widget-xlabels: #{$dark-boxplotchart-widget-xlabels};
+--boxplotchart-widget-ylabels: #{$dark-boxplotchart-widget-ylabels};
+--boxplotchart-widget-gridline-color: #{$dark-boxplotchart-widget-gridline-color};
+--boxplotchart-widget-xline-color: #{$dark-boxplotchart-widget-xline-color};
+--boxplotchart-widget-boxplot-line: #{  1px solid $dark-boxplotchart-widget-boxplot-line};  
+--boxplotchart-widget-legend-circle: #{$dark-boxplotchart-widget-legend-circle};
+--boxplotchart-hoverdata-background: #{$dark-boxplotchart-hoverdata-background};
+--boxplotchart-hoverdata-box-shadow: #{0 $dark-boxplotchart-hoverdata-shadow-y $dark-boxplotchart-hoverdata-shadow-blur $dark-boxplotchart-hoverdata-shadow-color};
+--boxplotchart-hoverdata-tooltip-background: #{$dark-boxplotchart-hoverdata-tooltip-background};
+--boxplotchart-hoverdata-tooltip-text: #{$dark-boxplotchart-hoverdata-tooltip-text};
+--boxplotchart-hoverdata-tooltip-box-shadow: #{0 $dark-boxplotchart-hoverdata-tooltip-shadow-y $dark-boxplotchart-hoverdata-tooltip-shadow-blur $dark-boxplotchart-hoverdata-tooltip-shadow-color};
+--boxplotchart-hoverdata-legend-legendcolor: #{$dark-boxplotchart-hoverdata-legend-legendcolor};
+--boxplotchart-hoverdata-legend-circle: #{$dark-boxplotchart-hoverdata-legend-circle};
+--boxplotchart-hoverdata-boxplot-boxfill: #{$dark-boxplotchart-hoverdata-boxplot-boxfill};
+--boxplotchart-hoverdata-boxplot-line: #{  1px solid $dark-boxplotchart-hoverdata-boxplot-line};
+//line chart
+--linechart-default-background: #{$dark-linechart-default-background};
+--linechart-default-box-shadow: #{0 $dark-linechart-default-shadow-y $dark-linechart-default-shadow-blur $dark-linechart-default-shadow-color};
+--linechart-default-title: #{$dark-linechart-default-title};
+--linechart-default-xlabels: #{$dark-linechart-default-xlabels};
+--linechart-default-ylabels: #{$dark-linechart-default-ylabels};
+--linechart-default-legend-legendcolor: #{$dark-linechart-default-legend-legendcolor};
+--linechart-default-legend-circle1: #{$dark-linechart-default-legend-circle1};
+--linechart-default-legend-circle2: #{$dark-linechart-default-legend-circle2};
+--linechart-widget-background: #{$dark-linechart-widget-background};
+--linechart-widget-title: #{$dark-linechart-widget-title};
+--linechart-widget-legend-legendcolor: #{$dark-linechart-widget-legend-legendcolor};
+--linechart-widget-legend-circle1: #{$dark-linechart-widget-legend-circle1};
+--linechart-widget-legend-circle2: #{$dark-linechart-widget-legend-circle2};
+--linechart-hoverdata-background: #{$dark-linechart-hoverdata-background};
+--linechart-hoverdata-box-shadow: #{0 $dark-linechart-hoverdata-shadow-y $dark-linechart-hoverdata-shadow-blur $dark-linechart-hoverdata-shadow-color};
+--linechart-hoverdata-tooltip-background: #{$dark-linechart-hoverdata-tooltip-background};
+--linechart-hoverdata-tooltip-text: #{$dark-linechart-hoverdata-tooltip-text};
+--linechart-hoverdata-legend-legendcolor : #{$dark-linechart-hoverdata-legend-legendcolor};
+--linechart-hoverdata-legend-circle1: #{$dark-linechart-hoverdata-legend-circle1};
+--linechart-hoverdata-legend-circle2: #{$dark-linechart-hoverdata-legend-circle2};
+//stacked bar chart
+--stackedbarchart-default-background: #{$dark-stackedbarchart-default-background};
+--stackedbarchart-default-box-shadow: #{0 $dark-stackedbarchart-default-shadow-y $dark-stackedbarchart-default-shadow-blur $dark-stackedbarchart-default-shadow-color};
+--stackedbarchart-default-title: #{$dark-stackedbarchart-default-title};
+--stackedbarchart-default-xlabels: #{$dark-stackedbarchart-default-xlabels};
+--stackedbarchart-default-ylabels: #{$dark-stackedbarchart-default-ylabels};
+--stackedbarchart-default-barvalues: #{$dark-stackedbarchart-default-barvalues};
+--stackedbarchart-default-bar-stack1: #{$dark-stackedbarchart-default-bar-stack1};
+--stackedbarchart-default-bar-stack2: #{$dark-stackedbarchart-default-bar-stack2};
+--stackedbarchart-default-bar-stack3: #{$dark-stackedbarchart-default-bar-stack3};
+--stackedbarchart-default-bar-stack4: #{$dark-stackedbarchart-default-bar-stack4};
+--stackedbarchart-default-legend-legendcolor: #{$dark-stackedbarchart-default-legend-legendcolor};
+--stackedbarchart-default-legend-circle1: #{$dark-stackedbarchart-default-legend-circle1};
+--stackedbarchart-default-legend-circle2: #{$dark-stackedbarchart-default-legend-circle2};
+--stackedbarchart-default-legend-circle3: #{$dark-stackedbarchart-default-legend-circle3};
+--stackedbarchart-default-legend-circle4: #{$dark-stackedbarchart-default-legend-circle4};
+--stackedbarchart-widget-background: #{$dark-stackedbarchart-widget-background};
+--stackedbarchart-widget-box-shadow: #{0 $dark-stackedbarchart-widget-shadow-y $dark-stackedbarchart-widget-shadow-blur $dark-stackedbarchart-widget-shadow-color};
+--stackedbarchart-widget-title: #{$dark-stackedbarchart-widget-title};
+--stackedbarchart-widget-xlabels: #{$dark-stackedbarchart-widget-xlabels};
+--stackedbarchart-widget-ylabels: #{$dark-stackedbarchart-widget-ylabels};
+--stackedbarchart-widget-bar-stack1: #{$dark-stackedbarchart-widget-bar-stack1};
+--stackedbarchart-widget-bar-stack2: #{$dark-stackedbarchart-widget-bar-stack2};
+--stackedbarchart-widget-bar-stack3: #{$dark-stackedbarchart-widget-bar-stack3};
+--stackedbarchart-widget-bar-stack4: #{$dark-stackedbarchart-widget-bar-stack4};
+
+//bar chart
+--barchart-default-background: #{$dark-barchart-default-background};
+--barchart-default-box-shadow: #{0 $dark-barchart-default-shadow-y $dark-barchart-default-shadow-blur $dark-barchart-default-shadow-color};
+--barchart-default-title: #{$dark-barchart-default-title};
+--barchart-default-xlabels: #{$dark-barchart-default-xlabels};
+--barchart-default-ylabels: #{$dark-barchart-default-ylabels};
+--barchart-default-bar: #{$dark-barchart-default-bar};
+--barchart-default-barvalues: #{$dark-barchart-default-barvalues};
+--barchart-default-legend-legendcolor: #{$dark-barchart-default-legend};
+--barchart-default-legendcircle: #{$dark-barchart-default-legendcircle};
+--barchart-widget-background: #{$dark-barchart-widget-background};
+--barchart-widget-box-shadow: #{0 $dark-barchart-widget-shadow-y $dark-barchart-widget-shadow-blur $dark-barchart-widget-shadow-color};
+--barchart-widget-title: #{$dark-barchart-widget-title};
+--barchart-widget-xlabels: #{$dark-barchart-widget-xlabels};
+--barchart-widget-ylabels: #{$dark-barchart-widget-ylabels};
+--barchart-widget-bar: #{$dark-barchart-widget-bar};
+--barchart-widget-barvalues: #{$dark-barchart-widget-barvalues};
+--barchart-widget-legend: #{$dark-barchart-widget-legend};
+--barchart-widget-legendcircle: #{$dark-barchart-widget-legendcircle};
+//breadcrumb
+--breadcrumb-hover-text: #{$dark-breadcrumb-hover-text};
+--breadcrumb-hover-hovertext: #{$dark-breadcrumb-hover-hovertext};
+--breadcrumb-active-activetext: #{$dark-breadcrumb-active-activetext};
+//summary point
+--border-color: 8px solid #434343;
+
+//header
+--header-default-iconborder-color: #{$dark-header-default-iconborder-color};
+--header-default-profileicon: #{$dark-header-default-profileicon};
+--header-default-border: #{ $dark-header-default-iconborder-width $dark-header-default-iconborder-style $dark-header-default-iconborder-color};
+--header-default-username: #{$dark-header-default-username};
+--header-default-account: #{$dark-header-default-account}; 
+--header-hover-profilefill: #{$dark-header-hover-profilefill};
+--header-hover-profileicon: #{$dark-header-hover-profileicon};
+--header-hover-border: #{$dark-header-hover-iconborder-width $dark-header-hover-iconborder-style $dark-header-hover-iconborder-color};
+--header-hover-box-shadow: #{0 $dark-header-hover-shadow-y $dark-header-hover-shadow-blur $dark-header-hover-shadow-color};
+--header-active-profilefill: #{$dark-header-active-profilefill};
+--header-active-profileicon: #{$dark-header-active-profileicon};
+--header-active-border: #{ $dark-header-active-iconborder-width $dark-header-active-iconborder-style $dark-header-active-iconborder-color};
+--header-active-box-shadow: #{0 $dark-header-active-shadow-y $dark-header-active-shadow-blur $dark-header-active-shadow-color};
+--header-active-menubackground: #{$dark-header-active-menubackground};
+--header-active-menuitem: #{$dark-header-active-menuitem};
+--header-hover-hoverfill: #{$dark-header-hover-hoverfill };
+--header-hover-dropdown: #{$dark-header-hover-dropdown};
+--header-active-activefill: #{$dark-header-active-activefill};
+--header-active-menubackground: #{$dark-header-active-menubackground};
+--header-active-box-shadow: #{0 $dark-header-active-shadow-y $dark-header-active-shadow-blur $dark-header-active-shadow-color};
+--header-active-menuitem: #{$dark-header-active-menuitem};
+--header-active-menuitem-border-bottom: #{1px $dark-header-active-menuline-style $dark-header-active-menuline-color};
+--header-hover-background: #{$dark-header-hover-background};
+--header-hover-dropdown: #{$dark-header-hover-dropdown};
+--header-active-profileicon: #{$dark-header-active-profileicon};
+--header-hover-box-shadow: #{0 $dark-header-hover-shadow-y $dark-header-hover-shadow-blur $dark-header-hover-shadow-color};
+--header-hover-username: #{$dark-header-hover-username};
+--header-hover-account: #{$dark-header-hover-account};
+//;bento
+--bento-default-background: #{$dark-bento-default-background};
+--bento-default-box-shadow: #{0 $dark-bento-default-shadow-y $dark-bento-default-shadow-blur $dark-bento-default-shadow-color};
+--bento-default-modules-iconfill: #{$dark-bento-default-modules-iconfill};
+--bento-default-modules-icon: #{$dark-bento-default-modules-icon};
+--bento-default-modules-title: #{$dark-bento-default-modules-title};
+--bento-default-modules-label: #{$dark-bento-default-modules-label};
+--bento-hover-modules-hover-foreground: #{$dark-bento-hover-modules-hover-foreground};
+--bento-hover-modules-hover-iconfill: #{$dark-bento-hover-modules-hover-iconfill};
+--bento-hover-modules-hover-icon: #{$dark-bento-hover-modules-hover-icon};
+ --bento-active-modules-active-foreground: #{$dark-bento-active-modules-active-foreground};
+--bento-active-modules-active: #{$dark-bento-active-modules-active-iconfill};
+--bento-active-modules-active-icon: #{$dark-bento-active-modules-active-icon};
+--bento-active-horizontals-title: #{$dark-bento-active-horizontals-title};
+--bento-active-horizontals-iconfill: #{$dark-bento-active-horizontals-iconfill};
+ --bento-active-horizontals-icon: #{$dark-bento-active-horizontals-icon};
+ --bento-active-horizontals-title: #{$dark-bento-active-horizontals-title};
+ --bento-active-horizontals-label: #{$dark-bento-active-horizontals-label};
+ --bento-active-horizontals-active-foreground: #{$dark-bento-active-horizontals-active-foreground};
+ --bento-active-horizontals-active-iconfill: #{$dark-bento-active-horizontals-active-iconfill};
+ --bento-active-horizontals-active-icon: #{$dark-bento-active-horizontals-active-icon};
+}
+
+$body-white:$body-white;
+$body-black:$body-black;
+// $primary: $light-mode-color-primary-color-default ;
+// $primary-hover: $light-mode-color-primary-color-p-hover ;
+// $primary-active: $light-mode-color-primary-color-active ;
+$primary-disabled: $light-mode-color-primary-color-p-disable ;
+$secondary: $light-mode-color-secondary-color-s-default ;
+$secondary-hover:$light-button-secondary-textbutton-hover-small-background ;
+$btn-primary-hover-bg: $light-button-primary-textbutton-hover-small-background;
+$bg-gradient: $light-mode-color-gradient-color-gradient-default ;
+$bg-gradient-active: $light-mode-color-gradient-color-gradient-active ;
+$bg-gradient-hover: $light-mode-color-gradient-color-gradient-hover ;
+$bg-gradient-disabled: $light-mode-color-gradient-color-g-disable ;
+$btn-outline-primary: $light-button-outline-textbutton-default-small-text;
+$btn-success: $light-button-success-textbutton-default-small-background ;
+$btn-danger: $light-button-danger-textbutton-default-small-background ;
+$btn-warning: $light-button-warning-textbutton-default-small-background ;
+$link-primary:$light-button-link-default-small-text ;
+//Button small
+$bs-btn-line-height: $light-button-primary-textbutton-default-small-textstyle-line-height ;
+$bs-btn-background-color: $light-button-primary-textbutton-default-small-background;
+$bs-btn-font-size: $light-button-primary-textbutton-default-small-textstyle-font-size ;
+// $bs-btn-font-weight: $light-button-primary-textbutton-default-small-textstyle-font-weight ;
+$bs-btn-font-weight: map-get($font-weight-map, $light-button-primary-textbutton-default-small-textstyle-font-weight);
+$bs-btn-text-color: $light-button-primary-textbutton-default-small-text ;
+$bs-btn-radius: $light-button-primary-textbutton-default-small-cornerradius ;
+$bs-btn-font-family:$light-button-primary-textbutton-default-small-textstyle-font-family ;
+$bs-btn-letter-spacing: $light-button-primary-textbutton-default-small-textstyle-letter-spacing;
+$bs-btn-default-height: $light-button-primary-textbutton-default-small-height;
+$bs-btn-default-paragraph-indent: $light-button-primary-textbutton-default-small-textstyle-paragraph-indent ;
+$bs-btn-default-font-family: $light-button-primary-textbutton-default-small-textstyle-font-family;
+$bs-btn-default-textstyle-text-case:$light-button-primary-textbutton-default-small-textstyle-text-case;
+$bs-btn-default-sec-radius-hover: $light-button-secondary-textbutton-hover-small-cornerradius;
+
+//button medium
+$bs-btn-md-font-family: $light-button-primary-textbutton-default-medium-textstyle-font-family;
+$bs-btn-md-height: $light-button-primary-textbutton-default-medium-height;
+$bs-btn-md-paragraph-indent: $light-button-primary-textbutton-default-medium-textstyle-paragraph-indent ;
+$bs-btn-md-letter-spacing: $light-button-primary-textbutton-default-medium-textstyle-letter-spacing;
+$bs-btn-md-font-size: $light-button-primary-textbutton-default-medium-textstyle-font-size ;
+//$bs-btn-md-font-weight: $light-button-primary-textbutton-default-medium-textstyle-font-weight ;
+$bs-btn-md-font-weight: map-get($font-weight-map, $light-button-primary-textbutton-default-medium-textstyle-font-weight);
+$bs-btn-md-text-color: $light-button-primary-textbutton-default-medium-text ;
+$bs-btn-md-cornerradius: $light-button-primary-textbutton-default-medium-cornerradius ;
+$bs-btn-md-line-height: $light-button-primary-textbutton-default-medium-textstyle-line-height;
+$bs-btn-md-background: $light-button-primary-textbutton-default-medium-background;
+
+ 
+//Button secondary medium
+$bs-btn-md-line-height: $light-button-primary-textbutton-default-medium-textstyle-line-height ;
+$bs-btn-md-sec-background: $light-button-secondary-textbutton-default-small-background;
+$bs-btn-md-sec-text:  $light-button-secondary-textbutton-default-small-text;
+$bs-btn-md-sec-cornerradius:  $light-button-secondary-textbutton-default-small-cornerradius;
+$bs-btn-md-sec-textstyle:  $light-button-secondary-textbutton-default-small-textstyle-font-family;
+// $bs-btn-md-sec-font-weight: $light-button-secondary-textbutton-default-small-textstyle-font-weight;
+$bs-btn-md-sec-font-weight: map-get($font-weight-map, $light-button-secondary-textbutton-default-small-textstyle-font-weight);
+$bs-btn-md-sec-line-height: $light-button-secondary-textbutton-default-small-textstyle-line-height;
+$bs-btn-md-sec-font-size: $light-button-secondary-textbutton-default-small-textstyle-font-size;
+$bs-btn-md-sec-letter-seacing: $light-button-secondary-textbutton-default-small-textstyle-letter-spacing;
+$bs-btn-md-sec-paragaraph-indent: $light-button-secondary-textbutton-default-small-textstyle-paragraph-indent; 
+$bs-btn-md-sec-text-color: $light-button-secondary-textbutton-default-small-text;
+
+//button large
+$bs-btn-lg-line-height: $light-button-primary-textbutton-default-large-textstyle-line-height ;
+$bs-btn-lg-font-size: $light-button-primary-textbutton-default-large-textstyle-font-size ; 
+//$bs-btn-lg-font-weight: $light-button-primary-textbutton-default-large-textstyle-font-weight ;
+$bs-btn-lg-font-weight: map-get($font-weight-map, $light-button-primary-textbutton-default-large-textstyle-font-weight);
+$bs-btn-lg-text-color: $light-button-primary-textbutton-default-large-text ;
+$bs-btn-lg-cornerradius: $light-button-primary-textbutton-default-large-cornerradius ;
+$bs-btn-lg-font-family:$light-button-primary-textbutton-default-large-textstyle-font-family ;
+$bs-btn-lg-letter-spacing: $light-button-primary-textbutton-default-large-textstyle-letter-spacing;
+$bs-btn-lg-height: $light-button-primary-textbutton-default-large-height;
+$bs-btn-lg-paragraph-indent: $light-button-primary-textbutton-default-large-textstyle-paragraph-indent ;
+$bs-btn-lg-font-family: $light-button-primary-textbutton-default-large-textstyle-font-family;
+$bs-btn-lg-text-case:$light-button-primary-textbutton-default-large-textstyle-text-case;
+
+//primary hover
+$bs-btn-primary-hover-background-color: $light-button-primary-textbutton-hover-small-background;
+$bs-btn-primary-hover-color: $light-button-primary-textbutton-hover-small-text;
+$bs-btn-primary-hover-border-radius: $light-button-primary-textbutton-hover-small-cornerradius;
+$bs-btn-primary-hover-border: $light-button-primary-textbutton-hover-small-textstyle-text-decoration;
+$bs-btn-primary-hover-border-radius:  $light-button-primary-textbutton-hover-small-textstyle-text-case;  
+//secondary hover
+$bs-btn-secondary-background-color: $light-button-secondary-textbutton-hover-small-background;
+$bs-btn-secondary-color: $light-button-secondary-textbutton-hover-small-text;
+$bs-btn-secondary-border-radius: $light-button-secondary-textbutton-hover-small-cornerradius;
+$bs-btn-secondary-border: $light-button-secondary-textbutton-hover-small-textstyle-text-decoration;
+$bs-btn-secondary-border-radius:  $light-button-secondary-textbutton-hover-small-textstyle-text-case;
+
+// Disabled button
+$bs-btn-disabled-background: $light-button-primary-textbutton-disabled-small-background;
+$bs-btn-disabled-text: $light-button-primary-textbutton-disabled-small-text;
+$bs-btn-disabled-cornerradius: $light-button-primary-textbutton-disabled-small-cornerradius;
+$bs-btn-disabled-textstyle: $light-button-primary-textbutton-disabled-small-textstyle-font-family;
+$bs-btn-disabled-font-weight: $light-button-primary-textbutton-disabled-small-textstyle-font-weight;
+$bs-btn-disabled-line-height: $light-button-primary-textbutton-disabled-small-textstyle-line-height;
+$bs-btn-disabled-font-size: $light-button-primary-textbutton-disabled-small-textstyle-font-size;
+$bs-btn-disabled-letter-seacing: $light-button-primary-textbutton-disabled-small-textstyle-letter-spacing;
+$bs-btn-disabled-paragaraph-indent: $light-button-primary-textbutton-disabled-small-textstyle-paragraph-indent;
+$bs-btn-disabled-text-color: $light-button-primary-textbutton-disabled-small-text;
+
+//Disabled secondary button
+$bs-btn-disabled-sec-background: $light-button-secondary-textbutton-disabled-small-background; 
+$bs-btn-disabled-sec-text: $light-button-secondary-textbutton-disabled-small-text;
+$bs-btn-disabled-sec-cornerradius: $light-button-secondary-textbutton-disabled-small-cornerradius;
+$bs-btn-disabled-sec-textstyle: $light-button-secondary-textbutton-disabled-small-textstyle-font-family;
+$bs-btn-disabled-sec-line-height: $light-button-secondary-textbutton-disabled-small-textstyle-line-height;
+$bs-btn-disabled-sec-font-size: $light-button-secondary-textbutton-disabled-small-textstyle-font-size;
+$bs-btn-disabled-sec-letter-seacing: $light-button-secondary-textbutton-disabled-small-textstyle-letter-spacing;
+$bs-btn-disabled-sec-paragaraph-indent: $light-button-secondary-textbutton-disabled-small-textstyle-paragraph-indent;
+$bs-btn-disabled-sec-text-color: $light-button-secondary-textbutton-disabled-small-text;
+$bs-btn-disabled-sec-font-weight: $light-button-secondary-textbutton-disabled-small-textstyle-font-weight;
+
+//button gradient
+$bs-btn-gradient-background: $light-button-gradient-textbutton-default-small-background;
+$bs-btn-gradient-text: $light-button-gradient-textbutton-default-small-text;
+$bs-btn-gradient-cornerradius: $light-button-gradient-textbutton-default-small-cornerradius;
+$bs-btn-gradient-textstyle: $light-button-gradient-textbutton-default-small-textstyle-font-family;
+$bs-btn-gradient-font-weight: $light-button-gradient-textbutton-default-small-textstyle-font-weight;
+$bs-btn-gradient-line-height: $light-button-gradient-textbutton-default-small-textstyle-line-height;
+$bs-btn-gradient-font-size: $light-button-gradient-textbutton-default-small-textstyle-font-size;
+$bs-btn-gradient-letter-seacing: $light-button-gradient-textbutton-default-small-textstyle-letter-spacing;
+$bs-btn-gradient-paragaraph-indent: $light-button-gradient-textbutton-default-small-textstyle-paragraph-indent;
+$bs-btn-gradient-text-color: $light-button-gradient-textbutton-default-small-text;
+// button gradient hover
+$bs-btn-gradient-hover-background: $light-button-gradient-textbutton-hover-small-background;
+$bs-btn-gradient-hover-text: $light-button-gradient-textbutton-hover-small-text;
+$bs-btn-gradient-hover-cornerradius: $light-button-gradient-textbutton-hover-small-cornerradius;
+$bs-btn-gradient-hover-textstyle: $light-button-gradient-textbutton-hover-small-textstyle-font-family;
+$bs-btn-gradient-hover-font-weight: $light-button-gradient-textbutton-hover-small-textstyle-font-weight;
+$bs-btn-gradient-hover-line-height: $light-button-gradient-textbutton-hover-small-textstyle-line-height;
+$bs-btn-gradient-hover-font-size: $light-button-gradient-textbutton-hover-small-textstyle-font-size;
+$bs-btn-gradient-hover-letter-seacing: $light-button-gradient-textbutton-hover-small-textstyle-letter-spacing;
+$bs-btn-gradient-hover-paragaraph-indent: $light-button-gradient-textbutton-hover-small-textstyle-paragraph-indent;
+
+//button gradient disabled
+$bs-btn-gradient-disabled-background: $light-button-gradient-textbutton-disabled-small-background;
+$bs-btn-gradient-disabled-text: $light-button-gradient-textbutton-disabled-small-text;
+$bs-btn-gradient-disabled-cornerradius: $light-button-gradient-textbutton-disabled-small-cornerradius;
+$bs-btn-gradient-disabled-textstyle: $light-button-gradient-textbutton-disabled-small-textstyle-font-family;
+$bs-btn-gradient-disabled-font-weight: $light-button-gradient-textbutton-disabled-small-textstyle-font-weight;
+$bs-btn-gradient-disabled-line-height: $light-button-gradient-textbutton-disabled-small-textstyle-line-height;
+$bs-btn-gradient-disabled-font-size: $light-button-gradient-textbutton-disabled-small-textstyle-font-size;
+$bs-btn-gradient-disabled-letter-seacing: $light-button-gradient-textbutton-disabled-small-textstyle-letter-spacing;
+$bs-btn-gradient-disabled-paragaraph-indent: $light-button-gradient-textbutton-disabled-small-textstyle-paragraph-indent;
+$bs-btn-gradient-disabled-text-color: $light-button-gradient-textbutton-disabled-small-text;
+
+//button gradient active
+$bs-btn-gradient-active-background: $light-button-gradient-textbutton-active-small-background;
+$bs-btn-gradient-active-text: $light-button-gradient-textbutton-active-small-text;
+$bs-btn-gradient-active-cornerradius: $light-button-gradient-textbutton-active-small-cornerradius;
+$bs-btn-gradient-active-textstyle: $light-button-gradient-textbutton-active-small-textstyle-font-family;
+$bs-btn-gradient-active-font-weight: $light-button-gradient-textbutton-active-small-textstyle-font-weight;
+$bs-btn-gradient-active-line-height: $light-button-gradient-textbutton-active-small-textstyle-line-height;
+$bs-btn-gradient-active-font-size: $light-button-gradient-textbutton-active-small-textstyle-font-size;
+$bs-btn-gradient-active-letter-seacing: $light-button-gradient-textbutton-active-small-textstyle-letter-spacing;
+$bs-btn-gradient-active-paragaraph-indent: $light-button-gradient-textbutton-active-small-textstyle-paragraph-indent;
+
+//button outline
+$bs-btn-outline-text: $light-button-outline-textbutton-default-small-text;
+$bs-btn-outline-cornerradius: $light-button-outline-textbutton-default-small-cornerradius;
+$bs-btn-outline-textstyle: $light-button-outline-textbutton-default-small-textstyle-font-family;
+$bs-btn-outline-font-weight: $light-button-outline-textbutton-default-small-textstyle-font-weight;
+$bs-btn-outline-line-height: $light-button-outline-textbutton-default-small-textstyle-line-height  ;
+$bs-btn-outline-font-size: $light-button-outline-textbutton-default-small-textstyle-font-size ;
+$bs-btn-outline-letter-seacing: $light-button-outline-textbutton-default-small-textstyle-letter-spacing;
+$bs-btn-outline-paragaraph-indent: $light-button-outline-textbutton-default-small-textstyle-paragraph-indent;
+$bs-btn-outline-text-color: $light-button-outline-textbutton-default-small-text;
+$bs-btn-outline-border: $light-button-outline-textbutton-default-small-textstyle-text-decoration;
+$bs-btn-outline-border-radius: $light-button-outline-textbutton-default-small-textstyle-text-case;
+$bs-btn-outline-border-width: $light-button-outline-textbutton-default-small-border-width;
+$bs-btn-outline-border-color: $light-button-outline-textbutton-default-small-border-color;
+
+//button outline hover
+$bs-btn-outline-hover-border: $light-button-outline-textbutton-hover-small-textstyle-text-decoration;
+$bs-btn-outline-hover-border-radius: $light-button-outline-textbutton-hover-small-textstyle-text-case;
+$bs-btn-outline-hover-border-width: $light-button-outline-textbutton-hover-small-border-width; 
+$bs-btn-outline-hover-border-color: $light-button-outline-textbutton-hover-small-border-color;
+$bs-btn-outline-hover-text: $light-button-outline-textbutton-hover-small-text;
+$bs-btn-outline-hover-cornerradius: $light-button-outline-textbutton-hover-small-cornerradius;
+$bs-btn-outline-hover-textstyle: $light-button-outline-textbutton-hover-small-textstyle-font-family;
+$bs-btn-outline-hover-font-weight: $light-button-outline-textbutton-hover-small-textstyle-font-weight;
+$bs-btn-background-color: $light-button-outline-textbutton-hover-small-background;
+
+//button outline active
+$bs-btn-outline-active-border: $light-button-outline-textbutton-active-small-textstyle-text-decoration;
+$bs-btn-outline-active-border-radius: $light-button-outline-textbutton-active-small-textstyle-text-case;
+$bs-btn-outline-active-border-width: $light-button-outline-textbutton-active-small-border-width;
+$bs-btn-outline-active-background: $light-button-outline-textbutton-active-small-background;
+$bs-btn-outline-active-text: $light-button-outline-textbutton-active-small-text;
+$bs-btn-outline-active-border-color: $light-button-outline-textbutton-active-small-border-color;
+$bs-btn-outline-active-font-size: $light-button-outline-textbutton-active-small-textstyle-font-size;
+
+
+//button outline disabled
+$bs-btn-outline-disabled-border: $light-button-outline-textbutton-disabled-large-border-color;
+$bs-btn-outline-disabled-border-radius: $light-button-outline-textbutton-disabled-small-textstyle-text-case;
+$bs-btn-outline-disabled-border-width: $light-button-outline-textbutton-disabled-small-border-width;
+$bs-btn-outline-disabled-text: $light-button-outline-textbutton-disabled-small-text;
+$bs-btn-outline-disabled-cornerradius: $light-button-outline-textbutton-disabled-small-cornerradius;
+$bs-btn-outline-disabled-textstyle: $light-button-outline-textbutton-disabled-small-textstyle-font-family;
+$bs-btn-outline-disabled-font-weight: $light-button-outline-textbutton-disabled-small-textstyle-font-weight;
+$bs-btn-outline-disabled-line-height: $light-button-outline-textbutton-disabled-small-textstyle-line-height;
+$bs-btn-outline-disabled-font-size: $light-button-outline-textbutton-disabled-small-textstyle-font-size;
+$bs-btn-outline-disabled-letter-seacing: $light-button-outline-textbutton-disabled-small-textstyle-letter-spacing;
+$bs-btn-outline-disabled-paragaraph-indent: $light-button-outline-textbutton-disabled-small-textstyle-paragraph-indent;
+
+// Button success
+$bs-btn-success-background: $light-button-success-textbutton-default-small-background ;
+$bs-btn-success-text: $light-button-success-textbutton-default-small-text ;
+$bs-btn-success-cornerradius: $light-button-success-textbutton-default-small-cornerradius ;
+$bs-btn-success-textstyle: $light-button-success-textbutton-default-small-textstyle-font-family ;
+$bs-btn-success-font-weight: $light-button-success-textbutton-default-small-textstyle-font-weight ;
+$bs-btn-success-line-height: $light-button-success-textbutton-default-small-textstyle-line-height ;
+$bs-btn-success-font-size: $light-button-success-textbutton-default-small-textstyle-font-size ;
+$bs-btn-success-letter-seacing: $light-button-success-textbutton-default-small-textstyle-letter-spacing ;
+$bs-btn-success-paragaraph-indent: $light-button-success-textbutton-default-small-textstyle-paragraph-indent ;
+//Button success hover
+$bs-btn-success-hover-background:$light-button-success-textbutton-hover-small-background;
+$bs-btn-success-hover-text: $light-button-success-textbutton-hover-small-text ;
+$bs-btn-success-hover-cornerradius: $light-button-success-textbutton-hover-small-cornerradius ;
+$bs-btn-success-hover-textstyle: $light-button-success-textbutton-hover-small-textstyle-font-family ;
+$bs-btn-success-hover-font-weight: $light-button-success-textbutton-hover-small-textstyle-font-weight ;
+$bs-btn-success-hover-line-height: $light-button-success-textbutton-hover-small-textstyle-line-height ;
+$bs-btn-success-hover-font-size: $light-button-success-textbutton-hover-small-textstyle-font-size ;
+//Button success disabled
+$bs-btn-success-disabled-background:$light-button-success-textbutton-disabled-small-background;
+$bs-btn-success-disabled-text: $light-button-success-textbutton-disabled-small-text ;
+$bs-btn-success-disabled-cornerradius: $light-button-success-textbutton-disabled-small-cornerradius ;
+$bs-btn-success-disabled-textstyle: $light-button-success-textbutton-disabled-small-textstyle-font-family ;
+$bs-btn-success-disabled-font-weight: map-get($font-weight-map, $light-button-success-textbutton-disabled-small-textstyle-font-weight);
+$bs-btn-success-disabled-line-height: $light-button-success-textbutton-disabled-small-textstyle-line-height ;
+//button success active
+$bs-btn-success-active-background:$light-button-success-textbutton-active-small-background;
+$bs-btn-success-active-text: $light-button-success-textbutton-active-small-text ;
+$bs-btn-success-active-cornerradius: $light-button-success-textbutton-active-small-cornerradius ;
+$bs-btn-success-active-textstyle: $light-button-success-textbutton-active-small-textstyle-font-family ;
+//Button Danger
+$bs-btn-danger-background: $light-button-danger-textbutton-default-small-background ;
+$bs-btn-danger-text: $light-button-danger-textbutton-default-small-text ;
+$bs-btn-danger-cornerradius: $light-button-danger-textbutton-default-small-cornerradius ;
+$bs-btn-danger-textstyle: $light-button-danger-textbutton-default-small-textstyle-font-family ;
+$bs-btn-danger-font-weight:  map-get($font-weight-map, $light-button-danger-textbutton-default-small-textstyle-font-weight); 
+$bs-btn-danger-line-height: $light-button-danger-textbutton-default-small-textstyle-line-height ;
+$bs-btn-danger-font-size: $light-button-danger-textbutton-default-small-textstyle-font-size ;
+$bs-btn-danger-letter-seacing: $light-button-danger-textbutton-default-small-textstyle-letter-spacing ;
+//button danger hover
+$bs-btn-danger-hover-background:$light-button-danger-textbutton-hover-small-background;
+$bs-btn-danger-hover-text: $light-button-danger-textbutton-hover-small-text ;
+$bs-btn-danger-hover-cornerradius: $light-button-danger-textbutton-hover-small-cornerradius ;
+$bs-btn-danger-hover-textstyle: $light-button-danger-textbutton-hover-small-textstyle-font-family ;
+$bs-btn-danger-hover-font-weight: map-get($font-weight-map, $light-button-danger-textbutton-hover-small-textstyle-font-weight);
+$bs-btn-danger-hover-line-height: $light-button-danger-textbutton-hover-small-textstyle-line-height ;
+$bs-btn-danger-hover-font-size: $light-button-danger-textbutton-hover-small-textstyle-font-size ;
+//button danger active
+$bs-btn-danger-active-background:$light-button-danger-textbutton-active-small-background;
+$bs-btn-danger-active-text: $light-button-danger-textbutton-active-small-text ;
+$bs-btn-danger-active-cornerradius: $light-button-danger-textbutton-active-small-cornerradius ;
+$bs-btn-danger-active-textstyle: $light-button-danger-textbutton-active-small-textstyle-font-family ;
+$bs-btn-danger-active-font-weight: map-get($font-weight-map, $light-button-danger-textbutton-active-small-textstyle-font-weight);
+$bs-btn-danger-active-line-height: $light-button-danger-textbutton-active-small-textstyle-line-height ;
+$bs-btn-danger-active-font-size: $light-button-danger-textbutton-active-small-textstyle-font-size ;
+//button danger disabled
+$bs-btn-danger-disabled-background:$light-button-danger-textbutton-disabled-small-background;
+$bs-btn-danger-disabled-text: $light-button-danger-textbutton-disabled-small-text ;
+$bs-btn-danger-disabled-cornerradius: $light-button-danger-textbutton-disabled-small-cornerradius ;
+$bs-btn-danger-disabled-textstyle: $light-button-danger-textbutton-disabled-small-textstyle-font-family ;
+$bs-btn-danger-disabled-font-weight: map-get($font-weight-map, $light-button-danger-textbutton-disabled-small-textstyle-font-weight);
+$bs-btn-danger-disabled-line-height: $light-button-danger-textbutton-disabled-small-textstyle-line-height ;
+$bs-btn-danger-disabled-font-size: $light-button-danger-textbutton-disabled-small-textstyle-font-size ;
+//button warning
+$bs-btn-warning-background: $light-button-warning-textbutton-default-small-background ;
+$bs-btn-warning-text: $light-button-warning-textbutton-default-small-text ;
+$bs-btn-warning-cornerradius: $light-button-warning-textbutton-default-small-cornerradius ;
+$bs-btn-warning-textstyle: $light-button-warning-textbutton-default-small-textstyle-font-family ;
+$bs-btn-warning-font-weight: map-get($font-weight-map, $light-button-warning-textbutton-default-small-textstyle-font-weight);
+$bs-btn-warning-line-height: $light-button-warning-textbutton-default-small-textstyle-line-height ;
+$bs-btn-warning-font-size: $light-button-warning-textbutton-default-small-textstyle-font-size ;
+$bs-btn-warning-letter-seacing: $light-button-warning-textbutton-default-small-textstyle-letter-spacing ;
+$bs-btn-warning-paragaraph-indent: $light-button-warning-textbutton-default-small-textstyle-paragraph-indent ;
+//button warning hover      
+$bs-btn-warning-hover-background:$light-button-warning-textbutton-hover-small-background;
+$bs-btn-warning-hover-text: $light-button-warning-textbutton-hover-small-text ;
+$bs-btn-warning-hover-cornerradius: $light-button-warning-textbutton-hover-small-cornerradius ;
+$bs-btn-warning-hover-textstyle: $light-button-warning-textbutton-hover-small-textstyle-font-family ;
+$bs-btn-warning-hover-font-weight: map-get($font-weight-map, $light-button-warning-textbutton-hover-small-textstyle-font-weight);
+$bs-btn-warning-hover-line-height: $light-button-warning-textbutton-hover-small-textstyle-line-height ;
+$bs-btn-warning-hover-font-size: $light-button-warning-textbutton-hover-small-textstyle-font-size ;
+//button warning disabled
+$bs-btn-warning-disabled-background:$light-button-warning-textbutton-disabled-small-background;
+$bs-btn-warning-disabled-text: $light-button-warning-textbutton-disabled-small-text ;
+$bs-btn-warning-disabled-cornerradius: $light-button-warning-textbutton-disabled-small-cornerradius ;
+$bs-btn-warning-disabled-textstyle: $light-button-warning-textbutton-disabled-small-textstyle-font-family ;
+$bs-btn-warning-disabled-font-weight: map-get($font-weight-map, $light-button-warning-textbutton-disabled-small-textstyle-font-weight);
+//button warning active
+$bs-btn-warning-active-background:$light-button-warning-textbutton-active-small-background;
+$bs-btn-warning-active-text: $light-button-warning-textbutton-active-small-text ;
+$bs-btn-warning-active-cornerradius: $light-button-warning-textbutton-active-small-cornerradius ;
+$bs-btn-warning-active-textstyle: $light-button-warning-textbutton-active-small-textstyle-font-family ;
+//Link
+$bs-link-primary: $light-button-link-default-small-text ;
+$bs-link-primary-underline: $light-button-link-default-small-underline;
+$bs-link-primary-font-weight: map-get($font-weight-map, $light-button-link-textbutton-default-small-textstyle-font-weight); 
+$bs-link-primary-font-size: $light-button-link-textbutton-default-small-textstyle-font-size;
+$bs-link-primary-line-height:$light-button-link-textbutton-default-small-textstyle-line-height;
+$bs-link-primary-letter-seacing: $light-button-link-textbutton-default-small-textstyle-letter-spacing;
+$bs-link-primary-text-case: $light-button-link-textbutton-default-small-textstyle-text-case;
+$bs-link-primary-text-decoration: $light-button-link-textbutton-default-small-textstyle-text-decoration;
+//link hover
+$bs-link-primary-hover: $light-button-link-hover-small-text ;
+$bs-link-primary-hover-underline: $light-button-link-hover-small-underline;
+//link active
+$bs-link-primary-active: $light-button-link-active-small-text ;
+$bs-link-primary-active-underline: $light-button-link-active-small-underline;
+//link small
+$bs-link-primary-small-font-weight: map-get($font-weight-map, $light-button-link-textbutton-default-small-textstyle-font-weight); 
+$bs-link-primary-small-font-size: $light-button-link-textbutton-default-small-textstyle-font-size;
+$bs-link-primary-small-line-height:$light-button-link-textbutton-default-small-textstyle-line-height;
+$bs-link-primary-small-letter-seacing: $light-button-link-textbutton-default-small-textstyle-letter-spacing;
+$bs-link-primary-small-text-case: $light-button-link-textbutton-default-small-textstyle-text-case;
+$bs-link-primary-small-text-decoration: $light-button-link-textbutton-default-small-textstyle-text-decoration;
+//link large
+$bs-link-primary-large-font-weight: map-get($font-weight-map, $light-button-link-textbutton-default-large-textstyle-font-weight); 
+$bs-link-primary-large-font-size: $light-button-link-textbutton-default-large-textstyle-font-size;
+$bs-link-primary-large-line-height:$light-button-link-textbutton-default-large-textstyle-line-height;
+$bs-link-primary-large-letter-seacing: $light-button-link-textbutton-default-large-textstyle-letter-spacing;
+$bs-link-primary-large-text-case: $light-button-link-textbutton-default-large-textstyle-text-case;
+$bs-link-primary-large-text-decoration: $light-button-link-textbutton-default-large-textstyle-text-decoration;
+//Link Medium
+$bs-link-primary-medium-font-weight: map-get($font-weight-map, $light-button-link-textbutton-default-medium-textstyle-font-weight); 
+$bs-link-primary-medium-font-size: $light-button-link-textbutton-default-medium-textstyle-font-size;
+$bs-link-primary-medium-line-height:$light-button-link-textbutton-default-medium-textstyle-line-height;
+$bs-link-primary-medium-letter-seacing: $light-button-link-textbutton-default-medium-textstyle-letter-spacing;
+$bs-link-primary-medium-text-case: $light-button-link-textbutton-default-medium-textstyle-text-case;
+$bs-link-primary-medium-text-decoration: $light-button-link-textbutton-default-medium-textstyle-text-decoration;
+//Link Disabled
+$bs-link-primary-disabled: $light-button-link-disabled-small-text;
+$bs-link-primary-disabled-font-weight: map-get($font-weight-map, $light-button-link-textbutton-disabled-small-textstyle-font-weight); 
+$bs-link-primary-disabled-font-size: $light-button-link-textbutton-disabled-small-textstyle-font-size;
+$bs-link-primary-disabled-line-height: $light-button-link-textbutton-disabled-small-textstyle-line-height;
+$bs-link-primary-disabled-letter-spacing: $light-button-link-textbutton-disabled-small-textstyle-letter-spacing;
+$bs-link-primary-disabled-text-case: $light-button-link-textbutton-disabled-small-textstyle-text-case;
+$bs-link-primary-disabled-text-decoration: $light-button-link-textbutton-disabled-small-textstyle-text-decoration;
+//button left icon
+$bs-btn-icon-left-color: $light-button-primary-texticonleft-default-small-icon;
+//button right icon
+$bs-btn-icon-right-color: $light-button-primary-texticonright-default-small-icon;
+//Rectangle icon primary button 
+$bs-icon-btn-background: $light-button-primary-iconbutton-rectangle-default-small-background;
+$bs-icon-btn-text: $light-button-primary-iconbutton-rectangle-default-small-icon;
+$bs-icon-btn-cornerradius: $light-button-primary-iconbutton-rectangle-default-small-cornerradius;
+$bs-icon-btn-line-height: $light-button-primary-iconbutton-rectangle-default-small-height;
+$bs-icon-btn-width: $light-button-primary-iconbutton-rectangle-default-small-width;
+$bs-icon-btn-primary-text-color:$light-button-primary-iconbutton-rectangle-default-small-icon;
+//rectangle icon primary button hover
+$bs-icon-btn-primary-hover-background: $light-button-primary-iconbutton-rectangle-hover-small-background;
+$bs-icon-btn-primary-hover-text: $light-button-primary-iconbutton-rectangle-hover-small-icon;
+//rectangle icon secondary button
+$bs-icon-btn-secondary-background: $light-button-secondary-iconbutton-rectangle-default-small-background;
+$bs-icon-btn-secondary-text: $light-button-secondary-iconbutton-rectangle-default-small-icon;
+$bs-icon-btn-secondary-cornerradius: $light-button-secondary-iconbutton-rectangle-default-small-cornerradius;
+$bs-icon-btn-secondary-line-height: $light-button-secondary-iconbutton-rectangle-default-small-height;
+$bs-icon-btn-secondary-width: $light-button-secondary-iconbutton-rectangle-default-small-width; 
+$bs-icon-btn-secondary-text-color:$light-button-secondary-iconbutton-rectangle-default-small-icon;
+//rectangle icon secondary button hover
+$bs-icon-btn-secondary-hover-background: $light-button-secondary-iconbutton-rectangle-hover-small-background;
+$bs-icon-btn-secondary-hover-text: $light-button-secondary-iconbutton-rectangle-hover-small-icon;
+//rectangle icon secondary button disabled
+$bs-icon-btn-secondary-disabled-background: $light-button-secondary-iconbutton-rectangle-disabled-small-background;
+$bs-icon-btn-secondary-disabled-text: $light-button-secondary-iconbutton-rectangle-disabled-small-icon;
+//rectangle icon gradient button
+$bs-icon-btn-gradient-background: $light-button-gradient-iconbutton-rectangle-default-small-background;
+$bs-icon-btn-gradient-text: $light-button-gradient-iconbutton-rectangle-default-small-icon;
+$bs-icon-btn-gradient-cornerradius: $light-button-gradient-iconbutton-rectangle-default-small-cornerradius;
+$bs-icon-btn-gradient-line-height: $light-button-gradient-iconbutton-rectangle-default-small-height;
+$bs-icon-btn-gradient-width: $light-button-gradient-iconbutton-rectangle-default-small-width; 
+//rectangle icon gradient button hover
+$bs-icon-btn-gradient-hover-background: $light-button-gradient-iconbutton-rectangle-hover-small-background;
+$bs-icon-btn-gradient-hover-text: $light-button-gradient-iconbutton-rectangle-hover-small-icon;
+//rectangle icon gradient button disabled
+$bs-icon-btn-gradient-disabled-background: $light-button-gradient-iconbutton-rectangle-disabled-small-background;
+$bs-icon-btn-gradient-disabled-text: $light-button-gradient-iconbutton-rectangle-disabled-small-icon;
+//rectangle icon gradient medium button
+$bs-icon-btn-gradient-md-background: $light-button-gradient-iconbutton-rectangle-default-medium-background;
+$bs-icon-btn-gradient-md-text: $light-button-gradient-iconbutton-rectangle-default-medium-icon;
+$bs-icon-btn-gradient-md-cornerradius: $light-button-gradient-iconbutton-rectangle-default-medium-cornerradius;
+$bs-icon-btn-gradient-md-line-height: $light-button-gradient-iconbutton-rectangle-default-medium-height;
+$bs-icon-btn-gradient-md-width: $light-button-gradient-iconbutton-rectangle-default-medium-width; 
+//rectangle icon gradient large button
+$bs-icon-btn-gradient-lg-background: $light-button-gradient-iconbutton-rectangle-default-large-background;
+$bs-icon-btn-gradient-lg-text: $light-button-gradient-iconbutton-rectangle-default-large-icon;
+$bs-icon-btn-gradient-lg-cornerradius: $light-button-gradient-iconbutton-rectangle-default-large-cornerradius;
+$bs-icon-btn-gradient-lg-line-height: $light-button-gradient-iconbutton-rectangle-default-large-height;
+$bs-icon-btn-gradient-lg-width: $light-button-gradient-iconbutton-rectangle-default-large-width;
+//rectangle icon outline small button
+$bs-icon-btn-outline-text: $light-button-outline-iconbutton-rectangle-default-small-icon;
+$bs-icon-btn-outline-cornerradius: $light-button-outline-iconbutton-rectangle-default-small-cornerradius;
+$bs-icon-btn-outline-line-height: $light-button-outline-iconbutton-rectangle-default-small-height;
+$bs-icon-btn-outline-width: $light-button-outline-iconbutton-rectangle-default-small-width;
+$bs-icon-btn-outline-border: $light-button-outline-iconbutton-rectangle-default-small-border-color;
+//rectangle icon outline small button hover
+$bs-icon-btn-outline-hover-background: $light-button-outline-iconbutton-rectangle-hover-small-background;
+$bs-icon-btn-outline-hover-text: $light-button-outline-iconbutton-rectangle-hover-small-icon;
+$bs-icon-btn-outline-hover-border: $light-button-outline-iconbutton-rectangle-hover-small-border-color;
+//rectangle icon outline small button disabled
+$bs-icon-btn-outline-disabled-text: $light-button-outline-iconbutton-rectangle-disabled-small-icon;
+$bs-icon-btn-outline-disabled-border: $light-button-outline-iconbutton-rectangle-disabled-small-border-color;
+//rectangle icon outline medium button
+$bs-icon-btn-outline-md-text: $light-button-outline-iconbutton-rectangle-default-medium-icon;
+$bs-icon-btn-outline-md-cornerradius: $light-button-outline-iconbutton-rectangle-default-medium-cornerradius;
+$bs-icon-btn-outline-md-line-height: $light-button-outline-iconbutton-rectangle-default-medium-height;
+$bs-icon-btn-outline-md-width: $light-button-outline-iconbutton-rectangle-default-medium-width;
+$bs-icon-btn-outline-md-border: $light-button-outline-iconbutton-rectangle-default-medium-border-color;
+//rectangle icon outline medium button hover
+$bs-icon-btn-outline-md-hover-background: $light-button-outline-iconbutton-rectangle-hover-medium-background;
+$bs-icon-btn-outline-md-hover-text: $light-button-outline-iconbutton-rectangle-hover-medium-icon;
+$bs-icon-btn-outline-md-hover-border: $light-button-outline-iconbutton-rectangle-hover-medium-border-color;
+//rectangle icon outline medium button disabled
+$bs-icon-btn-outline-md-disabled-background: $light-button-outline-iconbutton-rectangle-disabled-medium-border-color;
+$bs-icon-btn-outline-md-disabled-text: $light-button-outline-iconbutton-rectangle-disabled-medium-icon;
+//rectangle icon outline large button
+$bs-icon-btn-outline-lg-text: $light-button-outline-iconbutton-rectangle-default-large-icon;
+$bs-icon-btn-outline-lg-cornerradius: $light-button-outline-iconbutton-rectangle-default-large-cornerradius;
+$bs-icon-btn-outline-lg-line-height: $light-button-outline-iconbutton-rectangle-default-large-height;
+$bs-icon-btn-outline-lg-width: $light-button-outline-iconbutton-rectangle-default-large-width ;
+$bs-icon-btn-outline-lg-border: $light-button-outline-iconbutton-rectangle-default-large-border-color;
+//rectangle icon outline large button hover
+$bs-icon-btn-outline-lg-hover-background: $light-button-outline-iconbutton-rectangle-hover-small-background;
+$bs-icon-btn-outline-lg-hover-text: $light-button-outline-iconbutton-rectangle-hover-large-icon;
+$bs-icon-btn-outline-lg-hover-border: $light-button-outline-iconbutton-rectangle-hover-large-border-color;
+//rectangle icon outline large button disabled
+$bs-icon-btn-outline-lg-disabled-text: $light-button-outline-iconbutton-rectangle-disabled-large-icon;
+$bs-icon-btn-outline-lg-disabled-border: $light-button-outline-iconbutton-rectangle-disabled-large-border-color;
+//circle icon primary button small
+$bs-icon-btn-circle-background: $light-button-primary-iconbutton-circle-default-small-background;
+$bs-icon-btn-circle-text: $light-button-primary-iconbutton-circle-default-small-icon;
+$bs-icon-btn-circle-cornerradius: $light-button-primary-iconbutton-circle-default-small-cornerradius;
+$bs-icon-btn-circle-line-height: $light-button-primary-iconbutton-circle-default-small-height;
+$bs-icon-btn-circle-width: $light-button-primary-iconbutton-circle-default-small-width;
+$bs-icon-btn-circle-text-color:$light-button-primary-iconbutton-circle-default-small-icon;
+//circle icon primary button hover small
+$bs-icon-btn-circle-primary-hover-background: $light-button-primary-iconbutton-circle-hover-small-background;
+$bs-icon-btn-circle-primary-hover-text: $light-button-primary-iconbutton-circle-hover-small-icon;
+//circle icon primary button active small
+$bs-icon-btn-circle-primary-active-background: $light-button-primary-iconbutton-circle-active-small-background;
+$bs-icon-btn-circle-primary-active-text: $light-button-primary-iconbutton-circle-active-small-icon;
+//circle icon primary button disabled small
+$bs-icon-btn-circle-primary-disabled-background: $light-button-primary-iconbutton-circle-disabled-small-background;
+$bs-icon-btn-circle-primary-disabled-text: $light-button-primary-iconbutton-circle-disabled-small-icon;
+//circle icon primary button medium
+$bs-icon-btn-circle-md-background: $light-button-primary-iconbutton-circle-default-medium-background;
+$bs-icon-btn-circle-md-text: $light-button-primary-iconbutton-circle-default-medium-icon;
+$bs-icon-btn-circle-md-cornerradius: $light-button-primary-iconbutton-circle-default-medium-cornerradius;
+$bs-icon-btn-circle-md-line-height: $light-button-primary-iconbutton-circle-default-medium-height;
+$bs-icon-btn-circle-md-width: $light-button-primary-iconbutton-circle-default-medium-width;
+//circle icon primary button hover medium
+$bs-icon-btn-circle-primary-md-hover-background: $light-button-primary-iconbutton-circle-hover-medium-background;
+$bs-icon-btn-circle-primary-md-hover-text: $light-button-primary-iconbutton-circle-hover-medium-icon;
+//circle icon primary button active medium
+$bs-icon-btn-circle-primary-md-active-background: $light-button-primary-iconbutton-circle-active-medium-background;
+$bs-icon-btn-circle-primary-md-active-text: $light-button-primary-iconbutton-circle-active-medium-icon;
+//circle icon primary button disabled medium
+$bs-icon-btn-circle-primary-md-disabled-background: $light-button-primary-iconbutton-circle-disabled-medium-background;
+$bs-icon-btn-circle-primary-md-disabled-text: $light-button-primary-iconbutton-circle-disabled-medium-icon;
+//circle icon primary button large
+$bs-icon-btn-circle-lg-background: $light-button-primary-iconbutton-circle-default-large-background;
+$bs-icon-btn-circle-lg-text: $light-button-primary-iconbutton-circle-default-large-icon;
+$bs-icon-btn-circle-lg-cornerradius: $light-button-primary-iconbutton-circle-default-large-cornerradius;
+$bs-icon-btn-circle-lg-line-height: $light-button-primary-iconbutton-circle-default-large-height;
+$bs-icon-btn-circle-lg-width: $light-button-primary-iconbutton-circle-default-large-width;
+//circle icon primary button hover large
+$bs-icon-btn-circle-primary-lg-hover-background: $light-button-primary-iconbutton-circle-hover-large-background;
+$bs-icon-btn-circle-primary-lg-hover-text: $light-button-primary-iconbutton-circle-hover-large-icon;
+//circle icon primary button active large
+$bs-icon-btn-circle-primary-lg-active-background: $light-button-primary-iconbutton-circle-active-large-background;
+$bs-icon-btn-circle-primary-lg-active-text: $light-button-primary-iconbutton-circle-active-large-icon;
+//circle icon primary button disabled large
+$bs-icon-btn-circle-primary-lg-disabled-background: $light-button-primary-iconbutton-circle-disabled-large-background;
+$bs-icon-btn-circle-primary-lg-disabled-text: $light-button-primary-iconbutton-circle-disabled-large-icon;
+//circle icon secondary button small
+$bs-icon-btn-circle-secondary-background: $light-button-secondary-iconbutton-circle-default-small-background;
+$bs-icon-btn-circle-secondary-text: $light-button-secondary-iconbutton-circle-default-small-icon;
+$bs-icon-btn-circle-secondary-cornerradius: $light-button-secondary-iconbutton-circle-default-small-cornerradius;
+$bs-icon-btn-circle-secondary-line-height: $light-button-secondary-iconbutton-circle-default-small-height;
+$bs-icon-btn-circle-secondary-width: $light-button-secondary-iconbutton-circle-default-small-width;
+//circle icon secondary button hover small
+$bs-icon-btn-circle-secondary-hover-background: $light-button-secondary-iconbutton-circle-hover-small-background;
+$bs-icon-btn-circle-secondary-hover-text: $light-button-secondary-iconbutton-circle-hover-small-icon;
+//circle icon secondary button active small
+$bs-icon-btn-circle-secondary-active-background: $light-button-secondary-iconbutton-circle-active-small-background;
+$bs-icon-btn-circle-secondary-active-text: $light-button-secondary-iconbutton-circle-active-small-icon;
+//circle icon secondary button disabled small
+$bs-icon-btn-circle-secondary-disabled-background: $light-button-secondary-iconbutton-circle-disabled-small-background;
+$bs-icon-btn-circle-secondary-disabled-text: $light-button-secondary-iconbutton-circle-disabled-small-icon;
+//circle icon secondary button medium
+$bs-icon-btn-circle-secondary-md-background: $light-button-secondary-iconbutton-circle-default-medium-background;
+$bs-icon-btn-circle-secondary-md-text: $light-button-secondary-iconbutton-circle-default-medium-icon;
+$bs-icon-btn-circle-secondary-md-cornerradius: $light-button-secondary-iconbutton-circle-default-medium-cornerradius;
+$bs-icon-btn-circle-secondary-md-line-height: $light-button-secondary-iconbutton-circle-default-medium-height;
+$bs-icon-btn-circle-secondary-md-width: $light-button-secondary-iconbutton-circle-default-medium-width;
+//circle icon secondary button hover medium 
+$bs-icon-btn-circle-secondary-md-hover-background: $light-button-secondary-iconbutton-circle-hover-medium-background;
+$bs-icon-btn-circle-secondary-md-hover-text: $light-button-secondary-iconbutton-circle-hover-medium-icon;
+//circle icon secondary button active medium
+$bs-icon-btn-circle-secondary-md-active-background: $light-button-secondary-iconbutton-circle-active-medium-background;
+$bs-icon-btn-circle-secondary-md-active-text: $light-button-secondary-iconbutton-circle-active-medium-icon;
+//circle icon secondary button disabled medium
+$bs-icon-btn-circle-secondary-md-disabled-background: $light-button-secondary-iconbutton-circle-disabled-medium-background;
+$bs-icon-btn-circle-secondary-md-disabled-text: $light-button-secondary-iconbutton-circle-disabled-medium-icon;
+//circle icon secondary button large
+$bs-icon-btn-circle-secondary-lg-background: $light-button-secondary-iconbutton-circle-default-large-background;
+$bs-icon-btn-circle-secondary-lg-text: $light-button-secondary-iconbutton-circle-default-large-icon;
+$bs-icon-btn-circle-secondary-lg-cornerradius: $light-button-secondary-iconbutton-circle-default-large-cornerradius;
+$bs-icon-btn-circle-secondary-lg-line-height: $light-button-secondary-iconbutton-circle-default-large-height;
+$bs-icon-btn-circle-secondary-lg-width: $light-button-secondary-iconbutton-circle-default-large-width;
+//circle icon secondary button hover large
+$bs-icon-btn-circle-secondary-lg-hover-background: $light-button-secondary-iconbutton-circle-hover-large-background;
+$bs-icon-btn-circle-secondary-lg-hover-text: $light-button-secondary-iconbutton-circle-hover-large-icon;
+//circle icon secondary button active large
+$bs-icon-btn-circle-secondary-lg-active-background: $light-button-secondary-iconbutton-circle-active-large-background;
+$bs-icon-btn-circle-secondary-lg-active-text: $light-button-secondary-iconbutton-circle-active-large-icon;
+//circle icon secondary button disabled large
+$bs-icon-btn-circle-secondary-lg-disabled-background: $light-button-secondary-iconbutton-circle-disabled-large-background;
+$bs-icon-btn-circle-secondary-lg-disabled-text: $light-button-secondary-iconbutton-circle-disabled-large-icon;
+//circle icon gradient button small
+$bs-icon-btn-circle-gradient-background: $light-button-gradient-iconbutton-circle-default-small-background;
+$bs-icon-btn-circle-gradient-text: $light-button-gradient-iconbutton-circle-default-small-icon;
+$bs-icon-btn-circle-gradient-cornerradius: $light-button-gradient-iconbutton-circle-default-small-cornerradius;
+$bs-icon-btn-circle-gradient-line-height: $light-button-gradient-iconbutton-circle-default-small-height;
+$bs-icon-btn-circle-gradient-width: $light-button-gradient-iconbutton-circle-default-small-width;
+//circle icon gradient button hover small
+$bs-icon-btn-circle-gradient-hover-background: $light-button-gradient-iconbutton-circle-hover-small-background;
+$bs-icon-btn-circle-gradient-hover-text: $light-button-gradient-iconbutton-circle-hover-small-icon;
+//circle icon gradient button active small 
+$bs-icon-btn-circle-gradient-active-background: $light-button-gradient-iconbutton-circle-active-small-background;
+$bs-icon-btn-circle-gradient-active-text: $light-button-gradient-iconbutton-circle-active-small-icon;
+//circle icon gradient button disabled small
+$bs-icon-btn-circle-gradient-disabled-background: $light-button-gradient-iconbutton-circle-disabled-small-background;
+$bs-icon-btn-circle-gradient-disabled-text: $light-button-gradient-iconbutton-circle-disabled-small-icon;
+//circle icon gradient button medium
+$bs-icon-btn-circle-gradient-md-background: $light-button-gradient-iconbutton-circle-default-medium-background;
+$bs-icon-btn-circle-gradient-md-text: $light-button-gradient-iconbutton-circle-default-medium-icon;
+$bs-icon-btn-circle-gradient-md-cornerradius: $light-button-gradient-iconbutton-circle-default-medium-cornerradius;
+$bs-icon-btn-circle-gradient-md-line-height: $light-button-gradient-iconbutton-circle-default-medium-height;
+$bs-icon-btn-circle-gradient-md-width: $light-button-gradient-iconbutton-circle-default-medium-width;
+//circle icon gradient button hover medium
+$bs-icon-btn-circle-gradient-md-hover-background: $light-button-gradient-iconbutton-circle-hover-medium-background;
+$bs-icon-btn-circle-gradient-md-hover-text: $light-button-gradient-iconbutton-circle-hover-medium-icon;
+//circle icon gradient button active medium
+$bs-icon-btn-circle-gradient-md-active-background: $light-button-gradient-iconbutton-circle-active-medium-background;
+$bs-icon-btn-circle-gradient-md-active-text: $light-button-gradient-iconbutton-circle-active-medium-icon;
+//circle icon gradient button disabled medium
+$bs-icon-btn-circle-gradient-md-disabled-background: $light-button-gradient-iconbutton-circle-disabled-medium-background;
+$bs-icon-btn-circle-gradient-md-disabled-text: $light-button-gradient-iconbutton-circle-disabled-medium-icon;
+//circle icon gradient button large
+$bs-icon-btn-circle-gradient-lg-background: $light-button-gradient-iconbutton-circle-default-large-background;
+$bs-icon-btn-circle-gradient-lg-text: $light-button-gradient-iconbutton-circle-default-large-icon;
+$bs-icon-btn-circle-gradient-lg-cornerradius: $light-button-gradient-iconbutton-circle-default-large-cornerradius;
+$bs-icon-btn-circle-gradient-lg-line-height: $light-button-gradient-iconbutton-circle-default-large-height;
+$bs-icon-btn-circle-gradient-lg-width: $light-button-gradient-iconbutton-circle-default-large-width;
+//circle icon gradient button hover large
+$bs-icon-btn-circle-gradient-lg-hover-background: $light-button-gradient-iconbutton-circle-hover-large-background;
+$bs-icon-btn-circle-gradient-lg-hover-text: $light-button-gradient-iconbutton-circle-hover-large-icon;
+//circle icon gradient button active large
+$bs-icon-btn-circle-gradient-lg-active-background: $light-button-gradient-iconbutton-circle-active-large-background;
+$bs-icon-btn-circle-gradient-lg-active-text: $light-button-gradient-iconbutton-circle-active-large-icon;
+//circle icon gradient button disabled large
+$bs-icon-btn-circle-gradient-lg-disabled-background: $light-button-gradient-iconbutton-circle-disabled-large-background;
+$bs-icon-btn-circle-gradient-lg-disabled-text: $light-button-gradient-iconbutton-circle-disabled-large-icon;
+//circle icon outline button small
+$bs-icon-btn-circle-outline-text: $light-button-outline-iconbutton-circle-default-small-icon;
+$bs-icon-btn-circle-outline-cornerradius: $light-button-outline-iconbutton-circle-default-small-cornerradius;
+$bs-icon-btn-circle-outline-line-height: $light-button-outline-iconbutton-circle-default-small-height;
+$bs-icon-btn-circle-outline-width: $light-button-outline-iconbutton-circle-default-small-width;
+$bs-icon-btn-circle-outline-border: $light-button-outline-iconbutton-circle-default-small-border-color;
+//circle icon outline button hover small
+$bs-icon-btn-circle-outline-hover-background: $light-button-outline-iconbutton-circle-hover-small-background;
+$bs-icon-btn-circle-outline-hover-text: $light-button-outline-iconbutton-circle-hover-small-icon;
+$bs-icon-btn-circle-outline-hover-border: $light-button-outline-iconbutton-circle-hover-small-border-color;
+//circle icon outline button disabled small
+$bs-icon-btn-circle-outline-disabled-text: $light-button-outline-iconbutton-circle-disabled-small-icon; 
+$bs-icon-btn-circle-outline-disabled-border: $light-button-outline-iconbutton-circle-disabled-small-border-color;
+//circle icon outline button medium
+$bs-icon-btn-circle-outline-md-text: $light-button-outline-iconbutton-circle-default-medium-icon;
+$bs-icon-btn-circle-outline-md-cornerradius: $light-button-outline-iconbutton-circle-default-medium-cornerradius;
+$bs-icon-btn-circle-outline-md-line-height: $light-button-outline-iconbutton-circle-default-medium-height;
+$bs-icon-btn-circle-outline-md-width: $light-button-outline-iconbutton-circle-default-medium-width;
+$bs-icon-btn-circle-outline-md-border: $light-button-outline-iconbutton-circle-default-medium-border-color;
+//circle icon outline button hover medium
+$bs-icon-btn-circle-outline-md-hover-background: $light-button-outline-iconbutton-circle-hover-medium-background;
+$bs-icon-btn-circle-outline-md-hover-text: $light-button-outline-iconbutton-circle-hover-medium-icon;
+$bs-icon-btn-circle-outline-md-hover-border: $light-button-outline-iconbutton-circle-hover-medium-border-color;
+//circle icon outline button disabled medium
+$bs-icon-btn-circle-outline-md-disabled-text: $light-button-outline-iconbutton-circle-disabled-medium-icon;
+$bs-icon-btn-circle-outline-md-disabled-border: $light-button-outline-iconbutton-circle-disabled-medium-border-color;
+//circle icon outline button large
+$bs-icon-btn-circle-outline-lg-text: $light-button-outline-iconbutton-circle-default-large-icon;
+$bs-icon-btn-circle-outline-lg-cornerradius: $light-button-outline-iconbutton-circle-default-large-cornerradius;
+$bs-icon-btn-circle-outline-lg-line-height: $light-button-outline-iconbutton-circle-default-large-height;
+$bs-icon-btn-circle-outline-lg-width: $light-button-outline-iconbutton-circle-default-large-width ;
+$bs-icon-btn-circle-outline-lg-border: $light-button-outline-iconbutton-circle-default-large-border-color;
+//circle icon outline button hover large
+$bs-icon-btn-circle-outline-lg-hover-background: $light-button-outline-iconbutton-circle-hover-large-background;
+$bs-icon-btn-circle-outline-lg-hover-text: $light-button-outline-iconbutton-circle-hover-large-icon;
+$bs-icon-btn-circle-outline-lg-hover-border: $light-button-outline-iconbutton-circle-hover-large-border-color;
+//circle icon outline button disabled large
+$bs-icon-btn-circle-outline-lg-disabled-text: $light-button-outline-iconbutton-circle-disabled-large-icon;
+$bs-icon-btn-circle-outline-lg-disabled-border: $light-button-outline-iconbutton-circle-disabled-large-border-color;
+//leftnav default
+// $bs-leftnav-deafult-background: $light-leftnav-default-background;
+// $bs-leftnav-deafult-width: $light-leftnav-default-width;
+// $bs-leftnav-deafult-height: $light-leftnav-default-height;
+// $bs-leftnav-deafult-text: $light-leftnav-default-title;
+// $bs-leftnav-deafult-icon: $light-leftnav-default-icon;
+
+// ================== LEFT NAV DEFAULT ==================
+$bs-leftnav-default-title: black;
+$bs-leftnav-default-icon: $light-leftnav-default-icon;
+$bs-leftnav-default-body: $light-leftnav-default-body;
+$bs-leftnav-default-background: $light-leftnav-default-background;
+$bs-leftnav-default-collapse-fill: $light-leftnav-default-collapsefill;
+$bs-leftnav-default-collapse-icon: $light-leftnav-default-collapseicon;
+$bs-leftnav-default-bodytext-font-family: $light-leftnav-default-bodytext-font-family;
+$bs-leftnav-default-bodytext-font-weight: $light-leftnav-default-bodytext-font-weight;
+$bs-leftnav-default-bodytext-font-size: $light-leftnav-default-bodytext-font-size;
+$bs-leftnav-default-height: $light-leftnav-default-height;
+$bs-leftnav-default-width: $light-leftnav-default-width;
+
+// ================== LEFT NAV ACTIVE ==================
+$bs-leftnav-active-title: $light-leftnav-active-title;
+$bs-leftnav-active-icon: $light-leftnav-active-icon;
+$bs-leftnav-active-body: $light-leftnav-active-body;
+$bs-leftnav-active-background: $light-leftnav-active-background;
+$bs-leftnav-active-fill: $light-leftnav-active-activefill;
+$bs-leftnav-active-text: $light-leftnav-active-activetext;
+$bs-leftnav-active-icon-color: $light-leftnav-active-activeicon;
+$bs-leftnav-active-collapse-fill: $light-leftnav-active-collapsefill;
+$bs-leftnav-active-collapse-icon: $light-leftnav-active-collapseicon;
+$bs-leftnav-active-text-font-family: $light-leftnav-active-textactive-font-family;
+$bs-leftnav-active-text-font-weight: $light-leftnav-active-textactive-font-weight;
+$bs-leftnav-active-text-font-size: $light-leftnav-active-textactive-font-size;
+$bs-leftnav-active-height: $light-leftnav-active-height;
+$bs-leftnav-active-width: $light-leftnav-active-width;
+
+// ================== LEFT NAV HOVER ==================
+$bs-leftnav-hover-title: $light-leftnav-hover-title;
+$bs-leftnav-hover-icon: $light-leftnav-hover-icon;
+$bs-leftnav-hover-body: $light-leftnav-hover-body;
+$bs-leftnav-hover-background: $light-leftnav-hover-background;
+$bs-leftnav-hover-fill: $light-leftnav-hover-hoverfill;
+$bs-leftnav-hover-text: $light-leftnav-hover-hovertext;
+$bs-leftnav-hover-icon-color: $light-leftnav-hover-hovericon;
+$bs-leftnav-hover-collapse-fill: $light-leftnav-hover-collapsefill;
+$bs-leftnav-hover-collapse-icon: $light-leftnav-hover-collapseicon;
+$bs-leftnav-hover-text-font-family: $light-leftnav-hover-textactive-font-family;
+$bs-leftnav-hover-text-font-weight: $light-leftnav-hover-textactive-font-weight;
+$bs-leftnav-hover-text-font-size: $light-leftnav-hover-textactive-font-size;
+$bs-leftnav-hover-height: $light-leftnav-hover-height;
+$bs-leftnav-hover-width: $light-leftnav-hover-width;
+
+// ================== LEFT NAV INACTIVE ==================
+$bs-leftnav-inactive-title: $light-leftnav-inactive-title;
+$bs-leftnav-inactive-icon: $light-leftnav-inactive-icon;
+$bs-leftnav-inactive-body: $light-leftnav-inactive-body;
+$bs-leftnav-inactive-background: $light-leftnav-inactive-background;
+$bs-leftnav-inactive-text: $light-leftnav-inactive-inactivetext;
+$bs-leftnav-inactive-icon-color: $light-leftnav-inactive-inactiveicon;
+$bs-leftnav-inactive-collapse-fill: $light-leftnav-inactive-collapsefill;
+$bs-leftnav-inactive-collapse-icon: $light-leftnav-inactive-collapseicon;
+$bs-leftnav-inactive-disabletext-font-family: $light-leftnav-inactive-disabletext-font-family;
+$bs-leftnav-inactive-disabletext-font-weight: $light-leftnav-inactive-disabletext-font-weight;
+$bs-leftnav-inactive-disabletext-font-size: $light-leftnav-inactive-disabletext-font-size;
+$bs-leftnav-inactive-height: $light-leftnav-inactive-height;
+$bs-leftnav-inactive-width: $light-leftnav-inactive-width;
+
+// ================== LEFT NAV SUBMENU ==================
+$bs-leftnav-submenu-title: $light-leftnav-submenu-title;
+$bs-leftnav-submenu-icon: $light-leftnav-submenu-icon;
+$bs-leftnav-submenu-body: $light-leftnav-submenu-body;
+$bs-leftnav-submenu-background: $light-leftnav-submenu-background;
+$bs-leftnav-submenu-active-title: $light-leftnav-submenu-activemenutitle;
+$bs-leftnav-submenu-active-icon: $light-leftnav-submenu-activeicon;
+$bs-leftnav-submenu-active-fill: $light-leftnav-submenu-activemenufill;
+$bs-leftnav-submenu-active-text: $light-leftnav-submenu-activemenutext;
+$bs-leftnav-submenu-titletext-font-family: $light-leftnav-submenu-titletext-font-family;
+$bs-leftnav-submenu-titletext-font-weight: $light-leftnav-submenu-titletext-font-weight;
+$bs-leftnav-submenu-titletext-font-size: $light-leftnav-submenu-titletext-font-size;
+$bs-leftnav-submenu-active-font-family: $light-leftnav-submenu-activetitle-font-family;
+$bs-leftnav-submenu-active-font-weight: $light-leftnav-submenu-activetitle-font-weight;
+$bs-leftnav-submenu-active-font-size: $light-leftnav-submenu-activetitle-font-size;
+$bs-leftnav-submenu-height: $light-leftnav-submenu-height;
+$bs-leftnav-submenu-width: $light-leftnav-submenu-width;
+
+// ================== LEFT NAV COLLAPSE ==================
+$bs-leftnav-collapse-icon: $light-leftnav-collapse-icon;
+$bs-leftnav-collapse-expand-fill: $light-leftnav-collapse-expandfill;
+$bs-leftnav-collapse-expand-icon: $light-leftnav-collapse-expandicon;
+$bs-leftnav-collapse-title: $light-leftnav-collapse-title;
+$bs-leftnav-collapse-titletext-font-family: $light-leftnav-collapse-titletext-font-family;
+$bs-leftnav-collapse-titletext-font-weight: $light-leftnav-collapse-titletext-font-weight;
+$bs-leftnav-collapse-titletext-font-size: $light-leftnav-collapse-titletext-font-size;
+$bs-leftnav-collapse-height: $light-leftnav-collapse-height;
+$bs-leftnav-collapse-width: $light-leftnav-collapse-width;
+
+//header default
+$bs-header-default-height: $light-header-default-height;
+$bs-header-default-background: $light-header-default-background;
+$bs-header-default-width: $light-header-default-width;
+$bs-header-default-bentoheight: $light-header-default-bentoheight;
+$bs-header-default-bentowidth: $light-header-default-bentowidth;
+$bs-header-hover-background: $light-header-hover-background;
+$bs-header-hover-bento:$light-header-hover-bento;
+$bs-header-hover-profilefill: $light-header-hover-profilefill;
+$bs-header-hover-profileicon: $light-header-hover-profileicon;
+$bs-header-hover-username: $light-header-hover-username;
+$bs-header-hover-fill: $light-header-hover-hoverfill;
+$bs-header-hover-iconfill: $light-header-hover-iconfill;
+$bs-header-hover-iconradius: $light-header-hover-iconradius;
+$bs-header-hover-iconborder-color: $light-header-hover-iconborder-color;
+$bs-header-hover-iconborder-width: $light-header-hover-iconborder-width;
+$bs-header-hover-iconborder-style: $light-header-hover-iconborder-style;
+$bs-header-hover-profileborder-color: $light-header-hover-profileborder-color;
+$bs-header-hover-profileborder-width: $light-header-hover-profileborder-width;
+$bs-header-hover-profileborder-style: $light-header-hover-profileborder-style;
+$bs-header-hover-profileborder-width: $light-header-hover-profileborder-width;
+//bentoheight
+$bs-header-bentoheight:$light-header-active-bentoheight;
+$bs-header-bentowidth: $light-header-active-bentowidth;
+ $bs-header-bento:$light-header-default-bento;
+//card
+$bs-card-font-weight: map-get($font-weight-map, $light-card-card-headingtext-font-weight);

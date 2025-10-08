@@ -3,47 +3,92 @@ import { fn } from 'storybook/test';
 
 import { ButtonComponent } from './button.component';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta: Meta<ButtonComponent> = {
-  title: 'Example/Button',
+  title: 'Components/Buttons',
   component: ButtonComponent,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: {
-      control: 'color',
+    className: { control: 'text', description: 'Custom CSS classes' },
+    size: { 
+      control: { type: 'radio' }, 
+      options: ['sm', 'md', 'lg'], 
+      description: 'Button size' 
     },
+    label: { control: 'text' },
   },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
+  args: { onClick: fn(), size: 'md', className: '' },
 };
 
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+// Primary button
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    label: 'Primary Button',
+    className: 'btn-primary',
+    size: 'md',
   },
 };
 
+// Secondary button
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: 'Secondary Button',
+    className: 'btn-secondary',
+    size: 'md',
   },
 };
 
+// Large button
 export const Large: Story = {
   args: {
-    size: 'large',
-    label: 'Button',
+    label: 'Large Button',
+    className: 'btn-primary',
+    size: 'lg',
   },
 };
 
+// Small button
 export const Small: Story = {
   args: {
-    size: 'small',
-    label: 'Button',
+    label: 'Small Button',
+    className: 'btn-primary',
+    size: 'sm',
+  },
+  
+};
+// gradient button
+export const gradient: Story = {
+  args: {
+    label: 'Gradient Button',
+    className: 'bg-gradients',
+    size: 'sm',
+  },
+  
+};
+// Outline-primary button
+export const Outline: Story = {
+  args: {
+    label: 'Outline Button',
+    className: 'btn-outline-primary',
+    size: 'sm',
+  },
+};
+// Success button
+export const Success: Story = {
+  args: {
+    label: 'Success Button',
+    className: 'btn-success',
+    size: 'sm',
+  },
+};
+// Disabled button
+export const Disabled: Story = {
+  args: {
+    label: 'Disabled Button',
+    className: 'btn-secondary',
+    size: 'sm',
+    disabled: true,
   },
 };

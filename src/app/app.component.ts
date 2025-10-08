@@ -187,9 +187,9 @@ expr = expr.replace(/sum\((.*?)\)/gi, (_, content) => {
   console.log('Result:', this.result);
 }
 
-toggleTheme() {
-  document.body.classList.toggle("dark-theme");
-}
+// toggleTheme() {
+//   document.body.classList.toggle("dark-theme");
+// }
 salesData = [
   { businessUnit: 'Business Unit 1', salesType: 'Sales A', division: 'Division 1', amount: 1000 },
   { businessUnit: 'Business Unit 1', salesType: 'Sales A', division: 'Division 2', amount: 1000 },
@@ -210,4 +210,157 @@ salesData = [
 
 ];
 
+// subash files
+
+//  title = 'elixirdesign';
+  today = new Date();
+  selectedDate = new Date(2025, 8, 1); // Sept 1, 2025
+  currentUser = { name: 'John Doe', role: 'Admin' };
+
+  backendValue: number = 0;
+
+  categoryChips = [
+    { category: 'Sales', label: 'Sales' },
+    { category: 'Financial', label: 'Financial' },
+    { category: 'Business', label: 'Business' },
+    { category: 'Revenue', label: 'Revenue' },
+    { category: 'Technology', label: 'Technology' },
+  ];
+
+  queryChips = [
+    { status: 'inprogress', label: 'In Progress' },
+    { status: 'resolution', label: 'Resolved' },
+    { status: 'raised', label: 'Raised' }
+  ];
+
+  files: { name: string; size: string; progress: number; status: 'default' | 'progress' | 'completed' }[] = [];
+
+ ngOnInit(): void {
+    // simulate API call
+    setTimeout(() => {
+      this.backendValue = 3;
+    }, 1000);
+      this.onFileSelected 
+  }
+
+  handleLogin(event: Event) { console.log('Login clicked', event); }
+  handleLogout(event: Event) { console.log('Logout clicked', event); }
+  handleCreate(event: Event) { console.log('Create Account clicked', event); }
+
+  onFileSelected(event: any) {
+    if (!event || !event.target || !event.target.files || event.target.files.length === 0) return;
+
+    const selectedFile = event.target.files[0];
+
+    // initialize with default design
+    const fileObj = {
+      name: selectedFile.name,
+      size: (selectedFile.size / 1024 / 1024).toFixed(2) + ' Mb',
+      progress: 0,
+      status: 'default' as 'default' | 'progress' | 'completed'
+    };
+
+    this.files.push(fileObj);
+
+    // Show default design for 1 second before starting upload
+    setTimeout(() => {
+      fileObj.status = 'progress';
+      const interval = setInterval(() => {
+        if (fileObj.progress >= 100) {
+          fileObj.progress = 100;
+          fileObj.status = 'completed';
+          clearInterval(interval);
+        } else {
+          fileObj.progress += 10;
+        }
+      }, 300);
+    }, 1000);
+  }
+//draganddrop
+  filesList = [
+  { title: 'Document 1', desc: 'First file description' },
+  { title: 'Document 2', desc: 'Second file description' },
+  { title: 'Document 3', desc: 'Third file description' },
+];
+//sort
+sortOptions = [
+  { title: 'Recent' },
+  { title: 'High to Low' },
+  { title: 'Low to High' },
+];
+
+onSortChange(sort: string) {
+  console.log('Selected sort option:', sort);
+  // apply your sorting logic here
+}
+
+//bar chart
+  // 👉 Bar Chart Data
+  barChartData = [
+    { label: '2021', value: 85, color: '#1e88e5' },
+    { label: '2022', value: 95, color: '#43a047' },
+    { label: '2023', value: 110, color: '#fbc02d' },
+    { label: '2024', value: 95, color: '#e53935' },
+    { label: '2025', value: 85, color: '#8e24aa' }
+  ];
+
+  // 👉 Line Chart Data
+  lineChartData = [
+    { label: '2021', value: 50, color: '#42a5f5' },
+    { label: '2022', value: 95, color: '#ef5350' },
+    { label: '2023', value: 75, color: '#66bb6a' },
+    { label: '2024', value: 60, color: '#ffca28' },
+    { label: '2025', value: 90, color: '#ab47bc' }
+  ];
+
+  // 👉 Pie Chart Data
+  pieChartData = [
+    { label: 'Product A', value: 35, color: '#42a5f5' },
+    { label: 'Product B', value: 25, color: '#66bb6a' },
+    { label: 'Product C', value: 20, color: '#ef5350' },
+    { label: 'Product D', value: 20, color: '#ffca28' }
+  ];
+
+  // 👉 Radial Bar Chart Data
+  radialData = [
+    { label: 'Progress 1', value: 70, color: '#8e24aa' },
+    { label: 'Progress 2', value: 45, color: '#1e88e5' },
+    { label: 'Progress 3', value: 90, color: '#43a047' }
+  ];
+
+  boxPlotData = [
+  { label: '2021', value: [60, 80, 100, 120, 150], color: '#ffa726' },
+  { label: '2022', value: [70, 90, 110, 130, 160], color: '#ffa726' },
+  { label: '2023', value: [65, 85, 105, 125, 155], color: '#ffa726' },
+  { label: '2024', value: [50, 70, 90, 110, 140],  color: '#ffa726' }
+];
+  donutchart = [
+  { label: '2021', value: [60, 80, 100, 120, 150], color: '#ffa726' },
+  { label: '2022', value: [70, 90, 110, 130, 160], color: '#ffa726' },
+  { label: '2023', value: [65, 85, 105, 125, 155], color: '#ffa726' },
+  { label: '2024', value: [50, 70, 90, 110, 140],  color: '#ffa726' }
+];
+  isDark = false; 
+
+toggleTheme() {
+  this.isDark = !this.isDark;
+  document.body.classList.toggle("dark-theme");
+}
+ bentoData = [
+    { icon: 'fa-solid fa-user', title: ' Profile settings',  },
+    { icon: 'fa-solid fa-gear', title: 'Settings',  },
+    { icon: 'fa-solid fa-bell', title: 'Notifications', },
+        { icon: 'fa-solid fa-user', title: 'Profile',  },
+    { icon: 'fa-solid fa-gear', title: 'Settings',  },
+    { icon: 'fa-solid fa-bell', title: 'Notifications', },
+
+        { icon: 'fa-solid fa-user', title: 'Profile',  },
+    { icon: 'fa-solid fa-gear', title: 'Settings',  },
+    { icon: 'fa-solid fa-bell', title: 'Notifications', },
+  ];
+
+  bentoHorizontals= [
+    { icon: 'fa fa-envelope', title: 'Mail', },
+    { icon: 'fa fa-comments', title: 'Chat',  }
+  ];
 }
